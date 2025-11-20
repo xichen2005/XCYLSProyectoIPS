@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{122f0f8e-458b-4e7c-9eab-216b3af26f8a}</TemplateID>
+		<Name Package="{8bf689c9-05f2-4eba-86c7-f92496a3a491}" ID="103"/>
+		<Description Package="{8bf689c9-05f2-4eba-86c7-f92496a3a491}" ID="102"/>
+		<Icon Package="{8bf689c9-05f2-4eba-86c7-f92496a3a491}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>XCYLSProyectoIPS.XCYLS_DSLProyIPS</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.XCYLS_DSLProyIPS">XCYLS_DSLProyIPS.XCYLS_DSLProyIPS</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.XCYLS_DSLProyIPS.diagram">XCYLS_DSLProyIPS.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+
