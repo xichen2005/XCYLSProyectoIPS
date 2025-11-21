@@ -185,22 +185,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		/// <summary>
-		/// Most connectors are mapped to element links, but there can be exceptions. This method tell if a connector should be
-		/// mapped to an element link.
-		/// </summary>
-		public override bool IsConnectorMappedToLink(DslDiagrams::BinaryLinkShape connector)
-		{
-			#region Check Parameters
-			global::System.Diagnostics.Debug.Assert(connector != null);
-			if (connector == null)
-				throw new global::System.ArgumentNullException("connector");
-			#endregion
-			if (connector.GetType() == typeof(global::UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent))
-				return false;
-			return base.IsConnectorMappedToLink(connector);
-		}
-		
-		/// <summary>
 		/// Creates a new shape for the given model element as part of view fixup
 		/// </summary>
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily", Justification = "Generated code.")]
@@ -231,9 +215,30 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
 				return newShape;
 			}
+			if(element is global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion)
+			{
+				global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool newShape = new global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool(this.Partition);
+				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
+				return newShape;
+			}
 			if(element is global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned)
 			{
 				global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel newShape = new global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel(this.Partition);
+				return newShape;
+			}
+			if(element is global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoEntidad)
+			{
+				global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr newShape = new global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr(this.Partition);
+				return newShape;
+			}
+			if(element is global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves)
+			{
+				global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr newShape = new global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr(this.Partition);
+				return newShape;
+			}
+			if(element is global::UPM_IPS.XCYLSProyectoIPS.RelacionHasAtributoRelacioned)
+			{
+				global::UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr newShape = new global::UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr(this.Partition);
 				return newShape;
 			}
 			return base.CreateChildShape(element);
@@ -247,6 +252,120 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
 		{
 			base.InitializeShapeFields(shapeFields);
+			global::UPM_IPS.XCYLSProyectoIPS.EntidadShape.DecoratorsInitialized += EntidadShapeDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.RelacionShape.DecoratorsInitialized += RelacionShapeDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.AtributoEntShape.DecoratorsInitialized += AtributoEntShapeDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape.DecoratorsInitialized += AtributoClaveShapeDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool.DecoratorsInitialized += AtributoRelacionToolDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.DecoratorsInitialized += MetaforaEnt_RelDecoratorMap.OnDecoratorsInitialized;
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for EntidadShape.
+		/// </summary>
+		internal static partial class EntidadShapeDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for EntidadShape.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Entidad.NameDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "NameEntidad").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for RelacionShape.
+		/// </summary>
+		internal static partial class RelacionShapeDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for RelacionShape.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Relacion.NameDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Name").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for AtributoEntShape.
+		/// </summary>
+		internal static partial class AtributoEntShapeDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for AtributoEntShape.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.NameDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Atributo").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for AtributoClaveShape.
+		/// </summary>
+		internal static partial class AtributoClaveShapeDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for AtributoClaveShape.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoClave.ClaveDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "AtributoC").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for AtributoRelacionTool.
+		/// </summary>
+		internal static partial class AtributoRelacionToolDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for AtributoRelacionTool.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.NameDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Name").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for MetaforaEnt_Rel.
+		/// </summary>
+		internal static partial class MetaforaEnt_RelDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for MetaforaEnt_Rel.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "cardinaridad").AssociateValueWith(shape.Store, propertyInfo);
+			}
 		}
 		
 		#endregion
@@ -404,7 +523,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.Relacion), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.AtributoClave), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoEntidad), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.RelacionHasAtributoRelacioned), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		internal sealed partial class FixUpDiagram : FixUpDiagramBase
 		{
 			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
@@ -435,6 +558,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if(childElement is global::UPM_IPS.XCYLSProyectoIPS.AtributoClave)
 				{
 					parentElement = GetParentForAtributoClave((global::UPM_IPS.XCYLSProyectoIPS.AtributoClave)childElement);
+				} else
+				if(childElement is global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion)
+				{
+					parentElement = GetParentForAtributoRelacion((global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion)childElement);
 				} else
 				{
 					parentElement = null;
@@ -473,6 +600,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{
 				// Segments 0 and 1
 				global::UPM_IPS.XCYLSProyectoIPS.Entidad root2 = root.Entidad;
+				if ( root2 == null ) return null;
+				// Segments 2 and 3
+				global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS result = root2.DeraWebIPS;
+				if ( result == null ) return null;
+				return result;
+			}
+			public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS GetParentForAtributoRelacion( global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion root )
+			{
+				// Segments 0 and 1
+				global::UPM_IPS.XCYLSProyectoIPS.Relacion root2 = root.Relacion;
 				if ( root2 == null ) return null;
 				// Segments 2 and 3
 				global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS result = root2.DeraWebIPS;
@@ -566,9 +703,35 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		
 	
 		/// <summary>
+		/// A rule which fires when data mapped to outer text decorators has changed,
+		/// so we can update the decorator host's bounds.
+		/// </summary>
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned), InitiallyDisabled=true)]
+		internal sealed class DecoratorPropertyChanged : DslModeling::ChangeRule
+		{
+			[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "Generated code.")]
+			public override void ElementPropertyChanged(DslModeling::ElementPropertyChangedEventArgs e)
+			{
+				if(e == null) throw new global::System.ArgumentNullException("e");
+				
+				if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId)
+				{
+					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.FindMetaforaEnt_RelDecorator("cardinaridad");
+					if(decorator != null)
+					{
+						decorator.UpdateDecoratorHostShapes(e.ModelElement, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.DomainClassId);
+					}
+				}
+			}
+		}
+	
+		/// <summary>
 		/// Reroute a connector when the role players of its underlying relationship change
 		/// </summary>
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoEntidad), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.RelacionHasAtributoRelacioned), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddConnectionRulePriority, InitiallyDisabled=true)]
 		internal sealed class ConnectorRolePlayerChanged : DslModeling::RolePlayerChangeRule
 		{
 			/// <summary>

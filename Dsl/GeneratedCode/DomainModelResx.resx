@@ -157,6 +157,14 @@
     <value>Relacion</value>
     <comment>DisplayName for DomainClass &apos;Relacion&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Relacion/Name.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.Relacion.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Relacion/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Relacion&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad</value>
     <comment>Description for DomainClass &apos;AtributoEntidad&apos;</comment>
@@ -164,6 +172,14 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.DisplayName" xml:space="preserve">
     <value>Atributo Entidad</value>
     <comment>DisplayName for DomainClass &apos;AtributoEntidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Name.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion</value>
@@ -173,6 +189,14 @@
     <value>Atributo Relacion</value>
     <comment>DisplayName for DomainClass &apos;AtributoRelacion&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Name.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave</value>
     <comment>Description for DomainClass &apos;AtributoClave&apos;</comment>
@@ -180,6 +204,14 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave.DisplayName" xml:space="preserve">
     <value>Atributo Clave</value>
     <comment>DisplayName for DomainClass &apos;AtributoClave&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Clave.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Clave</value>
+    <comment>Description for DomainProperty &apos;Clave&apos; on DomainClass &apos;AtributoClave&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Clave.DisplayName" xml:space="preserve">
+    <value>Clave</value>
+    <comment>DisplayName for DomainProperty &apos;Clave&apos; on DomainClass &apos;AtributoClave&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad</value>
@@ -220,6 +252,14 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.DisplayName" xml:space="preserve">
     <value>Entidad References Relacioned</value>
     <comment>DisplayName for DomainClass &apos;EntidadReferencesRelacioned&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Cardinaridad</value>
+    <comment>Description for DomainProperty &apos;cardinaridad&apos; on DomainClass &apos;EntidadReferencesRelacioned&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.DisplayName" xml:space="preserve">
+    <value>Cardinaridad</value>
+    <comment>DisplayName for DomainProperty &apos;cardinaridad&apos; on DomainClass &apos;EntidadReferencesRelacioned&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Entidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Entidad</value>
@@ -381,8 +421,8 @@
     <value>Entidad Shape</value>
     <comment>DisplayName for DomainClass &apos;EntidadShape&apos;</comment>
   </data>
-  <data name="EntidadShapeNameDecoratorDefaultText" xml:space="preserve">
-    <value>NameDecorator</value>
+  <data name="EntidadShapeNameEntidadDefaultText" xml:space="preserve">
+    <value>NameEntidad</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.RelacionShape.Description" xml:space="preserve">
@@ -393,6 +433,10 @@
     <value>Relacion Shape</value>
     <comment>DisplayName for DomainClass &apos;RelacionShape&apos;</comment>
   </data>
+  <data name="RelacionShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntShape.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntShape</value>
     <comment>Description for DomainClass &apos;AtributoEntShape&apos;</comment>
@@ -400,6 +444,10 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntShape.DisplayName" xml:space="preserve">
     <value>Atributo Ent Shape</value>
     <comment>DisplayName for DomainClass &apos;AtributoEntShape&apos;</comment>
+  </data>
+  <data name="AtributoEntShapeAtributoDefaultText" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape</value>
@@ -409,6 +457,22 @@
     <value>Atributo Clave Shape</value>
     <comment>DisplayName for DomainClass &apos;AtributoClaveShape&apos;</comment>
   </data>
+  <data name="AtributoClaveShapeAtributoCDefaultText" xml:space="preserve">
+    <value>AtributoC</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool</value>
+    <comment>Description for DomainClass &apos;AtributoRelacionTool&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool.DisplayName" xml:space="preserve">
+    <value>Atributo Relacion Tool</value>
+    <comment>DisplayName for DomainClass &apos;AtributoRelacionTool&apos;</comment>
+  </data>
+  <data name="AtributoRelacionToolNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel</value>
     <comment>Description for DomainClass &apos;MetaforaEnt_Rel&apos;</comment>
@@ -417,13 +481,25 @@
     <value>Metafora Ent_ Rel</value>
     <comment>DisplayName for DomainClass &apos;MetaforaEnt_Rel&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent</value>
-    <comment>Description for DomainClass &apos;MetaforaRel_Ent&apos;</comment>
+  <data name="MetaforaEnt_RelcardinaridadDefaultText" xml:space="preserve">
+    <value>cardinaridad</value>
+    <comment>Text decorator default text</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent.DisplayName" xml:space="preserve">
-    <value>Metafora Rel_ Ent</value>
-    <comment>DisplayName for DomainClass &apos;MetaforaRel_Ent&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr</value>
+    <comment>Description for DomainClass &apos;MetaforaEnt_Atr&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr.DisplayName" xml:space="preserve">
+    <value>Metafora Ent_ Atr</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaEnt_Atr&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr</value>
+    <comment>Description for DomainClass &apos;MetaforaRel_Atr&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr.DisplayName" xml:space="preserve">
+    <value>Metafora Rel_ Atr</value>
+    <comment>DisplayName for DomainClass &apos;MetaforaRel_Atr&apos;</comment>
   </data>
   <data name="FormatList" xml:space="preserve">
     <value>XCYLSProyectoIPS (*.XCYLS_DSLProyIPS)|*.XCYLS_DSLProyIPS</value>
@@ -483,6 +559,14 @@
   </data>
   <data name="AtributoEntidadToolToolboxTooltip" xml:space="preserve">
     <value>Atributo Entidad Tool</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoRelacionToolboxItem" xml:space="preserve">
+    <value>AtributoRelacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoRelacionToolboxTooltip" xml:space="preserve">
+    <value>Atributo Relacion</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -627,6 +711,10 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="AtributoEntidadToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoRelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

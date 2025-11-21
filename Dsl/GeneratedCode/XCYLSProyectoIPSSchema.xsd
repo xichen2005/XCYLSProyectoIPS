@@ -111,13 +111,13 @@
             </xsd:complexType>
           </xsd:element>
           <!-- Relationship: EntidadHasAtributoClaves -->
-          <xsd:element name="atributoClaves" minOccurs="0" maxOccurs="1">
+          <xsd:element name="atributoClaves" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>Instances of EntidadHasAtributoClaves</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="entidadHasAtributoClaves" minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="entidadHasAtributoClaves" minOccurs="1" maxOccurs="unbounded">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of EntidadHasAtributoClaves needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
@@ -183,6 +183,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -215,6 +217,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -247,6 +251,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -279,6 +285,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: Clave -->
+        <xsd:attribute name="clave" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -359,6 +367,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
+        <!-- Property: cardinaridad -->
+        <xsd:attribute name="cardinaridad" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

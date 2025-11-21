@@ -95,9 +95,59 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
 		}
 		
+		
+		/// <summary>
+		/// Shape instance initialization.
+		/// </summary>
+		public override void OnInitialize()
+		{
+			base.OnInitialize();
+			
+			// Create host shapes for outer decorators.
+			foreach(DslDiagrams::Decorator decorator in this.Decorators)
+			{
+				if(decorator.RequiresHost)
+				{
+					decorator.ConfigureHostShape(this);
+				}
+			}
+			
+		}
 		#endregion
 		
 		#region Connector styles
+		#endregion
+		
+		#region Decorators
+		/// <summary>
+		/// Initialize the collection of shape fields associated with this shape type.
+		/// </summary>
+		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
+		{
+			base.InitializeShapeFields(shapeFields);
+		}
+		
+		/// <summary>
+		/// Initialize the collection of decorators associated with this shape type.  This method also
+		/// creates shape fields for outer decorators, because these are not part of the shape fields collection
+		/// associated with the shape, so they must be created here rather than in InitializeShapeFields.
+		/// </summary>
+		protected override void InitializeDecorators(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields, global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators)
+		{
+			base.InitializeDecorators(shapeFields, decorators);
+			
+			DslDiagrams::TextField field1 = new DslDiagrams::TextField("cardinaridad");
+			field1.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MetaforaEnt_RelcardinaridadDefaultText");
+			field1.DefaultFocusable = true;
+			field1.DefaultAutoSize = true;
+			field1.AnchoringBehavior.MinimumHeightInLines = 1;
+			field1.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field1.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator1 = new DslDiagrams::ConnectorDecorator(field1, DslDiagrams::ConnectorDecoratorPosition.SourceTop, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator1);
+				
+		}
+		
 		#endregion
 		
 		#region Constructors, domain class Id
@@ -131,15 +181,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// DomainClass MetaforaRel_Ent
-	/// Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent
+	/// DomainClass MetaforaEnt_Atr
+	/// Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("3b09d435-e500-4349-9bca-5e3c6ace0b36")]
-	public partial class MetaforaRel_Ent : DslDiagrams::BinaryLinkShape
+	public partial class MetaforaEnt_Atr : DslDiagrams::BinaryLinkShape
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;
@@ -204,9 +254,9 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		/// <summary>
-		/// Finds a decorator associated with MetaforaRel_Ent.
+		/// Finds a decorator associated with MetaforaEnt_Atr.
 		/// </summary>
-		public static DslDiagrams::Decorator FindMetaforaRel_EntDecorator(string decoratorName)
+		public static DslDiagrams::Decorator FindMetaforaEnt_AtrDecorator(string decoratorName)
 		{	
 			if(decorators == null) return null;
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
@@ -220,7 +270,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// MetaforaRel_Ent domain class Id.
+		/// MetaforaEnt_Atr domain class Id.
 		/// </summary>
 		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x3b09d435, 0xe500, 0x4349, 0x9b, 0xca, 0x5e, 0x3c, 0x6a, 0xce, 0x0b, 0x36);
 		/// <summary>
@@ -228,7 +278,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public MetaforaRel_Ent(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public MetaforaEnt_Atr(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -238,7 +288,124 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public MetaforaRel_Ent(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public MetaforaEnt_Atr(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass MetaforaRel_Atr
+	/// Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("2909b438-51bf-4c46-81d4-c483803eddd4")]
+	public partial class MetaforaRel_Atr : DslDiagrams::BinaryLinkShape
+	{
+		#region DiagramElement boilerplate
+		private static DslDiagrams::StyleSet classStyleSet;
+		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
+		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
+		
+		/// <summary>
+		/// Per-class style set for this shape.
+		/// </summary>
+		protected override DslDiagrams::StyleSet ClassStyleSet
+		{
+			get
+			{
+				if (classStyleSet == null)
+				{
+					classStyleSet = CreateClassStyleSet();
+				}
+				return classStyleSet;
+			}
+		}
+		
+		/// <summary>
+		/// Per-class ShapeFields for this shape.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
+		{
+			get
+			{
+				if (shapeFields == null)
+				{
+					shapeFields = CreateShapeFields();
+				}
+				return shapeFields;
+			}
+		}
+		
+		/// <summary>
+		/// Event fired when decorator initialization is complete for this shape type.
+		/// </summary>
+		public static event global::System.EventHandler DecoratorsInitialized;
+		
+		/// <summary>
+		/// List containing decorators used by this type.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
+		{
+			get 
+			{
+				if(decorators == null)
+				{
+					decorators = CreateDecorators();
+					
+					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
+					if(DecoratorsInitialized != null)
+					{
+						DecoratorsInitialized(this, global::System.EventArgs.Empty);
+					}
+				}
+				
+				return decorators; 
+			}
+		}
+		
+		/// <summary>
+		/// Finds a decorator associated with MetaforaRel_Atr.
+		/// </summary>
+		public static DslDiagrams::Decorator FindMetaforaRel_AtrDecorator(string decoratorName)
+		{	
+			if(decorators == null) return null;
+			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
+		}
+		
+		#endregion
+		
+		#region Connector styles
+		#endregion
+		
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// MetaforaRel_Atr domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x2909b438, 0x51bf, 0x4c46, 0x81, 0xd4, 0xc4, 0x83, 0x80, 0x3e, 0xdd, 0xd4);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public MetaforaRel_Atr(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public MetaforaRel_Atr(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}

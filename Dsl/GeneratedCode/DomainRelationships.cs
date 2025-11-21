@@ -377,7 +377,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
 		[DslModeling::DomainObjectId("31ad9191-1381-4176-89f9-7dcdfc039946")]
 		public virtual Relacion Relacion
 		{
@@ -404,6 +404,94 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 			return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(element, EntidadDomainRoleId);
 		}
+		#endregion
+		#region cardinaridad domain property code
+		
+		/// <summary>
+		/// cardinaridad domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid cardinaridadDomainPropertyId = new global::System.Guid(0x20246e3c, 0xa6f2, 0x401d, 0x8d, 0xfd, 0xea, 0x41, 0x4d, 0x68, 0x05, 0x16);
+		
+		/// <summary>
+		/// Storage for cardinaridad
+		/// </summary>
+		private global::System.String cardinaridadPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of cardinaridad domain property.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Cardinaridad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("20246e3c-a6f2-401d-8dfd-ea414d680516")]
+		public global::System.String cardinaridad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return cardinaridadPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				cardinaridadPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EntidadReferencesRelacioned.cardinaridad domain property.
+		/// </summary>
+		internal sealed partial class cardinaridadPropertyHandler : DslModeling::DomainPropertyValueHandler<EntidadReferencesRelacioned, global::System.String>
+		{
+			private cardinaridadPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EntidadReferencesRelacioned.cardinaridad domain property value handler.
+			/// </summary>
+			public static readonly cardinaridadPropertyHandler Instance = new cardinaridadPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EntidadReferencesRelacioned.cardinaridad domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return cardinaridadDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(EntidadReferencesRelacioned element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.cardinaridadPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EntidadReferencesRelacioned element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.cardinaridadPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
 		#endregion
 		#region Entidad link accessor
 		/// <summary>
@@ -1275,7 +1363,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves/Entidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves/Entidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "AtributoClaves", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "AtributoClaves", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.OneMany)]
 		[DslModeling::DomainObjectId("5bafca94-3e1c-46c7-afa7-acb7cbafd709")]
 		public virtual Entidad Entidad
 		{
