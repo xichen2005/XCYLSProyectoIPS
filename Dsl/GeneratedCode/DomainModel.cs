@@ -79,10 +79,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				typeof(EntidadHasAtributoEntidad),
 				typeof(RelacionHasAtributoRelacioned),
 				typeof(EntidadHasAtributoClaves),
+				typeof(RelacionReferencesEntidad1),
 				typeof(XCYLSProyectoIPSDiagram),
 				typeof(MetaforaEnt_Rel),
 				typeof(MetaforaEnt_Atr),
 				typeof(MetaforaRel_Atr),
+				typeof(MetaforaRel_Ent),
 				typeof(EntidadShape),
 				typeof(RelacionShape),
 				typeof(AtributoEntShape),
@@ -105,9 +107,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainMemberInfo(typeof(Entidad), "Name", Entidad.NameDomainPropertyId, typeof(Entidad.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Relacion), "Name", Relacion.NameDomainPropertyId, typeof(Relacion.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoEntidad), "Name", AtributoEntidad.NameDomainPropertyId, typeof(AtributoEntidad.NamePropertyHandler)),
+				new DomainMemberInfo(typeof(AtributoEntidad), "Tipo", AtributoEntidad.TipoDomainPropertyId, typeof(AtributoEntidad.TipoPropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoRelacion), "Name", AtributoRelacion.NameDomainPropertyId, typeof(AtributoRelacion.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoClave), "Clave", AtributoClave.ClaveDomainPropertyId, typeof(AtributoClave.ClavePropertyHandler)),
+				new DomainMemberInfo(typeof(AtributoClave), "Tipo", AtributoClave.TipoDomainPropertyId, typeof(AtributoClave.TipoPropertyHandler)),
 				new DomainMemberInfo(typeof(EntidadReferencesRelacioned), "cardinaridad", EntidadReferencesRelacioned.cardinaridadDomainPropertyId, typeof(EntidadReferencesRelacioned.cardinaridadPropertyHandler)),
+				new DomainMemberInfo(typeof(EntidadReferencesRelacioned), "relacionB", EntidadReferencesRelacioned.relacionBDomainPropertyId, typeof(EntidadReferencesRelacioned.relacionBPropertyHandler)),
+				new DomainMemberInfo(typeof(RelacionReferencesEntidad1), "cardinalidad", RelacionReferencesEntidad1.cardinalidadDomainPropertyId, typeof(RelacionReferencesEntidad1.cardinalidadPropertyHandler)),
+				new DomainMemberInfo(typeof(RelacionReferencesEntidad1), "relacionA", RelacionReferencesEntidad1.relacionADomainPropertyId, typeof(RelacionReferencesEntidad1.relacionAPropertyHandler)),
 			};
 		}
 		/// <summary>
@@ -130,6 +137,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainRolePlayerInfo(typeof(RelacionHasAtributoRelacioned), "AtributoRelacion", RelacionHasAtributoRelacioned.AtributoRelacionDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasAtributoClaves), "Entidad", EntidadHasAtributoClaves.EntidadDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasAtributoClaves), "AtributoClave", EntidadHasAtributoClaves.AtributoClaveDomainRoleId),
+				new DomainRolePlayerInfo(typeof(RelacionReferencesEntidad1), "Relacion", RelacionReferencesEntidad1.RelacionDomainRoleId),
+				new DomainRolePlayerInfo(typeof(RelacionReferencesEntidad1), "Entidad", RelacionReferencesEntidad1.EntidadDomainRoleId),
 			};
 		}
 		#endregion
@@ -151,7 +160,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(15);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(16);
 				createElementMap.Add(typeof(DeraWebIPS), 0);
 				createElementMap.Add(typeof(Entidad), 1);
 				createElementMap.Add(typeof(Relacion), 2);
@@ -162,11 +171,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				createElementMap.Add(typeof(MetaforaEnt_Rel), 7);
 				createElementMap.Add(typeof(MetaforaEnt_Atr), 8);
 				createElementMap.Add(typeof(MetaforaRel_Atr), 9);
-				createElementMap.Add(typeof(EntidadShape), 10);
-				createElementMap.Add(typeof(RelacionShape), 11);
-				createElementMap.Add(typeof(AtributoEntShape), 12);
-				createElementMap.Add(typeof(AtributoClaveShape), 13);
-				createElementMap.Add(typeof(AtributoRelacionTool), 14);
+				createElementMap.Add(typeof(MetaforaRel_Ent), 10);
+				createElementMap.Add(typeof(EntidadShape), 11);
+				createElementMap.Add(typeof(RelacionShape), 12);
+				createElementMap.Add(typeof(AtributoEntShape), 13);
+				createElementMap.Add(typeof(AtributoClaveShape), 14);
+				createElementMap.Add(typeof(AtributoRelacionTool), 15);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -190,11 +200,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				case 7: return new MetaforaEnt_Rel(partition, propertyAssignments);
 				case 8: return new MetaforaEnt_Atr(partition, propertyAssignments);
 				case 9: return new MetaforaRel_Atr(partition, propertyAssignments);
-				case 10: return new EntidadShape(partition, propertyAssignments);
-				case 11: return new RelacionShape(partition, propertyAssignments);
-				case 12: return new AtributoEntShape(partition, propertyAssignments);
-				case 13: return new AtributoClaveShape(partition, propertyAssignments);
-				case 14: return new AtributoRelacionTool(partition, propertyAssignments);
+				case 10: return new MetaforaRel_Ent(partition, propertyAssignments);
+				case 11: return new EntidadShape(partition, propertyAssignments);
+				case 12: return new RelacionShape(partition, propertyAssignments);
+				case 13: return new AtributoEntShape(partition, propertyAssignments);
+				case 14: return new AtributoClaveShape(partition, propertyAssignments);
+				case 15: return new AtributoRelacionTool(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -217,13 +228,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(6);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(7);
 				createElementLinkMap.Add(typeof(DeraWebIPSHasEntidad), 0);
 				createElementLinkMap.Add(typeof(EntidadReferencesRelacioned), 1);
 				createElementLinkMap.Add(typeof(DeraWebIPSHasRelacioned), 2);
 				createElementLinkMap.Add(typeof(EntidadHasAtributoEntidad), 3);
 				createElementLinkMap.Add(typeof(RelacionHasAtributoRelacioned), 4);
 				createElementLinkMap.Add(typeof(EntidadHasAtributoClaves), 5);
+				createElementLinkMap.Add(typeof(RelacionReferencesEntidad1), 6);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -244,6 +256,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				case 3: return new EntidadHasAtributoEntidad(partition, roleAssignments, propertyAssignments);
 				case 4: return new RelacionHasAtributoRelacioned(partition, roleAssignments, propertyAssignments);
 				case 5: return new EntidadHasAtributoClaves(partition, roleAssignments, propertyAssignments);
+				case 6: return new RelacionReferencesEntidad1(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -492,5 +505,40 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	}
 	#endregion
 		
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainEnumeration: tipoEnumeration
+	/// Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum tipoEnumeration
+	{
+		/// <summary>
+		/// String
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.String
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/String.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		String = 0,
+		/// <summary>
+		/// Int
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Int
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/Int.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Int = 1,
+		/// <summary>
+		/// Double
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Double
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/Double.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Double = 3,
+		/// <summary>
+		/// DateTime
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.DateTime
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/DateTime.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		DateTime = 4,
+	}
 }
 

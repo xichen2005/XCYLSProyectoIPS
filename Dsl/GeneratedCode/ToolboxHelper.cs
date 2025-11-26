@@ -51,6 +51,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Toolbox item filter string used to identify EnlaceEnt_RelTool connector tool.
 		/// </summary>
 		public const string EnlaceEnt_RelToolFilterString = "EnlaceEnt_RelTool.1.0";
+		/// <summary>
+		/// Toolbox item filter string used to identify EnlaceRel_Ent connector tool.
+		/// </summary>
+		public const string EnlaceRel_EntFilterString = "EnlaceRel_Ent.1.0";
 
 	
 		private global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem> toolboxItemCache = new global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem>();
@@ -98,7 +102,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 			get
 			{
-				return 6;
+				return 7;
 			}
 		}
 		
@@ -243,6 +247,24 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.XCYLSProyectoIPS.EnlaceRel_EntToolboxItem":
+
+					// Add EnlaceRel_Ent connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.XCYLSProyectoIPS.EnlaceRel_EntToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						7, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EnlaceRel_EntToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EnlaceRel_EntToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("XCYLSProyectoIPSToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EnlaceRel_Ent", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EnlaceRel_EntToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						null, // Connector toolbox items do not have an underlying data object.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(EnlaceRel_EntFilterString)
 						});
 					break;
 				default:

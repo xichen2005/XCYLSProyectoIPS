@@ -397,6 +397,21 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region Relacioned1 opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Relacioned1.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Entidad
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Relacion> Relacioned1
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.EntidadDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -699,6 +714,21 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region Entidad1 opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Entidad1.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Entidad> Entidad1
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -918,6 +948,93 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					ValueChanging(element, oldValue, newValue);
 					element.namePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Tipo domain property code
+		
+		/// <summary>
+		/// Tipo domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TipoDomainPropertyId = new global::System.Guid(0x2758beba, 0x9429, 0x44a6, 0xa4, 0x3b, 0xf2, 0x94, 0xba, 0x53, 0x3e, 0x97);
+		
+		/// <summary>
+		/// Storage for Tipo
+		/// </summary>
+		private tipoEnumeration tipoPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Tipo domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Tipo
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Tipo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Tipo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("2758beba-9429-44a6-a43b-f294ba533e97")]
+		public tipoEnumeration Tipo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return tipoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TipoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoEntidad.Tipo domain property.
+		/// </summary>
+		internal sealed partial class TipoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoEnumeration>
+		{
+			private TipoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoEntidad.Tipo domain property value handler.
+			/// </summary>
+			public static readonly TipoPropertyHandler Instance = new TipoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoEntidad.Tipo domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TipoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoEnumeration GetValue(AtributoEntidad element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tipoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoEntidad element, tipoEnumeration newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoEnumeration oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tipoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1214,6 +1331,93 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					ValueChanging(element, oldValue, newValue);
 					element.clavePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Tipo domain property code
+		
+		/// <summary>
+		/// Tipo domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TipoDomainPropertyId = new global::System.Guid(0xf3fe4d46, 0xf81c, 0x4970, 0xa6, 0x33, 0x20, 0xb1, 0xff, 0x29, 0xbf, 0x7d);
+		
+		/// <summary>
+		/// Storage for Tipo
+		/// </summary>
+		private tipoEnumeration tipoPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Tipo domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Tipo
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Tipo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Tipo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("f3fe4d46-f81c-4970-a633-20b1ff29bf7d")]
+		public tipoEnumeration Tipo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return tipoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TipoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoClave.Tipo domain property.
+		/// </summary>
+		internal sealed partial class TipoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, tipoEnumeration>
+		{
+			private TipoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoClave.Tipo domain property value handler.
+			/// </summary>
+			public static readonly TipoPropertyHandler Instance = new TipoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoClave.Tipo domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TipoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoEnumeration GetValue(AtributoClave element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tipoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoClave element, tipoEnumeration newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoEnumeration oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tipoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}

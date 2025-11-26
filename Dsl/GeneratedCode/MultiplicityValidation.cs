@@ -46,12 +46,28 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslValidation::ValidationMethod(DslValidation::ValidationCategories.Open | DslValidation::ValidationCategories.Save | DslValidation::ValidationCategories.Menu)]
 		private void ValidateEntidadMultiplicity (DslValidation::ValidationContext context)
 		{
+			if (this.Relacioned.Count == 0)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"Entidad", this.Name, "Relacioned"),
+						"DSL0001", this);
+			}
 			if (this.AtributoClaves.Count == 0)
 			{
 				context.LogViolation(DslValidation::ViolationType.Error,
 					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
 						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
 						"Entidad", this.Name, "AtributoClaves"),
+						"DSL0001", this);
+			}
+			if (this.Relacioned1.Count == 0)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"Entidad", this.Name, "Relacioned1"),
 						"DSL0001", this);
 			}
 		} // ValidateEntidadMultiplicity
@@ -76,6 +92,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
 						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
 						"Relacion", "", "Entidad"),
+						"DSL0001", this);
+			}
+			if (this.Entidad1.Count == 0)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"Relacion", "", "Entidad1"),
 						"DSL0001", this);
 			}
 		} // ValidateRelacionMultiplicity

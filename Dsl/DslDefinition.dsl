@@ -74,6 +74,11 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="2758beba-9429-44a6-a43b-f294ba533e97" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Tipo" Name="Tipo" DisplayName="Tipo">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoEnumeration" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
     <DomainClass Id="863fd30e-be10-41dc-9c2c-75e56b3e7a98" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion" Name="AtributoRelacion" DisplayName="Atributo Relacion" Namespace="UPM_IPS.XCYLSProyectoIPS">
@@ -90,6 +95,11 @@
         <DomainProperty Id="2a8c441d-d9cd-4806-a95a-e4a54a040f58" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Clave" Name="Clave" DisplayName="Clave">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="f3fe4d46-f81c-4970-a633-20b1ff29bf7d" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Tipo" Name="Tipo" DisplayName="Tipo">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoEnumeration" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -119,9 +129,14 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="8f96b178-3f33-428d-b669-28396bf3364d" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion B" Name="relacionB" DisplayName="Relacion B">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
       </Properties>
       <Source>
-        <DomainRole Id="b1d93943-c130-46be-bcda-97d2f02571e6" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="Relacioned" PropertyDisplayName="Relacioned">
+        <DomainRole Id="b1d93943-c130-46be-bcda-97d2f02571e6" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="Relacioned" Multiplicity="OneMany" PropertyDisplayName="Relacioned">
           <RolePlayer>
             <DomainClassMoniker Name="Entidad" />
           </RolePlayer>
@@ -199,6 +214,34 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
+    <DomainRelationship Id="a749eba1-eaf5-4b92-9198-be71d1b8d4af" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1" Name="RelacionReferencesEntidad1" DisplayName="Relacion References Entidad1" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Properties>
+        <DomainProperty Id="c18fc68d-3179-49e3-9b0e-6537c267e242" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Cardinalidad" Name="cardinalidad" DisplayName="Cardinalidad">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="21b9e85f-d613-48fd-9232-2ed26b4c90a9" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion A" Name="relacionA" DisplayName="Relacion A">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="926ed29f-b13b-4331-9ea1-2401acae3936" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad1" Multiplicity="OneMany" PropertyDisplayName="Entidad1">
+          <RolePlayer>
+            <DomainClassMoniker Name="Relacion" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="5303db20-4a12-408f-b381-657a6902f6dd" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="Relacioned1" Multiplicity="OneMany" PropertyDisplayName="Relacioned1">
+          <RolePlayer>
+            <DomainClassMoniker Name="Entidad" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -216,6 +259,14 @@
     <ExternalType Name="Guid" Namespace="System" />
     <ExternalType Name="Boolean" Namespace="System" />
     <ExternalType Name="Char" Namespace="System" />
+    <DomainEnumeration Name="tipoEnumeration" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.String" Name="String" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Int" Name="Int" Value="1" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Double" Name="Double" Value="3" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.DateTime" Name="DateTime" Value="4" />
+      </Literals>
+    </DomainEnumeration>
   </Types>
   <Shapes>
     <GeometryShape Id="16f5b8d8-b8f2-4523-922a-b9c1f31f223a" Description="Shape used to represent ExampleElements on a Diagram." Name="EntidadShape" DisplayName="Entidad Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Entidad Shape" FillColor="255, 255, 192" OutlineColor="113, 111, 110" InitialWidth="2" InitialHeight="0.75" OutlineThickness="0.01" Geometry="RoundedRectangle">
@@ -233,10 +284,16 @@
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Atributo" DisplayName="Atributo" DefaultText="Atributo" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
+      </ShapeHasDecorators>
     </GeometryShape>
-    <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" TextColor="White" FillColor="IndianRed" InitialHeight="1" Geometry="Rectangle">
+    <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" FillColor="Snow" InitialHeight="1" Geometry="Rectangle">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="AtributoC" DisplayName="Atributo C" DefaultText="AtributoC" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
       </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="025d0223-2f2d-433c-a1da-df042d913e57" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool" Name="AtributoRelacionTool" DisplayName="Atributo Relacion Tool" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Relacion Tool" FillColor="Honeydew" InitialHeight="1" Geometry="Rectangle">
@@ -250,9 +307,22 @@
       <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
         <TextDecorator Name="cardinaridad" DisplayName="Cardinaridad" DefaultText="cardinaridad" />
       </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="relacionB" DisplayName="Relacion B" DefaultText="relacionB" />
+      </ConnectorHasDecorators>
     </Connector>
     <Connector Id="3b09d435-e500-4349-9bca-5e3c6ace0b36" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Atr" Name="MetaforaEnt_Atr" DisplayName="Metafora Ent_ Atr" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Metafora Ent_ Atr" />
     <Connector Id="2909b438-51bf-4c46-81d4-c483803eddd4" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Atr" Name="MetaforaRel_Atr" DisplayName="Metafora Rel_ Atr" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Metafora Rel_ Atr" />
+    <Connector Id="1c8fca7e-6151-4d4a-9ee7-f12d0b0fc63b" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent" Name="MetaforaRel_Ent" DisplayName="Metafora Rel_ Ent" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Metafora Rel_ Ent">
+      <ConnectorHasDecorators Position="TargetTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="cardinalidad" DisplayName="Cardinalidad" DefaultText="cardinalidad">
+          <Notes>solo permite 0,1 y N</Notes>
+        </TextDecorator>
+      </ConnectorHasDecorators>
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="relacionA" DisplayName="Relacion A" DefaultText="relacionA" />
+      </ConnectorHasDecorators>
+    </Connector>
   </Connectors>
   <XmlSerializationBehavior Name="XCYLSProyectoIPSSerializationBehavior" Namespace="UPM_IPS.XCYLSProyectoIPS">
     <ClassData>
@@ -305,6 +375,9 @@
           <XmlPropertyData XmlName="name">
             <DomainPropertyMoniker Name="Relacion/Name" />
           </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="entidad1">
+            <DomainRelationshipMoniker Name="RelacionReferencesEntidad1" />
+          </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="AtributoEntidad" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoEntidadMoniker" ElementName="atributoEntidad" MonikerTypeName="AtributoEntidadMoniker">
@@ -313,6 +386,9 @@
           <XmlPropertyData XmlName="name">
             <DomainPropertyMoniker Name="AtributoEntidad/Name" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="tipo">
+            <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EntidadReferencesRelacioned" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadReferencesRelacionedMoniker" ElementName="entidadReferencesRelacioned" MonikerTypeName="EntidadReferencesRelacionedMoniker">
@@ -320,6 +396,9 @@
         <ElementData>
           <XmlPropertyData XmlName="cardinaridad">
             <DomainPropertyMoniker Name="EntidadReferencesRelacioned/cardinaridad" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="relacionB">
+            <DomainPropertyMoniker Name="EntidadReferencesRelacioned/relacionB" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -346,6 +425,9 @@
           <XmlPropertyData XmlName="clave">
             <DomainPropertyMoniker Name="AtributoClave/Clave" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="tipo">
+            <DomainPropertyMoniker Name="AtributoClave/Tipo" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EntidadHasAtributoClaves" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasAtributoClavesMoniker" ElementName="entidadHasAtributoClaves" MonikerTypeName="EntidadHasAtributoClavesMoniker">
@@ -369,6 +451,20 @@
       <XmlClassData TypeName="AtributoRelacionTool" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoRelacionToolMoniker" ElementName="atributoRelacionTool" MonikerTypeName="AtributoRelacionToolMoniker">
         <GeometryShapeMoniker Name="AtributoRelacionTool" />
       </XmlClassData>
+      <XmlClassData TypeName="RelacionReferencesEntidad1" MonikerAttributeName="" SerializeId="true" MonikerElementName="relacionReferencesEntidad1Moniker" ElementName="relacionReferencesEntidad1" MonikerTypeName="RelacionReferencesEntidad1Moniker">
+        <DomainRelationshipMoniker Name="RelacionReferencesEntidad1" />
+        <ElementData>
+          <XmlPropertyData XmlName="cardinalidad">
+            <DomainPropertyMoniker Name="RelacionReferencesEntidad1/cardinalidad" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="relacionA">
+            <DomainPropertyMoniker Name="RelacionReferencesEntidad1/relacionA" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="MetaforaRel_Ent" MonikerAttributeName="" SerializeId="true" MonikerElementName="metaforaRel_EntMoniker" ElementName="metaforaRel_Ent" MonikerTypeName="MetaforaRel_EntMoniker">
+        <ConnectorMoniker Name="MetaforaRel_Ent" />
+      </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
   <ExplorerBehavior Name="XCYLSProyectoIPSExplorer" />
@@ -387,6 +483,25 @@
           <RolePlayerConnectDirective>
             <AcceptingClass>
               <DomainClassMoniker Name="Relacion" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="RelacionReferencesEntidad1Builder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="RelacionReferencesEntidad1" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Relacion" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Entidad" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
@@ -441,6 +556,14 @@
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Tipo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
         <GeometryShapeMoniker Name="AtributoEntShape" />
       </ShapeMap>
       <ShapeMap>
@@ -453,6 +576,14 @@
           <PropertyDisplayed>
             <PropertyPath>
               <DomainPropertyMoniker Name="AtributoClave/Clave" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoClaveShape/Tipo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="AtributoClave/Tipo" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -486,10 +617,14 @@
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
-      </ConnectorMap>
-      <ConnectorMap>
-        <ConnectorMoniker Name="MetaforaEnt_Atr" />
-        <DomainRelationshipMoniker Name="EntidadHasAtributoEntidad" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="MetaforaEnt_Rel/relacionB" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EntidadReferencesRelacioned/relacionB" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
       </ConnectorMap>
       <ConnectorMap>
         <ConnectorMoniker Name="MetaforaEnt_Atr" />
@@ -498,6 +633,30 @@
       <ConnectorMap>
         <ConnectorMoniker Name="MetaforaRel_Atr" />
         <DomainRelationshipMoniker Name="RelacionHasAtributoRelacioned" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="MetaforaEnt_Atr" />
+        <DomainRelationshipMoniker Name="EntidadHasAtributoEntidad" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="MetaforaRel_Ent" />
+        <DomainRelationshipMoniker Name="RelacionReferencesEntidad1" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="MetaforaRel_Ent/cardinalidad" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="RelacionReferencesEntidad1/cardinalidad" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="MetaforaRel_Ent/relacionA" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="RelacionReferencesEntidad1/relacionA" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
       </ConnectorMap>
     </ConnectorMaps>
   </Diagram>
@@ -527,6 +686,9 @@
       <ElementTool Name="AtributoRelacion" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoRelacion" Tooltip="Atributo Relacion" HelpKeyword="AtributoRelacion">
         <DomainClassMoniker Name="AtributoRelacion" />
       </ElementTool>
+      <ConnectionTool Name="EnlaceRel_Ent" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceRel_Ent" Tooltip="Enlace Rel_ Ent" HelpKeyword="EnlaceRel_Ent">
+        <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/RelacionReferencesEntidad1Builder" />
+      </ConnectionTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
     <DiagramMoniker Name="XCYLSProyectoIPSDiagram" />

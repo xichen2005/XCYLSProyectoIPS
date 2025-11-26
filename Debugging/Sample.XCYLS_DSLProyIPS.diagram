@@ -1,18 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xCYLSProyectoIPSDiagram dslVersion="1.0.0.0" Id="8cbf42b6-681a-4b03-b86d-12faa6801ef5" absoluteBounds="0, 0, 11, 8.5" name="Sample">
-  <exampleModelMoniker Id="649de189-d0b4-42d2-aa70-98f56674522e" />
+<xCYLSProyectoIPSDiagram dslVersion="1.0.0.0" Id="8cbf42b6-681a-4b03-b86d-12faa6801ef5" absoluteBounds="0, 0, 11.875, 8.5" name="Sample">
+  <deraWebIPSMoniker Id="1d0da6d3-d4ba-4a44-82d0-91a594e8fdea" />
   <nestedChildShapes>
-    <exampleShape Id="d2cde169-609b-4fa3-bcb1-5fe387f0bb24" absoluteBounds="0.5, 1.75, 2, 0.75">
-      <exampleElementMoniker name="/649de189-d0b4-42d2-aa70-98f56674522e/ExampleElement1" />
-    </exampleShape>
-    <exampleShape Id="e6feabe8-551c-46ab-9173-92b704d1e12c" absoluteBounds="3, 0.5, 2, 0.75">
-      <exampleElementMoniker name="/649de189-d0b4-42d2-aa70-98f56674522e/ExampleElement2" />
-    </exampleShape>
-    <exampleConnector Id="f3606285-6ecc-4387-8225-24e89ce09967" edgePoints="[(1.5 : 1.75); (1.5 : 0.875); (3 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="56da0ba7-065c-4028-aaae-4109cae0d3eb">
-      <nodes>
-        <exampleShapeMoniker Id="d2cde169-609b-4fa3-bcb1-5fe387f0bb24" />
-        <exampleShapeMoniker Id="e6feabe8-551c-46ab-9173-92b704d1e12c" />
-      </nodes>
-    </exampleConnector>
+    <entidadShape Id="6dcf42d6-0540-4b5e-9af7-b06095fdc97b" absoluteBounds="9.625, 3.25, 2, 0.75">
+      <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Entidad1" />
+    </entidadShape>
   </nestedChildShapes>
 </xCYLSProyectoIPSDiagram>

@@ -77,6 +77,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					"@AtributoRelacionToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
 					Index = 5)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EnlaceRel_EntToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EnlaceRel_EntToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceRel_Ent", 
+					"@EnlaceRel_EntToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 6)]
 	[VSShell::ProvideEditorFactory(typeof(XCYLSProyectoIPSEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(XCYLSProyectoIPSEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(XCYLSProyectoIPSEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

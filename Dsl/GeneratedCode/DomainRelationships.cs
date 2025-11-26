@@ -336,7 +336,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Entidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Entidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Relacioned", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Relacioned", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
 		[DslModeling::DomainObjectId("b1d93943-c130-46be-bcda-97d2f02571e6")]
 		public virtual Entidad Entidad
 		{
@@ -487,6 +487,93 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					ValueChanging(element, oldValue, newValue);
 					element.cardinaridadPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region relacionB domain property code
+		
+		/// <summary>
+		/// relacionB domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid relacionBDomainPropertyId = new global::System.Guid(0x8f96b178, 0x3f33, 0x428d, 0xb6, 0x69, 0x28, 0x39, 0x6b, 0xf3, 0x36, 0x4d);
+		
+		/// <summary>
+		/// Storage for relacionB
+		/// </summary>
+		private global::System.String relacionBPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of relacionB domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion B
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/relacionB.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/relacionB.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("8f96b178-3f33-428d-b669-28396bf3364d")]
+		public global::System.String relacionB
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return relacionBPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				relacionBPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EntidadReferencesRelacioned.relacionB domain property.
+		/// </summary>
+		internal sealed partial class relacionBPropertyHandler : DslModeling::DomainPropertyValueHandler<EntidadReferencesRelacioned, global::System.String>
+		{
+			private relacionBPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EntidadReferencesRelacioned.relacionB domain property value handler.
+			/// </summary>
+			public static readonly relacionBPropertyHandler Instance = new relacionBPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EntidadReferencesRelacioned.relacionB domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return relacionBDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(EntidadReferencesRelacioned element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.relacionBPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EntidadReferencesRelacioned element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.relacionBPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1504,6 +1591,400 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			foreach ( global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves link in links )
 			{
 				if ( target.Equals(link.AtributoClave) )
+				{
+					return link;
+				}
+			}
+			return null;
+		}
+		
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainRelationship RelacionReferencesEntidad1
+	/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainRelationship()]
+	[DslModeling::DomainObjectId("a749eba1-eaf5-4b92-9198-be71d1b8d4af")]
+	public partial class RelacionReferencesEntidad1 : DslModeling::ElementLink
+	{
+		#region Constructors, domain class Id
+		
+		/// <summary>
+		/// RelacionReferencesEntidad1 domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xa749eba1, 0xeaf5, 0x4b92, 0x91, 0x98, 0xbe, 0x71, 0xd1, 0xb8, 0xd4, 0xaf);
+	
+				
+		/// <summary>
+		/// Constructor
+		/// Creates a RelacionReferencesEntidad1 link in the same Partition as the given Relacion
+		/// </summary>
+		/// <param name="source">Relacion to use as the source of the relationship.</param>
+		/// <param name="target">Entidad to use as the target of the relationship.</param>
+		public RelacionReferencesEntidad1(Relacion source, Entidad target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(RelacionReferencesEntidad1.RelacionDomainRoleId, source), new DslModeling::RoleAssignment(RelacionReferencesEntidad1.EntidadDomainRoleId, target)}, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public RelacionReferencesEntidad1(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public RelacionReferencesEntidad1(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public RelacionReferencesEntidad1(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(partition, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public RelacionReferencesEntidad1(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, roleAssignments, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Relacion domain role code
+		
+		/// <summary>
+		/// Relacion domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid RelacionDomainRoleId = new global::System.Guid(0x926ed29f, 0xb13b, 0x4331, 0x9e, 0xa1, 0x24, 0x01, 0xac, 0xae, 0x39, 0x36);
+		
+		/// <summary>
+		/// DomainRole Relacion
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Entidad1", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
+		[DslModeling::DomainObjectId("926ed29f-b13b-4331-9ea1-2401acae3936")]
+		public virtual Relacion Relacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (Relacion)DslModeling::DomainRoleInfo.GetRolePlayer(this, RelacionDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, RelacionDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access Relacioned1 of a Entidad
+		/// <summary>
+		/// Gets a list of Relacioned1.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static DslModeling::LinkedElementCollection<Relacion> GetRelacioned1(Entidad element)
+		{
+			return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(element, EntidadDomainRoleId);
+		}
+		#endregion
+		#region Entidad domain role code
+		
+		/// <summary>
+		/// Entidad domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid EntidadDomainRoleId = new global::System.Guid(0x5303db20, 0x4a12, 0x408f, 0xb3, 0x81, 0x65, 0x7a, 0x69, 0x02, 0xf6, 0xdd);
+		
+		/// <summary>
+		/// DomainRole Entidad
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Entidad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Entidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Entidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Relacioned1", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
+		[DslModeling::DomainObjectId("5303db20-4a12-408f-b381-657a6902f6dd")]
+		public virtual Entidad Entidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (Entidad)DslModeling::DomainRoleInfo.GetRolePlayer(this, EntidadDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, EntidadDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access Entidad1 of a Relacion
+		/// <summary>
+		/// Gets a list of Entidad1.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static DslModeling::LinkedElementCollection<Entidad> GetEntidad1(Relacion element)
+		{
+			return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(element, RelacionDomainRoleId);
+		}
+		#endregion
+		#region cardinalidad domain property code
+		
+		/// <summary>
+		/// cardinalidad domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid cardinalidadDomainPropertyId = new global::System.Guid(0xc18fc68d, 0x3179, 0x49e3, 0x9b, 0x0e, 0x65, 0x37, 0xc2, 0x67, 0xe2, 0x42);
+		
+		/// <summary>
+		/// Storage for cardinalidad
+		/// </summary>
+		private global::System.String cardinalidadPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of cardinalidad domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Cardinalidad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/cardinalidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/cardinalidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("c18fc68d-3179-49e3-9b0e-6537c267e242")]
+		public global::System.String cardinalidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return cardinalidadPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				cardinalidadPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the RelacionReferencesEntidad1.cardinalidad domain property.
+		/// </summary>
+		internal sealed partial class cardinalidadPropertyHandler : DslModeling::DomainPropertyValueHandler<RelacionReferencesEntidad1, global::System.String>
+		{
+			private cardinalidadPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the RelacionReferencesEntidad1.cardinalidad domain property value handler.
+			/// </summary>
+			public static readonly cardinalidadPropertyHandler Instance = new cardinalidadPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the RelacionReferencesEntidad1.cardinalidad domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return cardinalidadDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(RelacionReferencesEntidad1 element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.cardinalidadPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(RelacionReferencesEntidad1 element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.cardinalidadPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region relacionA domain property code
+		
+		/// <summary>
+		/// relacionA domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid relacionADomainPropertyId = new global::System.Guid(0x21b9e85f, 0xd613, 0x48fd, 0x92, 0x32, 0x2e, 0xd2, 0x6b, 0x4c, 0x90, 0xa9);
+		
+		/// <summary>
+		/// Storage for relacionA
+		/// </summary>
+		private global::System.String relacionAPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of relacionA domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion A
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/relacionA.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/relacionA.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("21b9e85f-d613-48fd-9232-2ed26b4c90a9")]
+		public global::System.String relacionA
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return relacionAPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				relacionAPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the RelacionReferencesEntidad1.relacionA domain property.
+		/// </summary>
+		internal sealed partial class relacionAPropertyHandler : DslModeling::DomainPropertyValueHandler<RelacionReferencesEntidad1, global::System.String>
+		{
+			private relacionAPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the RelacionReferencesEntidad1.relacionA domain property value handler.
+			/// </summary>
+			public static readonly relacionAPropertyHandler Instance = new relacionAPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the RelacionReferencesEntidad1.relacionA domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return relacionADomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(RelacionReferencesEntidad1 element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.relacionAPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(RelacionReferencesEntidad1 element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.relacionAPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Relacion link accessor
+		/// <summary>
+		/// Get the list of RelacionReferencesEntidad1 links to a Relacion.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> GetLinksToEntidad1 ( global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance )
+		{
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+		}
+		#endregion
+		#region Entidad link accessor
+		/// <summary>
+		/// Get the list of RelacionReferencesEntidad1 links to a Entidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> GetLinksToRelacioned1 ( global::UPM_IPS.XCYLSProyectoIPS.Entidad entidadInstance )
+		{
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(entidadInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.EntidadDomainRoleId);
+		}
+		#endregion
+		#region RelacionReferencesEntidad1 instance accessors
+		
+		/// <summary>
+		/// Get any RelacionReferencesEntidad1 links between a given Relacion and a Entidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Relacion source, global::UPM_IPS.XCYLSProyectoIPS.Entidad target )
+		{
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(source, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1 link in links )
+			{
+				if ( target.Equals(link.Entidad) )
+				{
+					outLinks.Add(link);
+				}
+			}
+			return outLinks.AsReadOnly();
+		}
+		/// <summary>
+		/// Get the one RelacionReferencesEntidad1 link between a given Relacionand a Entidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1 GetLink( global::UPM_IPS.XCYLSProyectoIPS.Relacion source, global::UPM_IPS.XCYLSProyectoIPS.Entidad target )
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(source, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1 link in links )
+			{
+				if ( target.Equals(link.Entidad) )
 				{
 					return link;
 				}
