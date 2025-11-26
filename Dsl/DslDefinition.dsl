@@ -81,7 +81,7 @@
         </DomainProperty>
         <DomainProperty Id="202eebcb-62e1-44c6-9e35-a762d3d813ee" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null" Name="Null" DisplayName="Null">
           <Type>
-            <ExternalTypeMoniker Name="/System/Boolean" />
+            <DomainEnumerationMoniker Name="tipoNull" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -270,6 +270,12 @@
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Int" Name="Int" Value="1" />
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.Double" Name="Double" Value="3" />
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.DateTime" Name="DateTime" Value="4" />
+      </Literals>
+    </DomainEnumeration>
+    <DomainEnumeration Name="tipoNull" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null" Name="Null" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null" Name="Not_Null" Value="" />
       </Literals>
     </DomainEnumeration>
   </Types>

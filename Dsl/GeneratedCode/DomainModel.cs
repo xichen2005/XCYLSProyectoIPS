@@ -542,4 +542,27 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		DateTime = 4,
 	}
 }
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainEnumeration: tipoNull
+	/// Description for UPM_IPS.XCYLSProyectoIPS.tipoNull
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum tipoNull
+	{
+		/// <summary>
+		/// Null
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoNull/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Null,
+		/// <summary>
+		/// Not_Null
+		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoNull/Not_Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Not_Null,
+	}
+}
 

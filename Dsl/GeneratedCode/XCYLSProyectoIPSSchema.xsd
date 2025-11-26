@@ -237,7 +237,7 @@
         <!-- Property: Tipo -->
         <xsd:attribute name="tipo" type="tipoEnumeration" />
         <!-- Property: Null -->
-        <xsd:attribute name="null" type="xsd:boolean" />
+        <xsd:attribute name="null" type="tipoNull" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -624,6 +624,14 @@
       <xsd:enumeration value="Int"/>
       <xsd:enumeration value="Double"/>
       <xsd:enumeration value="DateTime"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <!-- Enum tipoNull -->
+  <xsd:simpleType name="tipoNull">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Null"/>
+      <xsd:enumeration value="Not_Null"/>
     </xsd:restriction>
   </xsd:simpleType>
   

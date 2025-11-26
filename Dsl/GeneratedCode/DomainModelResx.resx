@@ -525,6 +525,22 @@
     <value>Description for UPM_IPS.XCYLSProyectoIPS.tipoEnumeration.DateTime</value>
     <comment>Description for EnumerationLiteral &apos;DateTime&apos; on DomainEnumeration &apos;tipoEnumeration&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.tipoNull/Null.DisplayName" xml:space="preserve">
+    <value>Null</value>
+    <comment>Display name for EnumerationLiteral &apos;Null&apos; on DomainEnumeration &apos;tipoNull&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.tipoNull/Null.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null</value>
+    <comment>Description for EnumerationLiteral &apos;Null&apos; on DomainEnumeration &apos;tipoNull&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.tipoNull/Not_Null.DisplayName" xml:space="preserve">
+    <value>Not_Null</value>
+    <comment>Display name for EnumerationLiteral &apos;Not_Null&apos; on DomainEnumeration &apos;tipoNull&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.tipoNull/Not_Null.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null</value>
+    <comment>Description for EnumerationLiteral &apos;Not_Null&apos; on DomainEnumeration &apos;tipoNull&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EntidadShape.Description" xml:space="preserve">
     <value>Shape used to represent ExampleElements on a Diagram.</value>
     <comment>Description for DomainClass &apos;EntidadShape&apos;</comment>

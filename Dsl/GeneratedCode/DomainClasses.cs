@@ -1051,7 +1051,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Storage for Null
 		/// </summary>
-		private global::System.Boolean nullPropertyStorage;
+		private tipoNull nullPropertyStorage;
 		
 		/// <summary>
 		/// Gets or sets the value of Null domain property.
@@ -1060,7 +1060,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslModeling::DomainObjectId("202eebcb-62e1-44c6-9e35-a762d3d813ee")]
-		public global::System.Boolean Null
+		public tipoNull Null
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
@@ -1076,7 +1076,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Value handler for the AtributoEntidad.Null domain property.
 		/// </summary>
-		internal sealed partial class NullPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, global::System.Boolean>
+		internal sealed partial class NullPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoNull>
 		{
 			private NullPropertyHandler() { }
 		
@@ -1102,7 +1102,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.Boolean GetValue(AtributoEntidad element)
+			public override sealed tipoNull GetValue(AtributoEntidad element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 				return element.nullPropertyStorage;
@@ -1113,11 +1113,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoEntidad element, global::System.Boolean newValue)
+			public override sealed void SetValue(AtributoEntidad element, tipoNull newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
-				global::System.Boolean oldValue = GetValue(element);
+				tipoNull oldValue = GetValue(element);
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);

@@ -2853,14 +2853,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				string attribNull = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "null");
 				if (attribNull != null)
 				{
-					global::System.Boolean valueOfNull;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribNull, out valueOfNull))
+					tipoNull valueOfNull;
+					if (DslModeling::SerializationUtilities.TryGetValue<tipoNull>(serializationContext, attribNull, out valueOfNull))
 					{
 						instanceOfAtributoEntidad.Null = valueOfNull;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "null", typeof(global::System.Boolean), attribNull);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "null", typeof(tipoNull), attribNull);
 					}
 				}
 			}
@@ -3313,8 +3313,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// Null
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.Boolean propValue = instanceOfAtributoEntidad.Null;
-				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				tipoNull propValue = instanceOfAtributoEntidad.Null;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<tipoNull>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
 					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "null", serializedPropValue);
