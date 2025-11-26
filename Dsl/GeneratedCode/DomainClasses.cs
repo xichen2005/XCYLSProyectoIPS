@@ -1041,6 +1041,93 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
+		#region Null domain property code
+		
+		/// <summary>
+		/// Null domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NullDomainPropertyId = new global::System.Guid(0x202eebcb, 0x62e1, 0x44c6, 0x9e, 0x35, 0xa7, 0x62, 0xd3, 0xd8, 0x13, 0xee);
+		
+		/// <summary>
+		/// Storage for Null
+		/// </summary>
+		private global::System.Boolean nullPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Null domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("202eebcb-62e1-44c6-9e35-a762d3d813ee")]
+		public global::System.Boolean Null
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return nullPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NullPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoEntidad.Null domain property.
+		/// </summary>
+		internal sealed partial class NullPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, global::System.Boolean>
+		{
+			private NullPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoEntidad.Null domain property value handler.
+			/// </summary>
+			public static readonly NullPropertyHandler Instance = new NullPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoEntidad.Null domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NullDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(AtributoEntidad element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.nullPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoEntidad element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.nullPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region Entidad opposite domain role accessor
 		/// <summary>
 		/// Gets or sets Entidad.

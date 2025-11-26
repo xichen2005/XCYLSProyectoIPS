@@ -236,6 +236,8 @@
         <xsd:attribute name="name" type="xsd:string" />
         <!-- Property: Tipo -->
         <xsd:attribute name="tipo" type="tipoEnumeration" />
+        <!-- Property: Null -->
+        <xsd:attribute name="null" type="xsd:boolean" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

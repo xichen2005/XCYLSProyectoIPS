@@ -664,6 +664,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field2.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
 			shapeFields.Add(field2);
 			
+			DslDiagrams::TextField field3 = new DslDiagrams::TextField("Null");
+			field3.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoEntShapeNullDefaultText");
+			field3.DefaultFocusable = true;
+			field3.DefaultAutoSize = true;
+			field3.AnchoringBehavior.MinimumHeightInLines = 1;
+			field3.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field3.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			shapeFields.Add(field3);
+			
 		}
 		
 		/// <summary>
@@ -682,6 +691,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DslDiagrams::ShapeField field2 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Tipo");
 			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator2);
+				
+			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Null");
+			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator3);
 				
 		}
 		

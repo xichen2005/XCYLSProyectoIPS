@@ -189,6 +189,14 @@
     <value>Tipo</value>
     <comment>DisplayName for DomainProperty &apos;Tipo&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null</value>
+    <comment>Description for DomainProperty &apos;Null&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.DisplayName" xml:space="preserve">
+    <value>Null</value>
+    <comment>DisplayName for DomainProperty &apos;Null&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion</value>
     <comment>Description for DomainClass &apos;AtributoRelacion&apos;</comment>
@@ -555,6 +563,10 @@
   </data>
   <data name="AtributoEntShapeTipoDefaultText" xml:space="preserve">
     <value>Tipo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoEntShapeNullDefaultText" xml:space="preserve">
+    <value>Null</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape.Description" xml:space="preserve">

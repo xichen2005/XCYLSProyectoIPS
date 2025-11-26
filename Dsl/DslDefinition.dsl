@@ -79,6 +79,11 @@
             <DomainEnumerationMoniker Name="tipoEnumeration" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="202eebcb-62e1-44c6-9e35-a762d3d813ee" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null" Name="Null" DisplayName="Null">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
     <DomainClass Id="863fd30e-be10-41dc-9c2c-75e56b3e7a98" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion" Name="AtributoRelacion" DisplayName="Atributo Relacion" Namespace="UPM_IPS.XCYLSProyectoIPS">
@@ -287,6 +292,9 @@
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Null" DisplayName="Null" DefaultText="Null" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" FillColor="Snow" InitialHeight="1" Geometry="Rectangle">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -388,6 +396,9 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="tipo">
             <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="null">
+            <DomainPropertyMoniker Name="AtributoEntidad/Null" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -561,6 +572,14 @@
           <PropertyDisplayed>
             <PropertyPath>
               <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Null" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="AtributoEntidad/Null" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>

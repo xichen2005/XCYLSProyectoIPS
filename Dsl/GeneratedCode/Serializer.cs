@@ -2847,6 +2847,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					}
 				}
 			}
+			// Null
+			if (!serializationContext.Result.Failed)
+			{
+				string attribNull = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "null");
+				if (attribNull != null)
+				{
+					global::System.Boolean valueOfNull;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribNull, out valueOfNull))
+					{
+						instanceOfAtributoEntidad.Null = valueOfNull;
+					}
+					else
+					{	// Invalid property value, ignored.
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "null", typeof(global::System.Boolean), attribNull);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -3291,6 +3308,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (!serializationContext.Result.Failed)
 				{
 					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "tipo", serializedPropValue);
+				}
+			}
+			// Null
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfAtributoEntidad.Null;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "null", serializedPropValue);
 				}
 			}
 		}

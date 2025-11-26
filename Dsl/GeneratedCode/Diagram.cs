@@ -320,6 +320,9 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.TipoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Tipo").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.NullDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Null").AssociateValueWith(shape.Store, propertyInfo);
 			}
 		}
 		

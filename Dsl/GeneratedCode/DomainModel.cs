@@ -108,6 +108,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainMemberInfo(typeof(Relacion), "Name", Relacion.NameDomainPropertyId, typeof(Relacion.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoEntidad), "Name", AtributoEntidad.NameDomainPropertyId, typeof(AtributoEntidad.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoEntidad), "Tipo", AtributoEntidad.TipoDomainPropertyId, typeof(AtributoEntidad.TipoPropertyHandler)),
+				new DomainMemberInfo(typeof(AtributoEntidad), "Null", AtributoEntidad.NullDomainPropertyId, typeof(AtributoEntidad.NullPropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoRelacion), "Name", AtributoRelacion.NameDomainPropertyId, typeof(AtributoRelacion.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoClave), "Clave", AtributoClave.ClaveDomainPropertyId, typeof(AtributoClave.ClavePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoClave), "Tipo", AtributoClave.TipoDomainPropertyId, typeof(AtributoClave.TipoPropertyHandler)),
