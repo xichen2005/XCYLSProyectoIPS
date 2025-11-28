@@ -40,16 +40,16 @@
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
-          <!-- Relationship: DeraWebIPSReferencesEstiloPortalWeb -->
+          <!-- Relationship: DeraWebIPSHasEstiloPortalWeb -->
           <xsd:element name="estiloPortalWeb" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
-              <xsd:documentation>Instance of DeraWebIPSReferencesEstiloPortalWeb</xsd:documentation>
+              <xsd:documentation>Instance of DeraWebIPSHasEstiloPortalWeb</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="deraWebIPSReferencesEstiloPortalWeb" minOccurs="1" maxOccurs="1">
+                <xsd:element ref="deraWebIPSHasEstiloPortalWeb" minOccurs="1" maxOccurs="1">
                   <xsd:annotation>
-                    <xsd:documentation>[Instance of DeraWebIPSReferencesEstiloPortalWeb needs to be serialized in full-form]</xsd:documentation>
+                    <xsd:documentation>[Instance of DeraWebIPSHasEstiloPortalWeb needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -140,16 +140,16 @@
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
-          <!-- Relationship: EntidadReferencesEstiloPáginaWeb -->
-          <xsd:element name="estiloPáginaWeb" minOccurs="0" maxOccurs="1">
+          <!-- Relationship: EntidadHasEstiloPaginaWeb -->
+          <xsd:element name="estiloPaginaWeb" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
-              <xsd:documentation>Instances of EntidadReferencesEstiloPáginaWeb</xsd:documentation>
+              <xsd:documentation>Instances of EntidadHasEstiloPaginaWeb</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="entidadReferencesEstiloPáginaWeb" minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="entidadHasEstiloPaginaWeb" minOccurs="0" maxOccurs="unbounded">
                   <xsd:annotation>
-                    <xsd:documentation>[Instance of EntidadReferencesEstiloPáginaWeb needs to be serialized in full-form]</xsd:documentation>
+                    <xsd:documentation>[Instance of EntidadHasEstiloPaginaWeb needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -216,21 +216,6 @@
                 <xsd:element ref="relacionReferencesEntidad1" minOccurs="1" maxOccurs="unbounded">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of RelacionReferencesEntidad1 needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
-          <!-- Relationship: RelacionReferencesEstiloPáginaWeb -->
-          <xsd:element name="estiloPáginaWeb" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instances of RelacionReferencesEstiloPáginaWeb</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="relacionReferencesEstiloPáginaWeb" minOccurs="0" maxOccurs="unbounded">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of RelacionReferencesEstiloPáginaWeb needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -365,16 +350,16 @@
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: AtributoReferencesEstiloCampoFormulario -->
+          <!-- Relationship: AtributoHasEstiloCampoFormulario -->
           <xsd:element name="estiloCampoFormulario" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
-              <xsd:documentation>Instances of AtributoReferencesEstiloCampoFormulario</xsd:documentation>
+              <xsd:documentation>Instances of AtributoHasEstiloCampoFormulario</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="atributoReferencesEstiloCampoFormulario" minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="atributoHasEstiloCampoFormulario" minOccurs="0" maxOccurs="unbounded">
                   <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoReferencesEstiloCampoFormulario needs to be serialized in full-form]</xsd:documentation>
+                    <xsd:documentation>[Instance of AtributoHasEstiloCampoFormulario needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -412,9 +397,9 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- EstiloGráfico -->
-  <xsd:element name="estiloGráfico" abstract="true" type="EstiloGráfico" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="EstiloGráfico" abstract="true" >
+  <!-- EstiloPaginaWeb -->
+  <xsd:element name="estiloPaginaWeb" type="EstiloPaginaWeb" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="EstiloPaginaWeb">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <!-- Id -->
@@ -435,11 +420,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- EstiloGráfico Moniker -->
-  <xsd:element name="estiloGráficoMoniker" abstract="true" type="EstiloGráficoMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="EstiloGráficoMoniker">
+  <!-- EstiloPaginaWeb Moniker -->
+  <xsd:element name="estiloPaginaWebMoniker" type="EstiloPaginaWebMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="EstiloPaginaWebMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for EstiloGráfico instance.</xsd:documentation>
+      <xsd:documentation>Moniker for EstiloPaginaWeb instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -453,10 +438,10 @@
   </xsd:complexType>
   
   <!-- EstiloPortalWeb -->
-  <xsd:element name="estiloPortalWeb" type="EstiloPortalWeb" substitutionGroup="estiloGráfico" />
+  <xsd:element name="estiloPortalWeb" type="EstiloPortalWeb" substitutionGroup="core:modelElement" />
   <xsd:complexType name="EstiloPortalWeb">
     <xsd:complexContent>
-      <xsd:extension base="EstiloGráfico">
+      <xsd:extension base="core:ModelElement">
         <!-- Id -->
         <xsd:attribute name="Id" type="xsd:string">
           <xsd:annotation>
@@ -470,22 +455,27 @@
   </xsd:complexType>
   
   <!-- EstiloPortalWeb Moniker -->
-  <xsd:element name="estiloPortalWebMoniker" type="EstiloPortalWebMoniker" substitutionGroup="estiloGráficoMoniker" />
+  <xsd:element name="estiloPortalWebMoniker" type="EstiloPortalWebMoniker" substitutionGroup="core:modelElementMoniker" />
   <xsd:complexType name="EstiloPortalWebMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for EstiloPortalWeb instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
-      <xsd:extension base="EstiloGráficoMoniker">
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
   
   <!-- EstiloCampoFormulario -->
-  <xsd:element name="estiloCampoFormulario" type="EstiloCampoFormulario" substitutionGroup="estiloGráfico" />
+  <xsd:element name="estiloCampoFormulario" type="EstiloCampoFormulario" substitutionGroup="core:modelElement" />
   <xsd:complexType name="EstiloCampoFormulario">
     <xsd:complexContent>
-      <xsd:extension base="EstiloGráfico">
+      <xsd:extension base="core:ModelElement">
         <!-- Id -->
         <xsd:attribute name="Id" type="xsd:string">
           <xsd:annotation>
@@ -499,40 +489,18 @@
   </xsd:complexType>
   
   <!-- EstiloCampoFormulario Moniker -->
-  <xsd:element name="estiloCampoFormularioMoniker" type="EstiloCampoFormularioMoniker" substitutionGroup="estiloGráficoMoniker" />
+  <xsd:element name="estiloCampoFormularioMoniker" type="EstiloCampoFormularioMoniker" substitutionGroup="core:modelElementMoniker" />
   <xsd:complexType name="EstiloCampoFormularioMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for EstiloCampoFormulario instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
-      <xsd:extension base="EstiloGráficoMoniker">
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- EstiloPáginaWeb -->
-  <xsd:element name="estiloPáginaWeb" type="EstiloPáginaWeb" substitutionGroup="estiloGráfico" />
-  <xsd:complexType name="EstiloPáginaWeb">
-    <xsd:complexContent>
-      <xsd:extension base="EstiloGráfico">
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
           <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- EstiloPáginaWeb Moniker -->
-  <xsd:element name="estiloPáginaWebMoniker" type="EstiloPáginaWebMoniker" substitutionGroup="estiloGráficoMoniker" />
-  <xsd:complexType name="EstiloPáginaWebMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for EstiloPáginaWeb instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="EstiloGráficoMoniker">
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -825,14 +793,14 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- DeraWebIPSReferencesEstiloPortalWeb -->
-  <xsd:element name="deraWebIPSReferencesEstiloPortalWeb" type="DeraWebIPSReferencesEstiloPortalWeb" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="DeraWebIPSReferencesEstiloPortalWeb">
+  <!-- DeraWebIPSHasEstiloPortalWeb -->
+  <xsd:element name="deraWebIPSHasEstiloPortalWeb" type="DeraWebIPSHasEstiloPortalWeb" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DeraWebIPSHasEstiloPortalWeb">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
           <!-- Target end EstiloPortalWeb -->
-          <xsd:element ref="estiloPortalWebMoniker" minOccurs="1" maxOccurs="1">
+          <xsd:element ref="estiloPortalWeb" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>[Target role-player]</xsd:documentation>
             </xsd:annotation>
@@ -848,11 +816,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- DeraWebIPSReferencesEstiloPortalWeb Moniker -->
-  <xsd:element name="deraWebIPSReferencesEstiloPortalWebMoniker" type="DeraWebIPSReferencesEstiloPortalWebMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="DeraWebIPSReferencesEstiloPortalWebMoniker">
+  <!-- DeraWebIPSHasEstiloPortalWeb Moniker -->
+  <xsd:element name="deraWebIPSHasEstiloPortalWebMoniker" type="DeraWebIPSHasEstiloPortalWebMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DeraWebIPSHasEstiloPortalWebMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for DeraWebIPSReferencesEstiloPortalWeb instance.</xsd:documentation>
+      <xsd:documentation>Moniker for DeraWebIPSHasEstiloPortalWeb instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -865,14 +833,14 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoReferencesEstiloCampoFormulario -->
-  <xsd:element name="atributoReferencesEstiloCampoFormulario" type="AtributoReferencesEstiloCampoFormulario" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoReferencesEstiloCampoFormulario">
+  <!-- AtributoHasEstiloCampoFormulario -->
+  <xsd:element name="atributoHasEstiloCampoFormulario" type="AtributoHasEstiloCampoFormulario" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="AtributoHasEstiloCampoFormulario">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
           <!-- Target end EstiloCampoFormulario -->
-          <xsd:element ref="estiloCampoFormularioMoniker" minOccurs="1" maxOccurs="1">
+          <xsd:element ref="estiloCampoFormulario" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>[Target role-player]</xsd:documentation>
             </xsd:annotation>
@@ -888,11 +856,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoReferencesEstiloCampoFormulario Moniker -->
-  <xsd:element name="atributoReferencesEstiloCampoFormularioMoniker" type="AtributoReferencesEstiloCampoFormularioMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoReferencesEstiloCampoFormularioMoniker">
+  <!-- AtributoHasEstiloCampoFormulario Moniker -->
+  <xsd:element name="atributoHasEstiloCampoFormularioMoniker" type="AtributoHasEstiloCampoFormularioMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AtributoHasEstiloCampoFormularioMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoReferencesEstiloCampoFormulario instance.</xsd:documentation>
+      <xsd:documentation>Moniker for AtributoHasEstiloCampoFormulario instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -905,14 +873,14 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- EntidadReferencesEstiloPáginaWeb -->
-  <xsd:element name="entidadReferencesEstiloPáginaWeb" type="EntidadReferencesEstiloPáginaWeb" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="EntidadReferencesEstiloPáginaWeb">
+  <!-- EntidadHasEstiloPaginaWeb -->
+  <xsd:element name="entidadHasEstiloPaginaWeb" type="EntidadHasEstiloPaginaWeb" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="EntidadHasEstiloPaginaWeb">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end EstiloPáginaWeb -->
-          <xsd:element ref="estiloPáginaWebMoniker" minOccurs="1" maxOccurs="1">
+          <!-- Target end EstiloPaginaWeb -->
+          <xsd:element ref="estiloPaginaWeb" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>[Target role-player]</xsd:documentation>
             </xsd:annotation>
@@ -928,51 +896,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- EntidadReferencesEstiloPáginaWeb Moniker -->
-  <xsd:element name="entidadReferencesEstiloPáginaWebMoniker" type="EntidadReferencesEstiloPáginaWebMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="EntidadReferencesEstiloPáginaWebMoniker">
+  <!-- EntidadHasEstiloPaginaWeb Moniker -->
+  <xsd:element name="entidadHasEstiloPaginaWebMoniker" type="EntidadHasEstiloPaginaWebMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="EntidadHasEstiloPaginaWebMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for EntidadReferencesEstiloPáginaWeb instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- RelacionReferencesEstiloPáginaWeb -->
-  <xsd:element name="relacionReferencesEstiloPáginaWeb" type="RelacionReferencesEstiloPáginaWeb" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="RelacionReferencesEstiloPáginaWeb">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end EstiloPáginaWeb -->
-          <xsd:element ref="estiloPáginaWebMoniker" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- RelacionReferencesEstiloPáginaWeb Moniker -->
-  <xsd:element name="relacionReferencesEstiloPáginaWebMoniker" type="RelacionReferencesEstiloPáginaWebMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="RelacionReferencesEstiloPáginaWebMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for RelacionReferencesEstiloPáginaWeb instance.</xsd:documentation>
+      <xsd:documentation>Moniker for EntidadHasEstiloPaginaWeb instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

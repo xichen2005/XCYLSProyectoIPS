@@ -19,6 +19,14 @@
             <DomainPath>DeraWebIPSHasRelacioned.Relacioned</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloPortalWeb" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="d4875884-1061-4bba-834c-4cb0a9f93791" Description="Description for UPM_IPS.XCYLSProyectoIPS.Entidad" Name="Entidad" DisplayName="Entidad" Namespace="UPM_IPS.XCYLSProyectoIPS">
@@ -44,6 +52,14 @@
           </Index>
           <LinkCreationPaths>
             <DomainPath>EntidadHasAtributoClaves.AtributoClaves</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloPaginaWeb" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>EntidadHasEstiloPaginaWeb.EstiloPaginaWeb</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
       </ElementMergeDirectives>
@@ -131,6 +147,16 @@
           </Type>
         </DomainProperty>
       </Properties>
+      <ElementMergeDirectives>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloCampoFormulario" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>AtributoHasEstiloCampoFormulario.EstiloCampoFormulario</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+      </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="a677dd1e-0826-407b-a24c-4ae43026ae02" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb" Name="EstiloPaginaWeb" DisplayName="Estilo Pagina Web" Namespace="UPM_IPS.XCYLSProyectoIPS">
       <Properties>
@@ -312,34 +338,50 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="a2a4fc31-2b1a-40f7-8d17-6138a1588225" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb" Name="DeraWebIPSReferencesEstiloPortalWeb" DisplayName="Dera Web IPSReferences Estilo Portal Web" Namespace="UPM_IPS.XCYLSProyectoIPS">
+    <DomainRelationship Id="f4d3808f-f3d6-4ad3-a62d-fb0e03c9cd07" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb" Name="DeraWebIPSHasEstiloPortalWeb" DisplayName="Dera Web IPSHas Estilo Portal Web" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
       <Source>
-        <DomainRole Id="304661a4-a4fe-4c88-947d-3586fc90cbae" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloPortalWeb" Multiplicity="One" PropertyDisplayName="Estilo Portal Web">
+        <DomainRole Id="08dd36d0-156c-490a-aeb5-4f75c2dda6a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloPortalWeb" Multiplicity="One" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Portal Web">
           <RolePlayer>
             <DomainClassMoniker Name="DeraWebIPS" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="e8f300f7-2377-4524-8c0d-d2d6878e45db" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" PropertyName="DeraWebIPS" PropertyDisplayName="Dera Web IPS">
+        <DomainRole Id="2d9672f9-0750-48d1-a872-0343a1226bc7" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" PropertyName="DeraWebIPS" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Dera Web IPS">
           <RolePlayer>
             <DomainClassMoniker Name="EstiloPortalWeb" />
           </RolePlayer>
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="5d251798-48d4-415d-ad6c-444bef57e8d3" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario" Name="AtributoReferencesEstiloCampoFormulario" DisplayName="Atributo References Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS">
+    <DomainRelationship Id="aad1ac41-0d06-493a-9f90-3b7456769e11" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario" Name="AtributoHasEstiloCampoFormulario" DisplayName="Atributo Has Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
       <Source>
-        <DomainRole Id="aba6db9d-c49a-44fe-8717-d6c242ab75e5" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="EstiloCampoFormulario" PropertyDisplayName="Estilo Campo Formulario">
+        <DomainRole Id="d63c7621-6759-4653-949e-9619530c4b4e" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="EstiloCampoFormulario" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Campo Formulario">
           <RolePlayer>
             <DomainClassMoniker Name="Atributo" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="e79a2241-bb8f-4d24-ba76-d6456b530e35" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="Atributo" PropertyDisplayName="Atributo">
+        <DomainRole Id="0f1018f9-407c-47d5-82d8-3ef08f251d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="Atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo">
           <RolePlayer>
             <DomainClassMoniker Name="EstiloCampoFormulario" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="4568c178-eeff-43c2-abb4-e41b1af6ffb8" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb" Name="EntidadHasEstiloPaginaWeb" DisplayName="Entidad Has Estilo Pagina Web" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="a16e1692-2bb7-483f-ac52-cfe78e76dbee" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="EstiloPaginaWeb" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Pagina Web">
+          <RolePlayer>
+            <DomainClassMoniker Name="Entidad" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="73a1014e-268e-416f-b02f-26fd8a810c20" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EstiloPaginaWeb" Name="EstiloPaginaWeb" DisplayName="Estilo Pagina Web" PropertyName="Entidad" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Entidad">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloPaginaWeb" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -423,9 +465,6 @@
       <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerBottomRight" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="Longitud" DisplayName="Longitud" DefaultText="Longitud" />
-      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" FillColor="Snow" InitialHeight="1" Geometry="Rectangle">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -434,7 +473,7 @@
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
       </ShapeHasDecorators>
     </GeometryShape>
@@ -487,7 +526,7 @@
             <DomainRelationshipMoniker Name="DeraWebIPSHasRelacioned" />
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloPortalWeb">
-            <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
+            <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWeb" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -511,6 +550,9 @@
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="atributoClaves">
             <DomainRelationshipMoniker Name="EntidadHasAtributoClaves" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloPaginaWeb">
+            <DomainRelationshipMoniker Name="EntidadHasEstiloPaginaWeb" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -632,7 +674,7 @@
             <DomainPropertyMoniker Name="Atributo/Tipo" />
           </XmlPropertyData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormulario">
-            <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
+            <DomainRelationshipMoniker Name="AtributoHasEstiloCampoFormulario" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -669,11 +711,14 @@
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="DeraWebIPSReferencesEstiloPortalWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSReferencesEstiloPortalWebMoniker" ElementName="deraWebIPSReferencesEstiloPortalWeb" MonikerTypeName="DeraWebIPSReferencesEstiloPortalWebMoniker">
-        <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
+      <XmlClassData TypeName="DeraWebIPSHasEstiloPortalWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSHasEstiloPortalWebMoniker" ElementName="deraWebIPSHasEstiloPortalWeb" MonikerTypeName="DeraWebIPSHasEstiloPortalWebMoniker">
+        <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWeb" />
       </XmlClassData>
-      <XmlClassData TypeName="AtributoReferencesEstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoReferencesEstiloCampoFormularioMoniker" ElementName="atributoReferencesEstiloCampoFormulario" MonikerTypeName="AtributoReferencesEstiloCampoFormularioMoniker">
-        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
+      <XmlClassData TypeName="AtributoHasEstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoHasEstiloCampoFormularioMoniker" ElementName="atributoHasEstiloCampoFormulario" MonikerTypeName="AtributoHasEstiloCampoFormularioMoniker">
+        <DomainRelationshipMoniker Name="AtributoHasEstiloCampoFormulario" />
+      </XmlClassData>
+      <XmlClassData TypeName="EntidadHasEstiloPaginaWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasEstiloPaginaWebMoniker" ElementName="entidadHasEstiloPaginaWeb" MonikerTypeName="EntidadHasEstiloPaginaWebMoniker">
+        <DomainRelationshipMoniker Name="EntidadHasEstiloPaginaWeb" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -712,44 +757,6 @@
           <RolePlayerConnectDirective>
             <AcceptingClass>
               <DomainClassMoniker Name="Entidad" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </TargetDirectives>
-      </LinkConnectDirective>
-    </ConnectionBuilder>
-    <ConnectionBuilder Name="DeraWebIPSReferencesEstiloPortalWebBuilder">
-      <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
-        <SourceDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="DeraWebIPS" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </SourceDirectives>
-        <TargetDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="EstiloPortalWeb" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </TargetDirectives>
-      </LinkConnectDirective>
-    </ConnectionBuilder>
-    <ConnectionBuilder Name="AtributoReferencesEstiloCampoFormularioBuilder">
-      <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
-        <SourceDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="Atributo" />
-            </AcceptingClass>
-          </RolePlayerConnectDirective>
-        </SourceDirectives>
-        <TargetDirectives>
-          <RolePlayerConnectDirective>
-            <AcceptingClass>
-              <DomainClassMoniker Name="EstiloCampoFormulario" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>

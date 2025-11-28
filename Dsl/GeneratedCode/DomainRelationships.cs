@@ -1998,33 +1998,33 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// DomainRelationship DeraWebIPSReferencesEstiloPortalWeb
-	/// Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb
+	/// DomainRelationship DeraWebIPSHasEstiloPortalWeb
+	/// Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainRelationship()]
-	[DslModeling::DomainObjectId("a2a4fc31-2b1a-40f7-8d17-6138a1588225")]
-	public partial class DeraWebIPSReferencesEstiloPortalWeb : DslModeling::ElementLink
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("f4d3808f-f3d6-4ad3-a62d-fb0e03c9cd07")]
+	public partial class DeraWebIPSHasEstiloPortalWeb : DslModeling::ElementLink
 	{
 		#region Constructors, domain class Id
 		
 		/// <summary>
-		/// DeraWebIPSReferencesEstiloPortalWeb domain class Id.
+		/// DeraWebIPSHasEstiloPortalWeb domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xa2a4fc31, 0x2b1a, 0x40f7, 0x8d, 0x17, 0x61, 0x38, 0xa1, 0x58, 0x82, 0x25);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xf4d3808f, 0xf3d6, 0x4ad3, 0xa6, 0x2d, 0xfb, 0x0e, 0x03, 0xc9, 0xcd, 0x07);
 	
 				
 		/// <summary>
 		/// Constructor
-		/// Creates a DeraWebIPSReferencesEstiloPortalWeb link in the same Partition as the given DeraWebIPS
+		/// Creates a DeraWebIPSHasEstiloPortalWeb link in the same Partition as the given DeraWebIPS
 		/// </summary>
 		/// <param name="source">DeraWebIPS to use as the source of the relationship.</param>
 		/// <param name="target">EstiloPortalWeb to use as the target of the relationship.</param>
-		public DeraWebIPSReferencesEstiloPortalWeb(DeraWebIPS source, EstiloPortalWeb target)
-			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId, source), new DslModeling::RoleAssignment(DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWebDomainRoleId, target)}, null)
+		public DeraWebIPSHasEstiloPortalWeb(DeraWebIPS source, EstiloPortalWeb target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(DeraWebIPSHasEstiloPortalWeb.DeraWebIPSDomainRoleId, source), new DslModeling::RoleAssignment(DeraWebIPSHasEstiloPortalWeb.EstiloPortalWebDomainRoleId, target)}, null)
 		{
 		}
 		
@@ -2033,7 +2033,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public DeraWebIPSReferencesEstiloPortalWeb(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+		public DeraWebIPSHasEstiloPortalWeb(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
 		{
 		}
@@ -2044,7 +2044,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public DeraWebIPSReferencesEstiloPortalWeb(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public DeraWebIPSHasEstiloPortalWeb(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2054,7 +2054,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public DeraWebIPSReferencesEstiloPortalWeb(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+		public DeraWebIPSHasEstiloPortalWeb(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(partition, roleAssignments, null)
 		{
 		}
@@ -2065,7 +2065,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public DeraWebIPSReferencesEstiloPortalWeb(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public DeraWebIPSHasEstiloPortalWeb(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2075,17 +2075,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// DeraWebIPS domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid DeraWebIPSDomainRoleId = new global::System.Guid(0x304661a4, 0xa4fe, 0x4c88, 0x94, 0x7d, 0x35, 0x86, 0xfc, 0x90, 0xcb, 0xae);
+		public static readonly global::System.Guid DeraWebIPSDomainRoleId = new global::System.Guid(0x08dd36d0, 0x156c, 0x490a, 0xae, 0xb5, 0x4f, 0x75, 0xc2, 0xdd, 0xa6, 0xa4);
 		
 		/// <summary>
 		/// DomainRole DeraWebIPS
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPS
+		/// Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPS
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/DeraWebIPS.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/DeraWebIPS.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloPortalWeb", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/DeraWebIPS.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
-		[DslModeling::DomainObjectId("304661a4-a4fe-4c88-947d-3586fc90cbae")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloPortalWeb", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("08dd36d0-156c-490a-aeb5-4f75c2dda6a4")]
 		public virtual DeraWebIPS DeraWebIPS
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -2103,13 +2102,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Static methods to access DeraWebIPS of a EstiloPortalWeb
 		/// <summary>
-		/// Gets a list of DeraWebIPS.
+		/// Gets DeraWebIPS.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<DeraWebIPS> GetDeraWebIPS(EstiloPortalWeb element)
+		public static DeraWebIPS GetDeraWebIPS(EstiloPortalWeb element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<DeraWebIPS>, DeraWebIPS>(element, EstiloPortalWebDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, EstiloPortalWebDomainRoleId) as DeraWebIPS;
+		}
+		
+		/// <summary>
+		/// Sets DeraWebIPS.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetDeraWebIPS(EstiloPortalWeb element, DeraWebIPS newDeraWebIPS)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, EstiloPortalWebDomainRoleId, newDeraWebIPS);
 		}
 		#endregion
 		#region EstiloPortalWeb domain role code
@@ -2117,17 +2126,17 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// EstiloPortalWeb domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid EstiloPortalWebDomainRoleId = new global::System.Guid(0xe8f300f7, 0x2377, 0x4524, 0x8c, 0x0d, 0xd2, 0xd6, 0x87, 0x8e, 0x45, 0xdb);
+		public static readonly global::System.Guid EstiloPortalWebDomainRoleId = new global::System.Guid(0x2d9672f9, 0x0750, 0x48d1, 0xa8, 0x72, 0x03, 0x43, 0xa1, 0x22, 0x6b, 0xc7);
 		
 		/// <summary>
 		/// DomainRole EstiloPortalWeb
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWeb
+		/// UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/EstiloPortalWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/EstiloPortalWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "DeraWebIPS", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb/EstiloPortalWeb.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("e8f300f7-2377-4524-8c0d-d2d6878e45db")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "DeraWebIPS", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("2d9672f9-0750-48d1-a872-0343a1226bc7")]
 		public virtual EstiloPortalWeb EstiloPortalWeb
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -2166,13 +2175,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region DeraWebIPS link accessor
 		/// <summary>
-		/// Get the DeraWebIPSReferencesEstiloPortalWeb link to a DeraWebIPS.
+		/// Get the DeraWebIPSHasEstiloPortalWeb link to a DeraWebIPS.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb GetLinkToEstiloPortalWeb (global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS deraWebIPSInstance)
+		public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb GetLinkToEstiloPortalWeb (global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS deraWebIPSInstance)
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb>(deraWebIPSInstance, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb>(deraWebIPSInstance, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPSDomainRoleId);
 			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of DeraWebIPS not obeyed.");
 			if ( links.Count == 0 )
 			{
@@ -2186,27 +2195,36 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region EstiloPortalWeb link accessor
 		/// <summary>
-		/// Get the list of DeraWebIPSReferencesEstiloPortalWeb links to a EstiloPortalWeb.
+		/// Get the DeraWebIPSHasEstiloPortalWeb link to a EstiloPortalWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> GetLinksToDeraWebIPS ( global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb estiloPortalWebInstance )
+		public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb GetLinkToDeraWebIPS (global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb estiloPortalWebInstance)
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb>(estiloPortalWebInstance, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWebDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb>(estiloPortalWebInstance, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWebDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of EstiloPortalWeb not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
 		}
 		#endregion
-		#region DeraWebIPSReferencesEstiloPortalWeb instance accessors
+		#region DeraWebIPSHasEstiloPortalWeb instance accessors
 		
 		/// <summary>
-		/// Get any DeraWebIPSReferencesEstiloPortalWeb links between a given DeraWebIPS and a EstiloPortalWeb.
+		/// Get any DeraWebIPSHasEstiloPortalWeb links between a given DeraWebIPS and a EstiloPortalWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb target )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb target )
 		{
-			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb>();
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb link in links )
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPSDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb link in links )
 			{
 				if ( target.Equals(link.EstiloPortalWeb) )
 				{
@@ -2216,14 +2234,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			return outLinks.AsReadOnly();
 		}
 		/// <summary>
-		/// Get the one DeraWebIPSReferencesEstiloPortalWeb link between a given DeraWebIPSand a EstiloPortalWeb.
+		/// Get the one DeraWebIPSHasEstiloPortalWeb link between a given DeraWebIPSand a EstiloPortalWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb GetLink( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb target )
+		public static global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb GetLink( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPS source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb target )
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb link in links )
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPSDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb link in links )
 			{
 				if ( target.Equals(link.EstiloPortalWeb) )
 				{
@@ -2239,33 +2257,33 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// DomainRelationship AtributoReferencesEstiloCampoFormulario
-	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario
+	/// DomainRelationship AtributoHasEstiloCampoFormulario
+	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainRelationship()]
-	[DslModeling::DomainObjectId("5d251798-48d4-415d-ad6c-444bef57e8d3")]
-	public partial class AtributoReferencesEstiloCampoFormulario : DslModeling::ElementLink
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("aad1ac41-0d06-493a-9f90-3b7456769e11")]
+	public partial class AtributoHasEstiloCampoFormulario : DslModeling::ElementLink
 	{
 		#region Constructors, domain class Id
 		
 		/// <summary>
-		/// AtributoReferencesEstiloCampoFormulario domain class Id.
+		/// AtributoHasEstiloCampoFormulario domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x5d251798, 0x48d4, 0x415d, 0xad, 0x6c, 0x44, 0x4b, 0xef, 0x57, 0xe8, 0xd3);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xaad1ac41, 0x0d06, 0x493a, 0x9f, 0x90, 0x3b, 0x74, 0x56, 0x76, 0x9e, 0x11);
 	
 				
 		/// <summary>
 		/// Constructor
-		/// Creates a AtributoReferencesEstiloCampoFormulario link in the same Partition as the given Atributo
+		/// Creates a AtributoHasEstiloCampoFormulario link in the same Partition as the given Atributo
 		/// </summary>
 		/// <param name="source">Atributo to use as the source of the relationship.</param>
 		/// <param name="target">EstiloCampoFormulario to use as the target of the relationship.</param>
-		public AtributoReferencesEstiloCampoFormulario(Atributo source, EstiloCampoFormulario target)
-			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoReferencesEstiloCampoFormulario.AtributoDomainRoleId, source), new DslModeling::RoleAssignment(AtributoReferencesEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId, target)}, null)
+		public AtributoHasEstiloCampoFormulario(Atributo source, EstiloCampoFormulario target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoHasEstiloCampoFormulario.AtributoDomainRoleId, source), new DslModeling::RoleAssignment(AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId, target)}, null)
 		{
 		}
 		
@@ -2274,7 +2292,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public AtributoReferencesEstiloCampoFormulario(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+		public AtributoHasEstiloCampoFormulario(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
 		{
 		}
@@ -2285,7 +2303,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public AtributoReferencesEstiloCampoFormulario(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public AtributoHasEstiloCampoFormulario(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2295,7 +2313,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public AtributoReferencesEstiloCampoFormulario(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+		public AtributoHasEstiloCampoFormulario(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(partition, roleAssignments, null)
 		{
 		}
@@ -2306,7 +2324,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public AtributoReferencesEstiloCampoFormulario(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public AtributoHasEstiloCampoFormulario(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2316,17 +2334,17 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Atributo domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid AtributoDomainRoleId = new global::System.Guid(0xaba6db9d, 0xc49a, 0x44fe, 0x87, 0x17, 0xd6, 0xc2, 0x42, 0xab, 0x75, 0xe5);
+		public static readonly global::System.Guid AtributoDomainRoleId = new global::System.Guid(0xd63c7621, 0x6759, 0x4653, 0x94, 0x9e, 0x96, 0x19, 0x53, 0x0c, 0x4b, 0x4e);
 		
 		/// <summary>
 		/// DomainRole Atributo
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.Atributo
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Atributo
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/Atributo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/Atributo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloCampoFormulario", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/Atributo.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("aba6db9d-c49a-44fe-8717-d6c242ab75e5")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloCampoFormulario", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainObjectId("d63c7621-6759-4653-949e-9619530c4b4e")]
 		public virtual Atributo Atributo
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -2344,13 +2362,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Static methods to access Atributo of a EstiloCampoFormulario
 		/// <summary>
-		/// Gets a list of Atributo.
+		/// Gets Atributo.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<Atributo> GetAtributo(EstiloCampoFormulario element)
+		public static Atributo GetAtributo(EstiloCampoFormulario element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<Atributo>, Atributo>(element, EstiloCampoFormularioDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, EstiloCampoFormularioDomainRoleId) as Atributo;
+		}
+		
+		/// <summary>
+		/// Sets Atributo.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetAtributo(EstiloCampoFormulario element, Atributo newAtributo)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, EstiloCampoFormularioDomainRoleId, newAtributo);
 		}
 		#endregion
 		#region EstiloCampoFormulario domain role code
@@ -2358,17 +2386,17 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// EstiloCampoFormulario domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid EstiloCampoFormularioDomainRoleId = new global::System.Guid(0xe79a2241, 0xbb8f, 0x4d24, 0xba, 0x76, 0xd6, 0x45, 0x6b, 0x53, 0x0e, 0x35);
+		public static readonly global::System.Guid EstiloCampoFormularioDomainRoleId = new global::System.Guid(0x0f1018f9, 0x407c, 0x47d5, 0x82, 0xd8, 0x3e, 0xf0, 0x8f, 0x25, 0x1d, 0x3f);
 		
 		/// <summary>
 		/// DomainRole EstiloCampoFormulario
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormulario
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormulario
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/EstiloCampoFormulario.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/EstiloCampoFormulario.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Atributo", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario/EstiloCampoFormulario.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("e79a2241-bb8f-4d24-ba76-d6456b530e35")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Atributo", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("0f1018f9-407c-47d5-82d8-3ef08f251d3f")]
 		public virtual EstiloCampoFormulario EstiloCampoFormulario
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -2397,38 +2425,47 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Atributo link accessor
 		/// <summary>
-		/// Get the list of AtributoReferencesEstiloCampoFormulario links to a Atributo.
+		/// Get the list of AtributoHasEstiloCampoFormulario links to a Atributo.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> GetLinksToEstiloCampoFormulario ( global::UPM_IPS.XCYLSProyectoIPS.Atributo atributoInstance )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> GetLinksToEstiloCampoFormulario ( global::UPM_IPS.XCYLSProyectoIPS.Atributo atributoInstance )
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario>(atributoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.AtributoDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario>(atributoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.AtributoDomainRoleId);
 		}
 		#endregion
 		#region EstiloCampoFormulario link accessor
 		/// <summary>
-		/// Get the list of AtributoReferencesEstiloCampoFormulario links to a EstiloCampoFormulario.
+		/// Get the AtributoHasEstiloCampoFormulario link to a EstiloCampoFormulario.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> GetLinksToAtributo ( global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario estiloCampoFormularioInstance )
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario GetLinkToAtributo (global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario estiloCampoFormularioInstance)
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario>(estiloCampoFormularioInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario>(estiloCampoFormularioInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of EstiloCampoFormulario not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
 		}
 		#endregion
-		#region AtributoReferencesEstiloCampoFormulario instance accessors
+		#region AtributoHasEstiloCampoFormulario instance accessors
 		
 		/// <summary>
-		/// Get any AtributoReferencesEstiloCampoFormulario links between a given Atributo and a EstiloCampoFormulario.
+		/// Get any AtributoHasEstiloCampoFormulario links between a given Atributo and a EstiloCampoFormulario.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario target )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario target )
 		{
-			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario>();
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.AtributoDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario link in links )
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.AtributoDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario link in links )
 			{
 				if ( target.Equals(link.EstiloCampoFormulario) )
 				{
@@ -2438,14 +2475,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			return outLinks.AsReadOnly();
 		}
 		/// <summary>
-		/// Get the one AtributoReferencesEstiloCampoFormulario link between a given Atributoand a EstiloCampoFormulario.
+		/// Get the one AtributoHasEstiloCampoFormulario link between a given Atributoand a EstiloCampoFormulario.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario GetLink( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario target )
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario GetLink( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario target )
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.AtributoDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario link in links )
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.AtributoDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario link in links )
 			{
 				if ( target.Equals(link.EstiloCampoFormulario) )
 				{
@@ -2461,33 +2498,33 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// DomainRelationship EntidadReferencesEstiloPáginaWeb
-	/// Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb
+	/// DomainRelationship EntidadHasEstiloPaginaWeb
+	/// Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainRelationship()]
-	[DslModeling::DomainObjectId("ab002627-ec4b-426c-8515-83e5fac6b033")]
-	public partial class EntidadReferencesEstiloPáginaWeb : DslModeling::ElementLink
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("4568c178-eeff-43c2-abb4-e41b1af6ffb8")]
+	public partial class EntidadHasEstiloPaginaWeb : DslModeling::ElementLink
 	{
 		#region Constructors, domain class Id
 		
 		/// <summary>
-		/// EntidadReferencesEstiloPáginaWeb domain class Id.
+		/// EntidadHasEstiloPaginaWeb domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xab002627, 0xec4b, 0x426c, 0x85, 0x15, 0x83, 0xe5, 0xfa, 0xc6, 0xb0, 0x33);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x4568c178, 0xeeff, 0x43c2, 0xab, 0xb4, 0xe4, 0x1b, 0x1a, 0xf6, 0xff, 0xb8);
 	
 				
 		/// <summary>
 		/// Constructor
-		/// Creates a EntidadReferencesEstiloPáginaWeb link in the same Partition as the given Entidad
+		/// Creates a EntidadHasEstiloPaginaWeb link in the same Partition as the given Entidad
 		/// </summary>
 		/// <param name="source">Entidad to use as the source of the relationship.</param>
-		/// <param name="target">EstiloPáginaWeb to use as the target of the relationship.</param>
-		public EntidadReferencesEstiloPáginaWeb(Entidad source, EstiloPáginaWeb target)
-			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(EntidadReferencesEstiloPáginaWeb.EntidadDomainRoleId, source), new DslModeling::RoleAssignment(EntidadReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId, target)}, null)
+		/// <param name="target">EstiloPaginaWeb to use as the target of the relationship.</param>
+		public EntidadHasEstiloPaginaWeb(Entidad source, EstiloPaginaWeb target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(EntidadHasEstiloPaginaWeb.EntidadDomainRoleId, source), new DslModeling::RoleAssignment(EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId, target)}, null)
 		{
 		}
 		
@@ -2496,7 +2533,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public EntidadReferencesEstiloPáginaWeb(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+		public EntidadHasEstiloPaginaWeb(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
 		{
 		}
@@ -2507,7 +2544,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public EntidadReferencesEstiloPáginaWeb(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public EntidadHasEstiloPaginaWeb(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2517,7 +2554,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public EntidadReferencesEstiloPáginaWeb(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+		public EntidadHasEstiloPaginaWeb(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(partition, roleAssignments, null)
 		{
 		}
@@ -2528,7 +2565,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public EntidadReferencesEstiloPáginaWeb(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public EntidadHasEstiloPaginaWeb(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2538,17 +2575,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Entidad domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid EntidadDomainRoleId = new global::System.Guid(0xa0e93f58, 0xad9a, 0x450d, 0x93, 0x50, 0x96, 0x0f, 0x87, 0xa8, 0x17, 0xf5);
+		public static readonly global::System.Guid EntidadDomainRoleId = new global::System.Guid(0xa16e1692, 0x2bb7, 0x483f, 0xac, 0x52, 0xcf, 0xe7, 0x8e, 0x76, 0xdb, 0xee);
 		
 		/// <summary>
 		/// DomainRole Entidad
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.Entidad
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.Entidad
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/Entidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/Entidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloPáginaWeb", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("a0e93f58-ad9a-450d-9350-960f87a817f5")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/Entidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/Entidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloPaginaWeb", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/Entidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslModeling::DomainObjectId("a16e1692-2bb7-483f-ac52-cfe78e76dbee")]
 		public virtual Entidad Entidad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -2564,95 +2600,114 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 				
 		#endregion
-		#region Static methods to access Entidad of a EstiloPáginaWeb
+		#region Static methods to access Entidad of a EstiloPaginaWeb
 		/// <summary>
-		/// Gets a list of Entidad.
+		/// Gets Entidad.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<Entidad> GetEntidad(EstiloPáginaWeb element)
+		public static Entidad GetEntidad(EstiloPaginaWeb element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(element, EstiloPáginaWebDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, EstiloPaginaWebDomainRoleId) as Entidad;
+		}
+		
+		/// <summary>
+		/// Sets Entidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetEntidad(EstiloPaginaWeb element, Entidad newEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, EstiloPaginaWebDomainRoleId, newEntidad);
 		}
 		#endregion
-		#region EstiloPáginaWeb domain role code
+		#region EstiloPaginaWeb domain role code
 		
 		/// <summary>
-		/// EstiloPáginaWeb domain role Id.
+		/// EstiloPaginaWeb domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid EstiloPáginaWebDomainRoleId = new global::System.Guid(0x15f56903, 0x7a73, 0x4b22, 0x82, 0xe1, 0x4d, 0x50, 0x7f, 0x74, 0x68, 0xaa);
+		public static readonly global::System.Guid EstiloPaginaWebDomainRoleId = new global::System.Guid(0x73a1014e, 0x268e, 0x416f, 0xb0, 0x2f, 0x26, 0xfd, 0x8a, 0x81, 0x0c, 0x20);
 		
 		/// <summary>
-		/// DomainRole EstiloPáginaWeb
+		/// DomainRole EstiloPaginaWeb
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EstiloPáginaWeb
+		/// UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EstiloPaginaWeb
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/EstiloPáginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/EstiloPáginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb/EstiloPáginaWeb.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("15f56903-7a73-4b22-82e1-4d507f7468aa")]
-		public virtual EstiloPáginaWeb EstiloPáginaWeb
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/EstiloPaginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/EstiloPaginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb/EstiloPaginaWeb.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("73a1014e-268e-416f-b02f-26fd8a810c20")]
+		public virtual EstiloPaginaWeb EstiloPaginaWeb
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return (EstiloPáginaWeb)DslModeling::DomainRoleInfo.GetRolePlayer(this, EstiloPáginaWebDomainRoleId);
+				return (EstiloPaginaWeb)DslModeling::DomainRoleInfo.GetRolePlayer(this, EstiloPaginaWebDomainRoleId);
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::DomainRoleInfo.SetRolePlayer(this, EstiloPáginaWebDomainRoleId, value);
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, EstiloPaginaWebDomainRoleId, value);
 			}
 		}
 				
 		#endregion
-		#region Static methods to access EstiloPáginaWeb of a Entidad
+		#region Static methods to access EstiloPaginaWeb of a Entidad
 		/// <summary>
-		/// Gets a list of EstiloPáginaWeb.
+		/// Gets a list of EstiloPaginaWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<EstiloPáginaWeb> GetEstiloPáginaWeb(Entidad element)
+		public static DslModeling::LinkedElementCollection<EstiloPaginaWeb> GetEstiloPaginaWeb(Entidad element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloPáginaWeb>, EstiloPáginaWeb>(element, EntidadDomainRoleId);
+			return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloPaginaWeb>, EstiloPaginaWeb>(element, EntidadDomainRoleId);
 		}
 		#endregion
 		#region Entidad link accessor
 		/// <summary>
-		/// Get the list of EntidadReferencesEstiloPáginaWeb links to a Entidad.
+		/// Get the list of EntidadHasEstiloPaginaWeb links to a Entidad.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> GetLinksToEstiloPáginaWeb ( global::UPM_IPS.XCYLSProyectoIPS.Entidad entidadInstance )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> GetLinksToEstiloPaginaWeb ( global::UPM_IPS.XCYLSProyectoIPS.Entidad entidadInstance )
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb>(entidadInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EntidadDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb>(entidadInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EntidadDomainRoleId);
 		}
 		#endregion
-		#region EstiloPáginaWeb link accessor
+		#region EstiloPaginaWeb link accessor
 		/// <summary>
-		/// Get the list of EntidadReferencesEstiloPáginaWeb links to a EstiloPáginaWeb.
+		/// Get the EntidadHasEstiloPaginaWeb link to a EstiloPaginaWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> GetLinksToEntidad ( global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb estiloPáginaWebInstance )
+		public static global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb GetLinkToEntidad (global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb estiloPaginaWebInstance)
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb>(estiloPáginaWebInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb>(estiloPaginaWebInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of EstiloPaginaWeb not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
 		}
 		#endregion
-		#region EntidadReferencesEstiloPáginaWeb instance accessors
+		#region EntidadHasEstiloPaginaWeb instance accessors
 		
 		/// <summary>
-		/// Get any EntidadReferencesEstiloPáginaWeb links between a given Entidad and a EstiloPáginaWeb.
+		/// Get any EntidadHasEstiloPaginaWeb links between a given Entidad and a EstiloPaginaWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Entidad source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb target )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Entidad source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb target )
 		{
-			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb>();
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EntidadDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb link in links )
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb link in links )
 			{
-				if ( target.Equals(link.EstiloPáginaWeb) )
+				if ( target.Equals(link.EstiloPaginaWeb) )
 				{
 					outLinks.Add(link);
 				}
@@ -2660,238 +2715,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			return outLinks.AsReadOnly();
 		}
 		/// <summary>
-		/// Get the one EntidadReferencesEstiloPáginaWeb link between a given Entidadand a EstiloPáginaWeb.
+		/// Get the one EntidadHasEstiloPaginaWeb link between a given Entidadand a EstiloPaginaWeb.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb GetLink( global::UPM_IPS.XCYLSProyectoIPS.Entidad source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb target )
+		public static global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb GetLink( global::UPM_IPS.XCYLSProyectoIPS.Entidad source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb target )
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EntidadDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb link in links )
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb link in links )
 			{
-				if ( target.Equals(link.EstiloPáginaWeb) )
-				{
-					return link;
-				}
-			}
-			return null;
-		}
-		
-		#endregion
-	}
-}
-namespace UPM_IPS.XCYLSProyectoIPS
-{
-	/// <summary>
-	/// DomainRelationship RelacionReferencesEstiloPáginaWeb
-	/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb
-	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainRelationship()]
-	[DslModeling::DomainObjectId("857378ec-dc4a-473c-8b6f-8dd560fa9ca8")]
-	public partial class RelacionReferencesEstiloPáginaWeb : DslModeling::ElementLink
-	{
-		#region Constructors, domain class Id
-		
-		/// <summary>
-		/// RelacionReferencesEstiloPáginaWeb domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x857378ec, 0xdc4a, 0x473c, 0x8b, 0x6f, 0x8d, 0xd5, 0x60, 0xfa, 0x9c, 0xa8);
-	
-				
-		/// <summary>
-		/// Constructor
-		/// Creates a RelacionReferencesEstiloPáginaWeb link in the same Partition as the given Relacion
-		/// </summary>
-		/// <param name="source">Relacion to use as the source of the relationship.</param>
-		/// <param name="target">EstiloPáginaWeb to use as the target of the relationship.</param>
-		public RelacionReferencesEstiloPáginaWeb(Relacion source, EstiloPáginaWeb target)
-			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(RelacionReferencesEstiloPáginaWeb.RelacionDomainRoleId, source), new DslModeling::RoleAssignment(RelacionReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId, target)}, null)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new link is to be created.</param>
-		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public RelacionReferencesEstiloPáginaWeb(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
-			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new link is to be created.</param>
-		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public RelacionReferencesEstiloPáginaWeb(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new link is to be created.</param>
-		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public RelacionReferencesEstiloPáginaWeb(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
-			: base(partition, roleAssignments, null)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new link is to be created.</param>
-		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public RelacionReferencesEstiloPáginaWeb(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, roleAssignments, propertyAssignments)
-		{
-		}
-		#endregion
-		#region Relacion domain role code
-		
-		/// <summary>
-		/// Relacion domain role Id.
-		/// </summary>
-		public static readonly global::System.Guid RelacionDomainRoleId = new global::System.Guid(0xd3fae1fc, 0x7173, 0x4208, 0x8d, 0x5f, 0x8d, 0xf3, 0x82, 0x53, 0x6e, 0xfa);
-		
-		/// <summary>
-		/// DomainRole Relacion
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.Relacion
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/Relacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/Relacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "EstiloPáginaWeb", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("d3fae1fc-7173-4208-8d5f-8df382536efa")]
-		public virtual Relacion Relacion
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return (Relacion)DslModeling::DomainRoleInfo.GetRolePlayer(this, RelacionDomainRoleId);
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetRolePlayer(this, RelacionDomainRoleId, value);
-			}
-		}
-				
-		#endregion
-		#region Static methods to access Relacion of a EstiloPáginaWeb
-		/// <summary>
-		/// Gets a list of Relacion.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<Relacion> GetRelacion(EstiloPáginaWeb element)
-		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(element, EstiloPáginaWebDomainRoleId);
-		}
-		#endregion
-		#region EstiloPáginaWeb domain role code
-		
-		/// <summary>
-		/// EstiloPáginaWeb domain role Id.
-		/// </summary>
-		public static readonly global::System.Guid EstiloPáginaWebDomainRoleId = new global::System.Guid(0x33df0bdc, 0x7909, 0x4e8e, 0x97, 0x4c, 0x8c, 0x46, 0x4b, 0x96, 0x22, 0xe2);
-		
-		/// <summary>
-		/// DomainRole EstiloPáginaWeb
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.EstiloPáginaWeb
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/EstiloPáginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/EstiloPáginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Relacion", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb/EstiloPáginaWeb.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
-		[DslModeling::DomainObjectId("33df0bdc-7909-4e8e-974c-8c464b9622e2")]
-		public virtual EstiloPáginaWeb EstiloPáginaWeb
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return (EstiloPáginaWeb)DslModeling::DomainRoleInfo.GetRolePlayer(this, EstiloPáginaWebDomainRoleId);
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetRolePlayer(this, EstiloPáginaWebDomainRoleId, value);
-			}
-		}
-				
-		#endregion
-		#region Static methods to access EstiloPáginaWeb of a Relacion
-		/// <summary>
-		/// Gets a list of EstiloPáginaWeb.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<EstiloPáginaWeb> GetEstiloPáginaWeb(Relacion element)
-		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloPáginaWeb>, EstiloPáginaWeb>(element, RelacionDomainRoleId);
-		}
-		#endregion
-		#region Relacion link accessor
-		/// <summary>
-		/// Get the list of RelacionReferencesEstiloPáginaWeb links to a Relacion.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> GetLinksToEstiloPáginaWeb ( global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance )
-		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.RelacionDomainRoleId);
-		}
-		#endregion
-		#region EstiloPáginaWeb link accessor
-		/// <summary>
-		/// Get the list of RelacionReferencesEstiloPáginaWeb links to a EstiloPáginaWeb.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> GetLinksToRelacion ( global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb estiloPáginaWebInstance )
-		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb>(estiloPáginaWebInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId);
-		}
-		#endregion
-		#region RelacionReferencesEstiloPáginaWeb instance accessors
-		
-		/// <summary>
-		/// Get any RelacionReferencesEstiloPáginaWeb links between a given Relacion and a EstiloPáginaWeb.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Relacion source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb target )
-		{
-			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb>();
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.RelacionDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb link in links )
-			{
-				if ( target.Equals(link.EstiloPáginaWeb) )
-				{
-					outLinks.Add(link);
-				}
-			}
-			return outLinks.AsReadOnly();
-		}
-		/// <summary>
-		/// Get the one RelacionReferencesEstiloPáginaWeb link between a given Relacionand a EstiloPáginaWeb.
-		/// </summary>
-		[global::System.Diagnostics.DebuggerStepThrough]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb GetLink( global::UPM_IPS.XCYLSProyectoIPS.Relacion source, global::UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb target )
-		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb>(source, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.RelacionDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb link in links )
-			{
-				if ( target.Equals(link.EstiloPáginaWeb) )
+				if ( target.Equals(link.EstiloPaginaWeb) )
 				{
 					return link;
 				}
