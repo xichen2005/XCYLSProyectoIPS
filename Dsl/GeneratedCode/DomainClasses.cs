@@ -78,6 +78,26 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region EstiloPortalWeb opposite domain role accessor
+		/// <summary>
+		/// Gets or sets EstiloPortalWeb.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPS
+		/// </summary>
+		public virtual EstiloPortalWeb EstiloPortalWeb
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId) as EstiloPortalWeb;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPSDomainRoleId, value);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -412,6 +432,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region EstiloPáginaWeb opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of EstiloPáginaWeb.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.Entidad
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<EstiloPáginaWeb> EstiloPáginaWeb
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloPáginaWeb>, EstiloPáginaWeb>(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EntidadDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -729,6 +765,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region EstiloPáginaWeb opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of EstiloPáginaWeb.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.Relacion
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<EstiloPáginaWeb> EstiloPáginaWeb
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloPáginaWeb>, EstiloPáginaWeb>(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.RelacionDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -839,7 +891,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("b59878ed-1691-4098-8655-d3a0ad522f67")]
-	public partial class AtributoEntidad : DslModeling::ModelElement
+	public partial class AtributoEntidad : Atributo
 	{
 		#region Constructors, domain class Id
 	
@@ -867,180 +919,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
-		#region Name domain property code
-		
-		/// <summary>
-		/// Name domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid NameDomainPropertyId = new global::System.Guid(0xd64bf91a, 0xd0ba, 0x4e81, 0x90, 0x7a, 0x38, 0x2c, 0x36, 0xf8, 0x07, 0x94);
-		
-		/// <summary>
-		/// Storage for Name
-		/// </summary>
-		private global::System.String namePropertyStorage = string.Empty;
-		
-		/// <summary>
-		/// Gets or sets the value of Name domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Name
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Name.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Name.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("d64bf91a-d0ba-4e81-907a-382c36f80794")]
-		public global::System.String Name
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return namePropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				NamePropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the AtributoEntidad.Name domain property.
-		/// </summary>
-		internal sealed partial class NamePropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, global::System.String>
-		{
-			private NamePropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the AtributoEntidad.Name domain property value handler.
-			/// </summary>
-			public static readonly NamePropertyHandler Instance = new NamePropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the AtributoEntidad.Name domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return NameDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(AtributoEntidad element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.namePropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoEntidad element, global::System.String newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				global::System.String oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.namePropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
-		#region Tipo domain property code
-		
-		/// <summary>
-		/// Tipo domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid TipoDomainPropertyId = new global::System.Guid(0x2758beba, 0x9429, 0x44a6, 0xa4, 0x3b, 0xf2, 0x94, 0xba, 0x53, 0x3e, 0x97);
-		
-		/// <summary>
-		/// Storage for Tipo
-		/// </summary>
-		private tipoEnumeration tipoPropertyStorage;
-		
-		/// <summary>
-		/// Gets or sets the value of Tipo domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Tipo
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Tipo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Tipo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("2758beba-9429-44a6-a43b-f294ba533e97")]
-		public tipoEnumeration Tipo
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return tipoPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				TipoPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the AtributoEntidad.Tipo domain property.
-		/// </summary>
-		internal sealed partial class TipoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoEnumeration>
-		{
-			private TipoPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the AtributoEntidad.Tipo domain property value handler.
-			/// </summary>
-			public static readonly TipoPropertyHandler Instance = new TipoPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the AtributoEntidad.Tipo domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return TipoDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed tipoEnumeration GetValue(AtributoEntidad element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.tipoPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoEntidad element, tipoEnumeration newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				tipoEnumeration oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.tipoPropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
 		#region Null domain property code
 		
 		/// <summary>
@@ -1051,7 +929,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Storage for Null
 		/// </summary>
-		private tipoNull nullPropertyStorage;
+		private tipoNull nullPropertyStorage = tipoNull.Null;
 		
 		/// <summary>
 		/// Gets or sets the value of Null domain property.
@@ -1059,6 +937,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(tipoNull.Null)]
 		[DslModeling::DomainObjectId("202eebcb-62e1-44c6-9e35-a762d3d813ee")]
 		public tipoNull Null
 		{
@@ -1128,6 +1007,181 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
+		#region Único domain property code
+		
+		/// <summary>
+		/// Único domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x64770b58, 0xb7cb, 0x40fb, 0x96, 0x2e, 0xf8, 0x81, 0x5d, 0x12, 0xc9, 0xe5);
+		
+		/// <summary>
+		/// Storage for Único
+		/// </summary>
+		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
+		
+		/// <summary>
+		/// Gets or sets the value of Único domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Único
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
+		[DslModeling::DomainObjectId("64770b58-b7cb-40fb-962e-f8815d12c9e5")]
+		public tipoÚnico Único
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return únicoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ÚnicoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoEntidad.Único domain property.
+		/// </summary>
+		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoÚnico>
+		{
+			private ÚnicoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoEntidad.Único domain property value handler.
+			/// </summary>
+			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoEntidad.Único domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ÚnicoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoÚnico GetValue(AtributoEntidad element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.únicoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoEntidad element, tipoÚnico newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoÚnico oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.únicoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Longitud domain property code
+		
+		/// <summary>
+		/// Longitud domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid LongitudDomainPropertyId = new global::System.Guid(0xb115c1f1, 0xf698, 0x4136, 0x83, 0xbb, 0xb2, 0xe0, 0x23, 0x5c, 0xef, 0x1d);
+		
+		/// <summary>
+		/// Storage for Longitud
+		/// </summary>
+		private global::System.Int32 longitudPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Longitud domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Longitud
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Longitud.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Longitud.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("b115c1f1-f698-4136-83bb-b2e0235cef1d")]
+		public global::System.Int32 Longitud
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return longitudPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				LongitudPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoEntidad.Longitud domain property.
+		/// </summary>
+		internal sealed partial class LongitudPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, global::System.Int32>
+		{
+			private LongitudPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoEntidad.Longitud domain property value handler.
+			/// </summary>
+			public static readonly LongitudPropertyHandler Instance = new LongitudPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoEntidad.Longitud domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return LongitudDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Int32 GetValue(AtributoEntidad element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.longitudPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoEntidad element, global::System.Int32 newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Int32 oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.longitudPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region Entidad opposite domain role accessor
 		/// <summary>
 		/// Gets or sets Entidad.
@@ -1161,7 +1215,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("863fd30e-be10-41dc-9c2c-75e56b3e7a98")]
-	public partial class AtributoRelacion : DslModeling::ModelElement
+	public partial class AtributoRelacion : Atributo
 	{
 		#region Constructors, domain class Id
 	
@@ -1189,59 +1243,60 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
-		#region Name domain property code
+		#region Único domain property code
 		
 		/// <summary>
-		/// Name domain property Id.
+		/// Único domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid NameDomainPropertyId = new global::System.Guid(0xe333823c, 0x4c3c, 0x46a8, 0x8d, 0x9d, 0xf7, 0xb0, 0x1b, 0x36, 0x18, 0xfc);
+		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x2f96f9aa, 0x1b86, 0x4309, 0x8e, 0xde, 0xe5, 0x54, 0xaf, 0xc7, 0x54, 0xb8);
 		
 		/// <summary>
-		/// Storage for Name
+		/// Storage for Único
 		/// </summary>
-		private global::System.String namePropertyStorage = string.Empty;
+		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
 		
 		/// <summary>
-		/// Gets or sets the value of Name domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Name
+		/// Gets or sets the value of Único domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Único
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Name.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Name.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("e333823c-4c3c-46a8-8d9d-f7b01b3618fc")]
-		public global::System.String Name
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
+		[DslModeling::DomainObjectId("2f96f9aa-1b86-4309-8ede-e554afc754b8")]
+		public tipoÚnico Único
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return namePropertyStorage;
+				return únicoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				NamePropertyHandler.Instance.SetValue(this, value);
+				ÚnicoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the AtributoRelacion.Name domain property.
+		/// Value handler for the AtributoRelacion.Único domain property.
 		/// </summary>
-		internal sealed partial class NamePropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoRelacion, global::System.String>
+		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoRelacion, tipoÚnico>
 		{
-			private NamePropertyHandler() { }
+			private ÚnicoPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the AtributoRelacion.Name domain property value handler.
+			/// Gets the singleton instance of the AtributoRelacion.Único domain property value handler.
 			/// </summary>
-			public static readonly NamePropertyHandler Instance = new NamePropertyHandler();
+			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the AtributoRelacion.Name domain property.
+			/// Gets the Id of the AtributoRelacion.Único domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return NameDomainPropertyId;
+					return ÚnicoDomainPropertyId;
 				}
 			}
 			
@@ -1250,10 +1305,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(AtributoRelacion element)
+			public override sealed tipoÚnico GetValue(AtributoRelacion element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.namePropertyStorage;
+				return element.únicoPropertyStorage;
 			}
 		
 			/// <summary>
@@ -1261,15 +1316,103 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoRelacion element, global::System.String newValue)
+			public override sealed void SetValue(AtributoRelacion element, tipoÚnico newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
-				global::System.String oldValue = GetValue(element);
+				tipoÚnico oldValue = GetValue(element);
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.namePropertyStorage = newValue;
+					element.únicoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Null domain property code
+		
+		/// <summary>
+		/// Null domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NullDomainPropertyId = new global::System.Guid(0xe5b31c6d, 0xdc95, 0x4d2e, 0x8f, 0x7d, 0x69, 0x9e, 0x59, 0x97, 0x8e, 0x04);
+		
+		/// <summary>
+		/// Storage for Null
+		/// </summary>
+		private tipoNull nullPropertyStorage = tipoNull.Null;
+		
+		/// <summary>
+		/// Gets or sets the value of Null domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Null
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Null.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(tipoNull.Null)]
+		[DslModeling::DomainObjectId("e5b31c6d-dc95-4d2e-8f7d-699e59978e04")]
+		public tipoNull Null
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return nullPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NullPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the AtributoRelacion.Null domain property.
+		/// </summary>
+		internal sealed partial class NullPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoRelacion, tipoNull>
+		{
+			private NullPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the AtributoRelacion.Null domain property value handler.
+			/// </summary>
+			public static readonly NullPropertyHandler Instance = new NullPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the AtributoRelacion.Null domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NullDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoNull GetValue(AtributoRelacion element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.nullPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(AtributoRelacion element, tipoNull newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoNull oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.nullPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1309,7 +1452,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainObjectId("2995b03f-8599-42fe-833c-be8899997af1")]
-	public partial class AtributoClave : DslModeling::ModelElement
+	public partial class AtributoClave : Atributo
 	{
 		#region Constructors, domain class Id
 	
@@ -1337,59 +1480,60 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
-		#region Clave domain property code
+		#region Único domain property code
 		
 		/// <summary>
-		/// Clave domain property Id.
+		/// Único domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid ClaveDomainPropertyId = new global::System.Guid(0x2a8c441d, 0xd9cd, 0x4806, 0xa9, 0x5a, 0xe4, 0xa5, 0x4a, 0x04, 0x0f, 0x58);
+		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x63736cc9, 0x5f95, 0x4de7, 0xa3, 0x68, 0x9b, 0xbd, 0xc1, 0x72, 0xb8, 0x12);
 		
 		/// <summary>
-		/// Storage for Clave
+		/// Storage for Único
 		/// </summary>
-		private global::System.String clavePropertyStorage = string.Empty;
+		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
 		
 		/// <summary>
-		/// Gets or sets the value of Clave domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Clave
+		/// Gets or sets the value of Único domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Único
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Clave.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Clave.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("2a8c441d-d9cd-4806-a95a-e4a54a040f58")]
-		public global::System.String Clave
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
+		[DslModeling::DomainObjectId("63736cc9-5f95-4de7-a368-9bbdc172b812")]
+		public tipoÚnico Único
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return clavePropertyStorage;
+				return únicoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				ClavePropertyHandler.Instance.SetValue(this, value);
+				ÚnicoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the AtributoClave.Clave domain property.
+		/// Value handler for the AtributoClave.Único domain property.
 		/// </summary>
-		internal sealed partial class ClavePropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, global::System.String>
+		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, tipoÚnico>
 		{
-			private ClavePropertyHandler() { }
+			private ÚnicoPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the AtributoClave.Clave domain property value handler.
+			/// Gets the singleton instance of the AtributoClave.Único domain property value handler.
 			/// </summary>
-			public static readonly ClavePropertyHandler Instance = new ClavePropertyHandler();
+			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the AtributoClave.Clave domain property.
+			/// Gets the Id of the AtributoClave.Único domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return ClaveDomainPropertyId;
+					return ÚnicoDomainPropertyId;
 				}
 			}
 			
@@ -1398,10 +1542,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(AtributoClave element)
+			public override sealed tipoÚnico GetValue(AtributoClave element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.clavePropertyStorage;
+				return element.únicoPropertyStorage;
 			}
 		
 			/// <summary>
@@ -1409,102 +1553,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoClave element, global::System.String newValue)
+			public override sealed void SetValue(AtributoClave element, tipoÚnico newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
-				global::System.String oldValue = GetValue(element);
+				tipoÚnico oldValue = GetValue(element);
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.clavePropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
-		#region Tipo domain property code
-		
-		/// <summary>
-		/// Tipo domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid TipoDomainPropertyId = new global::System.Guid(0xf3fe4d46, 0xf81c, 0x4970, 0xa6, 0x33, 0x20, 0xb1, 0xff, 0x29, 0xbf, 0x7d);
-		
-		/// <summary>
-		/// Storage for Tipo
-		/// </summary>
-		private tipoEnumeration tipoPropertyStorage;
-		
-		/// <summary>
-		/// Gets or sets the value of Tipo domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Tipo
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Tipo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Tipo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("f3fe4d46-f81c-4970-a633-20b1ff29bf7d")]
-		public tipoEnumeration Tipo
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return tipoPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				TipoPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the AtributoClave.Tipo domain property.
-		/// </summary>
-		internal sealed partial class TipoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, tipoEnumeration>
-		{
-			private TipoPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the AtributoClave.Tipo domain property value handler.
-			/// </summary>
-			public static readonly TipoPropertyHandler Instance = new TipoPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the AtributoClave.Tipo domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return TipoDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed tipoEnumeration GetValue(AtributoClave element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.tipoPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(AtributoClave element, tipoEnumeration newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				tipoEnumeration oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.tipoPropertyStorage = newValue;
+					element.únicoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1527,6 +1584,967 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			set
 			{
 				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves.AtributoClaveDomainRoleId, value);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass Atributo
+	/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("b4a53bc0-9a94-4506-b709-e02dc96fd58a")]
+	public abstract partial class Atributo : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Atributo domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xb4a53bc0, 0x9a94, 0x4506, 0xb7, 0x09, 0xe0, 0x2d, 0xc9, 0x6f, 0xd5, 0x8a);
+		/// <summary>
+		/// Constructor.
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		protected Atributo(DslModeling::Partition partition, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Nombre domain property code
+		
+		/// <summary>
+		/// Nombre domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NombreDomainPropertyId = new global::System.Guid(0x9c79f7f3, 0x9dd8, 0x4274, 0xa7, 0xd7, 0x1e, 0xe7, 0xdb, 0xc1, 0x3f, 0xd6);
+		
+		/// <summary>
+		/// Storage for Nombre
+		/// </summary>
+		private global::System.String nombrePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Nombre domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Nombre
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Nombre.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Nombre.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("9c79f7f3-9dd8-4274-a7d7-1ee7dbc13fd6")]
+		public global::System.String Nombre
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return nombrePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NombrePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Atributo.Nombre domain property.
+		/// </summary>
+		internal sealed partial class NombrePropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.String>
+		{
+			private NombrePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.Nombre domain property value handler.
+			/// </summary>
+			public static readonly NombrePropertyHandler Instance = new NombrePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.Nombre domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NombreDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.nombrePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.nombrePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Tipo domain property code
+		
+		/// <summary>
+		/// Tipo domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TipoDomainPropertyId = new global::System.Guid(0xd14cc7c6, 0x9868, 0x456e, 0xbb, 0xfb, 0x8b, 0xc5, 0xb8, 0x54, 0x92, 0x09);
+		
+		/// <summary>
+		/// Storage for Tipo
+		/// </summary>
+		private tipoEnumeration tipoPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Tipo domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Tipo
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Tipo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Tipo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("d14cc7c6-9868-456e-bbfb-8bc5b8549209")]
+		public tipoEnumeration Tipo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return tipoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TipoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Atributo.Tipo domain property.
+		/// </summary>
+		internal sealed partial class TipoPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, tipoEnumeration>
+		{
+			private TipoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.Tipo domain property value handler.
+			/// </summary>
+			public static readonly TipoPropertyHandler Instance = new TipoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.Tipo domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TipoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoEnumeration GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tipoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, tipoEnumeration newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoEnumeration oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tipoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region EstiloCampoFormulario opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of EstiloCampoFormulario.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.Atributo
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<EstiloCampoFormulario> EstiloCampoFormulario
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<EstiloCampoFormulario>, EstiloCampoFormulario>(global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.AtributoDomainRoleId);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass EstiloGráfico
+	/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloGráfico
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("a677dd1e-0826-407b-a24c-4ae43026ae02")]
+	public abstract partial class EstiloGráfico : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EstiloGráfico domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xa677dd1e, 0x0826, 0x407b, 0xa2, 0x4c, 0x4a, 0xe4, 0x30, 0x26, 0xae, 0x02);
+		/// <summary>
+		/// Constructor.
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		protected EstiloGráfico(DslModeling::Partition partition, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region ColorTexto domain property code
+		
+		/// <summary>
+		/// ColorTexto domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ColorTextoDomainPropertyId = new global::System.Guid(0x446ca2c7, 0x3796, 0x4f17, 0xbd, 0x19, 0x4f, 0x98, 0xfa, 0x2d, 0x8b, 0x80);
+		
+		/// <summary>
+		/// Storage for ColorTexto
+		/// </summary>
+		private global::System.String colorTextoPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of ColorTexto domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.Color Texto
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/ColorTexto.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/ColorTexto.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("446ca2c7-3796-4f17-bd19-4f98fa2d8b80")]
+		public global::System.String ColorTexto
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return colorTextoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ColorTextoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloGráfico.ColorTexto domain property.
+		/// </summary>
+		internal sealed partial class ColorTextoPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloGráfico, global::System.String>
+		{
+			private ColorTextoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloGráfico.ColorTexto domain property value handler.
+			/// </summary>
+			public static readonly ColorTextoPropertyHandler Instance = new ColorTextoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloGráfico.ColorTexto domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ColorTextoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(EstiloGráfico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.colorTextoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloGráfico element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.colorTextoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region AlineaciónTexto domain property code
+		
+		/// <summary>
+		/// AlineaciónTexto domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid AlineaciónTextoDomainPropertyId = new global::System.Guid(0x7d7f5ef6, 0x9d21, 0x4faf, 0xb4, 0xcb, 0x54, 0x37, 0x4b, 0x20, 0x2a, 0x09);
+		
+		/// <summary>
+		/// Storage for AlineaciónTexto
+		/// </summary>
+		private tipoAlineacion alineaciónTextoPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of AlineaciónTexto domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.Alineación Texto
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/AlineaciónTexto.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/AlineaciónTexto.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("7d7f5ef6-9d21-4faf-b4cb-54374b202a09")]
+		public tipoAlineacion AlineaciónTexto
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return alineaciónTextoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				AlineaciónTextoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloGráfico.AlineaciónTexto domain property.
+		/// </summary>
+		internal sealed partial class AlineaciónTextoPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloGráfico, tipoAlineacion>
+		{
+			private AlineaciónTextoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloGráfico.AlineaciónTexto domain property value handler.
+			/// </summary>
+			public static readonly AlineaciónTextoPropertyHandler Instance = new AlineaciónTextoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloGráfico.AlineaciónTexto domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return AlineaciónTextoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoAlineacion GetValue(EstiloGráfico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.alineaciónTextoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloGráfico element, tipoAlineacion newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoAlineacion oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.alineaciónTextoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region TipoLetra domain property code
+		
+		/// <summary>
+		/// TipoLetra domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TipoLetraDomainPropertyId = new global::System.Guid(0x6d28f3fc, 0xc658, 0x425d, 0xaa, 0x32, 0x25, 0xc7, 0x6a, 0x9e, 0x32, 0xd4);
+		
+		/// <summary>
+		/// Storage for TipoLetra
+		/// </summary>
+		private global::System.String tipoLetraPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of TipoLetra domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.Tipo Letra
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/TipoLetra.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/TipoLetra.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("6d28f3fc-c658-425d-aa32-25c76a9e32d4")]
+		public global::System.String TipoLetra
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return tipoLetraPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TipoLetraPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloGráfico.TipoLetra domain property.
+		/// </summary>
+		internal sealed partial class TipoLetraPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloGráfico, global::System.String>
+		{
+			private TipoLetraPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloGráfico.TipoLetra domain property value handler.
+			/// </summary>
+			public static readonly TipoLetraPropertyHandler Instance = new TipoLetraPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloGráfico.TipoLetra domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TipoLetraDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(EstiloGráfico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tipoLetraPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloGráfico element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tipoLetraPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region TamañoLetra domain property code
+		
+		/// <summary>
+		/// TamañoLetra domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid TamañoLetraDomainPropertyId = new global::System.Guid(0x1a6e7a8a, 0x4151, 0x4379, 0x9a, 0xe4, 0xe4, 0x94, 0x55, 0xc2, 0xdf, 0x59);
+		
+		/// <summary>
+		/// Storage for TamañoLetra
+		/// </summary>
+		private global::System.Int32 tamañoLetraPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of TamañoLetra domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloGráfico.Tamaño Letra
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/TamañoLetra.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloGráfico/TamañoLetra.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("1a6e7a8a-4151-4379-9ae4-e49455c2df59")]
+		public global::System.Int32 TamañoLetra
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return tamañoLetraPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				TamañoLetraPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloGráfico.TamañoLetra domain property.
+		/// </summary>
+		internal sealed partial class TamañoLetraPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloGráfico, global::System.Int32>
+		{
+			private TamañoLetraPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloGráfico.TamañoLetra domain property value handler.
+			/// </summary>
+			public static readonly TamañoLetraPropertyHandler Instance = new TamañoLetraPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloGráfico.TamañoLetra domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TamañoLetraDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Int32 GetValue(EstiloGráfico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tamañoLetraPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloGráfico element, global::System.Int32 newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Int32 oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tamañoLetraPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass EstiloPortalWeb
+	/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("f7a2e095-2ea8-4b07-a56b-a35a75bc3de6")]
+	public partial class EstiloPortalWeb : EstiloGráfico
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EstiloPortalWeb domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xf7a2e095, 0x2ea8, 0x4b07, 0xa5, 0x6b, 0xa3, 0x5a, 0x75, 0xbc, 0x3d, 0xe6);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloPortalWeb(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloPortalWeb(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region ColorFondo domain property code
+		
+		/// <summary>
+		/// ColorFondo domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ColorFondoDomainPropertyId = new global::System.Guid(0xc61d2de7, 0x91b9, 0x4b97, 0x9b, 0xc7, 0x88, 0xb3, 0x23, 0x60, 0x05, 0x1f);
+		
+		/// <summary>
+		/// Storage for ColorFondo
+		/// </summary>
+		private global::System.String colorFondoPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of ColorFondo domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Color Fondo
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/ColorFondo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/ColorFondo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("c61d2de7-91b9-4b97-9bc7-88b32360051f")]
+		public global::System.String ColorFondo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return colorFondoPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ColorFondoPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloPortalWeb.ColorFondo domain property.
+		/// </summary>
+		internal sealed partial class ColorFondoPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloPortalWeb, global::System.String>
+		{
+			private ColorFondoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloPortalWeb.ColorFondo domain property value handler.
+			/// </summary>
+			public static readonly ColorFondoPropertyHandler Instance = new ColorFondoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloPortalWeb.ColorFondo domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ColorFondoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(EstiloPortalWeb element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.colorFondoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloPortalWeb element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.colorFondoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region DeraWebIPS opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of DeraWebIPS.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWeb
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<DeraWebIPS> DeraWebIPS
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<DeraWebIPS>, DeraWebIPS>(global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWebDomainRoleId);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass EstiloCampoFormulario
+	/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("64d5023f-9011-45d9-8594-8184b7285094")]
+	public partial class EstiloCampoFormulario : EstiloGráfico
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EstiloCampoFormulario domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x64d5023f, 0x9011, 0x45d9, 0x85, 0x94, 0x81, 0x84, 0xb7, 0x28, 0x50, 0x94);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloCampoFormulario(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloCampoFormulario(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Visualizacion domain property code
+		
+		/// <summary>
+		/// Visualizacion domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid VisualizacionDomainPropertyId = new global::System.Guid(0xd1484388, 0x1011, 0x40bf, 0x9f, 0xbd, 0x35, 0x2f, 0xc6, 0x8c, 0xe9, 0x0c);
+		
+		/// <summary>
+		/// Storage for Visualizacion
+		/// </summary>
+		private tipoVisualizacionCampo visualizacionPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Visualizacion domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Visualizacion
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Visualizacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Visualizacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("d1484388-1011-40bf-9fbd-352fc68ce90c")]
+		public tipoVisualizacionCampo Visualizacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return visualizacionPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				VisualizacionPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the EstiloCampoFormulario.Visualizacion domain property.
+		/// </summary>
+		internal sealed partial class VisualizacionPropertyHandler : DslModeling::DomainPropertyValueHandler<EstiloCampoFormulario, tipoVisualizacionCampo>
+		{
+			private VisualizacionPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the EstiloCampoFormulario.Visualizacion domain property value handler.
+			/// </summary>
+			public static readonly VisualizacionPropertyHandler Instance = new VisualizacionPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the EstiloCampoFormulario.Visualizacion domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return VisualizacionDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed tipoVisualizacionCampo GetValue(EstiloCampoFormulario element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.visualizacionPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(EstiloCampoFormulario element, tipoVisualizacionCampo newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				tipoVisualizacionCampo oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.visualizacionPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Atributo opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Atributo.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormulario
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Atributo> Atributo
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Atributo>, Atributo>(global::UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainClass EstiloPáginaWeb
+	/// Description for UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EstiloPáginaWeb.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("659e522a-5fae-4994-9858-3eb4080fc3c6")]
+	public partial class EstiloPáginaWeb : EstiloGráfico
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// EstiloPáginaWeb domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x659e522a, 0x5fae, 0x4994, 0x98, 0x58, 0x3e, 0xb4, 0x08, 0x0f, 0xc3, 0xc6);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloPáginaWeb(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public EstiloPáginaWeb(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Entidad opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Entidad.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EstiloPáginaWeb
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Entidad> Entidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId);
+			}
+		}
+		#endregion
+		#region Relacion opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Relacion.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.EstiloPáginaWeb
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Relacion> Relacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEstiloPáginaWeb.EstiloPáginaWebDomainRoleId);
 			}
 		}
 		#endregion

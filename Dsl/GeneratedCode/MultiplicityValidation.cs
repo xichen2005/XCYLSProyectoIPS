@@ -30,6 +30,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						"DeraWebIPS", "", "Entidad"),
 						"DSL0001", this);
 			}
+			if (this.EstiloPortalWeb == null)
+			{
+				context.LogViolation(DslValidation::ViolationType.Error,
+					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
+						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
+						"DeraWebIPS", "", "EstiloPortalWeb"),
+						"DSL0001", this);
+			}
 		} // ValidateDeraWebIPSMultiplicity
 	} // class DeraWebIPS
 } // UPM_IPS.XCYLSProyectoIPS

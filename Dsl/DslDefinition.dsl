@@ -68,43 +68,108 @@
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="b59878ed-1691-4098-8655-d3a0ad522f67" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad" Name="AtributoEntidad" DisplayName="Atributo Entidad" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <BaseClass>
+        <DomainClassMoniker Name="Atributo" />
+      </BaseClass>
       <Properties>
-        <DomainProperty Id="d64bf91a-d0ba-4e81-907a-382c36f80794" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Name" Name="Name" DisplayName="Name">
+        <DomainProperty Id="202eebcb-62e1-44c6-9e35-a762d3d813ee" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null" Name="Null" DisplayName="Null" DefaultValue="Null">
           <Type>
-            <ExternalTypeMoniker Name="/System/String" />
+            <DomainEnumerationMoniker Name="tipoNull" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="2758beba-9429-44a6-a43b-f294ba533e97" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Tipo" Name="Tipo" DisplayName="Tipo">
+        <DomainProperty Id="64770b58-b7cb-40fb-962e-f8815d12c9e5" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
           <Type>
-            <DomainEnumerationMoniker Name="tipoEnumeration" />
+            <DomainEnumerationMoniker Name="tipoÚnico" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="202eebcb-62e1-44c6-9e35-a762d3d813ee" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Null" Name="Null" DisplayName="Null">
+        <DomainProperty Id="b115c1f1-f698-4136-83bb-b2e0235cef1d" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Longitud" Name="Longitud" DisplayName="Longitud">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Int32" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+    </DomainClass>
+    <DomainClass Id="863fd30e-be10-41dc-9c2c-75e56b3e7a98" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion" Name="AtributoRelacion" DisplayName="Atributo Relacion" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <BaseClass>
+        <DomainClassMoniker Name="Atributo" />
+      </BaseClass>
+      <Properties>
+        <DomainProperty Id="2f96f9aa-1b86-4309-8ede-e554afc754b8" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoÚnico" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="e5b31c6d-dc95-4d2e-8f7d-699e59978e04" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Null" Name="Null" DisplayName="Null" DefaultValue="Null">
           <Type>
             <DomainEnumerationMoniker Name="tipoNull" />
           </Type>
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="863fd30e-be10-41dc-9c2c-75e56b3e7a98" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion" Name="AtributoRelacion" DisplayName="Atributo Relacion" Namespace="UPM_IPS.XCYLSProyectoIPS">
+    <DomainClass Id="2995b03f-8599-42fe-833c-be8899997af1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave" Name="AtributoClave" DisplayName="Atributo Clave" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <BaseClass>
+        <DomainClassMoniker Name="Atributo" />
+      </BaseClass>
       <Properties>
-        <DomainProperty Id="e333823c-4c3c-46a8-8d9d-f7b01b3618fc" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Name" Name="Name" DisplayName="Name">
+        <DomainProperty Id="63736cc9-5f95-4de7-a368-9bbdc172b812" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoÚnico" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+    </DomainClass>
+    <DomainClass Id="b4a53bc0-9a94-4506-b709-e02dc96fd58a" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo" Name="Atributo" DisplayName="Atributo" InheritanceModifier="Abstract" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Properties>
+        <DomainProperty Id="9c79f7f3-9dd8-4274-a7d7-1ee7dbc13fd6" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Nombre" Name="Nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="d14cc7c6-9868-456e-bbfb-8bc5b8549209" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Tipo" Name="Tipo" DisplayName="Tipo">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoEnumeration" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+    </DomainClass>
+    <DomainClass Id="a677dd1e-0826-407b-a24c-4ae43026ae02" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb" Name="EstiloPaginaWeb" DisplayName="Estilo Pagina Web" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Properties>
+        <DomainProperty Id="446ca2c7-3796-4f17-bd19-4f98fa2d8b80" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.Color Texto" Name="ColorTexto" DisplayName="Color Texto">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="7d7f5ef6-9d21-4faf-b4cb-54374b202a09" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.Alineación Texto" Name="AlineaciónTexto" DisplayName="Alineación Texto">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoAlineacion" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="6d28f3fc-c658-425d-aa32-25c76a9e32d4" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.Tipo Letra" Name="TipoLetra" DisplayName="Tipo Letra">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="1a6e7a8a-4151-4379-9ae4-e49455c2df59" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.Tamaño Letra" Name="TamañoLetra" DisplayName="Tamaño Letra">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Int32" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+    </DomainClass>
+    <DomainClass Id="f7a2e095-2ea8-4b07-a56b-a35a75bc3de6" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Properties>
+        <DomainProperty Id="c61d2de7-91b9-4b97-9bc7-88b32360051f" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Color Fondo" Name="ColorFondo" DisplayName="Color Fondo">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="2995b03f-8599-42fe-833c-be8899997af1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave" Name="AtributoClave" DisplayName="Atributo Clave" Namespace="UPM_IPS.XCYLSProyectoIPS">
+    <DomainClass Id="64d5023f-9011-45d9-8594-8184b7285094" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS">
       <Properties>
-        <DomainProperty Id="2a8c441d-d9cd-4806-a95a-e4a54a040f58" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Clave" Name="Clave" DisplayName="Clave">
+        <DomainProperty Id="d1484388-1011-40bf-9fbd-352fc68ce90c" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Visualizacion" Name="Visualizacion" DisplayName="Visualizacion">
           <Type>
-            <ExternalTypeMoniker Name="/System/String" />
-          </Type>
-        </DomainProperty>
-        <DomainProperty Id="f3fe4d46-f81c-4970-a633-20b1ff29bf7d" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Tipo" Name="Tipo" DisplayName="Tipo">
-          <Type>
-            <DomainEnumerationMoniker Name="tipoEnumeration" />
+            <DomainEnumerationMoniker Name="tipoVisualizacionCampo" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -247,6 +312,38 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
+    <DomainRelationship Id="a2a4fc31-2b1a-40f7-8d17-6138a1588225" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb" Name="DeraWebIPSReferencesEstiloPortalWeb" DisplayName="Dera Web IPSReferences Estilo Portal Web" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Source>
+        <DomainRole Id="304661a4-a4fe-4c88-947d-3586fc90cbae" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloPortalWeb" Multiplicity="One" PropertyDisplayName="Estilo Portal Web">
+          <RolePlayer>
+            <DomainClassMoniker Name="DeraWebIPS" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="e8f300f7-2377-4524-8c0d-d2d6878e45db" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSReferencesEstiloPortalWeb.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" PropertyName="DeraWebIPS" PropertyDisplayName="Dera Web IPS">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloPortalWeb" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="5d251798-48d4-415d-ad6c-444bef57e8d3" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario" Name="AtributoReferencesEstiloCampoFormulario" DisplayName="Atributo References Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Source>
+        <DomainRole Id="aba6db9d-c49a-44fe-8717-d6c242ab75e5" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="EstiloCampoFormulario" PropertyDisplayName="Estilo Campo Formulario">
+          <RolePlayer>
+            <DomainClassMoniker Name="Atributo" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="e79a2241-bb8f-4d24-ba76-d6456b530e35" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormulario.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="Atributo" PropertyDisplayName="Atributo">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloCampoFormulario" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -278,6 +375,28 @@
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null" Name="Not_Null" Value="" />
       </Literals>
     </DomainEnumeration>
+    <DomainEnumeration Name="tipoÚnico" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.Único" Name="Único" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.No_Único" Name="No_Único" Value="" />
+      </Literals>
+    </DomainEnumeration>
+    <DomainEnumeration Name="tipoAlineacion" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion.Izquierda" Name="Izquierda" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion.Derecha" Name="Derecha" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion.Centralizada" Name="Centralizada" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion.Justificada" Name="Justificada" Value="" />
+      </Literals>
+    </DomainEnumeration>
+    <DomainEnumeration Name="tipoVisualizacionCampo" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Área_de_Texto" Name="Área_de_Texto" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Checkbox" Name="Checkbox" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Radio_button" Name="Radio_button" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable" Name="Lista_Desplegable" Value="" />
+      </Literals>
+    </DomainEnumeration>
   </Types>
   <Shapes>
     <GeometryShape Id="16f5b8d8-b8f2-4523-922a-b9c1f31f223a" Description="Shape used to represent ExampleElements on a Diagram." Name="EntidadShape" DisplayName="Entidad Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Entidad Shape" FillColor="255, 255, 192" OutlineColor="113, 111, 110" InitialWidth="2" InitialHeight="0.75" OutlineThickness="0.01" Geometry="RoundedRectangle">
@@ -301,6 +420,12 @@
       <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Null" DisplayName="Null" DefaultText="Null" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerBottomRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Longitud" DisplayName="Longitud" DefaultText="Longitud" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" FillColor="Snow" InitialHeight="1" Geometry="Rectangle">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -309,10 +434,22 @@
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="025d0223-2f2d-433c-a1da-df042d913e57" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool" Name="AtributoRelacionTool" DisplayName="Atributo Relacion Tool" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Relacion Tool" FillColor="Honeydew" InitialHeight="1" Geometry="Rectangle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Name" DisplayName="Name" DefaultText="Name" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Null" DisplayName="Null" DefaultText="Null" />
       </ShapeHasDecorators>
     </GeometryShape>
   </Shapes>
@@ -348,6 +485,9 @@
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="relacioned">
             <DomainRelationshipMoniker Name="DeraWebIPSHasRelacioned" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloPortalWeb">
+            <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -397,14 +537,14 @@
       <XmlClassData TypeName="AtributoEntidad" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoEntidadMoniker" ElementName="atributoEntidad" MonikerTypeName="AtributoEntidadMoniker">
         <DomainClassMoniker Name="AtributoEntidad" />
         <ElementData>
-          <XmlPropertyData XmlName="name">
-            <DomainPropertyMoniker Name="AtributoEntidad/Name" />
-          </XmlPropertyData>
-          <XmlPropertyData XmlName="tipo">
-            <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
-          </XmlPropertyData>
           <XmlPropertyData XmlName="null">
             <DomainPropertyMoniker Name="AtributoEntidad/Null" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="único">
+            <DomainPropertyMoniker Name="AtributoEntidad/Único" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="longitud">
+            <DomainPropertyMoniker Name="AtributoEntidad/Longitud" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -425,8 +565,11 @@
       <XmlClassData TypeName="AtributoRelacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoRelacionMoniker" ElementName="atributoRelacion" MonikerTypeName="AtributoRelacionMoniker">
         <DomainClassMoniker Name="AtributoRelacion" />
         <ElementData>
-          <XmlPropertyData XmlName="name">
-            <DomainPropertyMoniker Name="AtributoRelacion/Name" />
+          <XmlPropertyData XmlName="único">
+            <DomainPropertyMoniker Name="AtributoRelacion/Único" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="null">
+            <DomainPropertyMoniker Name="AtributoRelacion/Null" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -439,11 +582,8 @@
       <XmlClassData TypeName="AtributoClave" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoClaveMoniker" ElementName="atributoClave" MonikerTypeName="AtributoClaveMoniker">
         <DomainClassMoniker Name="AtributoClave" />
         <ElementData>
-          <XmlPropertyData XmlName="clave">
-            <DomainPropertyMoniker Name="AtributoClave/Clave" />
-          </XmlPropertyData>
-          <XmlPropertyData XmlName="tipo">
-            <DomainPropertyMoniker Name="AtributoClave/Tipo" />
+          <XmlPropertyData XmlName="único">
+            <DomainPropertyMoniker Name="AtributoClave/Único" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -482,6 +622,59 @@
       <XmlClassData TypeName="MetaforaRel_Ent" MonikerAttributeName="" SerializeId="true" MonikerElementName="metaforaRel_EntMoniker" ElementName="metaforaRel_Ent" MonikerTypeName="MetaforaRel_EntMoniker">
         <ConnectorMoniker Name="MetaforaRel_Ent" />
       </XmlClassData>
+      <XmlClassData TypeName="Atributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoMoniker" ElementName="atributo" MonikerTypeName="AtributoMoniker">
+        <DomainClassMoniker Name="Atributo" />
+        <ElementData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="Atributo/Nombre" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tipo">
+            <DomainPropertyMoniker Name="Atributo/Tipo" />
+          </XmlPropertyData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormulario">
+            <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
+          </XmlRelationshipData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloPaginaWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloPaginaWebMoniker" ElementName="estiloPaginaWeb" MonikerTypeName="EstiloPaginaWebMoniker">
+        <DomainClassMoniker Name="EstiloPaginaWeb" />
+        <ElementData>
+          <XmlPropertyData XmlName="colorTexto">
+            <DomainPropertyMoniker Name="EstiloPaginaWeb/ColorTexto" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="alineaciónTexto">
+            <DomainPropertyMoniker Name="EstiloPaginaWeb/AlineaciónTexto" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tipoLetra">
+            <DomainPropertyMoniker Name="EstiloPaginaWeb/TipoLetra" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tamañoLetra">
+            <DomainPropertyMoniker Name="EstiloPaginaWeb/TamañoLetra" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloPortalWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloPortalWebMoniker" ElementName="estiloPortalWeb" MonikerTypeName="EstiloPortalWebMoniker">
+        <DomainClassMoniker Name="EstiloPortalWeb" />
+        <ElementData>
+          <XmlPropertyData XmlName="colorFondo">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/ColorFondo" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloCampoFormularioMoniker" ElementName="estiloCampoFormulario" MonikerTypeName="EstiloCampoFormularioMoniker">
+        <DomainClassMoniker Name="EstiloCampoFormulario" />
+        <ElementData>
+          <XmlPropertyData XmlName="visualizacion">
+            <DomainPropertyMoniker Name="EstiloCampoFormulario/Visualizacion" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="DeraWebIPSReferencesEstiloPortalWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSReferencesEstiloPortalWebMoniker" ElementName="deraWebIPSReferencesEstiloPortalWeb" MonikerTypeName="DeraWebIPSReferencesEstiloPortalWebMoniker">
+        <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
+      </XmlClassData>
+      <XmlClassData TypeName="AtributoReferencesEstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoReferencesEstiloCampoFormularioMoniker" ElementName="atributoReferencesEstiloCampoFormulario" MonikerTypeName="AtributoReferencesEstiloCampoFormularioMoniker">
+        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
+      </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
   <ExplorerBehavior Name="XCYLSProyectoIPSExplorer" />
@@ -519,6 +712,44 @@
           <RolePlayerConnectDirective>
             <AcceptingClass>
               <DomainClassMoniker Name="Entidad" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="DeraWebIPSReferencesEstiloPortalWebBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="DeraWebIPSReferencesEstiloPortalWeb" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="DeraWebIPS" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="EstiloPortalWeb" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="AtributoReferencesEstiloCampoFormularioBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormulario" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Atributo" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="EstiloCampoFormulario" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
@@ -566,18 +797,18 @@
           <DomainPath>EntidadHasAtributoEntidad.Entidad/!Entidad/DeraWebIPSHasEntidad.DeraWebIPS/!DeraWebIPS</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
-          <TextDecoratorMoniker Name="AtributoEntShape/Atributo" />
+          <TextDecoratorMoniker Name="AtributoClaveShape/Tipo" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoEntidad/Name" />
+              <DomainPropertyMoniker Name="Atributo/Tipo" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
         <DecoratorMap>
-          <TextDecoratorMoniker Name="AtributoEntShape/Tipo" />
+          <TextDecoratorMoniker Name="AtributoEntShape/Atributo" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoEntidad/Tipo" />
+              <DomainPropertyMoniker Name="Atributo/Nombre" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -586,6 +817,14 @@
           <PropertyDisplayed>
             <PropertyPath>
               <DomainPropertyMoniker Name="AtributoEntidad/Null" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Tipo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Tipo" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -600,7 +839,7 @@
           <TextDecoratorMoniker Name="AtributoClaveShape/AtributoC" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoClave/Clave" />
+              <DomainPropertyMoniker Name="Atributo/Nombre" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -608,7 +847,7 @@
           <TextDecoratorMoniker Name="AtributoClaveShape/Tipo" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoClave/Tipo" />
+              <DomainPropertyMoniker Name="Atributo/Tipo" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -623,7 +862,7 @@
           <TextDecoratorMoniker Name="AtributoRelacionTool/Name" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoRelacion/Name" />
+              <DomainPropertyMoniker Name="Atributo/Nombre" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
