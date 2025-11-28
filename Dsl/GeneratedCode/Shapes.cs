@@ -682,15 +682,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field4.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
 			shapeFields.Add(field4);
 			
-			DslDiagrams::TextField field5 = new DslDiagrams::TextField("Longitud");
-			field5.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoEntShapeLongitudDefaultText");
-			field5.DefaultFocusable = true;
-			field5.DefaultAutoSize = true;
-			field5.AnchoringBehavior.MinimumHeightInLines = 1;
-			field5.AnchoringBehavior.MinimumWidthInCharacters = 1;
-			field5.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			shapeFields.Add(field5);
-			
 		}
 		
 		/// <summary>
@@ -717,10 +708,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DslDiagrams::ShapeField field4 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Único");
 			DslDiagrams::Decorator decorator4 = new DslDiagrams::ShapeDecorator(field4, DslDiagrams::ShapeDecoratorPosition.InnerBottomLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator4);
-				
-			DslDiagrams::ShapeField field5 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Longitud");
-			DslDiagrams::Decorator decorator5 = new DslDiagrams::ShapeDecorator(field5, DslDiagrams::ShapeDecoratorPosition.InnerBottomRight, DslDiagrams::PointD.Empty);
-			decorators.Add(decorator5);
 				
 		}
 		
@@ -980,7 +967,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			decorators.Add(decorator2);
 				
 			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Único");
-			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerBottomLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator3);
 				
 		}

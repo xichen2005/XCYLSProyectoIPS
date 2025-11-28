@@ -813,6 +813,46 @@
     <value>Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable</value>
     <comment>Description for EnumerationLiteral &apos;Lista_Desplegable&apos; on DomainEnumeration &apos;tipoVisualizacionCampo&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_MaxN.DisplayName" xml:space="preserve">
+    <value>Min1_MaxN</value>
+    <comment>Display name for EnumerationLiteral &apos;Min1_MaxN&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_MaxN.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_MaxN</value>
+    <comment>Description for EnumerationLiteral &apos;Min1_MaxN&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_MaxN.DisplayName" xml:space="preserve">
+    <value>Min0_MaxN</value>
+    <comment>Display name for EnumerationLiteral &apos;Min0_MaxN&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_MaxN.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN</value>
+    <comment>Description for EnumerationLiteral &apos;Min0_MaxN&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/MinN_MaxM.DisplayName" xml:space="preserve">
+    <value>MinN_MaxM</value>
+    <comment>Display name for EnumerationLiteral &apos;MinN_MaxM&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/MinN_MaxM.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.MinN_MaxM</value>
+    <comment>Description for EnumerationLiteral &apos;MinN_MaxM&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_Max1.DisplayName" xml:space="preserve">
+    <value>Min1_Max1</value>
+    <comment>Display name for EnumerationLiteral &apos;Min1_Max1&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_Max1.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1</value>
+    <comment>Description for EnumerationLiteral &apos;Min1_Max1&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_Max1.DisplayName" xml:space="preserve">
+    <value>Min0_Max1</value>
+    <comment>Display name for EnumerationLiteral &apos;Min0_Max1&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_Max1.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1</value>
+    <comment>Description for EnumerationLiteral &apos;Min0_Max1&apos; on DomainEnumeration &apos;TipoCardinalidad&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EntidadShape.Description" xml:space="preserve">
     <value>Shape used to represent ExampleElements on a Diagram.</value>
     <comment>Description for DomainClass &apos;EntidadShape&apos;</comment>
@@ -859,10 +899,6 @@
   </data>
   <data name="AtributoEntShapeÚnicoDefaultText" xml:space="preserve">
     <value>Único</value>
-    <comment>Text decorator default text</comment>
-  </data>
-  <data name="AtributoEntShapeLongitudDefaultText" xml:space="preserve">
-    <value>Longitud</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape.Description" xml:space="preserve">
@@ -1001,22 +1037,6 @@
     <value>crea un enlace de Ent a Rel</value>
     <comment>Toolbox tooltip text</comment>
   </data>
-  <data name="AtributoClaveToolToolboxItem" xml:space="preserve">
-    <value>AtributoClaveTool</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="AtributoClaveToolToolboxTooltip" xml:space="preserve">
-    <value>Atributo Clave Tool</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
-  <data name="AtributoEntidadToolToolboxItem" xml:space="preserve">
-    <value>AtributoEntidadTool</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="AtributoEntidadToolToolboxTooltip" xml:space="preserve">
-    <value>Atributo Entidad Tool</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
   <data name="AtributoRelacionToolboxItem" xml:space="preserve">
     <value>AtributoRelacion</value>
     <comment>Toolbox item name</comment>
@@ -1031,6 +1051,22 @@
   </data>
   <data name="EnlaceRel_EntToolboxTooltip" xml:space="preserve">
     <value>Enlace Rel_ Ent</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoClaveToolboxItem" xml:space="preserve">
+    <value>AtributoClave</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoClaveToolboxTooltip" xml:space="preserve">
+    <value>Atributo Clave</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoEntidadToolboxItem" xml:space="preserve">
+    <value>AtributoEntidad</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoEntidadToolboxTooltip" xml:space="preserve">
+    <value>Atributo Entidad</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -1170,20 +1206,20 @@ A DomainClass can be serialized as a moniker only if
     <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
-  <data name="AtributoClaveToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
-  <data name="AtributoEntidadToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
   <data name="AtributoRelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
   <data name="EnlaceRel_EntToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoClaveToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\..\..\..\..\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoEntidadToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\..\..\..\..\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
 </root>

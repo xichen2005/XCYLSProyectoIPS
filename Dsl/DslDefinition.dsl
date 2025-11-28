@@ -222,7 +222,7 @@
       <Properties>
         <DomainProperty Id="20246e3c-a6f2-401d-8dfd-ea414d680516" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Cardinaridad" Name="cardinaridad" DisplayName="Cardinaridad">
           <Type>
-            <ExternalTypeMoniker Name="/System/String" />
+            <DomainEnumerationMoniker Name="TipoCardinalidad" />
           </Type>
         </DomainProperty>
         <DomainProperty Id="8f96b178-3f33-428d-b669-28396bf3364d" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion B" Name="relacionB" DisplayName="Relacion B">
@@ -314,7 +314,7 @@
       <Properties>
         <DomainProperty Id="c18fc68d-3179-49e3-9b0e-6537c267e242" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Cardinalidad" Name="cardinalidad" DisplayName="Cardinalidad">
           <Type>
-            <ExternalTypeMoniker Name="/System/String" />
+            <DomainEnumerationMoniker Name="TipoCardinalidad" />
           </Type>
         </DomainProperty>
         <DomainProperty Id="21b9e85f-d613-48fd-9232-2ed26b4c90a9" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion A" Name="relacionA" DisplayName="Relacion A">
@@ -439,6 +439,15 @@
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable" Name="Lista_Desplegable" Value="" />
       </Literals>
     </DomainEnumeration>
+    <DomainEnumeration Name="TipoCardinalidad" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad">
+      <Literals>
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_MaxN" Name="Min1_MaxN" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN" Name="Min0_MaxN" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.MinN_MaxM" Name="MinN_MaxM" Value="2" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1" Name="Min1_Max1" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1" Name="Min0_Max1" Value="" />
+      </Literals>
+    </DomainEnumeration>
   </Types>
   <Shapes>
     <GeometryShape Id="16f5b8d8-b8f2-4523-922a-b9c1f31f223a" Description="Shape used to represent ExampleElements on a Diagram." Name="EntidadShape" DisplayName="Entidad Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Entidad Shape" FillColor="255, 255, 192" OutlineColor="113, 111, 110" InitialWidth="2" InitialHeight="0.75" OutlineThickness="0.01" Geometry="RoundedRectangle">
@@ -497,7 +506,7 @@
       <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
         <TextDecorator Name="cardinaridad" DisplayName="Cardinaridad" DefaultText="cardinaridad" />
       </ConnectorHasDecorators>
-      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+      <ConnectorHasDecorators Position="TargetTop" OffsetFromShape="0" OffsetFromLine="0">
         <TextDecorator Name="relacionB" DisplayName="Relacion B" DefaultText="relacionB" />
       </ConnectorHasDecorators>
     </Connector>
@@ -948,18 +957,18 @@
       <ConnectionTool Name="EnlaceEnt_RelTool" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceEnt_RelTool" Tooltip="crea un enlace de Ent a Rel" HelpKeyword="EnlaceEnt_RelTool">
         <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/EntidadReferencesRelacionedBuilder" />
       </ConnectionTool>
-      <ElementTool Name="AtributoClaveTool" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoClaveTool" Tooltip="Atributo Clave Tool" HelpKeyword="AtributoClaveTool">
-        <DomainClassMoniker Name="AtributoClave" />
-      </ElementTool>
-      <ElementTool Name="AtributoEntidadTool" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidadTool" Tooltip="Atributo Entidad Tool" HelpKeyword="AtributoEntidadTool">
-        <DomainClassMoniker Name="AtributoEntidad" />
-      </ElementTool>
       <ElementTool Name="AtributoRelacion" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoRelacion" Tooltip="Atributo Relacion" HelpKeyword="AtributoRelacion">
         <DomainClassMoniker Name="AtributoRelacion" />
       </ElementTool>
       <ConnectionTool Name="EnlaceRel_Ent" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceRel_Ent" Tooltip="Enlace Rel_ Ent" HelpKeyword="EnlaceRel_Ent">
         <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/RelacionReferencesEntidad1Builder" />
       </ConnectionTool>
+      <ElementTool Name="AtributoClave" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoClave" Tooltip="Atributo Clave" HelpKeyword="AtributoClave">
+        <DomainClassMoniker Name="AtributoClave" />
+      </ElementTool>
+      <ElementTool Name="AtributoEntidad" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidad" Tooltip="Atributo Entidad" HelpKeyword="AtributoEntidad">
+        <DomainClassMoniker Name="AtributoEntidad" />
+      </ElementTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
     <DiagramMoniker Name="XCYLSProyectoIPSDiagram" />

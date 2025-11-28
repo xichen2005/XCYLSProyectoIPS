@@ -565,7 +565,7 @@
           </xsd:annotation>
         </xsd:attribute>
         <!-- Property: cardinaridad -->
-        <xsd:attribute name="cardinaridad" type="xsd:string" />
+        <xsd:attribute name="cardinaridad" type="TipoCardinalidad" />
         <!-- Property: relacionB -->
         <xsd:attribute name="relacionB" type="xsd:string" />
       </xsd:extension>
@@ -769,7 +769,7 @@
           </xsd:annotation>
         </xsd:attribute>
         <!-- Property: cardinalidad -->
-        <xsd:attribute name="cardinalidad" type="xsd:string" />
+        <xsd:attribute name="cardinalidad" type="TipoCardinalidad" />
         <!-- Property: relacionA -->
         <xsd:attribute name="relacionA" type="xsd:string" />
       </xsd:extension>
@@ -956,6 +956,17 @@
       <xsd:enumeration value="Checkbox"/>
       <xsd:enumeration value="Radio_button"/>
       <xsd:enumeration value="Lista_Desplegable"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <!-- Enum TipoCardinalidad -->
+  <xsd:simpleType name="TipoCardinalidad">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Min1_MaxN"/>
+      <xsd:enumeration value="Min0_MaxN"/>
+      <xsd:enumeration value="MinN_MaxM"/>
+      <xsd:enumeration value="Min1_Max1"/>
+      <xsd:enumeration value="Min0_Max1"/>
     </xsd:restriction>
   </xsd:simpleType>
   

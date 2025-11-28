@@ -54,35 +54,35 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					0xff00ff,
 					Index = 2)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@AtributoClaveToolToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.AtributoClaveToolToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"AtributoClaveTool", 
-					"@AtributoClaveToolToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					0xff00ff,
-					Index = 3)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@AtributoEntidadToolToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.AtributoEntidadToolToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"AtributoEntidadTool", 
-					"@AtributoEntidadToolToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					0xff00ff,
-					Index = 4)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
 					"@AtributoRelacionToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					"UPM_IPS.XCYLSProyectoIPS.AtributoRelacionToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"AtributoRelacion", 
 					"@AtributoRelacionToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
-					Index = 5)]
+					Index = 3)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
 					"@EnlaceRel_EntToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					"UPM_IPS.XCYLSProyectoIPS.EnlaceRel_EntToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EnlaceRel_Ent", 
 					"@EnlaceRel_EntToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 4)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@AtributoClaveToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.AtributoClaveToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"AtributoClave", 
+					"@AtributoClaveToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 5)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@AtributoEntidadToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.AtributoEntidadToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"AtributoEntidad", 
+					"@AtributoEntidadToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
 					Index = 6)]
 	[VSShell::ProvideEditorFactory(typeof(XCYLSProyectoIPSEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]

@@ -695,4 +695,45 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		Lista_Desplegable,
 	}
 }
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainEnumeration: TipoCardinalidad
+	/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad
+	/// </summary>
+	[global::System.CLSCompliant(true)]
+	public enum TipoCardinalidad
+	{
+		/// <summary>
+		/// Min1_MaxN
+		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_MaxN
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_MaxN.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Min1_MaxN = 0,
+		/// <summary>
+		/// Min0_MaxN
+		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_MaxN.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Min0_MaxN = 0,
+		/// <summary>
+		/// MinN_MaxM
+		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.MinN_MaxM
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/MinN_MaxM.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		MinN_MaxM = 2,
+		/// <summary>
+		/// Min1_Max1
+		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_Max1.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Min1_Max1,
+		/// <summary>
+		/// Min0_Max1
+		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1
+		/// </summary>
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_Max1.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		Min0_Max1,
+	}
+}
 

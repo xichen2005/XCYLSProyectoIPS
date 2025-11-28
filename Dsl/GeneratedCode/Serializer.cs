@@ -8549,14 +8549,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				string attribcardinaridad = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "cardinaridad");
 				if (attribcardinaridad != null)
 				{
-					global::System.String valueOfcardinaridad;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribcardinaridad, out valueOfcardinaridad))
+					TipoCardinalidad valueOfcardinaridad;
+					if (DslModeling::SerializationUtilities.TryGetValue<TipoCardinalidad>(serializationContext, attribcardinaridad, out valueOfcardinaridad))
 					{
 						instanceOfEntidadReferencesRelacioned.cardinaridad = valueOfcardinaridad;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "cardinaridad", typeof(global::System.String), attribcardinaridad);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "cardinaridad", typeof(TipoCardinalidad), attribcardinaridad);
 					}
 				}
 			}
@@ -9066,12 +9066,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// cardinaridad
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.String propValue = instanceOfEntidadReferencesRelacioned.cardinaridad;
+				TipoCardinalidad propValue = instanceOfEntidadReferencesRelacioned.cardinaridad;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<TipoCardinalidad>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
-					if (!string.IsNullOrEmpty(propValue))
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "cardinaridad", propValue);
-	
+					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "cardinaridad", serializedPropValue);
 				}
 			}
 			// relacionB
@@ -12623,14 +12622,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				string attribcardinalidad = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "cardinalidad");
 				if (attribcardinalidad != null)
 				{
-					global::System.String valueOfcardinalidad;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribcardinalidad, out valueOfcardinalidad))
+					TipoCardinalidad valueOfcardinalidad;
+					if (DslModeling::SerializationUtilities.TryGetValue<TipoCardinalidad>(serializationContext, attribcardinalidad, out valueOfcardinalidad))
 					{
 						instanceOfRelacionReferencesEntidad1.cardinalidad = valueOfcardinalidad;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "cardinalidad", typeof(global::System.String), attribcardinalidad);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "cardinalidad", typeof(TipoCardinalidad), attribcardinalidad);
 					}
 				}
 			}
@@ -13140,12 +13139,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// cardinalidad
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.String propValue = instanceOfRelacionReferencesEntidad1.cardinalidad;
+				TipoCardinalidad propValue = instanceOfRelacionReferencesEntidad1.cardinalidad;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<TipoCardinalidad>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
-					if (!string.IsNullOrEmpty(propValue))
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "cardinalidad", propValue);
-	
+					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "cardinalidad", serializedPropValue);
 				}
 			}
 			// relacionA

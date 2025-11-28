@@ -415,7 +415,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Storage for cardinaridad
 		/// </summary>
-		private global::System.String cardinaridadPropertyStorage = string.Empty;
+		private TipoCardinalidad cardinaridadPropertyStorage;
 		
 		/// <summary>
 		/// Gets or sets the value of cardinaridad domain property.
@@ -425,7 +425,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/cardinaridad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslModeling::DomainObjectId("20246e3c-a6f2-401d-8dfd-ea414d680516")]
-		public global::System.String cardinaridad
+		public TipoCardinalidad cardinaridad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
@@ -441,7 +441,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Value handler for the EntidadReferencesRelacioned.cardinaridad domain property.
 		/// </summary>
-		internal sealed partial class cardinaridadPropertyHandler : DslModeling::DomainPropertyValueHandler<EntidadReferencesRelacioned, global::System.String>
+		internal sealed partial class cardinaridadPropertyHandler : DslModeling::DomainPropertyValueHandler<EntidadReferencesRelacioned, TipoCardinalidad>
 		{
 			private cardinaridadPropertyHandler() { }
 		
@@ -467,7 +467,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(EntidadReferencesRelacioned element)
+			public override sealed TipoCardinalidad GetValue(EntidadReferencesRelacioned element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 				return element.cardinaridadPropertyStorage;
@@ -478,11 +478,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(EntidadReferencesRelacioned element, global::System.String newValue)
+			public override sealed void SetValue(EntidadReferencesRelacioned element, TipoCardinalidad newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
-				global::System.String oldValue = GetValue(element);
+				TipoCardinalidad oldValue = GetValue(element);
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
@@ -1768,7 +1768,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Storage for cardinalidad
 		/// </summary>
-		private global::System.String cardinalidadPropertyStorage = string.Empty;
+		private TipoCardinalidad cardinalidadPropertyStorage;
 		
 		/// <summary>
 		/// Gets or sets the value of cardinalidad domain property.
@@ -1777,7 +1777,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/cardinalidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/cardinalidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslModeling::DomainObjectId("c18fc68d-3179-49e3-9b0e-6537c267e242")]
-		public global::System.String cardinalidad
+		public TipoCardinalidad cardinalidad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
@@ -1793,7 +1793,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Value handler for the RelacionReferencesEntidad1.cardinalidad domain property.
 		/// </summary>
-		internal sealed partial class cardinalidadPropertyHandler : DslModeling::DomainPropertyValueHandler<RelacionReferencesEntidad1, global::System.String>
+		internal sealed partial class cardinalidadPropertyHandler : DslModeling::DomainPropertyValueHandler<RelacionReferencesEntidad1, TipoCardinalidad>
 		{
 			private cardinalidadPropertyHandler() { }
 		
@@ -1819,7 +1819,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(RelacionReferencesEntidad1 element)
+			public override sealed TipoCardinalidad GetValue(RelacionReferencesEntidad1 element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 				return element.cardinalidadPropertyStorage;
@@ -1830,11 +1830,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(RelacionReferencesEntidad1 element, global::System.String newValue)
+			public override sealed void SetValue(RelacionReferencesEntidad1 element, TipoCardinalidad newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
-				global::System.String oldValue = GetValue(element);
+				TipoCardinalidad oldValue = GetValue(element);
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
