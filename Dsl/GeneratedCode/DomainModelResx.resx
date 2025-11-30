@@ -261,6 +261,30 @@
     <value>Tipo</value>
     <comment>DisplayName for DomainProperty &apos;Tipo&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Min.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Min</value>
+    <comment>Description for DomainProperty &apos;Min&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Min.DisplayName" xml:space="preserve">
+    <value>Min</value>
+    <comment>DisplayName for DomainProperty &apos;Min&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Max.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Max</value>
+    <comment>Description for DomainProperty &apos;Max&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Max.DisplayName" xml:space="preserve">
+    <value>Max</value>
+    <comment>DisplayName for DomainProperty &apos;Max&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Valores.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Valores</value>
+    <comment>Description for DomainProperty &apos;Valores&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.Atributo/Valores.DisplayName" xml:space="preserve">
+    <value>Valores</value>
+    <comment>DisplayName for DomainProperty &apos;Valores&apos; on DomainClass &apos;Atributo&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb</value>
     <comment>Description for DomainClass &apos;EstiloPaginaWeb&apos;</comment>
@@ -901,6 +925,18 @@
     <value>Único</value>
     <comment>Text decorator default text</comment>
   </data>
+  <data name="AtributoEntShapeMinDefaultText" xml:space="preserve">
+    <value>Min</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoEntShapeMaxDefaultText" xml:space="preserve">
+    <value>Max</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoEntShapeValoresDefaultText" xml:space="preserve">
+    <value>Valores</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape</value>
     <comment>Description for DomainClass &apos;AtributoClaveShape&apos;</comment>
@@ -919,6 +955,18 @@
   </data>
   <data name="AtributoClaveShapeÚnicoDefaultText" xml:space="preserve">
     <value>Único</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoClaveShapeMinDefaultText" xml:space="preserve">
+    <value>Min</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoClaveShapeMaxDefaultText" xml:space="preserve">
+    <value>Max</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoClaveShapeValoresDefaultText" xml:space="preserve">
+    <value>Valores</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool.Description" xml:space="preserve">
@@ -943,6 +991,18 @@
   </data>
   <data name="AtributoRelacionToolNullDefaultText" xml:space="preserve">
     <value>Null</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoRelacionToolMinDefaultText" xml:space="preserve">
+    <value>Min</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoRelacionToolMaxDefaultText" xml:space="preserve">
+    <value>Max</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="AtributoRelacionToolValoresDefaultText" xml:space="preserve">
+    <value>Valores</value>
     <comment>Text decorator default text</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.Description" xml:space="preserve">

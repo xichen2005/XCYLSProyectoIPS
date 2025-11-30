@@ -146,6 +146,21 @@
             <DomainEnumerationMoniker Name="tipoEnumeration" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="35ef85ec-2aa1-40b9-ab9d-b5c4c7f7673d" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Min" Name="Min" DisplayName="Min" DefaultValue="0">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="20dd651c-7dd6-4433-a229-8d1854530b1c" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Max" Name="Max" DisplayName="Max" DefaultValue="256">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="3b5563f9-54e8-4e70-b081-9903c2b47bab" Description="Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Valores" Name="Valores" DisplayName="Valores">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
       </Properties>
       <ElementMergeDirectives>
         <ElementMergeDirective>
@@ -474,6 +489,15 @@
       <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Min" DisplayName="Min" DefaultText="Min" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Max" DisplayName="Max" DefaultText="Max" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterTopCenter" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Valores" DisplayName="Valores" DefaultText="Valores" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="b5acadd3-5b68-4115-a9a5-72528c5df1a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClaveShape" Name="AtributoClaveShape" DisplayName="Atributo Clave Shape" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Clave Shape" FillColor="Snow" InitialHeight="1" Geometry="Rectangle">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -484,6 +508,15 @@
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Único" DisplayName="Único" DefaultText="Único" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Min" DisplayName="Min" DefaultText="Min" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Max" DisplayName="Max" DefaultText="Max" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterTopCenter" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Valores" DisplayName="Valores" DefaultText="Valores" />
       </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="025d0223-2f2d-433c-a1da-df042d913e57" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacionTool" Name="AtributoRelacionTool" DisplayName="Atributo Relacion Tool" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Atributo Relacion Tool" FillColor="Honeydew" InitialHeight="1" Geometry="Rectangle">
@@ -498,6 +531,15 @@
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Null" DisplayName="Null" DefaultText="Null" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Min" DisplayName="Min" DefaultText="Min" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterMiddleRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Max" DisplayName="Max" DefaultText="Max" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="OuterTopCenter" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Valores" DisplayName="Valores" DefaultText="Valores" />
       </ShapeHasDecorators>
     </GeometryShape>
   </Shapes>
@@ -685,6 +727,15 @@
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormulario">
             <DomainRelationshipMoniker Name="AtributoHasEstiloCampoFormulario" />
           </XmlRelationshipData>
+          <XmlPropertyData XmlName="min">
+            <DomainPropertyMoniker Name="Atributo/Min" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="max">
+            <DomainPropertyMoniker Name="Atributo/Max" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="valores">
+            <DomainPropertyMoniker Name="Atributo/Valores" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EstiloPaginaWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloPaginaWebMoniker" ElementName="estiloPaginaWeb" MonikerTypeName="EstiloPaginaWebMoniker">
@@ -844,6 +895,30 @@
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Max" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Max" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Min" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Min" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoEntShape/Valores" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Valores" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
         <GeometryShapeMoniker Name="AtributoEntShape" />
       </ShapeMap>
       <ShapeMap>
@@ -867,6 +942,30 @@
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoClaveShape/Max" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Max" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoClaveShape/Min" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Min" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoClaveShape/Valores" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Valores" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
         <GeometryShapeMoniker Name="AtributoClaveShape" />
       </ShapeMap>
       <ShapeMap>
@@ -879,6 +978,46 @@
           <PropertyDisplayed>
             <PropertyPath>
               <DomainPropertyMoniker Name="Atributo/Nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoRelacionTool/Max" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Max" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoRelacionTool/Min" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Min" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoRelacionTool/Tipo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Tipo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoRelacionTool/Valores" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Valores" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="AtributoRelacionTool/Null" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="AtributoRelacion/Null" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>

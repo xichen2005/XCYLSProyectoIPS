@@ -153,7 +153,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field2.AnchoringBehavior.MinimumHeightInLines = 1;
 			field2.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field2.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			DslDiagrams::Decorator decorator2 = new DslDiagrams::ConnectorDecorator(field2, DslDiagrams::ConnectorDecoratorPosition.SourceTop, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator2 = new DslDiagrams::ConnectorDecorator(field2, DslDiagrams::ConnectorDecoratorPosition.TargetTop, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator2);
 				
 		}

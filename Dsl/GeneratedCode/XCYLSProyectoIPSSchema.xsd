@@ -376,6 +376,12 @@
         <xsd:attribute name="nombre" type="xsd:string" />
         <!-- Property: Tipo -->
         <xsd:attribute name="tipo" type="tipoEnumeration" />
+        <!-- Property: Min -->
+        <xsd:attribute name="min" type="xsd:double" />
+        <!-- Property: Max -->
+        <xsd:attribute name="max" type="xsd:double" />
+        <!-- Property: Valores -->
+        <xsd:attribute name="valores" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

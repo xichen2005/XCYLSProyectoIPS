@@ -4937,6 +4937,57 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					}
 				}
 			}
+			// Min
+			if (!serializationContext.Result.Failed)
+			{
+				string attribMin = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "min");
+				if (attribMin != null)
+				{
+					global::System.Double valueOfMin;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Double>(serializationContext, attribMin, out valueOfMin))
+					{
+						instanceOfAtributo.Min = valueOfMin;
+					}
+					else
+					{	// Invalid property value, ignored.
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "min", typeof(global::System.Double), attribMin);
+					}
+				}
+			}
+			// Max
+			if (!serializationContext.Result.Failed)
+			{
+				string attribMax = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "max");
+				if (attribMax != null)
+				{
+					global::System.Double valueOfMax;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Double>(serializationContext, attribMax, out valueOfMax))
+					{
+						instanceOfAtributo.Max = valueOfMax;
+					}
+					else
+					{	// Invalid property value, ignored.
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "max", typeof(global::System.Double), attribMax);
+					}
+				}
+			}
+			// Valores
+			if (!serializationContext.Result.Failed)
+			{
+				string attribValores = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "valores");
+				if (attribValores != null)
+				{
+					global::System.String valueOfValores;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribValores, out valueOfValores))
+					{
+						instanceOfAtributo.Valores = valueOfValores;
+					}
+					else
+					{	// Invalid property value, ignored.
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "valores", typeof(global::System.String), attribValores);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -5365,6 +5416,43 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (!serializationContext.Result.Failed)
 				{
 					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "tipo", serializedPropValue);
+				}
+			}
+			// Min
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Double propValue = instanceOfAtributo.Min;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Double>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "0") != 0)
+					{	// No need to write the value out if it's the same as default value.
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "min", serializedPropValue);
+					}
+				}
+			}
+			// Max
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Double propValue = instanceOfAtributo.Max;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Double>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "256") != 0)
+					{	// No need to write the value out if it's the same as default value.
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "max", serializedPropValue);
+					}
+				}
+			}
+			// Valores
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.String propValue = instanceOfAtributo.Valores;
+				if (!serializationContext.Result.Failed)
+				{
+					if (!string.IsNullOrEmpty(propValue))
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "valores", propValue);
+	
 				}
 			}
 		}

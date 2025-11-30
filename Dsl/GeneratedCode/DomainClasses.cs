@@ -1835,6 +1835,270 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
+		#region Min domain property code
+		
+		/// <summary>
+		/// Min domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid MinDomainPropertyId = new global::System.Guid(0x35ef85ec, 0x2aa1, 0x40b9, 0xab, 0x9d, 0xb5, 0xc4, 0xc7, 0xf7, 0x67, 0x3d);
+		
+		/// <summary>
+		/// Storage for Min
+		/// </summary>
+		private global::System.Double minPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Min domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Min
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Min.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Min.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("35ef85ec-2aa1-40b9-ab9d-b5c4c7f7673d")]
+		public global::System.Double Min
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return minPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				MinPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Atributo.Min domain property.
+		/// </summary>
+		internal sealed partial class MinPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.Double>
+		{
+			private MinPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.Min domain property value handler.
+			/// </summary>
+			public static readonly MinPropertyHandler Instance = new MinPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.Min domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return MinDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Double GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.minPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.Double newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Double oldValue = GetValue(element);
+				// double type precision is guaranteed only to 15th digit.
+				if (global::System.Math.Abs(newValue - oldValue) > 1e-15)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.minPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Max domain property code
+		
+		/// <summary>
+		/// Max domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid MaxDomainPropertyId = new global::System.Guid(0x20dd651c, 0x7dd6, 0x4433, 0xa2, 0x29, 0x8d, 0x18, 0x54, 0x53, 0x0b, 0x1c);
+		
+		/// <summary>
+		/// Storage for Max
+		/// </summary>
+		private global::System.Double maxPropertyStorage = 256D;
+		
+		/// <summary>
+		/// Gets or sets the value of Max domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Max
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Max.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Max.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.DefaultValue(256D)]
+		[DslModeling::DomainObjectId("20dd651c-7dd6-4433-a229-8d1854530b1c")]
+		public global::System.Double Max
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return maxPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				MaxPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Atributo.Max domain property.
+		/// </summary>
+		internal sealed partial class MaxPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.Double>
+		{
+			private MaxPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.Max domain property value handler.
+			/// </summary>
+			public static readonly MaxPropertyHandler Instance = new MaxPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.Max domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return MaxDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Double GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.maxPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.Double newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Double oldValue = GetValue(element);
+				// double type precision is guaranteed only to 15th digit.
+				if (global::System.Math.Abs(newValue - oldValue) > 1e-15)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.maxPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Valores domain property code
+		
+		/// <summary>
+		/// Valores domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid ValoresDomainPropertyId = new global::System.Guid(0x3b5563f9, 0x54e8, 0x4e70, 0xb0, 0x81, 0x99, 0x03, 0xc2, 0xb4, 0x7b, 0xab);
+		
+		/// <summary>
+		/// Storage for Valores
+		/// </summary>
+		private global::System.String valoresPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Valores domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.Atributo.Valores
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Valores.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.Atributo/Valores.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("3b5563f9-54e8-4e70-b081-9903c2b47bab")]
+		public global::System.String Valores
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return valoresPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				ValoresPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Atributo.Valores domain property.
+		/// </summary>
+		internal sealed partial class ValoresPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.String>
+		{
+			private ValoresPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.Valores domain property value handler.
+			/// </summary>
+			public static readonly ValoresPropertyHandler Instance = new ValoresPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.Valores domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return ValoresDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.valoresPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.valoresPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region EstiloCampoFormulario opposite domain role accessor
 		
 		/// <summary>

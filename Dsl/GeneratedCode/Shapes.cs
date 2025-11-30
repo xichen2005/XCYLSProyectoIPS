@@ -709,6 +709,36 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DslDiagrams::Decorator decorator4 = new DslDiagrams::ShapeDecorator(field4, DslDiagrams::ShapeDecoratorPosition.InnerBottomLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator4);
 				
+			DslDiagrams::TextField field5 = new DslDiagrams::TextField("Min");
+			field5.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoEntShapeMinDefaultText");
+			field5.DefaultFocusable = true;
+			field5.DefaultAutoSize = true;
+			field5.AnchoringBehavior.MinimumHeightInLines = 1;
+			field5.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field5.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator5 = new DslDiagrams::ShapeDecorator(field5, DslDiagrams::ShapeDecoratorPosition.OuterMiddleLeft, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator5);
+				
+			DslDiagrams::TextField field6 = new DslDiagrams::TextField("Max");
+			field6.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoEntShapeMaxDefaultText");
+			field6.DefaultFocusable = true;
+			field6.DefaultAutoSize = true;
+			field6.AnchoringBehavior.MinimumHeightInLines = 1;
+			field6.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field6.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator6 = new DslDiagrams::ShapeDecorator(field6, DslDiagrams::ShapeDecoratorPosition.OuterMiddleRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator6);
+				
+			DslDiagrams::TextField field7 = new DslDiagrams::TextField("Valores");
+			field7.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoEntShapeValoresDefaultText");
+			field7.DefaultFocusable = true;
+			field7.DefaultAutoSize = true;
+			field7.AnchoringBehavior.MinimumHeightInLines = 1;
+			field7.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field7.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator7);
+				
 		}
 		
 		/// <summary>
@@ -969,6 +999,36 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Único");
 			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerBottomLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator3);
+				
+			DslDiagrams::TextField field4 = new DslDiagrams::TextField("Min");
+			field4.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoClaveShapeMinDefaultText");
+			field4.DefaultFocusable = true;
+			field4.DefaultAutoSize = true;
+			field4.AnchoringBehavior.MinimumHeightInLines = 1;
+			field4.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field4.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator4 = new DslDiagrams::ShapeDecorator(field4, DslDiagrams::ShapeDecoratorPosition.OuterMiddleLeft, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator4);
+				
+			DslDiagrams::TextField field5 = new DslDiagrams::TextField("Max");
+			field5.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoClaveShapeMaxDefaultText");
+			field5.DefaultFocusable = true;
+			field5.DefaultAutoSize = true;
+			field5.AnchoringBehavior.MinimumHeightInLines = 1;
+			field5.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field5.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator5 = new DslDiagrams::ShapeDecorator(field5, DslDiagrams::ShapeDecoratorPosition.OuterMiddleRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator5);
+				
+			DslDiagrams::TextField field6 = new DslDiagrams::TextField("Valores");
+			field6.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoClaveShapeValoresDefaultText");
+			field6.DefaultFocusable = true;
+			field6.DefaultAutoSize = true;
+			field6.AnchoringBehavior.MinimumHeightInLines = 1;
+			field6.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field6.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator6 = new DslDiagrams::ShapeDecorator(field6, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator6);
 				
 		}
 		
@@ -1243,6 +1303,36 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DslDiagrams::ShapeField field4 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Null");
 			DslDiagrams::Decorator decorator4 = new DslDiagrams::ShapeDecorator(field4, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator4);
+				
+			DslDiagrams::TextField field5 = new DslDiagrams::TextField("Min");
+			field5.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoRelacionToolMinDefaultText");
+			field5.DefaultFocusable = true;
+			field5.DefaultAutoSize = true;
+			field5.AnchoringBehavior.MinimumHeightInLines = 1;
+			field5.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field5.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator5 = new DslDiagrams::ShapeDecorator(field5, DslDiagrams::ShapeDecoratorPosition.OuterMiddleLeft, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator5);
+				
+			DslDiagrams::TextField field6 = new DslDiagrams::TextField("Max");
+			field6.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoRelacionToolMaxDefaultText");
+			field6.DefaultFocusable = true;
+			field6.DefaultAutoSize = true;
+			field6.AnchoringBehavior.MinimumHeightInLines = 1;
+			field6.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field6.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator6 = new DslDiagrams::ShapeDecorator(field6, DslDiagrams::ShapeDecoratorPosition.OuterMiddleRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator6);
+				
+			DslDiagrams::TextField field7 = new DslDiagrams::TextField("Valores");
+			field7.DefaultText = global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("AtributoRelacionToolValoresDefaultText");
+			field7.DefaultFocusable = true;
+			field7.DefaultAutoSize = true;
+			field7.AnchoringBehavior.MinimumHeightInLines = 1;
+			field7.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field7.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator7);
 				
 		}
 		
