@@ -736,7 +736,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field7.AnchoringBehavior.MinimumHeightInLines = 1;
 			field7.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field7.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterTopCenter, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator7);
 				
 		}
@@ -1027,7 +1027,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field6.AnchoringBehavior.MinimumHeightInLines = 1;
 			field6.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field6.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			DslDiagrams::Decorator decorator6 = new DslDiagrams::ShapeDecorator(field6, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator6 = new DslDiagrams::ShapeDecorator(field6, DslDiagrams::ShapeDecoratorPosition.OuterTopCenter, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator6);
 				
 		}
@@ -1331,7 +1331,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field7.AnchoringBehavior.MinimumHeightInLines = 1;
 			field7.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field7.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterBottomCenter, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator7 = new DslDiagrams::ShapeDecorator(field7, DslDiagrams::ShapeDecoratorPosition.OuterTopCenter, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator7);
 				
 		}

@@ -377,9 +377,9 @@
         <!-- Property: Tipo -->
         <xsd:attribute name="tipo" type="tipoEnumeration" />
         <!-- Property: Min -->
-        <xsd:attribute name="min" type="xsd:double" />
+        <xsd:attribute name="min" type="xsd:string" />
         <!-- Property: Max -->
-        <xsd:attribute name="max" type="xsd:double" />
+        <xsd:attribute name="max" type="xsd:string" />
         <!-- Property: Valores -->
         <xsd:attribute name="valores" type="xsd:string" />
       </xsd:extension>

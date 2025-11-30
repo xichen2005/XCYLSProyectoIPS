@@ -4943,14 +4943,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				string attribMin = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "min");
 				if (attribMin != null)
 				{
-					global::System.Double valueOfMin;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Double>(serializationContext, attribMin, out valueOfMin))
+					global::System.String valueOfMin;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribMin, out valueOfMin))
 					{
 						instanceOfAtributo.Min = valueOfMin;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "min", typeof(global::System.Double), attribMin);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "min", typeof(global::System.String), attribMin);
 					}
 				}
 			}
@@ -4960,14 +4960,14 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				string attribMax = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "max");
 				if (attribMax != null)
 				{
-					global::System.Double valueOfMax;
-					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Double>(serializationContext, attribMax, out valueOfMax))
+					global::System.String valueOfMax;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribMax, out valueOfMax))
 					{
 						instanceOfAtributo.Max = valueOfMax;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "max", typeof(global::System.Double), attribMax);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "max", typeof(global::System.String), attribMax);
 					}
 				}
 			}
@@ -5421,26 +5421,24 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// Min
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.Double propValue = instanceOfAtributo.Min;
-				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Double>(serializationContext, propValue);
+				global::System.String propValue = instanceOfAtributo.Min;
 				if (!serializationContext.Result.Failed)
 				{
-					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "0") != 0)
+					if (propValue != null && (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(propValue, "0") != 0))
 					{	// No need to write the value out if it's the same as default value.
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "min", serializedPropValue);
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "min", propValue);
 					}
 				}
 			}
 			// Max
 			if (!serializationContext.Result.Failed)
 			{
-				global::System.Double propValue = instanceOfAtributo.Max;
-				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Double>(serializationContext, propValue);
+				global::System.String propValue = instanceOfAtributo.Max;
 				if (!serializationContext.Result.Failed)
 				{
-					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "256") != 0)
+					if (propValue != null && (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(propValue, "256") != 0))
 					{	// No need to write the value out if it's the same as default value.
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "max", serializedPropValue);
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "max", propValue);
 					}
 				}
 			}
