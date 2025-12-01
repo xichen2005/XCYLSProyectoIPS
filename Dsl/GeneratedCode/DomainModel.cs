@@ -88,7 +88,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				typeof(DeraWebIPSHasEstiloPortalWeb),
 				typeof(AtributoHasEstiloCampoFormulario),
 				typeof(EntidadHasEstiloPaginaWeb),
-				typeof(AtributoEntidadHasrestrinccionAlfanumerico),
+				typeof(AtributoHasrestrinccionAlfanumerico),
 				typeof(XCYLSProyectoIPSDiagram),
 				typeof(MetaforaEnt_Rel),
 				typeof(MetaforaEnt_Atr),
@@ -169,8 +169,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainRolePlayerInfo(typeof(AtributoHasEstiloCampoFormulario), "EstiloCampoFormulario", AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasEstiloPaginaWeb), "Entidad", EntidadHasEstiloPaginaWeb.EntidadDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasEstiloPaginaWeb), "EstiloPaginaWeb", EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId),
-				new DomainRolePlayerInfo(typeof(AtributoEntidadHasrestrinccionAlfanumerico), "AtributoEntidad", AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId),
-				new DomainRolePlayerInfo(typeof(AtributoEntidadHasrestrinccionAlfanumerico), "restrinccionAlfanumerico", AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(AtributoHasrestrinccionAlfanumerico), "Atributo", AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(AtributoHasrestrinccionAlfanumerico), "restrinccionAlfanumerico", AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId),
 			};
 		}
 		#endregion
@@ -281,7 +281,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				createElementLinkMap.Add(typeof(DeraWebIPSHasEstiloPortalWeb), 7);
 				createElementLinkMap.Add(typeof(AtributoHasEstiloCampoFormulario), 8);
 				createElementLinkMap.Add(typeof(EntidadHasEstiloPaginaWeb), 9);
-				createElementLinkMap.Add(typeof(AtributoEntidadHasrestrinccionAlfanumerico), 10);
+				createElementLinkMap.Add(typeof(AtributoHasrestrinccionAlfanumerico), 10);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -306,7 +306,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				case 7: return new DeraWebIPSHasEstiloPortalWeb(partition, roleAssignments, propertyAssignments);
 				case 8: return new AtributoHasEstiloCampoFormulario(partition, roleAssignments, propertyAssignments);
 				case 9: return new EntidadHasEstiloPaginaWeb(partition, roleAssignments, propertyAssignments);
-				case 10: return new AtributoEntidadHasrestrinccionAlfanumerico(partition, roleAssignments, propertyAssignments);
+				case 10: return new AtributoHasrestrinccionAlfanumerico(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -485,7 +485,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWebDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId, true);
-			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>

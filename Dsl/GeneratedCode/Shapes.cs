@@ -1425,6 +1425,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			fontSettings.Style =  global::System.Drawing.FontStyle.Regular ;
 			fontSettings.Size = 5/72.0F;
 			classStyleSet.AddFont(new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular5"), DslDiagrams::DiagramFonts.ShapeText, fontSettings);
+			fontSettings = new DslDiagrams::FontSettings();
+			fontSettings.Style =  global::System.Drawing.FontStyle.Regular ;
+			fontSettings.Size = 4/72.0F;
+			classStyleSet.AddFont(new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular4"), DslDiagrams::DiagramFonts.ShapeText, fontSettings);
 		}
 		
 		/// <summary>
@@ -1493,7 +1497,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field4.AnchoringBehavior.MinimumHeightInLines = 1;
 			field4.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field4.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			field4.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular5");			
+			field4.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular4");			
 			shapeFields.Add(field4);
 			
 			DslDiagrams::TextField field5 = new DslDiagrams::TextField("FechaMax");
@@ -1503,7 +1507,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			field5.AnchoringBehavior.MinimumHeightInLines = 1;
 			field5.AnchoringBehavior.MinimumWidthInCharacters = 1;
 			field5.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
-			field5.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular5");			
+			field5.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular4");			
 			shapeFields.Add(field5);
 			
 		}
@@ -1522,11 +1526,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			decorators.Add(decorator1);
 				
 			DslDiagrams::ShapeField field2 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "min");
-			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerTopLeft, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator2 = new DslDiagrams::ShapeDecorator(field2, DslDiagrams::ShapeDecoratorPosition.InnerMiddleLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator2);
 				
 			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "Max");
-			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
+			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerMiddleRight, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator3);
 				
 			DslDiagrams::ShapeField field4 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "FechaMin");

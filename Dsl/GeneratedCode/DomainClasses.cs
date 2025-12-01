@@ -1245,128 +1245,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
-		#region restrinccionAlfanumerico opposite domain role accessor
-		/// <summary>
-		/// Gets or sets restrinccionAlfanumerico.
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidad
-		/// </summary>
-		public virtual restrinccionAlfanumerico restrinccionAlfanumerico
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId) as restrinccionAlfanumerico;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId, value);
-			}
-		}
-		#endregion
-		#region ElementGroupPrototype Merge methods
-		/// <summary>
-		/// Returns a value indicating whether the source element represented by the
-		/// specified root ProtoElement can be added to this element.
-		/// </summary>
-		/// <param name="rootElement">
-		/// The root ProtoElement representing a source element.  This can be null, 
-		/// in which case the ElementGroupPrototype does not contain an ProtoElements
-		/// and the code should inspect the ElementGroupPrototype context information.
-		/// </param>
-		/// <param name="elementGroupPrototype">The ElementGroupPrototype that contains the root ProtoElement.</param>
-		/// <returns>true if the source element represented by the ProtoElement can be added to this target element.</returns>
-		protected override bool CanMerge(DslModeling::ProtoElementBase rootElement, DslModeling::ElementGroupPrototype elementGroupPrototype)
-		{
-			if ( elementGroupPrototype == null ) throw new global::System.ArgumentNullException("elementGroupPrototype");
-			
-			if (rootElement != null)
-			{
-				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
-				
-				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.DomainClassId)) 
-				{
-					// Check that creating a link with this path doesn't cause multiplicity overflow: AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
-					if (this.restrinccionAlfanumerico != null)
-					{
-						return false;
-					}
-					return true;
-				}
-			}
-			return base.CanMerge(rootElement, elementGroupPrototype);
-		}
-		
-		/// <summary>
-		/// Called by the Merge process to create a relationship between 
-		/// this target element and the specified source element. 
-		/// Typically, a parent-child relationship is established
-		/// between the target element (the parent) and the source element 
-		/// (the child), but any relationship can be established.
-		/// </summary>
-		/// <param name="sourceElement">The element that is to be related to this model element.</param>
-		/// <param name="elementGroup">The group of source ModelElements that have been rehydrated into the target store.</param>
-		/// <remarks>
-		/// This method is overriden to create the relationship between the target element and the specified source element.
-		/// The base method does nothing.
-		/// </remarks>
-		protected override void MergeRelate(DslModeling::ModelElement sourceElement, DslModeling::ElementGroup elementGroup)
-		{
-			// In general, sourceElement is allowed to be null, meaning that the elementGroup must be parsed for special cases.
-			// However this is not supported in generated code.  Use double-deriving on this class and then override MergeRelate completely if you 
-			// need to support this case.
-			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
-		
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico sourcerestrinccionAlfanumerico1 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico;
-			if (sourcerestrinccionAlfanumerico1 != null)
-			{
-				// Create link for path AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
-				this.restrinccionAlfanumerico = sourcerestrinccionAlfanumerico1;
-
-				return;
-			}
-		
-			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
-			// during a "Paste".
-			if (sourceElement is DslModeling::ExtensionElement
-				&& sourceElement.Store.TransactionManager.CurrentTransaction.TopLevelTransaction.Context.ContextInfo.ContainsKey("{9DAFD42A-DC0E-4d78-8C3F-8266B2CF8B33}"))
-			{
-				return;
-			}
-		
-			// Fall through to base class if this class hasn't handled the merge.
-			base.MergeRelate(sourceElement, elementGroup);
-		}
-		
-		/// <summary>
-		/// Performs operation opposite to MergeRelate - i.e. disconnects a given
-		/// element from the current one (removes links created by MergeRelate).
-		/// </summary>
-		/// <param name="sourceElement">Element to be unmerged/disconnected.</param>
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
-		protected override void MergeDisconnect(DslModeling::ModelElement sourceElement)
-		{
-			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico sourcerestrinccionAlfanumerico1 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico;
-			if (sourcerestrinccionAlfanumerico1 != null)
-			{
-				// Delete link for path AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
-				
-				foreach (DslModeling::ElementLink link in global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.GetLinks((global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad)this, sourcerestrinccionAlfanumerico1))
-				{
-					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
-					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId);
-				}
-
-				return;
-			}
-			// Fall through to base class if this class hasn't handled the unmerge.
-			base.MergeDisconnect(sourceElement);
-		}
-		#endregion
 	}
 }
 namespace UPM_IPS.XCYLSProyectoIPS
@@ -1973,6 +1851,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
+		#region restrinccionAlfanumerico opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of restrinccionAlfanumerico.
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Atributo
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<restrinccionAlfanumerico> restrinccionAlfanumerico
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<restrinccionAlfanumerico>, restrinccionAlfanumerico>(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId);
+			}
+		}
+		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -1994,6 +1888,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
 				
 				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.DomainClassId)) 
+				{
+					return true;
+				}
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.DomainClassId)) 
 				{
 					return true;
 				}
@@ -2030,6 +1929,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 
 				return;
 			}
+				
+			global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico sourcerestrinccionAlfanumerico2 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico;
+			if (sourcerestrinccionAlfanumerico2 != null)
+			{
+				// Create link for path AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico
+				this.restrinccionAlfanumerico.Add(sourcerestrinccionAlfanumerico2);
+
+				return;
+			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -2062,6 +1970,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.AtributoDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId);
+				}
+
+				return;
+			}
+				
+			global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico sourcerestrinccionAlfanumerico2 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico;
+			if (sourcerestrinccionAlfanumerico2 != null)
+			{
+				// Delete link for path AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico
+				
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.GetLinks((global::UPM_IPS.XCYLSProyectoIPS.Atributo)this, sourcerestrinccionAlfanumerico2))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId);
 				}
 
 				return;
@@ -3251,23 +3173,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
-		#region AtributoEntidad opposite domain role accessor
+		#region Atributo opposite domain role accessor
 		/// <summary>
-		/// Gets or sets AtributoEntidad.
+		/// Gets or sets Atributo.
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico
 		/// </summary>
-		public virtual AtributoEntidad AtributoEntidad
+		public virtual Atributo Atributo
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId) as AtributoEntidad;
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId) as Atributo;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, value);
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, value);
 			}
 		}
 		#endregion

@@ -424,15 +424,27 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MinDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "min").AssociateValueWith(shape.Store, propertyInfo);
-				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMaxDomainPropertyId);
-				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMax").AssociateValueWith(shape.Store, propertyInfo);
-				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMinDomainPropertyId);
-				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMin").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MinDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "min").AssociateVisibilityWith(shape.Store, propertyInfo);
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MaxDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Max").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MaxDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Max").AssociateVisibilityWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMaxDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMax").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMaxDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMax").AssociateVisibilityWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMinDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMin").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMinDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMin").AssociateVisibilityWith(shape.Store, propertyInfo);
 			}
 		}
 		
@@ -747,10 +759,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if ( result == null ) return null;
 				return result;
 			}
-			public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad GetParentForrestrinccionAlfanumerico( global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico root )
+			public static global::UPM_IPS.XCYLSProyectoIPS.Atributo GetParentForrestrinccionAlfanumerico( global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico root )
 			{
 				// Segments 0 and 1
-				global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad result = root.AtributoEntidad;
+				global::UPM_IPS.XCYLSProyectoIPS.Atributo result = root.Atributo;
 				if ( result == null ) return null;
 				return result;
 			}

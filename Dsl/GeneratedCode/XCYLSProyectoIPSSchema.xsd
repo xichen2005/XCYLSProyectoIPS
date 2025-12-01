@@ -256,23 +256,6 @@
   <xsd:complexType name="AtributoEntidad">
     <xsd:complexContent>
       <xsd:extension base="Atributo">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: AtributoEntidadHasrestrinccionAlfanumerico -->
-          <xsd:element name="restrinccionAlfanumerico" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instance of AtributoEntidadHasrestrinccionAlfanumerico</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="atributoEntidadHasrestrinccionAlfanumerico" minOccurs="0" maxOccurs="1">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoEntidadHasrestrinccionAlfanumerico needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:sequence>
         <!-- Id -->
         <xsd:attribute name="Id" type="xsd:string">
           <xsd:annotation>
@@ -377,6 +360,21 @@
                 <xsd:element ref="atributoHasEstiloCampoFormulario" minOccurs="0" maxOccurs="unbounded">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of AtributoHasEstiloCampoFormulario needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: AtributoHasrestrinccionAlfanumerico -->
+          <xsd:element name="restrinccionAlfanumerico" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of AtributoHasrestrinccionAlfanumerico</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="atributoHasrestrinccionAlfanumerico" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of AtributoHasrestrinccionAlfanumerico needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -972,9 +970,9 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoEntidadHasrestrinccionAlfanumerico -->
-  <xsd:element name="atributoEntidadHasrestrinccionAlfanumerico" type="AtributoEntidadHasrestrinccionAlfanumerico" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionAlfanumerico">
+  <!-- AtributoHasrestrinccionAlfanumerico -->
+  <xsd:element name="atributoHasrestrinccionAlfanumerico" type="AtributoHasrestrinccionAlfanumerico" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="AtributoHasrestrinccionAlfanumerico">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
@@ -995,11 +993,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoEntidadHasrestrinccionAlfanumerico Moniker -->
-  <xsd:element name="atributoEntidadHasrestrinccionAlfanumericoMoniker" type="AtributoEntidadHasrestrinccionAlfanumericoMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionAlfanumericoMoniker">
+  <!-- AtributoHasrestrinccionAlfanumerico Moniker -->
+  <xsd:element name="atributoHasrestrinccionAlfanumericoMoniker" type="AtributoHasrestrinccionAlfanumericoMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AtributoHasrestrinccionAlfanumericoMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoEntidadHasrestrinccionAlfanumerico instance.</xsd:documentation>
+      <xsd:documentation>Moniker for AtributoHasrestrinccionAlfanumerico instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

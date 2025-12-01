@@ -2931,7 +2931,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					// model elements.
 					while (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
 					{
-						ReadElements(serializationContext, element, reader);
+						base.ReadElements(serializationContext, element, reader);
 						if (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
 						{
 							// Encountered one unknown XML element, skip it and keep reading.
@@ -3014,125 +3014,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					else
 					{	// Invalid property value, ignored.
 						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "longitud", typeof(global::System.Int32), attribLongitud);
-					}
-				}
-			}
-		}
-	
-		/// <summary>
-		/// This methods deserializes nested XML elements inside the passed-in element.
-		/// </summary>
-		/// <remarks>
-		/// The caller will guarantee that the current element does have nested XML elements, and the call will position the 
-		/// reader at the open tag of the first child XML element.
-		/// This method will read as many child XML elements as it can. It returns under three circumstances:
-		/// 1) When an unknown child XML element is encountered. In this case, this method will position the reader at the open 
-		///    tag of the unknown element. This implies that if the first child XML element is unknown, this method should return 
-		///    immediately and do nothing.
-		/// 2) When all child XML elemnets are read. In this case, the reader will be positioned at the end tag of the parent element.
-		/// 3) EOF.
-		/// </remarks>
-		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidad instance that will get the deserialized data.</param>
-		/// <param name="reader">XmlReader to read serialized data from.</param>
-		protected override void ReadElements(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlReader reader)
-		{
-			// Always call the base class so any extensions are deserialized
-			base.ReadElements(serializationContext, element, reader);
-	
-			AtributoEntidad instanceOfAtributoEntidad = element as AtributoEntidad;
-			global::System.Diagnostics.Debug.Assert(instanceOfAtributoEntidad != null, "Expecting an instance of AtributoEntidad!");
-	
-			// Read child model elements (which are always serialized as nested XML elements).
-			if (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
-				ReadChildElements(serializationContext, instanceOfAtributoEntidad, reader);
-		}
-	
-		/// <summary>
-		/// This method deserializes all child model elements.
-		/// </summary>
-		/// <remarks>
-		/// The caller will position the reader at the open tag of the first child XML element to deserialized.
-		/// This method will read as many child elements as it can. It returns under three circumstances:
-		/// 1) When an unknown child XML element is encountered. In this case, this method will position the reader at the 
-		///    open tag of the unknown element. This implies that if the first child XML element is unknown, this method 
-		///    should return immediately and do nothing.
-		/// 2) When all child XML elemnets are read. In this case, the reader will be positioned at the end tag of the parent element.
-		/// 3) EOF.
-		/// </remarks>
-		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="reader">XmlReader to read serialized data from.</param>
-		/// <param name="element">In-memory AtributoEntidad instance that will get the deserialized data.</param>
-		private static void ReadChildElements(DslModeling::SerializationContext serializationContext, AtributoEntidad element, global::System.Xml.XmlReader reader)
-		{
-			if (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
-			{
-				if (string.Compare(reader.LocalName, "restrinccionAlfanumerico", global::System.StringComparison.CurrentCulture) == 0)
-				{
-					if (reader.IsEmptyElement)
-					{	// No instance of this relationship, just skip
-						DslModeling::SerializationUtilities.Skip(reader);
-					}
-					else
-					{
-						DslModeling::SerializationUtilities.SkipToFirstChild(reader);  // Skip the open tag of <restrinccionAlfanumerico>
-						ReadAtributoEntidadHasrestrinccionAlfanumericoInstance(serializationContext, element, reader);
-						DslModeling::SerializationUtilities.Skip(reader);  // Skip the close tag of </restrinccionAlfanumerico>
-					}
-				}
-			}
-		}
-	
-		/// <summary>
-		/// Reads instance of relationship AtributoEntidadHasrestrinccionAlfanumerico.
-		/// </summary>
-		/// <remarks>
-		/// The caller will position the reader at the open tag of the first XML element inside the relationship tag, so it can be
-		/// either the first instance, or a bogus tag. This method will deserialize only the first valid instance and ignore all the
-		/// rest tags (because the multiplicity allows only one instance). When the method returns, the reader will be positioned at 
-		/// the end tag of the relationship (or EOF if somehow that happens).
-		/// </remarks>
-		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidad instance that will get the deserialized data.</param>
-		/// <param name="reader">XmlReader to read serialized data from.</param>
-		private static void ReadAtributoEntidadHasrestrinccionAlfanumericoInstance(DslModeling::SerializationContext serializationContext, AtributoEntidad element, global::System.Xml.XmlReader reader)
-		{
-			if (DslModeling::DomainRoleInfo.GetElementLinks<AtributoEntidadHasrestrinccionAlfanumerico> (element, AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId).Count > 0)
-			{	// Only allow one instance, which already exists, so skip everything
-				DslModeling::SerializationUtilities.Skip(reader);	// Moniker contains no child XML elements, so just skip.
-				return;
-			}
-	
-			while (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
-			{
-				DslModeling::DomainClassXmlSerializer newAtributoEntidadHasrestrinccionAlfanumericoSerializer = serializationContext.Directory.GetSerializer(AtributoEntidadHasrestrinccionAlfanumerico.DomainClassId);
-				global::System.Diagnostics.Debug.Assert(newAtributoEntidadHasrestrinccionAlfanumericoSerializer != null, "Cannot find serializer for AtributoEntidadHasrestrinccionAlfanumerico!");
-				AtributoEntidadHasrestrinccionAlfanumerico newAtributoEntidadHasrestrinccionAlfanumerico = newAtributoEntidadHasrestrinccionAlfanumericoSerializer.TryCreateInstance (serializationContext, reader, element.Partition) as AtributoEntidadHasrestrinccionAlfanumerico;
-				if (newAtributoEntidadHasrestrinccionAlfanumerico != null)
-				{
-					DslModeling::DomainRoleInfo.SetRolePlayer (newAtributoEntidadHasrestrinccionAlfanumerico, AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId, element);
-					DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newAtributoEntidadHasrestrinccionAlfanumerico.GetDomainClass().Id);	
-					global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newAtributoEntidadHasrestrinccionAlfanumerico.GetDomainClass().Name + "!");
-					targetSerializer.Read(serializationContext, newAtributoEntidadHasrestrinccionAlfanumerico, reader);
-					break;	// Only allow one instance.
-				}
-				else
-				{	// Maybe the relationship is serialized in short-form by mistake.
-					DslModeling::DomainClassXmlSerializer newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumericoSerializer = serializationContext.Directory.GetSerializer(restrinccionAlfanumerico.DomainClassId);
-					global::System.Diagnostics.Debug.Assert(newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumericoSerializer != null, "Cannot find serializer for restrinccionAlfanumerico!");
-					restrinccionAlfanumerico newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico = newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumericoSerializer.TryCreateInstance(serializationContext, reader, element.Partition) as restrinccionAlfanumerico;
-					if (newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico != null)
-					{
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(serializationContext, reader, typeof(AtributoEntidadHasrestrinccionAlfanumerico));
-						element.restrinccionAlfanumerico = newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico;
-						DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico.GetDomainClass().Id);	
-						global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico.GetDomainClass().Name + "!");
-						targetSerializer.Read(serializationContext, newrestrinccionAlfanumericoOfAtributoEntidadHasrestrinccionAlfanumerico, reader);
-						break;	// Only allow one instance.
-					}
-					else
-					{	// Unknown element, skip.
-						DslModeling::SerializationUtilities.Skip(reader);
 					}
 				}
 			}
@@ -3517,7 +3398,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			if (!serializationContext.Result.Failed)
 			{
 				// Write 1) properties serialized as nested XML elements and 2) child model elements into XML.
-				WriteElements(serializationContext, element, writer);
+				base.WriteElements(serializationContext, element, writer);
 			}
 	
 			writer.WriteEndElement();
@@ -3574,49 +3455,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "longitud", serializedPropValue);
 				}
 			}
-		}
-	
-		/// <summary>
-		/// This methods serializes 1) properties serialized as nested XML elements and 2) child model elements into XML. 
-		/// </summary>
-		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidad instance to be serialized.</param>
-		/// <param name="writer">XmlWriter to write serialized data to.</param>        
-		protected override void WriteElements(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlWriter writer)
-		{
-			// Always call the base class so any extensions are serialized
-			base.WriteElements(serializationContext, element, writer);
-	
-			AtributoEntidad instance = element as AtributoEntidad;
-			global::System.Diagnostics.Debug.Assert(instance != null, "Expecting an instance of AtributoEntidad!");
-	
-			// Write child model elements (which are always serialized as nested XML elements).
-			if (!serializationContext.Result.Failed)
-				WriteChildElements(serializationContext, instance, writer);
-		}
-		
-	
-		/// <summary>
-		/// Serialize all child model elements.
-		/// </summary>
-		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidad instance to be serialized.</param>
-		/// <param name="writer">XmlWriter to write serialized data to.</param>
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "Generated code.")]
-		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]		
-		private static void WriteChildElements(DslModeling::SerializationContext serializationContext, AtributoEntidad element, global::System.Xml.XmlWriter writer)
-		{
-			// AtributoEntidadHasrestrinccionAlfanumerico
-			AtributoEntidadHasrestrinccionAlfanumerico theAtributoEntidadHasrestrinccionAlfanumericoInstance = AtributoEntidadHasrestrinccionAlfanumerico.GetLinkTorestrinccionAlfanumerico(element);
-			if (!serializationContext.Result.Failed && theAtributoEntidadHasrestrinccionAlfanumericoInstance != null)
-			{
-				writer.WriteStartElement("restrinccionAlfanumerico");
-				DslModeling::DomainClassXmlSerializer relSerializer = serializationContext.Directory.GetSerializer(theAtributoEntidadHasrestrinccionAlfanumericoInstance.GetDomainClass().Id);
-				global::System.Diagnostics.Debug.Assert(relSerializer != null, "Cannot find serializer for " + theAtributoEntidadHasrestrinccionAlfanumericoInstance.GetDomainClass().Name + "!");
-				relSerializer.Write(serializationContext, theAtributoEntidadHasrestrinccionAlfanumericoInstance, writer);
-				writer.WriteEndElement();
-			}
-	
 		}
 		#endregion
 	
@@ -5147,20 +4985,36 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="element">In-memory Atributo instance that will get the deserialized data.</param>
 		private static void ReadChildElements(DslModeling::SerializationContext serializationContext, Atributo element, global::System.Xml.XmlReader reader)
 		{
-			if (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
+			while (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
 			{
-				if (string.Compare(reader.LocalName, "estiloCampoFormulario", global::System.StringComparison.CurrentCulture) == 0)
+				switch (reader.LocalName)
 				{
-					if (reader.IsEmptyElement)
-					{	// No instance of this relationship, just skip
-						DslModeling::SerializationUtilities.Skip(reader);
-					}
-					else
-					{
-						DslModeling::SerializationUtilities.SkipToFirstChild(reader);  // Skip the open tag of <estiloCampoFormulario>
-						ReadAtributoHasEstiloCampoFormularioInstances(serializationContext, element, reader);
-						DslModeling::SerializationUtilities.Skip(reader);  // Skip the close tag of </estiloCampoFormulario>
-					}
+					case "estiloCampoFormulario":	// Relationship "AtributoHasEstiloCampoFormulario"
+						if (reader.IsEmptyElement)
+						{	// No instance of this relationship, just skip
+							DslModeling::SerializationUtilities.Skip(reader);
+						}
+						else
+						{
+							DslModeling::SerializationUtilities.SkipToFirstChild(reader);  // Skip the open tag of <estiloCampoFormulario>
+							ReadAtributoHasEstiloCampoFormularioInstances(serializationContext, element, reader);
+							DslModeling::SerializationUtilities.Skip(reader);  // Skip the close tag of </estiloCampoFormulario>
+						}
+						break;
+					case "restrinccionAlfanumerico":	// Relationship "AtributoHasrestrinccionAlfanumerico"
+						if (reader.IsEmptyElement)
+						{	// No instance of this relationship, just skip
+							DslModeling::SerializationUtilities.Skip(reader);
+						}
+						else
+						{
+							DslModeling::SerializationUtilities.SkipToFirstChild(reader);  // Skip the open tag of <restrinccionAlfanumerico>
+							ReadAtributoHasrestrinccionAlfanumericoInstances(serializationContext, element, reader);
+							DslModeling::SerializationUtilities.Skip(reader);  // Skip the close tag of </restrinccionAlfanumerico>
+						}
+						break;
+					default:
+						return;  // Don't know this element.
 				}
 			}
 		}
@@ -5202,6 +5056,52 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newEstiloCampoFormularioOfAtributoHasEstiloCampoFormulario.GetDomainClass().Id);	
 						global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newEstiloCampoFormularioOfAtributoHasEstiloCampoFormulario.GetDomainClass().Name + "!");
 						targetSerializer.Read(serializationContext, newEstiloCampoFormularioOfAtributoHasEstiloCampoFormulario, reader);
+					}
+					else
+					{	// Unknown element, skip.
+						DslModeling::SerializationUtilities.Skip(reader);
+					}
+				}
+			}
+		}
+	
+		/// <summary>
+		/// Reads all instances of relationship AtributoHasrestrinccionAlfanumerico.
+		/// </summary>
+		/// <remarks>
+		/// The caller will position the reader at the open tag of the first XML element inside the relationship tag, so it can be
+		/// either the first instance, or a bogus tag. This method will deserialize all instances and ignore all bogus tags. When the
+		/// method returns, the reader will be positioned at the end tag of the relationship (or EOF if somehow that happens).
+		/// </remarks>
+		/// <param name="serializationContext">Serialization context.</param>
+		/// <param name="element">In-memory Atributo instance that will get the deserialized data.</param>
+		/// <param name="reader">XmlReader to read serialized data from.</param>
+		private static void ReadAtributoHasrestrinccionAlfanumericoInstances(DslModeling::SerializationContext serializationContext, Atributo element, global::System.Xml.XmlReader reader)
+		{
+			while (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
+			{
+				DslModeling::DomainClassXmlSerializer newAtributoHasrestrinccionAlfanumericoSerializer = serializationContext.Directory.GetSerializer(AtributoHasrestrinccionAlfanumerico.DomainClassId);
+				global::System.Diagnostics.Debug.Assert(newAtributoHasrestrinccionAlfanumericoSerializer != null, "Cannot find serializer for AtributoHasrestrinccionAlfanumerico!");
+				AtributoHasrestrinccionAlfanumerico newAtributoHasrestrinccionAlfanumerico = newAtributoHasrestrinccionAlfanumericoSerializer.TryCreateInstance (serializationContext, reader, element.Partition) as AtributoHasrestrinccionAlfanumerico;
+				if (newAtributoHasrestrinccionAlfanumerico != null)
+				{
+					DslModeling::DomainRoleInfo.SetRolePlayer (newAtributoHasrestrinccionAlfanumerico, AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId, element);
+					DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newAtributoHasrestrinccionAlfanumerico.GetDomainClass().Id);	
+					global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newAtributoHasrestrinccionAlfanumerico.GetDomainClass().Name + "!");
+					targetSerializer.Read(serializationContext, newAtributoHasrestrinccionAlfanumerico, reader);
+				}
+				else
+				{	// Maybe the relationship is serialized in short-form by mistake.
+					DslModeling::DomainClassXmlSerializer newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumericoSerializer = serializationContext.Directory.GetSerializer(restrinccionAlfanumerico.DomainClassId);
+					global::System.Diagnostics.Debug.Assert(newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumericoSerializer != null, "Cannot find serializer for restrinccionAlfanumerico!");
+					restrinccionAlfanumerico newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico = newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumericoSerializer.TryCreateInstance(serializationContext, reader, element.Partition) as restrinccionAlfanumerico;
+					if (newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico != null)
+					{
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(serializationContext, reader, typeof(AtributoHasrestrinccionAlfanumerico));
+						element.restrinccionAlfanumerico.Add(newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico);
+						DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico.GetDomainClass().Id);	
+						global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico.GetDomainClass().Name + "!");
+						targetSerializer.Read(serializationContext, newrestrinccionAlfanumericoOfAtributoHasrestrinccionAlfanumerico, reader);
 					}
 					else
 					{	// Unknown element, skip.
@@ -5574,6 +5474,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					DslModeling::DomainClassXmlSerializer relSerializer = serializationContext.Directory.GetSerializer(eachAtributoHasEstiloCampoFormularioInstance.GetDomainClass().Id);
 					global::System.Diagnostics.Debug.Assert(relSerializer != null, "Cannot find serializer for " + eachAtributoHasEstiloCampoFormularioInstance.GetDomainClass().Name + "!");
 					relSerializer.Write(serializationContext, eachAtributoHasEstiloCampoFormularioInstance, writer);
+				}
+				writer.WriteEndElement();
+			}
+	
+			// AtributoHasrestrinccionAlfanumerico
+			global::System.Collections.ObjectModel.ReadOnlyCollection<AtributoHasrestrinccionAlfanumerico> allAtributoHasrestrinccionAlfanumericoInstances = AtributoHasrestrinccionAlfanumerico.GetLinksTorestrinccionAlfanumerico(element);
+			if (!serializationContext.Result.Failed && allAtributoHasrestrinccionAlfanumericoInstances.Count > 0)
+			{
+				writer.WriteStartElement("restrinccionAlfanumerico");
+				foreach (AtributoHasrestrinccionAlfanumerico eachAtributoHasrestrinccionAlfanumericoInstance in allAtributoHasrestrinccionAlfanumericoInstances)
+				{
+					if (serializationContext.Result.Failed)
+						break;
+	
+					DslModeling::DomainClassXmlSerializer relSerializer = serializationContext.Directory.GetSerializer(eachAtributoHasrestrinccionAlfanumericoInstance.GetDomainClass().Id);
+					global::System.Diagnostics.Debug.Assert(relSerializer != null, "Cannot find serializer for " + eachAtributoHasrestrinccionAlfanumericoInstance.GetDomainClass().Name + "!");
+					relSerializer.Write(serializationContext, eachAtributoHasrestrinccionAlfanumericoInstance, writer);
 				}
 				writer.WriteEndElement();
 			}
@@ -16635,15 +16552,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// Serializer AtributoEntidadHasrestrinccionAlfanumericoSerializer for DomainClass AtributoEntidadHasrestrinccionAlfanumerico.
+	/// Serializer AtributoHasrestrinccionAlfanumericoSerializer for DomainClass AtributoHasrestrinccionAlfanumerico.
 	/// </summary>
-	public partial class AtributoEntidadHasrestrinccionAlfanumericoSerializer : DslModeling::DomainRelationshipXmlSerializer
+	public partial class AtributoHasrestrinccionAlfanumericoSerializer : DslModeling::DomainRelationshipXmlSerializer
 	{
 		#region Constructor
 		/// <summary>
-		/// AtributoEntidadHasrestrinccionAlfanumericoSerializer Constructor
+		/// AtributoHasrestrinccionAlfanumericoSerializer Constructor
 		/// </summary>
-		public AtributoEntidadHasrestrinccionAlfanumericoSerializer ()
+		public AtributoHasrestrinccionAlfanumericoSerializer ()
 			: base ()
 		{
 		}
@@ -16669,25 +16586,25 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region Public Properties
 		/// <summary>
-		/// This is the XML tag name used to serialize an instance of AtributoEntidadHasrestrinccionAlfanumerico.
+		/// This is the XML tag name used to serialize an instance of AtributoHasrestrinccionAlfanumerico.
 		/// </summary>
 		public override string XmlTagName
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
-			get { return @"atributoEntidadHasrestrinccionAlfanumerico"; }
+			get { return @"atributoHasrestrinccionAlfanumerico"; }
 		}
 	
 		/// <summary>
-		/// This is the XML tag name used to serialize a monikerized instance of AtributoEntidadHasrestrinccionAlfanumerico.
+		/// This is the XML tag name used to serialize a monikerized instance of AtributoHasrestrinccionAlfanumerico.
 		/// </summary>
 		public override string MonikerTagName
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
-			get { return @"atributoEntidadHasrestrinccionAlfanumericoMoniker"; }
+			get { return @"atributoHasrestrinccionAlfanumericoMoniker"; }
 		}
 		
 		/// <summary>
-		/// This is the name of the XML attribute that stores the moniker of AtributoEntidadHasrestrinccionAlfanumerico in a serialized monikerized instance.
+		/// This is the name of the XML attribute that stores the moniker of AtributoHasrestrinccionAlfanumerico in a serialized monikerized instance.
 		/// </summary>
 		public override string MonikerAttributeName
 		{
@@ -16698,16 +16615,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region Read Methods
 		/// <summary>
-		/// Public Read() method that deserializes one AtributoEntidadHasrestrinccionAlfanumerico instance from XML.
+		/// Public Read() method that deserializes one AtributoHasrestrinccionAlfanumerico instance from XML.
 		/// </summary>
 		/// <remarks>
 		/// When this method is called, caller guarantees that the passed-in XML reader is positioned at the open XML tag
-		/// of the AtributoEntidadHasrestrinccionAlfanumerico element that is about to be deserialized. 
+		/// of the AtributoHasrestrinccionAlfanumerico element that is about to be deserialized. 
 		/// The method needs to ensure that when it returns, the reader is positioned at the open XML tag of the next sibling element,
 		/// or the close tag of the parent element (or EOF).
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidadHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
+		/// <param name="element">In-memory AtributoHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		public override void Read(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlReader reader)
 		{
@@ -16755,7 +16672,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				}
 				else
 				{
-					XCYLSProyectoIPSSerializationBehaviorSerializationMessages.DanglingRelationship(serializationContext, reader, "AtributoEntidadHasrestrinccionAlfanumerico");
+					XCYLSProyectoIPSSerializationBehaviorSerializationMessages.DanglingRelationship(serializationContext, reader, "AtributoHasrestrinccionAlfanumerico");
 				}
 			}
 	
@@ -16779,7 +16696,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// 3) EOF.
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidadHasrestrinccionAlfanumerico instance that will link to the target restrinccionAlfanumerico instance.</param>
+		/// <param name="element">In-memory AtributoHasrestrinccionAlfanumerico instance that will link to the target restrinccionAlfanumerico instance.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		protected virtual void ReadTargetRolePlayer(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlReader reader)
 		{
@@ -16806,7 +16723,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (targetRolePlayer != null)
 				{
 					// Attach the target role-player.
-					DslModeling::DomainRoleInfo.SetRolePlayer(element as DslModeling::ElementLink, AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, targetRolePlayer);
+					DslModeling::DomainRoleInfo.SetRolePlayer(element as DslModeling::ElementLink, AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, targetRolePlayer);
 					// Read target role-player.
 					DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (targetRolePlayer.GetDomainClass().Id);	
 					global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + targetRolePlayer.GetDomainClass().Name + "!");
@@ -16819,7 +16736,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 			if (targetRolePlayer == null)
 			{
-				XCYLSProyectoIPSSerializationBehaviorSerializationMessages.DanglingRelationship(serializationContext, reader, "AtributoEntidadHasrestrinccionAlfanumerico");
+				XCYLSProyectoIPSSerializationBehaviorSerializationMessages.DanglingRelationship(serializationContext, reader, "AtributoHasrestrinccionAlfanumerico");
 			}
 		}
 	
@@ -16831,7 +16748,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// The caller will guarantee that the reader is positioned on the open XML tag of the current element being deserialized.
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidadHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
+		/// <param name="element">In-memory AtributoHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "Generated code.")]
 		protected override void ReadPropertiesFromAttributes(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlReader reader)
@@ -16856,7 +16773,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// 3) EOF.
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">In-memory AtributoEntidadHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
+		/// <param name="element">In-memory AtributoHasrestrinccionAlfanumerico instance that will get the deserialized data.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		protected override void ReadElements(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlReader reader)
 		{
@@ -16867,8 +16784,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region TryCreateInstance & TryCreateDerivedInstance
 		/// <summary>
-		/// This method creates a correct instance of AtributoEntidadHasrestrinccionAlfanumerico based on the tag currently pointed by the reader. If the reader
-		/// is positioned at a serialized AtributoEntidadHasrestrinccionAlfanumerico, a new AtributoEntidadHasrestrinccionAlfanumerico instance will be created in the given partition, otherwise 
+		/// This method creates a correct instance of AtributoHasrestrinccionAlfanumerico based on the tag currently pointed by the reader. If the reader
+		/// is positioned at a serialized AtributoHasrestrinccionAlfanumerico, a new AtributoHasrestrinccionAlfanumerico instance will be created in the given partition, otherwise 
 		/// null is returned.
 		/// </summary>
 		/// <remarks>
@@ -16878,7 +16795,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		/// <param name="partition">Partition in which new elements should be created.</param>	
-		/// <returns>Created AtributoEntidadHasrestrinccionAlfanumerico instance, or null if the reader is not pointing to a serialized AtributoEntidadHasrestrinccionAlfanumerico instance.</returns>
+		/// <returns>Created AtributoHasrestrinccionAlfanumerico instance, or null if the reader is not pointing to a serialized AtributoHasrestrinccionAlfanumerico instance.</returns>
 		public override DslModeling::ModelElement TryCreateInstance(DslModeling::SerializationContext serializationContext, global::System.Xml.XmlReader reader, DslModeling::Partition partition)
 		{
 			#region Check Parameters
@@ -16897,9 +16814,9 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 	
 		/// <summary>
-		/// This method creates a correct derived instance of AtributoEntidadHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
+		/// This method creates a correct derived instance of AtributoHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
 		/// Note that the difference between this method and the above one is that this method will never create an instance of the
-		/// AtributoEntidadHasrestrinccionAlfanumerico type itself, only derived types are checked.
+		/// AtributoHasrestrinccionAlfanumerico type itself, only derived types are checked.
 		/// </summary>
 		/// <remarks>
 		/// The caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should
@@ -16908,7 +16825,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		/// <param name="partition">Partition in which new elements should be created.</param>
-		/// <returns>Created instance that derives from AtributoEntidadHasrestrinccionAlfanumerico, or null if the reader is not pointing to such a serialized instance.</returns>
+		/// <returns>Created instance that derives from AtributoHasrestrinccionAlfanumerico, or null if the reader is not pointing to such a serialized instance.</returns>
 		public override DslModeling::ElementLink TryCreateDerivedInstance (DslModeling::SerializationContext serializationContext, global::System.Xml.XmlReader reader, DslModeling::Partition partition)
 		{
 			#region Check Parameters
@@ -16940,18 +16857,18 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{
 				string localName = reader.LocalName;
 				if (!derivedTypesOnly && string.Compare (localName, this.XmlTagName, global::System.StringComparison.CurrentCulture) == 0)
-				{	// New "AtributoEntidadHasrestrinccionAlfanumerico" instance.
+				{	// New "AtributoHasrestrinccionAlfanumerico" instance.
 					result = this.CreateInstance(serializationContext, reader, partition);
 				}
 				else
-				{	// Check for derived classes of "AtributoEntidadHasrestrinccionAlfanumerico".
+				{	// Check for derived classes of "AtributoHasrestrinccionAlfanumerico".
 					if (this.derivedClasses == null)
 						this.ConstructDerivedClassesLookupTable(serializationContext, partition.DomainDataDirectory);
 					global::System.Diagnostics.Debug.Assert (this.derivedClasses != null);
 					DslModeling::DomainClassInfo derivedClass = null;
 					if (this.derivedClasses.TryGetValue (localName, out derivedClass) && derivedClass != null)
 					{	// New derived relationship instance.
-						AtributoEntidadHasrestrinccionAlfanumericoSerializer derivedSerializer = serializationContext.Directory.GetSerializer(derivedClass.Id) as AtributoEntidadHasrestrinccionAlfanumericoSerializer;
+						AtributoHasrestrinccionAlfanumericoSerializer derivedSerializer = serializationContext.Directory.GetSerializer(derivedClass.Id) as AtributoHasrestrinccionAlfanumericoSerializer;
 						global::System.Diagnostics.Debug.Assert(derivedSerializer != null, "Cannot find serializer for " + derivedClass.Name + "!");
 						result = derivedSerializer.CreateInstance(serializationContext, reader, partition);
 					}
@@ -16962,8 +16879,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 	
 		/// <summary>
-		/// This method creates an instance of AtributoEntidadHasrestrinccionAlfanumerico based on the tag currently pointed by the reader. The reader is guaranteed (by the caller)
-		/// to be pointed at a serialized instance of AtributoEntidadHasrestrinccionAlfanumerico.
+		/// This method creates an instance of AtributoHasrestrinccionAlfanumerico based on the tag currently pointed by the reader. The reader is guaranteed (by the caller)
+		/// to be pointed at a serialized instance of AtributoHasrestrinccionAlfanumerico.
 		/// </summary>
 		/// <remarks>
 		/// The caller will guarantee that the reader is positioned at open XML tag of the ModelRoot instance being read. This method should
@@ -16971,8 +16888,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
-		/// <param name="partition">Partition in which new AtributoEntidadHasrestrinccionAlfanumerico instance should be created.</param>	
-		/// <returns>Created AtributoEntidadHasrestrinccionAlfanumerico instance.</returns>
+		/// <param name="partition">Partition in which new AtributoHasrestrinccionAlfanumerico instance should be created.</param>	
+		/// <returns>Created AtributoHasrestrinccionAlfanumerico instance.</returns>
 		protected override DslModeling::ModelElement CreateInstance(DslModeling::SerializationContext serializationContext, global::System.Xml.XmlReader reader, DslModeling::Partition partition)
 		{
 			string idStr = reader.GetAttribute ("Id");
@@ -16989,11 +16906,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					id = new global::System.Guid (idStr);
 				}
 				// Create the link with place-holder role-players.
-				return new AtributoEntidadHasrestrinccionAlfanumerico(
+				return new AtributoHasrestrinccionAlfanumerico(
 					partition,
 					new DslModeling::RoleAssignment[] {
-						DslModeling::RoleAssignment.CreatePlaceholderRoleAssignment (AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId), 
-						DslModeling::RoleAssignment.CreatePlaceholderRoleAssignment (AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId)
+						DslModeling::RoleAssignment.CreatePlaceholderRoleAssignment (AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId), 
+						DslModeling::RoleAssignment.CreatePlaceholderRoleAssignment (AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId)
 					},
 					new DslModeling::PropertyAssignment[] {
 						new DslModeling::PropertyAssignment(DslModeling::ElementFactory.IdPropertyAssignment, id)
@@ -17016,12 +16933,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 	
 		/// <summary>
-		/// Stores a mapping from XmlTagName to DomainClassInfo that derives from AtributoEntidadHasrestrinccionAlfanumerico, created on demand.
+		/// Stores a mapping from XmlTagName to DomainClassInfo that derives from AtributoHasrestrinccionAlfanumerico, created on demand.
 		/// </summary>
 		private global::System.Collections.Generic.Dictionary<string, DslModeling::DomainClassInfo> derivedClasses;
 	
 		/// <summary>
-		/// Construct the apping from XmlTagName to DomainClassInfo that derives from AtributoEntidadHasrestrinccionAlfanumerico.
+		/// Construct the apping from XmlTagName to DomainClassInfo that derives from AtributoHasrestrinccionAlfanumerico.
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="domainDataDirectory">DomainDataDirectory to be used to discover all derived classes.</param>
@@ -17030,7 +16947,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			global::System.Diagnostics.Debug.Assert(this.derivedClasses == null); // Shouldn't construct the table more than once.
 			this.derivedClasses = new global::System.Collections.Generic.Dictionary<string, DslModeling::DomainClassInfo> (global::System.StringComparer.CurrentCulture);
 	
-			DslModeling::DomainClassInfo thisClass = domainDataDirectory.GetDomainClass(AtributoEntidadHasrestrinccionAlfanumerico.DomainClassId);
+			DslModeling::DomainClassInfo thisClass = domainDataDirectory.GetDomainClass(AtributoHasrestrinccionAlfanumerico.DomainClassId);
 			global::System.Diagnostics.Debug.Assert(thisClass != null, "Cannot find DomainClassInfo for ModelRoot!");
 	
 			global::System.Collections.ObjectModel.ReadOnlyCollection<DslModeling::DomainClassInfo> descendents = thisClass.AllDescendants;
@@ -17062,7 +16979,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region TryCreateMonikerInstance
 		/// <summary>
-		/// This method creates a Moniker of the correct derived (including AtributoEntidadHasrestrinccionAlfanumerico itself) instance of AtributoEntidadHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
+		/// This method creates a Moniker of the correct derived (including AtributoHasrestrinccionAlfanumerico itself) instance of AtributoHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
 		/// </summary>
 		/// <remarks>
 		/// The caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should
@@ -17096,18 +17013,18 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{
 				string localName = reader.LocalName;
 				if (string.Compare (localName, this.MonikerTagName, global::System.StringComparison.CurrentCulture) == 0)
-				{	// New "AtributoEntidadHasrestrinccionAlfanumerico" moniker instance.
+				{	// New "AtributoHasrestrinccionAlfanumerico" moniker instance.
 					result = this.CreateMonikerInstance(serializationContext, reader, sourceRolePlayer, relDomainClassId, partition);
 				}
 				else
-				{	// Check for derived classes of "AtributoEntidadHasrestrinccionAlfanumerico".
+				{	// Check for derived classes of "AtributoHasrestrinccionAlfanumerico".
 					if (this.derivedClassMonikers == null)
 						this.ConstructDerivedClassMonikersLookupTable(serializationContext, partition.DomainDataDirectory);
 					global::System.Diagnostics.Debug.Assert(this.derivedClassMonikers != null);
 					DslModeling::DomainClassInfo derivedClass = null;
 					if (this.derivedClassMonikers.TryGetValue (localName, out derivedClass) && derivedClass != null)
 					{	// New derived class moniker instance.
-						AtributoEntidadHasrestrinccionAlfanumericoSerializer derivedSerializer = serializationContext.Directory.GetSerializer(derivedClass.Id) as AtributoEntidadHasrestrinccionAlfanumericoSerializer;
+						AtributoHasrestrinccionAlfanumericoSerializer derivedSerializer = serializationContext.Directory.GetSerializer(derivedClass.Id) as AtributoHasrestrinccionAlfanumericoSerializer;
 						global::System.Diagnostics.Debug.Assert(derivedSerializer != null, "Cannot find serializer for " + derivedClass.Name + "!");
 						result = derivedSerializer.CreateMonikerInstance(serializationContext, reader, sourceRolePlayer, relDomainClassId, partition);
 					}
@@ -17118,7 +17035,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		/// <summary>
-		/// This method creates a Moniker of AtributoEntidadHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
+		/// This method creates a Moniker of AtributoHasrestrinccionAlfanumerico based on the tag currently pointed by the reader.
 		/// </summary>
 		/// <remarks>
 		/// The caller will guarantee that the reader is positioned at open XML tag of the next element being read. This method should
@@ -17143,7 +17060,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{	// Normalize the Id.
 				global::System.Guid id = new global::System.Guid(monikerString);
 				monikerString = id.ToString("D", global::System.Globalization.CultureInfo.CurrentCulture);
-				DslModeling::Moniker result = new DslModeling::Moniker(new DslModeling::MonikerKey(monikerString, relDomainClassId, AtributoEntidadHasrestrinccionAlfanumerico.DomainClassId, partition.Store), partition.Store);
+				DslModeling::Moniker result = new DslModeling::Moniker(new DslModeling::MonikerKey(monikerString, relDomainClassId, AtributoHasrestrinccionAlfanumerico.DomainClassId, partition.Store), partition.Store);
 				// Set location info if possible.
 				result.Location = serializationContext.Location;
 				global::System.Xml.IXmlLineInfo xmlLineInfo = reader as global::System.Xml.IXmlLineInfo;
@@ -17167,12 +17084,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 	
 		/// <summary>
-		/// Stores a mapping from Moniker Xml tag name to DomainClassInfo that derives from AtributoEntidadHasrestrinccionAlfanumerico, created on demand.
+		/// Stores a mapping from Moniker Xml tag name to DomainClassInfo that derives from AtributoHasrestrinccionAlfanumerico, created on demand.
 		/// </summary>
 		private global::System.Collections.Generic.Dictionary<string, DslModeling::DomainClassInfo> derivedClassMonikers;
 	
 		/// <summary>
-		/// Construct the mapping from Moniker Xml tag name to DomainClassInfo that derives from AtributoEntidadHasrestrinccionAlfanumerico.
+		/// Construct the mapping from Moniker Xml tag name to DomainClassInfo that derives from AtributoHasrestrinccionAlfanumerico.
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="domainDataDirectory">DomainDataDirectory to be used to discover all derived classes.</param>
@@ -17181,7 +17098,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			global::System.Diagnostics.Debug.Assert(this.derivedClassMonikers == null); // Shouldn't construct the table more than once.
 			this.derivedClassMonikers = new global::System.Collections.Generic.Dictionary<string, DslModeling::DomainClassInfo> (global::System.StringComparer.CurrentCulture);
 	
-			DslModeling::DomainClassInfo thisClass = domainDataDirectory.GetDomainClass(AtributoEntidadHasrestrinccionAlfanumerico.DomainClassId);
+			DslModeling::DomainClassInfo thisClass = domainDataDirectory.GetDomainClass(AtributoHasrestrinccionAlfanumerico.DomainClassId);
 			global::System.Diagnostics.Debug.Assert(thisClass != null, "Cannot find DomainClassInfo for ModelRoot!");
 	
 			global::System.Collections.ObjectModel.ReadOnlyCollection<DslModeling::DomainClassInfo> descendents = thisClass.AllDescendants;
@@ -17207,13 +17124,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region Write Methods
 		/// <summary>
-		/// Public WriteMoniker() method that writes a monikerized AtributoEntidadHasrestrinccionAlfanumerico instance into XML.
+		/// Public WriteMoniker() method that writes a monikerized AtributoHasrestrinccionAlfanumerico instance into XML.
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to be monikerized.</param>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to be monikerized.</param>
 		/// <param name="writer">XmlWriter to write serialized data to.</param>
-		/// <param name="sourceRolePlayer">Source element that references the AtributoEntidadHasrestrinccionAlfanumerico instance being monikerized.</param>
-		/// <param name="relSerializer">Serializer that handles the relationship connecting the source element to the AtributoEntidadHasrestrinccionAlfanumerico instance being monikerized.</param>
+		/// <param name="sourceRolePlayer">Source element that references the AtributoHasrestrinccionAlfanumerico instance being monikerized.</param>
+		/// <param name="relSerializer">Serializer that handles the relationship connecting the source element to the AtributoHasrestrinccionAlfanumerico instance being monikerized.</param>
 		public override void WriteMoniker(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlWriter writer, DslModeling::ModelElement sourceRolePlayer, DslModeling::DomainRelationshipXmlSerializer relSerializer)
 		{
 			#region Check Parameters
@@ -17242,10 +17159,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		/// <summary>
-		/// Public Write() method that serializes one AtributoEntidadHasrestrinccionAlfanumerico instance into XML.
+		/// Public Write() method that serializes one AtributoHasrestrinccionAlfanumerico instance into XML.
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to be serialized.</param>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to be serialized.</param>
 		/// <param name="writer">XmlWriter to write serialized data to.</param>
 		/// <param name="rootElementSettings">
 		/// The root element settings if the passed in element is serialized as a root element in the XML. The root element contains additional
@@ -17294,8 +17211,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 	
 			// Write the target role-player instance.
-			AtributoEntidadHasrestrinccionAlfanumerico instance = element as AtributoEntidadHasrestrinccionAlfanumerico;
-			global::System.Diagnostics.Debug.Assert(instance != null, "Expecting an instance of AtributoEntidadHasrestrinccionAlfanumerico!");
+			AtributoHasrestrinccionAlfanumerico instance = element as AtributoHasrestrinccionAlfanumerico;
+			global::System.Diagnostics.Debug.Assert(instance != null, "Expecting an instance of AtributoHasrestrinccionAlfanumerico!");
 	
 			DslModeling::ModelElement targetElement = instance.restrinccionAlfanumerico;
 			DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer(targetElement.GetDomainClass().Id);
@@ -17315,7 +17232,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Write all properties that need to be serialized as XML attributes.
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to be serialized.</param>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to be serialized.</param>
 		/// <param name="writer">XmlWriter to write serialized data to.</param> 
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "Generated code.")]
 		protected override void WritePropertiesAsAttributes(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlWriter writer)
@@ -17330,7 +17247,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// This methods serializes 1) properties serialized as nested XML elements and 2) child model elements into XML. 
 		/// </summary>
 		/// <param name="serializationContext">Serialization context.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to be serialized.</param>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to be serialized.</param>
 		/// <param name="writer">XmlWriter to write serialized data to.</param>        
 		protected override void WriteElements(DslModeling::SerializationContext serializationContext, DslModeling::ModelElement element, global::System.Xml.XmlWriter writer)
 		{
@@ -17343,11 +17260,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 		#region Moniker Support
 		/// <summary>
-		/// This method calculates a moniker to a given AtributoEntidadHasrestrinccionAlfanumerico instance.
+		/// This method calculates a moniker to a given AtributoHasrestrinccionAlfanumerico instance.
 		/// </summary>
 		/// <param name="directory">Directory to look up serializer based on model element type.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to calculate qualified name for.</param>
-		/// <returns>A fully qualified string moniker to the AtributoEntidadHasrestrinccionAlfanumerico instance.</returns>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to calculate qualified name for.</param>
+		/// <returns>A fully qualified string moniker to the AtributoHasrestrinccionAlfanumerico instance.</returns>
 		public override string CalculateQualifiedName(DslModeling::DomainXmlSerializerDirectory directory, DslModeling::ModelElement element)
 		{
 			#region Check Parameters
@@ -17359,8 +17276,8 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				throw new global::System.ArgumentNullException("element");
 			#endregion	
 			
-			AtributoEntidadHasrestrinccionAlfanumerico instance = element as AtributoEntidadHasrestrinccionAlfanumerico;
-			global::System.Diagnostics.Debug.Assert(instance != null, "Expecting an instance of AtributoEntidadHasrestrinccionAlfanumerico!");
+			AtributoHasrestrinccionAlfanumerico instance = element as AtributoHasrestrinccionAlfanumerico;
+			global::System.Diagnostics.Debug.Assert(instance != null, "Expecting an instance of AtributoHasrestrinccionAlfanumerico!");
 	
 			return instance.Id.ToString("D", global::System.Globalization.CultureInfo.CurrentCulture);
 		}
@@ -17371,7 +17288,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// returns empty string.
 		/// </summary>
 		/// <param name="directory">Directory to look up serializer based on model element type.</param>
-		/// <param name="element">AtributoEntidadHasrestrinccionAlfanumerico instance to get moniker qualifier from.</param>
+		/// <param name="element">AtributoHasrestrinccionAlfanumerico instance to get moniker qualifier from.</param>
 		/// <returns>
 		/// Value of this element's moniker qualifier property, if it has one, or the value of the container's moniker qualifier property. Or empty string if this
 		/// element is not monikerized using standard /qualifier/key mechanism.
@@ -23696,7 +23613,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(DeraWebIPSHasEstiloPortalWeb.DomainClassId, typeof(DeraWebIPSHasEstiloPortalWebSerializer)));
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(AtributoHasEstiloCampoFormulario.DomainClassId, typeof(AtributoHasEstiloCampoFormularioSerializer)));
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(EntidadHasEstiloPaginaWeb.DomainClassId, typeof(EntidadHasEstiloPaginaWebSerializer)));
-					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(AtributoEntidadHasrestrinccionAlfanumerico.DomainClassId, typeof(AtributoEntidadHasrestrinccionAlfanumericoSerializer)));
+					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(AtributoHasrestrinccionAlfanumerico.DomainClassId, typeof(AtributoHasrestrinccionAlfanumericoSerializer)));
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(EntidadShape.DomainClassId, typeof(EntidadShapeSerializer)));
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(RelacionShape.DomainClassId, typeof(RelacionShapeSerializer)));
 					XCYLSProyectoIPSSerializationBehavior.serializerTypes.Add(new DslModeling::DomainXmlSerializerDirectoryEntry(AtributoEntShape.DomainClassId, typeof(AtributoEntShapeSerializer)));
