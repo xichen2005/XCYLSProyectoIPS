@@ -2735,3 +2735,784 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 	}
 }
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainRelationship AtributoEntidadHasrestrinccionAlfanumerico
+	/// Description for
+	/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("6360bd6d-4e32-4259-86bd-23ea7dce1b64")]
+	public partial class AtributoEntidadHasrestrinccionAlfanumerico : DslModeling::ElementLink
+	{
+		#region Constructors, domain class Id
+		
+		/// <summary>
+		/// AtributoEntidadHasrestrinccionAlfanumerico domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x6360bd6d, 0x4e32, 0x4259, 0x86, 0xbd, 0x23, 0xea, 0x7d, 0xce, 0x1b, 0x64);
+	
+				
+		/// <summary>
+		/// Constructor
+		/// Creates a AtributoEntidadHasrestrinccionAlfanumerico link in the same Partition as the given AtributoEntidad
+		/// </summary>
+		/// <param name="source">AtributoEntidad to use as the source of the relationship.</param>
+		/// <param name="target">restrinccionAlfanumerico to use as the target of the relationship.</param>
+		public AtributoEntidadHasrestrinccionAlfanumerico(AtributoEntidad source, restrinccionAlfanumerico target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId, source), new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, target)}, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionAlfanumerico(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionAlfanumerico(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionAlfanumerico(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(partition, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionAlfanumerico(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, roleAssignments, propertyAssignments)
+		{
+		}
+		#endregion
+		#region AtributoEntidad domain role code
+		
+		/// <summary>
+		/// AtributoEntidad domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid AtributoEntidadDomainRoleId = new global::System.Guid(0xd8a4ba68, 0x4c43, 0x4aad, 0x95, 0xe4, 0x2a, 0x8e, 0x83, 0xe0, 0x91, 0xdc);
+		
+		/// <summary>
+		/// DomainRole AtributoEntidad
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/AtributoEntidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/AtributoEntidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "restrinccionAlfanumerico", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/AtributoEntidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
+		[DslModeling::DomainObjectId("d8a4ba68-4c43-4aad-95e4-2a8e83e091dc")]
+		public virtual AtributoEntidad AtributoEntidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (AtributoEntidad)DslModeling::DomainRoleInfo.GetRolePlayer(this, AtributoEntidadDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, AtributoEntidadDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access AtributoEntidad of a restrinccionAlfanumerico
+		/// <summary>
+		/// Gets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static AtributoEntidad GetAtributoEntidad(restrinccionAlfanumerico element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, restrinccionAlfanumericoDomainRoleId) as AtributoEntidad;
+		}
+		
+		/// <summary>
+		/// Sets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetAtributoEntidad(restrinccionAlfanumerico element, AtributoEntidad newAtributoEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, restrinccionAlfanumericoDomainRoleId, newAtributoEntidad);
+		}
+		#endregion
+		#region restrinccionAlfanumerico domain role code
+		
+		/// <summary>
+		/// restrinccionAlfanumerico domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid restrinccionAlfanumericoDomainRoleId = new global::System.Guid(0x90ed51b7, 0xd622, 0x474e, 0xb0, 0xcb, 0x28, 0x97, 0x08, 0x83, 0xbf, 0x89);
+		
+		/// <summary>
+		/// DomainRole restrinccionAlfanumerico
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/restrinccionAlfanumerico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/restrinccionAlfanumerico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "AtributoEntidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico/restrinccionAlfanumerico.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("90ed51b7-d622-474e-b0cb-28970883bf89")]
+		public virtual restrinccionAlfanumerico restrinccionAlfanumerico
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (restrinccionAlfanumerico)DslModeling::DomainRoleInfo.GetRolePlayer(this, restrinccionAlfanumericoDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, restrinccionAlfanumericoDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access restrinccionAlfanumerico of a AtributoEntidad
+		/// <summary>
+		/// Gets restrinccionAlfanumerico.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static restrinccionAlfanumerico GetrestrinccionAlfanumerico(AtributoEntidad element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, AtributoEntidadDomainRoleId) as restrinccionAlfanumerico;
+		}
+		
+		/// <summary>
+		/// Sets restrinccionAlfanumerico.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetrestrinccionAlfanumerico(AtributoEntidad element, restrinccionAlfanumerico newrestrinccionAlfanumerico)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, AtributoEntidadDomainRoleId, newrestrinccionAlfanumerico);
+		}
+		#endregion
+		#region AtributoEntidad link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionAlfanumerico link to a AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico GetLinkTorestrinccionAlfanumerico (global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad atributoEntidadInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico>(atributoEntidadInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of AtributoEntidad not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region restrinccionAlfanumerico link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionAlfanumerico link to a restrinccionAlfanumerico.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico GetLinkToAtributoEntidad (global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico restrinccionAlfanumericoInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico>(restrinccionAlfanumericoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of restrinccionAlfanumerico not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region AtributoEntidadHasrestrinccionAlfanumerico instance accessors
+		
+		/// <summary>
+		/// Get any AtributoEntidadHasrestrinccionAlfanumerico links between a given AtributoEntidad and a restrinccionAlfanumerico.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico target )
+		{
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico link in links )
+			{
+				if ( target.Equals(link.restrinccionAlfanumerico) )
+				{
+					outLinks.Add(link);
+				}
+			}
+			return outLinks.AsReadOnly();
+		}
+		/// <summary>
+		/// Get the one AtributoEntidadHasrestrinccionAlfanumerico link between a given AtributoEntidadand a restrinccionAlfanumerico.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico GetLink( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico target )
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico link in links )
+			{
+				if ( target.Equals(link.restrinccionAlfanumerico) )
+				{
+					return link;
+				}
+			}
+			return null;
+		}
+		
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainRelationship AtributoEntidadHasrestrinccionFecha
+	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("e70678af-1edd-4883-bf5c-6998353635c8")]
+	public partial class AtributoEntidadHasrestrinccionFecha : DslModeling::ElementLink
+	{
+		#region Constructors, domain class Id
+		
+		/// <summary>
+		/// AtributoEntidadHasrestrinccionFecha domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xe70678af, 0x1edd, 0x4883, 0xbf, 0x5c, 0x69, 0x98, 0x35, 0x36, 0x35, 0xc8);
+	
+				
+		/// <summary>
+		/// Constructor
+		/// Creates a AtributoEntidadHasrestrinccionFecha link in the same Partition as the given AtributoEntidad
+		/// </summary>
+		/// <param name="source">AtributoEntidad to use as the source of the relationship.</param>
+		/// <param name="target">restrinccionFecha to use as the target of the relationship.</param>
+		public AtributoEntidadHasrestrinccionFecha(AtributoEntidad source, restrinccionFecha target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId, source), new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionFecha.restrinccionFechaDomainRoleId, target)}, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionFecha(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionFecha(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionFecha(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(partition, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionFecha(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, roleAssignments, propertyAssignments)
+		{
+		}
+		#endregion
+		#region AtributoEntidad domain role code
+		
+		/// <summary>
+		/// AtributoEntidad domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid AtributoEntidadDomainRoleId = new global::System.Guid(0xf4627f68, 0x0dd8, 0x41f0, 0x98, 0x1e, 0x58, 0xa0, 0xb3, 0xe7, 0xb0, 0xe4);
+		
+		/// <summary>
+		/// DomainRole AtributoEntidad
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "restrinccionFecha", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
+		[DslModeling::DomainObjectId("f4627f68-0dd8-41f0-981e-58a0b3e7b0e4")]
+		public virtual AtributoEntidad AtributoEntidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (AtributoEntidad)DslModeling::DomainRoleInfo.GetRolePlayer(this, AtributoEntidadDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, AtributoEntidadDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access AtributoEntidad of a restrinccionFecha
+		/// <summary>
+		/// Gets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static AtributoEntidad GetAtributoEntidad(restrinccionFecha element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, restrinccionFechaDomainRoleId) as AtributoEntidad;
+		}
+		
+		/// <summary>
+		/// Sets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetAtributoEntidad(restrinccionFecha element, AtributoEntidad newAtributoEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, restrinccionFechaDomainRoleId, newAtributoEntidad);
+		}
+		#endregion
+		#region restrinccionFecha domain role code
+		
+		/// <summary>
+		/// restrinccionFecha domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid restrinccionFechaDomainRoleId = new global::System.Guid(0x287906fd, 0x042c, 0x4d41, 0xb0, 0x8c, 0x8d, 0xc8, 0x4e, 0x0d, 0x3d, 0xe3);
+		
+		/// <summary>
+		/// DomainRole restrinccionFecha
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFecha
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "AtributoEntidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("287906fd-042c-4d41-b08c-8dc84e0d3de3")]
+		public virtual restrinccionFecha restrinccionFecha
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (restrinccionFecha)DslModeling::DomainRoleInfo.GetRolePlayer(this, restrinccionFechaDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, restrinccionFechaDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access restrinccionFecha of a AtributoEntidad
+		/// <summary>
+		/// Gets restrinccionFecha.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static restrinccionFecha GetrestrinccionFecha(AtributoEntidad element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, AtributoEntidadDomainRoleId) as restrinccionFecha;
+		}
+		
+		/// <summary>
+		/// Sets restrinccionFecha.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetrestrinccionFecha(AtributoEntidad element, restrinccionFecha newrestrinccionFecha)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, AtributoEntidadDomainRoleId, newrestrinccionFecha);
+		}
+		#endregion
+		#region AtributoEntidad link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionFecha link to a AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha GetLinkTorestrinccionFecha (global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad atributoEntidadInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha>(atributoEntidadInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of AtributoEntidad not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region restrinccionFecha link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionFecha link to a restrinccionFecha.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha GetLinkToAtributoEntidad (global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha restrinccionFechaInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha>(restrinccionFechaInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFechaDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of restrinccionFecha not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region AtributoEntidadHasrestrinccionFecha instance accessors
+		
+		/// <summary>
+		/// Get any AtributoEntidadHasrestrinccionFecha links between a given AtributoEntidad and a restrinccionFecha.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha target )
+		{
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha link in links )
+			{
+				if ( target.Equals(link.restrinccionFecha) )
+				{
+					outLinks.Add(link);
+				}
+			}
+			return outLinks.AsReadOnly();
+		}
+		/// <summary>
+		/// Get the one AtributoEntidadHasrestrinccionFecha link between a given AtributoEntidadand a restrinccionFecha.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha GetLink( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha target )
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha link in links )
+			{
+				if ( target.Equals(link.restrinccionFecha) )
+				{
+					return link;
+				}
+			}
+			return null;
+		}
+		
+		#endregion
+	}
+}
+namespace UPM_IPS.XCYLSProyectoIPS
+{
+	/// <summary>
+	/// DomainRelationship AtributoEntidadHasrestrinccionInt
+	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainRelationship(IsEmbedding=true)]
+	[DslModeling::DomainObjectId("cec266af-2a71-434b-9112-0f79a5fb5864")]
+	public partial class AtributoEntidadHasrestrinccionInt : DslModeling::ElementLink
+	{
+		#region Constructors, domain class Id
+		
+		/// <summary>
+		/// AtributoEntidadHasrestrinccionInt domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xcec266af, 0x2a71, 0x434b, 0x91, 0x12, 0x0f, 0x79, 0xa5, 0xfb, 0x58, 0x64);
+	
+				
+		/// <summary>
+		/// Constructor
+		/// Creates a AtributoEntidadHasrestrinccionInt link in the same Partition as the given AtributoEntidad
+		/// </summary>
+		/// <param name="source">AtributoEntidad to use as the source of the relationship.</param>
+		/// <param name="target">restrinccionInt to use as the target of the relationship.</param>
+		public AtributoEntidadHasrestrinccionInt(AtributoEntidad source, restrinccionInt target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId, source), new DslModeling::RoleAssignment(AtributoEntidadHasrestrinccionInt.restrinccionIntDomainRoleId, target)}, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionInt(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionInt(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		public AtributoEntidadHasrestrinccionInt(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+			: base(partition, roleAssignments, null)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new link is to be created.</param>
+		/// <param name="roleAssignments">List of relationship role assignments.</param>
+		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
+		public AtributoEntidadHasrestrinccionInt(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, roleAssignments, propertyAssignments)
+		{
+		}
+		#endregion
+		#region AtributoEntidad domain role code
+		
+		/// <summary>
+		/// AtributoEntidad domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid AtributoEntidadDomainRoleId = new global::System.Guid(0x473e46dc, 0x2afe, 0x4279, 0x99, 0xc1, 0x36, 0xcc, 0x6e, 0x4b, 0x78, 0xeb);
+		
+		/// <summary>
+		/// DomainRole AtributoEntidad
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidad
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "restrinccionInt", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
+		[DslModeling::DomainObjectId("473e46dc-2afe-4279-99c1-36cc6e4b78eb")]
+		public virtual AtributoEntidad AtributoEntidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (AtributoEntidad)DslModeling::DomainRoleInfo.GetRolePlayer(this, AtributoEntidadDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, AtributoEntidadDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access AtributoEntidad of a restrinccionInt
+		/// <summary>
+		/// Gets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static AtributoEntidad GetAtributoEntidad(restrinccionInt element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, restrinccionIntDomainRoleId) as AtributoEntidad;
+		}
+		
+		/// <summary>
+		/// Sets AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetAtributoEntidad(restrinccionInt element, AtributoEntidad newAtributoEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, restrinccionIntDomainRoleId, newAtributoEntidad);
+		}
+		#endregion
+		#region restrinccionInt domain role code
+		
+		/// <summary>
+		/// restrinccionInt domain role Id.
+		/// </summary>
+		public static readonly global::System.Guid restrinccionIntDomainRoleId = new global::System.Guid(0x42db1dea, 0xfdca, 0x4017, 0xbf, 0x2a, 0xe7, 0xd7, 0x79, 0xa5, 0x7f, 0xf4);
+		
+		/// <summary>
+		/// DomainRole restrinccionInt
+		/// Description for
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionInt
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "AtributoEntidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslModeling::DomainObjectId("42db1dea-fdca-4017-bf2a-e7d779a57ff4")]
+		public virtual restrinccionInt restrinccionInt
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return (restrinccionInt)DslModeling::DomainRoleInfo.GetRolePlayer(this, restrinccionIntDomainRoleId);
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, restrinccionIntDomainRoleId, value);
+			}
+		}
+				
+		#endregion
+		#region Static methods to access restrinccionInt of a AtributoEntidad
+		/// <summary>
+		/// Gets restrinccionInt.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static restrinccionInt GetrestrinccionInt(AtributoEntidad element)
+		{
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, AtributoEntidadDomainRoleId) as restrinccionInt;
+		}
+		
+		/// <summary>
+		/// Sets restrinccionInt.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetrestrinccionInt(AtributoEntidad element, restrinccionInt newrestrinccionInt)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, AtributoEntidadDomainRoleId, newrestrinccionInt);
+		}
+		#endregion
+		#region AtributoEntidad link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionInt link to a AtributoEntidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt GetLinkTorestrinccionInt (global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad atributoEntidadInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt>(atributoEntidadInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of AtributoEntidad not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region restrinccionInt link accessor
+		/// <summary>
+		/// Get the AtributoEntidadHasrestrinccionInt link to a restrinccionInt.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt GetLinkToAtributoEntidad (global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt restrinccionIntInstance)
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt>(restrinccionIntInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionIntDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of restrinccionInt not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
+		}
+		#endregion
+		#region AtributoEntidadHasrestrinccionInt instance accessors
+		
+		/// <summary>
+		/// Get any AtributoEntidadHasrestrinccionInt links between a given AtributoEntidad and a restrinccionInt.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt target )
+		{
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt link in links )
+			{
+				if ( target.Equals(link.restrinccionInt) )
+				{
+					outLinks.Add(link);
+				}
+			}
+			return outLinks.AsReadOnly();
+		}
+		/// <summary>
+		/// Get the one AtributoEntidadHasrestrinccionInt link between a given AtributoEntidadand a restrinccionInt.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt GetLink( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt target )
+		{
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt link in links )
+			{
+				if ( target.Equals(link.restrinccionInt) )
+				{
+					return link;
+				}
+			}
+			return null;
+		}
+		
+		#endregion
+	}
+}
