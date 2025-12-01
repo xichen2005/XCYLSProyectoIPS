@@ -1169,13 +1169,13 @@
       <ConnectionTool Name="EnlaceRel_Ent" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceRel_Ent" Tooltip="Enlace Rel_ Ent" HelpKeyword="EnlaceRel_Ent">
         <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/RelacionReferencesEntidad1Builder" />
       </ConnectionTool>
-      <ElementTool Name="AtributoClave" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoClave" Tooltip="Atributo Clave" HelpKeyword="AtributoClave">
+      <ElementTool Name="AtributoClave" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoClave" Tooltip="Atributo Clave" HelpKeyword="AtributoClave">
         <DomainClassMoniker Name="AtributoClave" />
       </ElementTool>
-      <ElementTool Name="AtributoEntidad" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidad" Tooltip="Atributo Entidad" HelpKeyword="AtributoEntidad">
+      <ElementTool Name="AtributoEntidad" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidad" Tooltip="Atributo Entidad" HelpKeyword="AtributoEntidad">
         <DomainClassMoniker Name="AtributoEntidad" />
       </ElementTool>
-      <ElementTool Name="RestrincAlfanumerico" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincAlfanumerico" Tooltip="Restrinc Alfanumerico" HelpKeyword="RestrincAlfanumerico">
+      <ElementTool Name="RestrincAlfanumerico" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincAlfanumerico" Tooltip="Restrinc Alfanumerico" HelpKeyword="RestrincAlfanumerico">
         <DomainClassMoniker Name="restrinccionAlfanumerico" />
       </ElementTool>
     </ToolboxTab>

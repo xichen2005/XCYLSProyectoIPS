@@ -2,7 +2,100 @@
 <deraWebIPS xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1d0da6d3-d4ba-4a44-82d0-91a594e8fdea" xmlns="http://schemas.microsoft.com/dsltools/XCYLSProyectoIPS">
   <entidad>
     <deraWebIPSHasEntidad Id="2edabbeb-cac5-4050-a004-f0a929e3a3c2">
-      <entidad Id="b722dc3f-1031-4be3-89bd-914d807f3db7" name="Entidad1" />
+      <entidad Id="b722dc3f-1031-4be3-89bd-914d807f3db7" name="Entidad1">
+        <relacioned>
+          <entidadReferencesRelacioned Id="83dcb814-b935-42b1-bdf7-8e985dcf71ac" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="d8c76074-56f6-4b38-916b-6cb47d0c3f44" />
+          </entidadReferencesRelacioned>
+          <entidadReferencesRelacioned Id="662cd280-7e42-4922-9bff-be12a4329ad4" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="3d13d3a7-9b22-4ade-935b-14abab496ac6" />
+          </entidadReferencesRelacioned>
+          <entidadReferencesRelacioned Id="b32601a0-e0cf-4445-83b9-bb91e5c182b1" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" />
+          </entidadReferencesRelacioned>
+        </relacioned>
+        <atributoEntidad>
+          <entidadHasAtributoEntidad Id="0ae814af-4197-4469-b2a2-b41a71f27740">
+            <atributoEntidad Id="094e4ffa-42d0-458a-ba2d-908d723df36f" tipo="Int" longitud="0">
+              <restrinccionAlfanumerico>
+                <atributoHasrestrinccionAlfanumerico Id="0173931a-1a89-4111-903b-82e655cb3a65">
+                  <restrinccionAlfanumerico Id="a9d62ffe-c7ea-4002-91b2-eadfdc267cbf" min="5" max="10" fechaMax="" fechaMin="" />
+                </atributoHasrestrinccionAlfanumerico>
+              </restrinccionAlfanumerico>
+            </atributoEntidad>
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="d954c7ca-c225-4031-b36a-a11e18ebc331">
+            <atributoEntidad Id="c9e621a8-b2e5-43ec-83a3-1602080e169e" tipo="String" null="Not_Null" longitud="0">
+              <restrinccionAlfanumerico>
+                <atributoHasrestrinccionAlfanumerico Id="2d376264-8824-483c-8353-aabd9e698afd">
+                  <restrinccionAlfanumerico Id="95e182cb-427d-4a47-b671-c6e72eca9fc5" min="0" max="0" fechaMax="" fechaMin="" />
+                </atributoHasrestrinccionAlfanumerico>
+              </restrinccionAlfanumerico>
+            </atributoEntidad>
+          </entidadHasAtributoEntidad>
+        </atributoEntidad>
+        <atributoClaves>
+          <entidadHasAtributoClaves Id="def26397-e543-4cbc-afcc-db63ca0de647">
+            <atributoClave Id="ead004b7-b880-4848-8edb-2f5eb0c22f08" tipo="String" />
+          </entidadHasAtributoClaves>
+        </atributoClaves>
+      </entidad>
+    </deraWebIPSHasEntidad>
+    <deraWebIPSHasEntidad Id="052eb37a-b1fa-4a7f-8d28-7e9652da69dd">
+      <entidad Id="106b90fa-35c3-423d-b24d-9e9013d69737" name="Entidad2" />
+    </deraWebIPSHasEntidad>
+    <deraWebIPSHasEntidad Id="11ce1fc3-4bea-48d2-b039-1d029f7308df">
+      <entidad Id="2b7695b5-e0c6-4892-8aac-892b696dbaaa" name="Entidad3">
+        <relacioned>
+          <entidadReferencesRelacioned Id="d1cd7269-4072-4ccd-aec3-832b4609f12d" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" />
+          </entidadReferencesRelacioned>
+        </relacioned>
+        <atributoEntidad>
+          <entidadHasAtributoEntidad Id="13b6a253-3ef2-4af2-b587-b59d25da241d">
+            <atributoEntidad Id="c54471b4-9b77-41ca-9726-1651027bbb81" tipo="Int" null="Not_Null" único="Único" longitud="0" />
+          </entidadHasAtributoEntidad>
+        </atributoEntidad>
+        <atributoClaves>
+          <entidadHasAtributoClaves Id="bbeb096e-ffe0-4cd2-960c-77a8cf016d5c">
+            <atributoClave Id="45520610-28ff-4c3b-bbbb-e99711d1ead5" tipo="String" />
+          </entidadHasAtributoClaves>
+        </atributoClaves>
+      </entidad>
     </deraWebIPSHasEntidad>
   </entidad>
+  <relacioned>
+    <deraWebIPSHasRelacioned Id="6b2dc418-7b8a-448b-912b-c00d2f33b389">
+      <relacion Id="d8c76074-56f6-4b38-916b-6cb47d0c3f44">
+        <atributoRelacioned>
+          <relacionHasAtributoRelacioned Id="eacaa81a-1c5d-4cb4-8d80-f28b8f4b14b8">
+            <atributoRelacion Id="ad6f3e70-e034-40dd-a0a1-b8d29548c481" tipo="String">
+              <restrinccionAlfanumerico>
+                <atributoHasrestrinccionAlfanumerico Id="d7baa050-84b9-46ba-b382-991825a2bcf9">
+                  <restrinccionAlfanumerico Id="4c86b410-47fb-45b8-9194-7db6f8824c81" min="0" max="0" fechaMax="" fechaMin="" />
+                </atributoHasrestrinccionAlfanumerico>
+              </restrinccionAlfanumerico>
+            </atributoRelacion>
+          </relacionHasAtributoRelacioned>
+        </atributoRelacioned>
+        <entidad1>
+          <relacionReferencesEntidad1 Id="81cbe82c-86db-4d68-80b7-4e8880e731bc" cardinalidad="Min1_MaxN">
+            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Entidad2" />
+          </relacionReferencesEntidad1>
+        </entidad1>
+      </relacion>
+    </deraWebIPSHasRelacioned>
+    <deraWebIPSHasRelacioned Id="81562975-459a-457a-848f-344d63ab73da">
+      <relacion Id="3d13d3a7-9b22-4ade-935b-14abab496ac6">
+        <entidad1>
+          <relacionReferencesEntidad1 Id="c98d403a-4514-429d-bc54-94912271b1d1" cardinalidad="Min1_MaxN">
+            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Entidad1" />
+          </relacionReferencesEntidad1>
+        </entidad1>
+      </relacion>
+    </deraWebIPSHasRelacioned>
+    <deraWebIPSHasRelacioned Id="cf0da476-bf3a-419b-afe0-55c7c3a1b32a">
+      <relacion Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" />
+    </deraWebIPSHasRelacioned>
+  </relacioned>
 </deraWebIPS>
