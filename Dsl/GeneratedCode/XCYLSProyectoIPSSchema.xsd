@@ -272,36 +272,6 @@
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
-          <!-- Relationship: AtributoEntidadHasrestrinccionFecha -->
-          <xsd:element name="restrinccionFecha" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instance of AtributoEntidadHasrestrinccionFecha</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="atributoEntidadHasrestrinccionFecha" minOccurs="0" maxOccurs="1">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoEntidadHasrestrinccionFecha needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
-          <!-- Relationship: AtributoEntidadHasrestrinccionInt -->
-          <xsd:element name="restrinccionInt" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instance of AtributoEntidadHasrestrinccionInt</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="atributoEntidadHasrestrinccionInt" minOccurs="0" maxOccurs="1">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoEntidadHasrestrinccionInt needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
         </xsd:sequence>
         <!-- Id -->
         <xsd:attribute name="Id" type="xsd:string">
@@ -565,6 +535,14 @@
         </xsd:attribute>
         <!-- Property: Valores -->
         <xsd:attribute name="valores" type="xsd:string" />
+        <!-- Property: Min -->
+        <xsd:attribute name="min" type="xsd:integer" />
+        <!-- Property: Max -->
+        <xsd:attribute name="max" type="xsd:integer" />
+        <!-- Property: FechaMax -->
+        <xsd:attribute name="fechaMax" type="xsd:string" />
+        <!-- Property: FechaMin -->
+        <xsd:attribute name="fechaMin" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -574,78 +552,6 @@
   <xsd:complexType name="RestrinccionAlfanumericoMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for restrinccionAlfanumerico instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- restrinccionFecha -->
-  <xsd:element name="restrinccionFecha" type="RestrinccionFecha" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="RestrinccionFecha">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-        <!-- Property: FechaMin -->
-        <xsd:attribute name="fechaMin" type="xsd:string" />
-        <!-- Property: FechaMax -->
-        <xsd:attribute name="fechaMax" type="xsd:string" />
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- restrinccionFecha Moniker -->
-  <xsd:element name="restrinccionFechaMoniker" type="RestrinccionFechaMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="RestrinccionFechaMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for restrinccionFecha instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- restrinccionInt -->
-  <xsd:element name="restrinccionInt" type="RestrinccionInt" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="RestrinccionInt">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-        <!-- Property: Min -->
-        <xsd:attribute name="min" type="xsd:integer" />
-        <!-- Property: Max -->
-        <xsd:attribute name="max" type="xsd:integer" />
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- restrinccionInt Moniker -->
-  <xsd:element name="restrinccionIntMoniker" type="RestrinccionIntMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="RestrinccionIntMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for restrinccionInt instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -1094,86 +1000,6 @@
   <xsd:complexType name="AtributoEntidadHasrestrinccionAlfanumericoMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for AtributoEntidadHasrestrinccionAlfanumerico instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoEntidadHasrestrinccionFecha -->
-  <xsd:element name="atributoEntidadHasrestrinccionFecha" type="AtributoEntidadHasrestrinccionFecha" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionFecha">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end restrinccionFecha -->
-          <xsd:element ref="restrinccionFecha" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoEntidadHasrestrinccionFecha Moniker -->
-  <xsd:element name="atributoEntidadHasrestrinccionFechaMoniker" type="AtributoEntidadHasrestrinccionFechaMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionFechaMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoEntidadHasrestrinccionFecha instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoEntidadHasrestrinccionInt -->
-  <xsd:element name="atributoEntidadHasrestrinccionInt" type="AtributoEntidadHasrestrinccionInt" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionInt">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end restrinccionInt -->
-          <xsd:element ref="restrinccionInt" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoEntidadHasrestrinccionInt Moniker -->
-  <xsd:element name="atributoEntidadHasrestrinccionIntMoniker" type="AtributoEntidadHasrestrinccionIntMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoEntidadHasrestrinccionIntMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoEntidadHasrestrinccionInt instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

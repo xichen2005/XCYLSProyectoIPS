@@ -349,53 +349,37 @@
     <value>Valores</value>
     <comment>DisplayName for DomainProperty &apos;Valores&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha</value>
-    <comment>Description for DomainClass &apos;restrinccionFecha&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Min</value>
+    <comment>Description for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.DisplayName" xml:space="preserve">
-    <value>Restrinccion Fecha</value>
-    <comment>DisplayName for DomainClass &apos;restrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMin.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Min</value>
-    <comment>Description for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMin.DisplayName" xml:space="preserve">
-    <value>Fecha Min</value>
-    <comment>DisplayName for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMax.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Max</value>
-    <comment>Description for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMax.DisplayName" xml:space="preserve">
-    <value>Fecha Max</value>
-    <comment>DisplayName for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt</value>
-    <comment>Description for DomainClass &apos;restrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt.DisplayName" xml:space="preserve">
-    <value>Restrinccion Int</value>
-    <comment>DisplayName for DomainClass &apos;restrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Min.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Min</value>
-    <comment>Description for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Min.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.DisplayName" xml:space="preserve">
     <value>Min</value>
-    <comment>DisplayName for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionInt&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Max.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Max</value>
-    <comment>Description for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionInt&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Max</value>
+    <comment>Description for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Max.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.DisplayName" xml:space="preserve">
     <value>Max</value>
-    <comment>DisplayName for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionInt&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Max</value>
+    <comment>Description for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.DisplayName" xml:space="preserve">
+    <value>Fecha Max</value>
+    <comment>DisplayName for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Min</value>
+    <comment>Description for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.DisplayName" xml:space="preserve">
+    <value>Fecha Min</value>
+    <comment>DisplayName for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad</value>
@@ -781,70 +765,6 @@
     <value>Atributo Entidad</value>
     <comment>PropertyDisplayName for DomainRole &apos;restrinccionAlfanumerico&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionAlfanumerico&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha</value>
-    <comment>Description for DomainClass &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.DisplayName" xml:space="preserve">
-    <value>Atributo Entidad Hasrestrinccion Fecha</value>
-    <comment>DisplayName for DomainClass &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidad</value>
-    <comment>Description for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.DisplayName" xml:space="preserve">
-    <value>Atributo Entidad</value>
-    <comment>DisplayName for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/AtributoEntidad.PropertyDisplayName" xml:space="preserve">
-    <value>Restrinccion Fecha</value>
-    <comment>PropertyDisplayName for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFecha</value>
-    <comment>Description for DomainRole &apos;restrinccionFecha&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.DisplayName" xml:space="preserve">
-    <value>Restrinccion Fecha</value>
-    <comment>DisplayName for DomainRole &apos;restrinccionFecha&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha/restrinccionFecha.PropertyDisplayName" xml:space="preserve">
-    <value>Atributo Entidad</value>
-    <comment>PropertyDisplayName for DomainRole &apos;restrinccionFecha&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionFecha&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt</value>
-    <comment>Description for DomainClass &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.DisplayName" xml:space="preserve">
-    <value>Atributo Entidad Hasrestrinccion Int</value>
-    <comment>DisplayName for DomainClass &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidad</value>
-    <comment>Description for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.DisplayName" xml:space="preserve">
-    <value>Atributo Entidad</value>
-    <comment>DisplayName for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/AtributoEntidad.PropertyDisplayName" xml:space="preserve">
-    <value>Restrinccion Int</value>
-    <comment>PropertyDisplayName for DomainRole &apos;AtributoEntidad&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionInt</value>
-    <comment>Description for DomainRole &apos;restrinccionInt&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.DisplayName" xml:space="preserve">
-    <value>Restrinccion Int</value>
-    <comment>DisplayName for DomainRole &apos;restrinccionInt&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt/restrinccionInt.PropertyDisplayName" xml:space="preserve">
-    <value>Atributo Entidad</value>
-    <comment>PropertyDisplayName for DomainRole &apos;restrinccionInt&apos; on DomainRelationship &apos;AtributoEntidadHasrestrinccionInt&apos;</comment>
-  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/String.DisplayName" xml:space="preserve">
     <value>String</value>
     <comment>Display name for EnumerationLiteral &apos;String&apos; on DomainEnumeration &apos;tipoEnumeration&apos;</comment>
@@ -1105,22 +1025,6 @@
     <value>Null</value>
     <comment>Text decorator default text</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.RestrinccInt.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.RestrinccInt</value>
-    <comment>Description for DomainClass &apos;RestrinccInt&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.RestrinccInt.DisplayName" xml:space="preserve">
-    <value>Restrincc Int</value>
-    <comment>DisplayName for DomainClass &apos;RestrinccInt&apos;</comment>
-  </data>
-  <data name="RestrinccIntMinDefaultText" xml:space="preserve">
-    <value>Min</value>
-    <comment>Text decorator default text</comment>
-  </data>
-  <data name="RestrinccIntMaxDefaultText" xml:space="preserve">
-    <value>Max</value>
-    <comment>Text decorator default text</comment>
-  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric</value>
     <comment>Description for DomainClass &apos;RestrinccAlfanumeric&apos;</comment>
@@ -1133,19 +1037,19 @@
     <value>Valores</value>
     <comment>Text decorator default text</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.RestrinccFecha.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.RestrinccFecha</value>
-    <comment>Description for DomainClass &apos;RestrinccFecha&apos;</comment>
+  <data name="RestrinccAlfanumericminDefaultText" xml:space="preserve">
+    <value>min</value>
+    <comment>Text decorator default text</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.RestrinccFecha.DisplayName" xml:space="preserve">
-    <value>Restrincc Fecha</value>
-    <comment>DisplayName for DomainClass &apos;RestrinccFecha&apos;</comment>
+  <data name="RestrinccAlfanumericMaxDefaultText" xml:space="preserve">
+    <value>Max</value>
+    <comment>Text decorator default text</comment>
   </data>
-  <data name="RestrinccFechaFechaMinDefaultText" xml:space="preserve">
+  <data name="RestrinccAlfanumericFechaMinDefaultText" xml:space="preserve">
     <value>FechaMin</value>
     <comment>Text decorator default text</comment>
   </data>
-  <data name="RestrinccFechaFechaMaxDefaultText" xml:space="preserve">
+  <data name="RestrinccAlfanumericFechaMaxDefaultText" xml:space="preserve">
     <value>FechaMax</value>
     <comment>Text decorator default text</comment>
   </data>
@@ -1271,22 +1175,6 @@
   </data>
   <data name="AtributoEntidadToolboxTooltip" xml:space="preserve">
     <value>Atributo Entidad</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
-  <data name="restrincIntToolboxItem" xml:space="preserve">
-    <value>restrincInt</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="restrincIntToolboxTooltip" xml:space="preserve">
-    <value>Restrinc Int</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
-  <data name="RestrincFechaToolboxItem" xml:space="preserve">
-    <value>RestrincFecha</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="RestrincFechaToolboxTooltip" xml:space="preserve">
-    <value>Restrinc Fecha</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="RestrincAlfanumericoToolboxItem" xml:space="preserve">
@@ -1447,14 +1335,6 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="AtributoEntidadToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\..\..\..\..\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
-  <data name="restrincIntToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\..\..\..\..\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>Toolbox item image</comment>
-  </data>
-  <data name="RestrincFechaToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\..\..\..\..\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

@@ -86,29 +86,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					0xff00ff,
 					Index = 6)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@restrincIntToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.restrincIntToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"restrincInt", 
-					"@restrincIntToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					0xff00ff,
-					Index = 7)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@RestrincFechaToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.RestrincFechaToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"RestrincFecha", 
-					"@RestrincFechaToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					0xff00ff,
-					Index = 8)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
 					"@RestrincAlfanumericoToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					"UPM_IPS.XCYLSProyectoIPS.RestrincAlfanumericoToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"RestrincAlfanumerico", 
 					"@RestrincAlfanumericoToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
-					Index = 9)]
+					Index = 7)]
 	[VSShell::ProvideEditorFactory(typeof(XCYLSProyectoIPSEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(XCYLSProyectoIPSEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(XCYLSProyectoIPSEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

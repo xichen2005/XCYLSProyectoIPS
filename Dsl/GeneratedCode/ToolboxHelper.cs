@@ -102,7 +102,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 			get
 			{
-				return 10;
+				return 8;
 			}
 		}
 		
@@ -267,43 +267,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "UPM_IPS.XCYLSProyectoIPS.restrincIntToolboxItem":
-					// Add restrincInt shape tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.XCYLSProyectoIPS.restrincIntToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						8, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("restrincIntToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("restrincIntToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("XCYLSProyectoIPSToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"restrincInt", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("restrincIntToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.RestrinccInt.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
-						});
-					break;
-				case "UPM_IPS.XCYLSProyectoIPS.RestrincFechaToolboxItem":
-					// Add RestrincFecha shape tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.XCYLSProyectoIPS.RestrincFechaToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						9, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("RestrincFechaToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("RestrincFechaToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("XCYLSProyectoIPSToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"RestrincFecha", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("RestrincFechaToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.RestrinccFecha.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
-						});
-					break;
 				case "UPM_IPS.XCYLSProyectoIPS.RestrincAlfanumericoToolboxItem":
 					// Add RestrincAlfanumerico shape tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"UPM_IPS.XCYLSProyectoIPS.RestrincAlfanumericoToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						10, // Position relative to other items in the same toolbox tab.
+						8, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("RestrincAlfanumericoToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("RestrincAlfanumericoToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
 						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.

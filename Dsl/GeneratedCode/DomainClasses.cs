@@ -1265,46 +1265,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
-		#region restrinccionFecha opposite domain role accessor
-		/// <summary>
-		/// Gets or sets restrinccionFecha.
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidad
-		/// </summary>
-		public virtual restrinccionFecha restrinccionFecha
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId) as restrinccionFecha;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId, value);
-			}
-		}
-		#endregion
-		#region restrinccionInt opposite domain role accessor
-		/// <summary>
-		/// Gets or sets restrinccionInt.
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidad
-		/// </summary>
-		public virtual restrinccionInt restrinccionInt
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId) as restrinccionInt;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId, value);
-			}
-		}
-		#endregion
 		#region ElementGroupPrototype Merge methods
 		/// <summary>
 		/// Returns a value indicating whether the source element represented by the
@@ -1329,26 +1289,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					// Check that creating a link with this path doesn't cause multiplicity overflow: AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
 					if (this.restrinccionAlfanumerico != null)
-					{
-						return false;
-					}
-					return true;
-				}
-				
-				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.DomainClassId)) 
-				{
-					// Check that creating a link with this path doesn't cause multiplicity overflow: AtributoEntidadHasrestrinccionFecha.restrinccionFecha
-					if (this.restrinccionFecha != null)
-					{
-						return false;
-					}
-					return true;
-				}
-				
-				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt.DomainClassId)) 
-				{
-					// Check that creating a link with this path doesn't cause multiplicity overflow: AtributoEntidadHasrestrinccionInt.restrinccionInt
-					if (this.restrinccionInt != null)
 					{
 						return false;
 					}
@@ -1387,24 +1327,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 
 				return;
 			}
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha sourcerestrinccionFecha2 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha;
-			if (sourcerestrinccionFecha2 != null)
-			{
-				// Create link for path AtributoEntidadHasrestrinccionFecha.restrinccionFecha
-				this.restrinccionFecha = sourcerestrinccionFecha2;
-
-				return;
-			}
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt sourcerestrinccionInt3 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt;
-			if (sourcerestrinccionInt3 != null)
-			{
-				// Create link for path AtributoEntidadHasrestrinccionInt.restrinccionInt
-				this.restrinccionInt = sourcerestrinccionInt3;
-
-				return;
-			}
 		
 			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
 			// during a "Paste".
@@ -1437,34 +1359,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
 					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidadDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId);
-				}
-
-				return;
-			}
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha sourcerestrinccionFecha2 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionFecha;
-			if (sourcerestrinccionFecha2 != null)
-			{
-				// Delete link for path AtributoEntidadHasrestrinccionFecha.restrinccionFecha
-				
-				foreach (DslModeling::ElementLink link in global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.GetLinks((global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad)this, sourcerestrinccionFecha2))
-				{
-					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
-					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidadDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFechaDomainRoleId);
-				}
-
-				return;
-			}
-				
-			global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt sourcerestrinccionInt3 = sourceElement as global::UPM_IPS.XCYLSProyectoIPS.restrinccionInt;
-			if (sourcerestrinccionInt3 != null)
-			{
-				// Delete link for path AtributoEntidadHasrestrinccionInt.restrinccionInt
-				
-				foreach (DslModeling::ElementLink link in global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.GetLinks((global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad)this, sourcerestrinccionInt3))
-				{
-					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
-					link.Delete(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidadDomainRoleId, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionIntDomainRoleId);
 				}
 
 				return;
@@ -3009,308 +2903,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
-		#region AtributoEntidad opposite domain role accessor
-		/// <summary>
-		/// Gets or sets AtributoEntidad.
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
-		/// </summary>
-		public virtual AtributoEntidad AtributoEntidad
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId) as AtributoEntidad;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, value);
-			}
-		}
-		#endregion
-	}
-}
-namespace UPM_IPS.XCYLSProyectoIPS
-{
-	/// <summary>
-	/// DomainClass restrinccionFecha
-	/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha
-	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("d78d037b-7e78-41bf-bd23-2cc2aee37bf5")]
-	public partial class restrinccionFecha : DslModeling::ModelElement
-	{
-		#region Constructors, domain class Id
-	
-		/// <summary>
-		/// restrinccionFecha domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xd78d037b, 0x7e78, 0x41bf, 0xbd, 0x23, 0x2c, 0xc2, 0xae, 0xe3, 0x7b, 0xf5);
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public restrinccionFecha(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public restrinccionFecha(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, propertyAssignments)
-		{
-		}
-		#endregion
-		#region FechaMin domain property code
-		
-		/// <summary>
-		/// FechaMin domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid FechaMinDomainPropertyId = new global::System.Guid(0x51e51b68, 0x3c0f, 0x4659, 0xb7, 0xe3, 0x7f, 0x34, 0x73, 0x7f, 0x80, 0xea);
-		
-		/// <summary>
-		/// Storage for FechaMin
-		/// </summary>
-		private global::System.String fechaMinPropertyStorage = string.Empty;
-		
-		/// <summary>
-		/// Gets or sets the value of FechaMin domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Min
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMin.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMin.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("51e51b68-3c0f-4659-b7e3-7f34737f80ea")]
-		public global::System.String FechaMin
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return fechaMinPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				FechaMinPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the restrinccionFecha.FechaMin domain property.
-		/// </summary>
-		internal sealed partial class FechaMinPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionFecha, global::System.String>
-		{
-			private FechaMinPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the restrinccionFecha.FechaMin domain property value handler.
-			/// </summary>
-			public static readonly FechaMinPropertyHandler Instance = new FechaMinPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the restrinccionFecha.FechaMin domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return FechaMinDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(restrinccionFecha element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.fechaMinPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(restrinccionFecha element, global::System.String newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				global::System.String oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.fechaMinPropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
-		#region FechaMax domain property code
-		
-		/// <summary>
-		/// FechaMax domain property Id.
-		/// </summary>
-		public static readonly global::System.Guid FechaMaxDomainPropertyId = new global::System.Guid(0xa256544e, 0xff44, 0x4323, 0xbc, 0x4b, 0x60, 0x37, 0x34, 0x00, 0x4f, 0x8e);
-		
-		/// <summary>
-		/// Storage for FechaMax
-		/// </summary>
-		private global::System.String fechaMaxPropertyStorage = string.Empty;
-		
-		/// <summary>
-		/// Gets or sets the value of FechaMax domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Max
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMax.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionFecha/FechaMax.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("a256544e-ff44-4323-bc4b-603734004f8e")]
-		public global::System.String FechaMax
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return fechaMaxPropertyStorage;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				FechaMaxPropertyHandler.Instance.SetValue(this, value);
-			}
-		}
-		/// <summary>
-		/// Value handler for the restrinccionFecha.FechaMax domain property.
-		/// </summary>
-		internal sealed partial class FechaMaxPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionFecha, global::System.String>
-		{
-			private FechaMaxPropertyHandler() { }
-		
-			/// <summary>
-			/// Gets the singleton instance of the restrinccionFecha.FechaMax domain property value handler.
-			/// </summary>
-			public static readonly FechaMaxPropertyHandler Instance = new FechaMaxPropertyHandler();
-		
-			/// <summary>
-			/// Gets the Id of the restrinccionFecha.FechaMax domain property.
-			/// </summary>
-			public sealed override global::System.Guid DomainPropertyId
-			{
-				[global::System.Diagnostics.DebuggerStepThrough]
-				get
-				{
-					return FechaMaxDomainPropertyId;
-				}
-			}
-			
-			/// <summary>
-			/// Gets a strongly-typed value of the property on specified element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(restrinccionFecha element)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.fechaMaxPropertyStorage;
-			}
-		
-			/// <summary>
-			/// Sets property value on an element.
-			/// </summary>
-			/// <param name="element">Element which owns the property.</param>
-			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(restrinccionFecha element, global::System.String newValue)
-			{
-				if (element == null) throw new global::System.ArgumentNullException("element");
-		
-				global::System.String oldValue = GetValue(element);
-				if (newValue != oldValue)
-				{
-					ValueChanging(element, oldValue, newValue);
-					element.fechaMaxPropertyStorage = newValue;
-					ValueChanged(element, oldValue, newValue);
-				}
-			}
-		}
-		
-		#endregion
-		#region AtributoEntidad opposite domain role accessor
-		/// <summary>
-		/// Gets or sets AtributoEntidad.
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFecha
-		/// </summary>
-		public virtual AtributoEntidad AtributoEntidad
-		{
-			[global::System.Diagnostics.DebuggerStepThrough]
-			get
-			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFechaDomainRoleId) as AtributoEntidad;
-			}
-			[global::System.Diagnostics.DebuggerStepThrough]
-			set
-			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFechaDomainRoleId, value);
-			}
-		}
-		#endregion
-	}
-}
-namespace UPM_IPS.XCYLSProyectoIPS
-{
-	/// <summary>
-	/// DomainClass restrinccionInt
-	/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt
-	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
-	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("3f4236ef-1cb6-4648-9768-a5ce2a59680b")]
-	public partial class restrinccionInt : DslModeling::ModelElement
-	{
-		#region Constructors, domain class Id
-	
-		/// <summary>
-		/// restrinccionInt domain class Id.
-		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x3f4236ef, 0x1cb6, 0x4648, 0x97, 0x68, 0xa5, 0xce, 0x2a, 0x59, 0x68, 0x0b);
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="store">Store where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public restrinccionInt(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
-		{
-		}
-		
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		/// <param name="partition">Partition where new element is to be created.</param>
-		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public restrinccionInt(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
-			: base(partition, propertyAssignments)
-		{
-		}
-		#endregion
 		#region Min domain property code
 		
 		/// <summary>
 		/// Min domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid MinDomainPropertyId = new global::System.Guid(0xa2a74f6f, 0x536a, 0x48da, 0xa8, 0x12, 0x99, 0x62, 0x92, 0x51, 0x86, 0x8a);
+		public static readonly global::System.Guid MinDomainPropertyId = new global::System.Guid(0xd503390d, 0xb863, 0x4212, 0x84, 0xef, 0xd7, 0xa2, 0xb1, 0x89, 0x26, 0x17);
 		
 		/// <summary>
 		/// Storage for Min
@@ -3319,11 +2917,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		
 		/// <summary>
 		/// Gets or sets the value of Min domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Min
+		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Min
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Min.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Min.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("a2a74f6f-536a-48da-a812-99629251868a")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("d503390d-b863-4212-84ef-d7a2b1892617")]
 		public global::System.Int32 Min
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -3338,19 +2936,19 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		/// <summary>
-		/// Value handler for the restrinccionInt.Min domain property.
+		/// Value handler for the restrinccionAlfanumerico.Min domain property.
 		/// </summary>
-		internal sealed partial class MinPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionInt, global::System.Int32>
+		internal sealed partial class MinPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionAlfanumerico, global::System.Int32>
 		{
 			private MinPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the restrinccionInt.Min domain property value handler.
+			/// Gets the singleton instance of the restrinccionAlfanumerico.Min domain property value handler.
 			/// </summary>
 			public static readonly MinPropertyHandler Instance = new MinPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the restrinccionInt.Min domain property.
+			/// Gets the Id of the restrinccionAlfanumerico.Min domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
@@ -3366,7 +2964,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.Int32 GetValue(restrinccionInt element)
+			public override sealed global::System.Int32 GetValue(restrinccionAlfanumerico element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 				return element.minPropertyStorage;
@@ -3377,7 +2975,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(restrinccionInt element, global::System.Int32 newValue)
+			public override sealed void SetValue(restrinccionAlfanumerico element, global::System.Int32 newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
@@ -3397,7 +2995,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <summary>
 		/// Max domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid MaxDomainPropertyId = new global::System.Guid(0xe04abd5c, 0x56a8, 0x40bc, 0x8f, 0x13, 0x92, 0xe1, 0x81, 0x32, 0xb8, 0x4e);
+		public static readonly global::System.Guid MaxDomainPropertyId = new global::System.Guid(0x2e2815b5, 0xdea9, 0x4bd0, 0x9d, 0xe9, 0x07, 0x82, 0xd7, 0x45, 0xc1, 0xb1);
 		
 		/// <summary>
 		/// Storage for Max
@@ -3406,11 +3004,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		
 		/// <summary>
 		/// Gets or sets the value of Max domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Max
+		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Max
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Max.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionInt/Max.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainObjectId("e04abd5c-56a8-40bc-8f13-92e18132b84e")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("2e2815b5-dea9-4bd0-9de9-0782d745c1b1")]
 		public global::System.Int32 Max
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
@@ -3425,19 +3023,19 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		/// <summary>
-		/// Value handler for the restrinccionInt.Max domain property.
+		/// Value handler for the restrinccionAlfanumerico.Max domain property.
 		/// </summary>
-		internal sealed partial class MaxPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionInt, global::System.Int32>
+		internal sealed partial class MaxPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionAlfanumerico, global::System.Int32>
 		{
 			private MaxPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the restrinccionInt.Max domain property value handler.
+			/// Gets the singleton instance of the restrinccionAlfanumerico.Max domain property value handler.
 			/// </summary>
 			public static readonly MaxPropertyHandler Instance = new MaxPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the restrinccionInt.Max domain property.
+			/// Gets the Id of the restrinccionAlfanumerico.Max domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
@@ -3453,7 +3051,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.Int32 GetValue(restrinccionInt element)
+			public override sealed global::System.Int32 GetValue(restrinccionAlfanumerico element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 				return element.maxPropertyStorage;
@@ -3464,7 +3062,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(restrinccionInt element, global::System.Int32 newValue)
+			public override sealed void SetValue(restrinccionAlfanumerico element, global::System.Int32 newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
@@ -3479,23 +3077,197 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
+		#region FechaMax domain property code
+		
+		/// <summary>
+		/// FechaMax domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid FechaMaxDomainPropertyId = new global::System.Guid(0x435135bc, 0x0084, 0x4f4b, 0xa3, 0x85, 0x03, 0xa8, 0x04, 0x07, 0xe8, 0x49);
+		
+		/// <summary>
+		/// Storage for FechaMax
+		/// </summary>
+		private global::System.DateTime fechaMaxPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of FechaMax domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Max
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("435135bc-0084-4f4b-a385-03a80407e849")]
+		public global::System.DateTime FechaMax
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return fechaMaxPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				FechaMaxPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the restrinccionAlfanumerico.FechaMax domain property.
+		/// </summary>
+		internal sealed partial class FechaMaxPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionAlfanumerico, global::System.DateTime>
+		{
+			private FechaMaxPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the restrinccionAlfanumerico.FechaMax domain property value handler.
+			/// </summary>
+			public static readonly FechaMaxPropertyHandler Instance = new FechaMaxPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the restrinccionAlfanumerico.FechaMax domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return FechaMaxDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.DateTime GetValue(restrinccionAlfanumerico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.fechaMaxPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(restrinccionAlfanumerico element, global::System.DateTime newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.DateTime oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.fechaMaxPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region FechaMin domain property code
+		
+		/// <summary>
+		/// FechaMin domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid FechaMinDomainPropertyId = new global::System.Guid(0x81828fc7, 0x29a5, 0x4701, 0xaf, 0xd0, 0xf7, 0x86, 0xba, 0xd3, 0x14, 0x56);
+		
+		/// <summary>
+		/// Storage for FechaMin
+		/// </summary>
+		private global::System.DateTime fechaMinPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of FechaMin domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Min
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("81828fc7-29a5-4701-afd0-f786bad31456")]
+		public global::System.DateTime FechaMin
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return fechaMinPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				FechaMinPropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the restrinccionAlfanumerico.FechaMin domain property.
+		/// </summary>
+		internal sealed partial class FechaMinPropertyHandler : DslModeling::DomainPropertyValueHandler<restrinccionAlfanumerico, global::System.DateTime>
+		{
+			private FechaMinPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the restrinccionAlfanumerico.FechaMin domain property value handler.
+			/// </summary>
+			public static readonly FechaMinPropertyHandler Instance = new FechaMinPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the restrinccionAlfanumerico.FechaMin domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return FechaMinDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.DateTime GetValue(restrinccionAlfanumerico element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.fechaMinPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(restrinccionAlfanumerico element, global::System.DateTime newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.DateTime oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.fechaMinPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region AtributoEntidad opposite domain role accessor
 		/// <summary>
 		/// Gets or sets AtributoEntidad.
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionInt
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico
 		/// </summary>
 		public virtual AtributoEntidad AtributoEntidad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionIntDomainRoleId) as AtributoEntidad;
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId) as AtributoEntidad;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionIntDomainRoleId, value);
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, value);
 			}
 		}
 		#endregion

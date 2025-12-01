@@ -113,22 +113,6 @@
             <DomainPath>AtributoEntidadHasrestrinccionAlfanumerico.restrinccionAlfanumerico</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
-        <ElementMergeDirective>
-          <Index>
-            <DomainClassMoniker Name="restrinccionFecha" />
-          </Index>
-          <LinkCreationPaths>
-            <DomainPath>AtributoEntidadHasrestrinccionFecha.restrinccionFecha</DomainPath>
-          </LinkCreationPaths>
-        </ElementMergeDirective>
-        <ElementMergeDirective>
-          <Index>
-            <DomainClassMoniker Name="restrinccionInt" />
-          </Index>
-          <LinkCreationPaths>
-            <DomainPath>AtributoEntidadHasrestrinccionInt.restrinccionInt</DomainPath>
-          </LinkCreationPaths>
-        </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
     <DomainClass Id="863fd30e-be10-41dc-9c2c-75e56b3e7a98" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion" Name="AtributoRelacion" DisplayName="Atributo Relacion" Namespace="UPM_IPS.XCYLSProyectoIPS">
@@ -233,32 +217,24 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
-      </Properties>
-    </DomainClass>
-    <DomainClass Id="d78d037b-7e78-41bf-bd23-2cc2aee37bf5" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha" Name="restrinccionFecha" DisplayName="Restrinccion Fecha" Namespace="UPM_IPS.XCYLSProyectoIPS">
-      <Properties>
-        <DomainProperty Id="51e51b68-3c0f-4659-b7e3-7f34737f80ea" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Min" Name="FechaMin" DisplayName="Fecha Min">
-          <Type>
-            <ExternalTypeMoniker Name="/System/String" />
-          </Type>
-        </DomainProperty>
-        <DomainProperty Id="a256544e-ff44-4323-bc4b-603734004f8e" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionFecha.Fecha Max" Name="FechaMax" DisplayName="Fecha Max">
-          <Type>
-            <ExternalTypeMoniker Name="/System/String" />
-          </Type>
-        </DomainProperty>
-      </Properties>
-    </DomainClass>
-    <DomainClass Id="3f4236ef-1cb6-4648-9768-a5ce2a59680b" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt" Name="restrinccionInt" DisplayName="Restrinccion Int" Namespace="UPM_IPS.XCYLSProyectoIPS">
-      <Properties>
-        <DomainProperty Id="a2a74f6f-536a-48da-a812-99629251868a" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Min" Name="Min" DisplayName="Min">
+        <DomainProperty Id="d503390d-b863-4212-84ef-d7a2b1892617" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Min" Name="Min" DisplayName="Min">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="e04abd5c-56a8-40bc-8f13-92e18132b84e" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionInt.Max" Name="Max" DisplayName="Max">
+        <DomainProperty Id="2e2815b5-dea9-4bd0-9de9-0782d745c1b1" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Max" Name="Max" DisplayName="Max">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="435135bc-0084-4f4b-a385-03a80407e849" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Max" Name="FechaMax" DisplayName="Fecha Max">
+          <Type>
+            <ExternalTypeMoniker Name="/System/DateTime" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="81828fc7-29a5-4701-afd0-f786bad31456" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Min" Name="FechaMin" DisplayName="Fecha Min">
+          <Type>
+            <ExternalTypeMoniker Name="/System/DateTime" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -465,38 +441,6 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="e70678af-1edd-4883-bf5c-6998353635c8" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha" Name="AtributoEntidadHasrestrinccionFecha" DisplayName="Atributo Entidad Hasrestrinccion Fecha" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
-      <Source>
-        <DomainRole Id="f4627f68-0dd8-41f0-981e-58a0b3e7b0e4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.AtributoEntidad" Name="AtributoEntidad" DisplayName="Atributo Entidad" PropertyName="restrinccionFecha" Multiplicity="ZeroOne" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Restrinccion Fecha">
-          <RolePlayer>
-            <DomainClassMoniker Name="AtributoEntidad" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="287906fd-042c-4d41-b08c-8dc84e0d3de3" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionFecha.restrinccionFecha" Name="restrinccionFecha" DisplayName="Restrinccion Fecha" PropertyName="AtributoEntidad" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo Entidad">
-          <RolePlayer>
-            <DomainClassMoniker Name="restrinccionFecha" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
-    <DomainRelationship Id="cec266af-2a71-434b-9112-0f79a5fb5864" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt" Name="AtributoEntidadHasrestrinccionInt" DisplayName="Atributo Entidad Hasrestrinccion Int" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
-      <Source>
-        <DomainRole Id="473e46dc-2afe-4279-99c1-36cc6e4b78eb" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.AtributoEntidad" Name="AtributoEntidad" DisplayName="Atributo Entidad" PropertyName="restrinccionInt" Multiplicity="ZeroOne" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Restrinccion Int">
-          <RolePlayer>
-            <DomainClassMoniker Name="AtributoEntidad" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="42db1dea-fdca-4017-bf2a-e7d779a57ff4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidadHasrestrinccionInt.restrinccionInt" Name="restrinccionInt" DisplayName="Restrinccion Int" PropertyName="AtributoEntidad" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo Entidad">
-          <RolePlayer>
-            <DomainClassMoniker Name="restrinccionInt" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
   </Relationships>
   <Types>
     <ExternalType Name="DateTime" Namespace="System" />
@@ -611,25 +555,21 @@
         <TextDecorator Name="Null" DisplayName="Null" DefaultText="Null" />
       </ShapeHasDecorators>
     </GeometryShape>
-    <Port Id="6f116fdd-413f-43e4-9770-cce113555b3a" Description="Description for UPM_IPS.XCYLSProyectoIPS.RestrinccInt" Name="RestrinccInt" DisplayName="Restrincc Int" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Restrincc Int" InitialWidth="0.5" InitialHeight="0.5" FillGradientMode="Vertical" Geometry="Rectangle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="Min" DisplayName="Min" DefaultText="Min" />
-      </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="Max" DisplayName="Max" DefaultText="Max" />
-      </ShapeHasDecorators>
-    </Port>
     <Port Id="0e2605b9-2a96-467d-8e48-82c81e94ae99" Description="Description for UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric" Name="RestrinccAlfanumeric" DisplayName="Restrincc Alfanumeric" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Restrincc Alfanumeric" InitialWidth="0.5" InitialHeight="0.5" Geometry="Rectangle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="Valores" DisplayName="Valores" DefaultText="Valores" />
-      </ShapeHasDecorators>
-    </Port>
-    <Port Id="59db0954-cc72-4c1f-8de1-b3400b144787" Description="Description for UPM_IPS.XCYLSProyectoIPS.RestrinccFecha" Name="RestrinccFecha" DisplayName="Restrincc Fecha" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Restrincc Fecha" InitialWidth="0.5" InitialHeight="0.5" Geometry="Rectangle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="FechaMin" DisplayName="Fecha Min" DefaultText="FechaMin" />
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Valores" DisplayName="Valores" DefaultText="Valores" FontSize="5" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
-        <TextDecorator Name="FechaMax" DisplayName="Fecha Max" DefaultText="FechaMax" />
+        <TextDecorator Name="min" DisplayName="Min" DefaultText="min" FontSize="5" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Max" DisplayName="Max" DefaultText="Max" FontSize="5" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="FechaMin" DisplayName="Fecha Min" DefaultText="FechaMin" FontSize="5" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="FechaMax" DisplayName="Fecha Max" DefaultText="FechaMax" FontSize="5" />
       </ShapeHasDecorators>
     </Port>
   </Shapes>
@@ -731,12 +671,6 @@
           </XmlPropertyData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="restrinccionAlfanumerico">
             <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionAlfanumerico" />
-          </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="restrinccionFecha">
-            <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionFecha" />
-          </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="restrinccionInt">
-            <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionInt" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -876,47 +810,25 @@
           <XmlPropertyData XmlName="valores">
             <DomainPropertyMoniker Name="restrinccionAlfanumerico/Valores" />
           </XmlPropertyData>
-        </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="RestrinccionFecha" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccionFechaMoniker" ElementName="restrinccionFecha" MonikerTypeName="RestrinccionFechaMoniker">
-        <DomainClassMoniker Name="restrinccionFecha" />
-        <ElementData>
-          <XmlPropertyData XmlName="fechaMin">
-            <DomainPropertyMoniker Name="restrinccionFecha/FechaMin" />
-          </XmlPropertyData>
-          <XmlPropertyData XmlName="fechaMax">
-            <DomainPropertyMoniker Name="restrinccionFecha/FechaMax" />
-          </XmlPropertyData>
-        </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="RestrinccionInt" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccionIntMoniker" ElementName="restrinccionInt" MonikerTypeName="RestrinccionIntMoniker">
-        <DomainClassMoniker Name="restrinccionInt" />
-        <ElementData>
           <XmlPropertyData XmlName="min">
-            <DomainPropertyMoniker Name="restrinccionInt/Min" />
+            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Min" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="max">
-            <DomainPropertyMoniker Name="restrinccionInt/Max" />
+            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Max" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="fechaMax">
+            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMax" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="fechaMin">
+            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMin" />
           </XmlPropertyData>
         </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="RestrinccInt" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccIntMoniker" ElementName="restrinccInt" MonikerTypeName="RestrinccIntMoniker">
-        <PortMoniker Name="RestrinccInt" />
       </XmlClassData>
       <XmlClassData TypeName="AtributoEntidadHasrestrinccionAlfanumerico" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoEntidadHasrestrinccionAlfanumericoMoniker" ElementName="atributoEntidadHasrestrinccionAlfanumerico" MonikerTypeName="AtributoEntidadHasrestrinccionAlfanumericoMoniker">
         <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionAlfanumerico" />
       </XmlClassData>
-      <XmlClassData TypeName="AtributoEntidadHasrestrinccionFecha" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoEntidadHasrestrinccionFechaMoniker" ElementName="atributoEntidadHasrestrinccionFecha" MonikerTypeName="AtributoEntidadHasrestrinccionFechaMoniker">
-        <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionFecha" />
-      </XmlClassData>
-      <XmlClassData TypeName="AtributoEntidadHasrestrinccionInt" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoEntidadHasrestrinccionIntMoniker" ElementName="atributoEntidadHasrestrinccionInt" MonikerTypeName="AtributoEntidadHasrestrinccionIntMoniker">
-        <DomainRelationshipMoniker Name="AtributoEntidadHasrestrinccionInt" />
-      </XmlClassData>
       <XmlClassData TypeName="RestrinccAlfanumeric" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccAlfanumericMoniker" ElementName="restrinccAlfanumeric" MonikerTypeName="RestrinccAlfanumericMoniker">
         <PortMoniker Name="RestrinccAlfanumeric" />
-      </XmlClassData>
-      <XmlClassData TypeName="RestrinccFecha" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccFechaMoniker" ElementName="restrinccFecha" MonikerTypeName="RestrinccFechaMoniker">
-        <PortMoniker Name="RestrinccFecha" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -1122,29 +1034,6 @@
         <GeometryShapeMoniker Name="AtributoRelacionTool" />
       </ShapeMap>
       <ShapeMap>
-        <DomainClassMoniker Name="restrinccionInt" />
-        <ParentElementPath>
-          <DomainPath>AtributoEntidadHasrestrinccionInt.AtributoEntidad/!AtributoEntidad</DomainPath>
-        </ParentElementPath>
-        <DecoratorMap>
-          <TextDecoratorMoniker Name="RestrinccInt/Max" />
-          <PropertyDisplayed>
-            <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionInt/Max" />
-            </PropertyPath>
-          </PropertyDisplayed>
-        </DecoratorMap>
-        <DecoratorMap>
-          <TextDecoratorMoniker Name="RestrinccInt/Min" />
-          <PropertyDisplayed>
-            <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionInt/Min" />
-            </PropertyPath>
-          </PropertyDisplayed>
-        </DecoratorMap>
-        <PortMoniker Name="RestrinccInt" />
-      </ShapeMap>
-      <ShapeMap>
         <DomainClassMoniker Name="restrinccionAlfanumerico" />
         <ParentElementPath>
           <DomainPath>AtributoEntidadHasrestrinccionAlfanumerico.AtributoEntidad/!AtributoEntidad</DomainPath>
@@ -1157,30 +1046,39 @@
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="RestrinccAlfanumeric/min" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="restrinccionAlfanumerico/Min" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="RestrinccAlfanumeric/FechaMax" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMax" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="RestrinccAlfanumeric/FechaMin" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMin" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="RestrinccAlfanumeric/Max" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="restrinccionAlfanumerico/Max" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
         <PortMoniker Name="RestrinccAlfanumeric" />
-      </ShapeMap>
-      <ShapeMap>
-        <DomainClassMoniker Name="restrinccionFecha" />
-        <ParentElementPath>
-          <DomainPath>AtributoEntidadHasrestrinccionFecha.AtributoEntidad/!AtributoEntidad</DomainPath>
-        </ParentElementPath>
-        <DecoratorMap>
-          <TextDecoratorMoniker Name="RestrinccFecha/FechaMax" />
-          <PropertyDisplayed>
-            <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionFecha/FechaMax" />
-            </PropertyPath>
-          </PropertyDisplayed>
-        </DecoratorMap>
-        <DecoratorMap>
-          <TextDecoratorMoniker Name="RestrinccFecha/FechaMin" />
-          <PropertyDisplayed>
-            <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionFecha/FechaMin" />
-            </PropertyPath>
-          </PropertyDisplayed>
-        </DecoratorMap>
-        <PortMoniker Name="RestrinccFecha" />
       </ShapeMap>
     </ShapeMaps>
     <ConnectorMaps>
@@ -1266,12 +1164,6 @@
       </ElementTool>
       <ElementTool Name="AtributoEntidad" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidad" Tooltip="Atributo Entidad" HelpKeyword="AtributoEntidad">
         <DomainClassMoniker Name="AtributoEntidad" />
-      </ElementTool>
-      <ElementTool Name="restrincInt" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="restrincInt" Tooltip="Restrinc Int" HelpKeyword="restrincInt">
-        <PortMoniker Name="RestrinccInt" />
-      </ElementTool>
-      <ElementTool Name="RestrincFecha" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincFecha" Tooltip="Restrinc Fecha" HelpKeyword="RestrincFecha">
-        <PortMoniker Name="RestrinccFecha" />
       </ElementTool>
       <ElementTool Name="RestrincAlfanumerico" ToolboxIcon="D:\Download\XCYLSProyectoIPS-master\XCYLSProyectoIPS-master\Dsl\Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincAlfanumerico" Tooltip="Restrinc Alfanumerico" HelpKeyword="RestrincAlfanumerico">
         <DomainClassMoniker Name="restrinccionAlfanumerico" />
