@@ -317,6 +317,46 @@
     <value>Color Fondo</value>
     <comment>DisplayName for DomainProperty &apos;ColorFondo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/ColorTitulo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Color Titulo</value>
+    <comment>Description for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/ColorTitulo.DisplayName" xml:space="preserve">
+    <value>Color Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;ColorTitulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Titulo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Titulo</value>
+    <comment>Description for DomainProperty &apos;Titulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Titulo.DisplayName" xml:space="preserve">
+    <value>Titulo</value>
+    <comment>DisplayName for DomainProperty &apos;Titulo&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Tamano.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Tamano</value>
+    <comment>Description for DomainProperty &apos;Tamano&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Tamano.DisplayName" xml:space="preserve">
+    <value>Tamano</value>
+    <comment>DisplayName for DomainProperty &apos;Tamano&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Alineacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Alineacion</value>
+    <comment>Description for DomainProperty &apos;Alineacion&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/Alineacion.DisplayName" xml:space="preserve">
+    <value>Alineacion</value>
+    <comment>DisplayName for DomainProperty &apos;Alineacion&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/TipoLetra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Tipo Letra</value>
+    <comment>Description for DomainProperty &apos;TipoLetra&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb/TipoLetra.DisplayName" xml:space="preserve">
+    <value>Tipo Letra</value>
+    <comment>DisplayName for DomainProperty &apos;TipoLetra&apos; on DomainClass &apos;EstiloPortalWeb&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario</value>
     <comment>Description for DomainClass &apos;EstiloCampoFormulario&apos;</comment>
@@ -332,6 +372,38 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Visualizacion.DisplayName" xml:space="preserve">
     <value>Visualizacion</value>
     <comment>DisplayName for DomainProperty &apos;Visualizacion&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Color.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Color</value>
+    <comment>Description for DomainProperty &apos;Color&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Color.DisplayName" xml:space="preserve">
+    <value>Color</value>
+    <comment>DisplayName for DomainProperty &apos;Color&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Tamano.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Tamano</value>
+    <comment>Description for DomainProperty &apos;Tamano&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Tamano.DisplayName" xml:space="preserve">
+    <value>Tamano</value>
+    <comment>DisplayName for DomainProperty &apos;Tamano&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Alineacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Alineacion</value>
+    <comment>Description for DomainProperty &apos;Alineacion&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/Alineacion.DisplayName" xml:space="preserve">
+    <value>Alineacion</value>
+    <comment>DisplayName for DomainProperty &apos;Alineacion&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/TipoLetra.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Tipo Letra</value>
+    <comment>Description for DomainProperty &apos;TipoLetra&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario/TipoLetra.DisplayName" xml:space="preserve">
+    <value>Tipo Letra</value>
+    <comment>DisplayName for DomainProperty &apos;TipoLetra&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico</value>
@@ -637,69 +709,37 @@
     <value>Relacioned1</value>
     <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;RelacionReferencesEntidad1&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb</value>
-    <comment>Description for DomainClass &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed</value>
+    <comment>Description for DomainClass &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DisplayName" xml:space="preserve">
-    <value>Dera Web IPSHas Estilo Portal Web</value>
-    <comment>DisplayName for DomainClass &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.DisplayName" xml:space="preserve">
+    <value>Dera Web IPSHas Estilo Portal Webbed</value>
+    <comment>DisplayName for DomainClass &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPS</value>
-    <comment>Description for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/DeraWebIPS.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.DeraWebIPS</value>
+    <comment>Description for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/DeraWebIPS.DisplayName" xml:space="preserve">
     <value>Dera Web IPS</value>
-    <comment>DisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
+    <comment>DisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/DeraWebIPS.PropertyDisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/DeraWebIPS.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Portal Webbed</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/EstiloPortalWeb.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.EstiloPortalWeb</value>
+    <comment>Description for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/EstiloPortalWeb.DisplayName" xml:space="preserve">
     <value>Estilo Portal Web</value>
-    <comment>PropertyDisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
+    <comment>DisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb</value>
-    <comment>Description for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.DisplayName" xml:space="preserve">
-    <value>Estilo Portal Web</value>
-    <comment>DisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb/EstiloPortalWeb.PropertyDisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed/EstiloPortalWeb.PropertyDisplayName" xml:space="preserve">
     <value>Dera Web IPS</value>
-    <comment>PropertyDisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWeb&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario</value>
-    <comment>Description for DomainClass &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.DisplayName" xml:space="preserve">
-    <value>Atributo Has Estilo Campo Formulario</value>
-    <comment>DisplayName for DomainClass &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Atributo</value>
-    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.DisplayName" xml:space="preserve">
-    <value>Atributo</value>
-    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/Atributo.PropertyDisplayName" xml:space="preserve">
-    <value>Estilo Campo Formulario</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormulario</value>
-    <comment>Description for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.DisplayName" xml:space="preserve">
-    <value>Estilo Campo Formulario</value>
-    <comment>DisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
-  </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario/EstiloCampoFormulario.PropertyDisplayName" xml:space="preserve">
-    <value>Atributo</value>
-    <comment>PropertyDisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoHasEstiloCampoFormulario&apos;</comment>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloPortalWeb&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloPortalWebbed&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb</value>
@@ -764,6 +804,70 @@
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.PropertyDisplayName" xml:space="preserve">
     <value>Atributo</value>
     <comment>PropertyDisplayName for DomainRole &apos;restrinccionAlfanumerico&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios</value>
+    <comment>Description for DomainClass &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.DisplayName" xml:space="preserve">
+    <value>Atributo References Estilo Campo Formularios</value>
+    <comment>DisplayName for DomainClass &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/Atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Campo Formularios</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/EstiloCampoFormulario.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.EstiloCampoFormulario</value>
+    <comment>Description for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/EstiloCampoFormulario.DisplayName" xml:space="preserve">
+    <value>Estilo Campo Formulario</value>
+    <comment>DisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios/EstiloCampoFormulario.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;AtributoReferencesEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios</value>
+    <comment>Description for DomainClass &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.DisplayName" xml:space="preserve">
+    <value>Dera Web IPSHas Estilo Campo Formularios</value>
+    <comment>DisplayName for DomainClass &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/DeraWebIPS.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.DeraWebIPS</value>
+    <comment>Description for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/DeraWebIPS.DisplayName" xml:space="preserve">
+    <value>Dera Web IPS</value>
+    <comment>DisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/DeraWebIPS.PropertyDisplayName" xml:space="preserve">
+    <value>Estilo Campo Formularios</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DeraWebIPS&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/EstiloCampoFormulario.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.EstiloCampoFormulario</value>
+    <comment>Description for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/EstiloCampoFormulario.DisplayName" xml:space="preserve">
+    <value>Estilo Campo Formulario</value>
+    <comment>DisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios/EstiloCampoFormulario.PropertyDisplayName" xml:space="preserve">
+    <value>Dera Web IPS</value>
+    <comment>PropertyDisplayName for DomainRole &apos;EstiloCampoFormulario&apos; on DomainRelationship &apos;DeraWebIPSHasEstiloCampoFormularios&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.tipoEnumeration/String.DisplayName" xml:space="preserve">
     <value>String</value>
@@ -1053,6 +1157,90 @@
     <value>FechaMax</value>
     <comment>Text decorator default text</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampo</value>
+    <comment>Description for DomainClass &apos;EstiloCampo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloCampo.DisplayName" xml:space="preserve">
+    <value>Estilo Campo</value>
+    <comment>DisplayName for DomainClass &apos;EstiloCampo&apos;</comment>
+  </data>
+  <data name="EstiloCampoVisualizacionDefaultText" xml:space="preserve">
+    <value>Visualizacion</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloCampoColorDefaultText" xml:space="preserve">
+    <value>Color</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloCampoTamanoDefaultText" xml:space="preserve">
+    <value>Tamano</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloCampoAlineacionDefaultText" xml:space="preserve">
+    <value>Alineacion</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloCampoTipoLetraDefaultText" xml:space="preserve">
+    <value>TipoLetra</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortral.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortral</value>
+    <comment>Description for DomainClass &apos;EstiloPortral&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPortral.DisplayName" xml:space="preserve">
+    <value>Estilo Portral</value>
+    <comment>DisplayName for DomainClass &apos;EstiloPortral&apos;</comment>
+  </data>
+  <data name="EstiloPortralColorFondoDefaultText" xml:space="preserve">
+    <value>ColorFondo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPortralColorTituloDefaultText" xml:space="preserve">
+    <value>ColorTitulo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPortralTituloDefaultText" xml:space="preserve">
+    <value>Titulo</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPortralTamanoDefaultText" xml:space="preserve">
+    <value>Tamano</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPortralAlineacionDefaultText" xml:space="preserve">
+    <value>Alineacion</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPortralTipoLetraDefaultText" xml:space="preserve">
+    <value>TipoLetra</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPagina.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.EstiloPagina</value>
+    <comment>Description for DomainClass &apos;EstiloPagina&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.EstiloPagina.DisplayName" xml:space="preserve">
+    <value>Estilo Pagina</value>
+    <comment>DisplayName for DomainClass &apos;EstiloPagina&apos;</comment>
+  </data>
+  <data name="EstiloPaginaColorDefaultText" xml:space="preserve">
+    <value>Color</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPaginaTamanoDefaultText" xml:space="preserve">
+    <value>Tamano</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPaginaAlineacionDefaultText" xml:space="preserve">
+    <value>Alineacion</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EstiloPaginaTipoDefaultText" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>Text decorator default text</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel</value>
     <comment>Description for DomainClass &apos;MetaforaEnt_Rel&apos;</comment>
@@ -1100,6 +1288,22 @@
   <data name="MetaforaRel_EntrelacionADefaultText" xml:space="preserve">
     <value>relacionA</value>
     <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetAtr_EstiloCampo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.MetAtr_EstiloCampo</value>
+    <comment>Description for DomainClass &apos;MetAtr_EstiloCampo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetAtr_EstiloCampo.DisplayName" xml:space="preserve">
+    <value>Met Atr_ Estilo Campo</value>
+    <comment>DisplayName for DomainClass &apos;MetAtr_EstiloCampo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetEnt_EstiloPagina.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.MetEnt_EstiloPagina</value>
+    <comment>Description for DomainClass &apos;MetEnt_EstiloPagina&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.MetEnt_EstiloPagina.DisplayName" xml:space="preserve">
+    <value>Met Ent_ Estilo Pagina</value>
+    <comment>DisplayName for DomainClass &apos;MetEnt_EstiloPagina&apos;</comment>
   </data>
   <data name="FormatList" xml:space="preserve">
     <value>XCYLSProyectoIPS (*.XCYLS_DSLProyIPS)|*.XCYLS_DSLProyIPS</value>
@@ -1183,6 +1387,38 @@
   </data>
   <data name="RestrincAlfanumericoToolboxTooltip" xml:space="preserve">
     <value>Restrinc Alfanumerico</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EnlaceAtr_EstiloCToolboxItem" xml:space="preserve">
+    <value>EnlaceAtr_EstiloC</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EnlaceAtr_EstiloCToolboxTooltip" xml:space="preserve">
+    <value>Enlace Atr_ Estilo C</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloCampoFToolboxItem" xml:space="preserve">
+    <value>EstiloCampoF</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloCampoFToolboxTooltip" xml:space="preserve">
+    <value>Estilo Campo F</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloPortalWebToolboxItem" xml:space="preserve">
+    <value>EstiloPortalWeb</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloPortalWebToolboxTooltip" xml:space="preserve">
+    <value>Estilo Portal Web</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloPaginaWebToolboxItem" xml:space="preserve">
+    <value>EstiloPaginaWeb</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloPaginaWebToolboxTooltip" xml:space="preserve">
+    <value>Estilo Pagina Web</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -1339,6 +1575,22 @@ A DomainClass can be serialized as a moniker only if
     <comment>Toolbox item image</comment>
   </data>
   <data name="RestrincAlfanumericoToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EnlaceAtr_EstiloCToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloCampoFToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloPortalWebToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EstiloPaginaWebToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

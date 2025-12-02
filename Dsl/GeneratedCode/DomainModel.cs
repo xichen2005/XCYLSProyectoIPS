@@ -85,20 +85,26 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				typeof(RelacionHasAtributoRelacioned),
 				typeof(EntidadHasAtributoClaves),
 				typeof(RelacionReferencesEntidad1),
-				typeof(DeraWebIPSHasEstiloPortalWeb),
-				typeof(AtributoHasEstiloCampoFormulario),
+				typeof(DeraWebIPSHasEstiloPortalWebbed),
 				typeof(EntidadHasEstiloPaginaWeb),
 				typeof(AtributoHasrestrinccionAlfanumerico),
+				typeof(AtributoReferencesEstiloCampoFormularios),
+				typeof(DeraWebIPSHasEstiloCampoFormularios),
 				typeof(XCYLSProyectoIPSDiagram),
 				typeof(MetaforaEnt_Rel),
 				typeof(MetaforaEnt_Atr),
 				typeof(MetaforaRel_Atr),
 				typeof(MetaforaRel_Ent),
+				typeof(MetAtr_EstiloCampo),
+				typeof(MetEnt_EstiloPagina),
 				typeof(EntidadShape),
 				typeof(RelacionShape),
 				typeof(AtributoEntShape),
 				typeof(AtributoClaveShape),
 				typeof(AtributoRelacionTool),
+				typeof(EstiloCampo),
+				typeof(EstiloPortral),
+				typeof(EstiloPagina),
 				typeof(RestrinccAlfanumeric),
 				typeof(global::UPM_IPS.XCYLSProyectoIPS.FixUpDiagram),
 				typeof(global::UPM_IPS.XCYLSProyectoIPS.DecoratorPropertyChanged),
@@ -129,7 +135,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainMemberInfo(typeof(EstiloPaginaWeb), "TipoLetra", EstiloPaginaWeb.TipoLetraDomainPropertyId, typeof(EstiloPaginaWeb.TipoLetraPropertyHandler)),
 				new DomainMemberInfo(typeof(EstiloPaginaWeb), "TamañoLetra", EstiloPaginaWeb.TamañoLetraDomainPropertyId, typeof(EstiloPaginaWeb.TamañoLetraPropertyHandler)),
 				new DomainMemberInfo(typeof(EstiloPortalWeb), "ColorFondo", EstiloPortalWeb.ColorFondoDomainPropertyId, typeof(EstiloPortalWeb.ColorFondoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloPortalWeb), "ColorTitulo", EstiloPortalWeb.ColorTituloDomainPropertyId, typeof(EstiloPortalWeb.ColorTituloPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloPortalWeb), "Titulo", EstiloPortalWeb.TituloDomainPropertyId, typeof(EstiloPortalWeb.TituloPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloPortalWeb), "Tamano", EstiloPortalWeb.TamanoDomainPropertyId, typeof(EstiloPortalWeb.TamanoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloPortalWeb), "Alineacion", EstiloPortalWeb.AlineacionDomainPropertyId, typeof(EstiloPortalWeb.AlineacionPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloPortalWeb), "TipoLetra", EstiloPortalWeb.TipoLetraDomainPropertyId, typeof(EstiloPortalWeb.TipoLetraPropertyHandler)),
 				new DomainMemberInfo(typeof(EstiloCampoFormulario), "Visualizacion", EstiloCampoFormulario.VisualizacionDomainPropertyId, typeof(EstiloCampoFormulario.VisualizacionPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloCampoFormulario), "Color", EstiloCampoFormulario.ColorDomainPropertyId, typeof(EstiloCampoFormulario.ColorPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloCampoFormulario), "Tamano", EstiloCampoFormulario.TamanoDomainPropertyId, typeof(EstiloCampoFormulario.TamanoPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloCampoFormulario), "Alineacion", EstiloCampoFormulario.AlineacionDomainPropertyId, typeof(EstiloCampoFormulario.AlineacionPropertyHandler)),
+				new DomainMemberInfo(typeof(EstiloCampoFormulario), "TipoLetra", EstiloCampoFormulario.TipoLetraDomainPropertyId, typeof(EstiloCampoFormulario.TipoLetraPropertyHandler)),
 				new DomainMemberInfo(typeof(restrinccionAlfanumerico), "Valores", restrinccionAlfanumerico.ValoresDomainPropertyId, typeof(restrinccionAlfanumerico.ValoresPropertyHandler)),
 				new DomainMemberInfo(typeof(restrinccionAlfanumerico), "Min", restrinccionAlfanumerico.MinDomainPropertyId, typeof(restrinccionAlfanumerico.MinPropertyHandler)),
 				new DomainMemberInfo(typeof(restrinccionAlfanumerico), "Max", restrinccionAlfanumerico.MaxDomainPropertyId, typeof(restrinccionAlfanumerico.MaxPropertyHandler)),
@@ -163,14 +178,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				new DomainRolePlayerInfo(typeof(EntidadHasAtributoClaves), "AtributoClave", EntidadHasAtributoClaves.AtributoClaveDomainRoleId),
 				new DomainRolePlayerInfo(typeof(RelacionReferencesEntidad1), "Relacion", RelacionReferencesEntidad1.RelacionDomainRoleId),
 				new DomainRolePlayerInfo(typeof(RelacionReferencesEntidad1), "Entidad", RelacionReferencesEntidad1.EntidadDomainRoleId),
-				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloPortalWeb), "DeraWebIPS", DeraWebIPSHasEstiloPortalWeb.DeraWebIPSDomainRoleId),
-				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloPortalWeb), "EstiloPortalWeb", DeraWebIPSHasEstiloPortalWeb.EstiloPortalWebDomainRoleId),
-				new DomainRolePlayerInfo(typeof(AtributoHasEstiloCampoFormulario), "Atributo", AtributoHasEstiloCampoFormulario.AtributoDomainRoleId),
-				new DomainRolePlayerInfo(typeof(AtributoHasEstiloCampoFormulario), "EstiloCampoFormulario", AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId),
+				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloPortalWebbed), "DeraWebIPS", DeraWebIPSHasEstiloPortalWebbed.DeraWebIPSDomainRoleId),
+				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloPortalWebbed), "EstiloPortalWeb", DeraWebIPSHasEstiloPortalWebbed.EstiloPortalWebDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasEstiloPaginaWeb), "Entidad", EntidadHasEstiloPaginaWeb.EntidadDomainRoleId),
 				new DomainRolePlayerInfo(typeof(EntidadHasEstiloPaginaWeb), "EstiloPaginaWeb", EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId),
 				new DomainRolePlayerInfo(typeof(AtributoHasrestrinccionAlfanumerico), "Atributo", AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId),
 				new DomainRolePlayerInfo(typeof(AtributoHasrestrinccionAlfanumerico), "restrinccionAlfanumerico", AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(AtributoReferencesEstiloCampoFormularios), "Atributo", AtributoReferencesEstiloCampoFormularios.AtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(AtributoReferencesEstiloCampoFormularios), "EstiloCampoFormulario", AtributoReferencesEstiloCampoFormularios.EstiloCampoFormularioDomainRoleId),
+				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloCampoFormularios), "DeraWebIPS", DeraWebIPSHasEstiloCampoFormularios.DeraWebIPSDomainRoleId),
+				new DomainRolePlayerInfo(typeof(DeraWebIPSHasEstiloCampoFormularios), "EstiloCampoFormulario", DeraWebIPSHasEstiloCampoFormularios.EstiloCampoFormularioDomainRoleId),
 			};
 		}
 		#endregion
@@ -192,7 +209,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(22);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(27);
 				createElementMap.Add(typeof(DeraWebIPS), 0);
 				createElementMap.Add(typeof(Entidad), 1);
 				createElementMap.Add(typeof(Relacion), 2);
@@ -208,12 +225,17 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				createElementMap.Add(typeof(MetaforaEnt_Atr), 12);
 				createElementMap.Add(typeof(MetaforaRel_Atr), 13);
 				createElementMap.Add(typeof(MetaforaRel_Ent), 14);
-				createElementMap.Add(typeof(EntidadShape), 15);
-				createElementMap.Add(typeof(RelacionShape), 16);
-				createElementMap.Add(typeof(AtributoEntShape), 17);
-				createElementMap.Add(typeof(AtributoClaveShape), 18);
-				createElementMap.Add(typeof(AtributoRelacionTool), 19);
-				createElementMap.Add(typeof(RestrinccAlfanumeric), 20);
+				createElementMap.Add(typeof(MetAtr_EstiloCampo), 15);
+				createElementMap.Add(typeof(MetEnt_EstiloPagina), 16);
+				createElementMap.Add(typeof(EntidadShape), 17);
+				createElementMap.Add(typeof(RelacionShape), 18);
+				createElementMap.Add(typeof(AtributoEntShape), 19);
+				createElementMap.Add(typeof(AtributoClaveShape), 20);
+				createElementMap.Add(typeof(AtributoRelacionTool), 21);
+				createElementMap.Add(typeof(EstiloCampo), 22);
+				createElementMap.Add(typeof(EstiloPortral), 23);
+				createElementMap.Add(typeof(EstiloPagina), 24);
+				createElementMap.Add(typeof(RestrinccAlfanumeric), 25);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -242,12 +264,17 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				case 12: return new MetaforaEnt_Atr(partition, propertyAssignments);
 				case 13: return new MetaforaRel_Atr(partition, propertyAssignments);
 				case 14: return new MetaforaRel_Ent(partition, propertyAssignments);
-				case 15: return new EntidadShape(partition, propertyAssignments);
-				case 16: return new RelacionShape(partition, propertyAssignments);
-				case 17: return new AtributoEntShape(partition, propertyAssignments);
-				case 18: return new AtributoClaveShape(partition, propertyAssignments);
-				case 19: return new AtributoRelacionTool(partition, propertyAssignments);
-				case 20: return new RestrinccAlfanumeric(partition, propertyAssignments);
+				case 15: return new MetAtr_EstiloCampo(partition, propertyAssignments);
+				case 16: return new MetEnt_EstiloPagina(partition, propertyAssignments);
+				case 17: return new EntidadShape(partition, propertyAssignments);
+				case 18: return new RelacionShape(partition, propertyAssignments);
+				case 19: return new AtributoEntShape(partition, propertyAssignments);
+				case 20: return new AtributoClaveShape(partition, propertyAssignments);
+				case 21: return new AtributoRelacionTool(partition, propertyAssignments);
+				case 22: return new EstiloCampo(partition, propertyAssignments);
+				case 23: return new EstiloPortral(partition, propertyAssignments);
+				case 24: return new EstiloPagina(partition, propertyAssignments);
+				case 25: return new RestrinccAlfanumeric(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -270,7 +297,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(11);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(12);
 				createElementLinkMap.Add(typeof(DeraWebIPSHasEntidad), 0);
 				createElementLinkMap.Add(typeof(EntidadReferencesRelacioned), 1);
 				createElementLinkMap.Add(typeof(DeraWebIPSHasRelacioned), 2);
@@ -278,10 +305,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				createElementLinkMap.Add(typeof(RelacionHasAtributoRelacioned), 4);
 				createElementLinkMap.Add(typeof(EntidadHasAtributoClaves), 5);
 				createElementLinkMap.Add(typeof(RelacionReferencesEntidad1), 6);
-				createElementLinkMap.Add(typeof(DeraWebIPSHasEstiloPortalWeb), 7);
-				createElementLinkMap.Add(typeof(AtributoHasEstiloCampoFormulario), 8);
-				createElementLinkMap.Add(typeof(EntidadHasEstiloPaginaWeb), 9);
-				createElementLinkMap.Add(typeof(AtributoHasrestrinccionAlfanumerico), 10);
+				createElementLinkMap.Add(typeof(DeraWebIPSHasEstiloPortalWebbed), 7);
+				createElementLinkMap.Add(typeof(EntidadHasEstiloPaginaWeb), 8);
+				createElementLinkMap.Add(typeof(AtributoHasrestrinccionAlfanumerico), 9);
+				createElementLinkMap.Add(typeof(AtributoReferencesEstiloCampoFormularios), 10);
+				createElementLinkMap.Add(typeof(DeraWebIPSHasEstiloCampoFormularios), 11);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -303,10 +331,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				case 4: return new RelacionHasAtributoRelacioned(partition, roleAssignments, propertyAssignments);
 				case 5: return new EntidadHasAtributoClaves(partition, roleAssignments, propertyAssignments);
 				case 6: return new RelacionReferencesEntidad1(partition, roleAssignments, propertyAssignments);
-				case 7: return new DeraWebIPSHasEstiloPortalWeb(partition, roleAssignments, propertyAssignments);
-				case 8: return new AtributoHasEstiloCampoFormulario(partition, roleAssignments, propertyAssignments);
-				case 9: return new EntidadHasEstiloPaginaWeb(partition, roleAssignments, propertyAssignments);
-				case 10: return new AtributoHasrestrinccionAlfanumerico(partition, roleAssignments, propertyAssignments);
+				case 7: return new DeraWebIPSHasEstiloPortalWebbed(partition, roleAssignments, propertyAssignments);
+				case 8: return new EntidadHasEstiloPaginaWeb(partition, roleAssignments, propertyAssignments);
+				case 9: return new AtributoHasrestrinccionAlfanumerico(partition, roleAssignments, propertyAssignments);
+				case 10: return new AtributoReferencesEstiloCampoFormularios(partition, roleAssignments, propertyAssignments);
+				case 11: return new DeraWebIPSHasEstiloCampoFormularios(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -482,10 +511,10 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoEntidad.AtributoEntidadDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.RelacionHasAtributoRelacioned.AtributoRelacionDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasAtributoClaves.AtributoClaveDomainRoleId, true);
-			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWebDomainRoleId, true);
-			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormularioDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.EstiloPortalWebDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.EntidadHasEstiloPaginaWeb.EstiloPaginaWebDomainRoleId, true);
 			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.EstiloCampoFormularioDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>

@@ -24,7 +24,15 @@
             <DomainClassMoniker Name="EstiloPortalWeb" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb</DomainPath>
+            <DomainPath>DeraWebIPSHasEstiloPortalWebbed.EstiloPortalWebbed</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="EstiloCampoFormulario" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>DeraWebIPSHasEstiloCampoFormularios.EstiloCampoFormularios</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
       </ElementMergeDirectives>
@@ -150,14 +158,6 @@
       <ElementMergeDirectives>
         <ElementMergeDirective>
           <Index>
-            <DomainClassMoniker Name="EstiloCampoFormulario" />
-          </Index>
-          <LinkCreationPaths>
-            <DomainPath>AtributoHasEstiloCampoFormulario.EstiloCampoFormulario</DomainPath>
-          </LinkCreationPaths>
-        </ElementMergeDirective>
-        <ElementMergeDirective>
-          <Index>
             <DomainClassMoniker Name="restrinccionAlfanumerico" />
           </Index>
           <LinkCreationPaths>
@@ -197,6 +197,31 @@
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="51522a99-550c-4c17-aa5a-aa101e934f89" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Color Titulo" Name="ColorTitulo" DisplayName="Color Titulo">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="a6313c66-3b64-4310-8091-683fd5a2484e" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Titulo" Name="Titulo" DisplayName="Titulo">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="bd8da6b2-5b22-4d3a-b03d-a75e35a79878" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Tamano" Name="Tamano" DisplayName="Tamano">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Int32" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="83e92fd7-9dbd-4865-ba57-fd78fbea34c6" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Alineacion" Name="Alineacion" DisplayName="Alineacion">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoAlineacion" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="b7445e06-38db-4da4-91dc-45e231725e6d" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.Tipo Letra" Name="TipoLetra" DisplayName="Tipo Letra">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
     <DomainClass Id="64d5023f-9011-45d9-8594-8184b7285094" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS">
@@ -204,6 +229,26 @@
         <DomainProperty Id="d1484388-1011-40bf-9fbd-352fc68ce90c" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Visualizacion" Name="Visualizacion" DisplayName="Visualizacion">
           <Type>
             <DomainEnumerationMoniker Name="tipoVisualizacionCampo" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="565bf201-4773-49e7-a9c7-337d11c73d3c" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Color" Name="Color" DisplayName="Color">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="d48e52bb-97dd-4116-8e52-608a88263246" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Tamano" Name="Tamano" DisplayName="Tamano">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Int32" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="7e2c3401-8c93-4308-bcbb-31727ea4e876" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Alineacion" Name="Alineacion" DisplayName="Alineacion">
+          <Type>
+            <DomainEnumerationMoniker Name="tipoAlineacion" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="5202c6dd-6a55-4162-8b52-c0557e32a595" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario.Tipo Letra" Name="TipoLetra" DisplayName="Tipo Letra">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
       </Properties>
@@ -375,34 +420,18 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="f4d3808f-f3d6-4ad3-a62d-fb0e03c9cd07" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb" Name="DeraWebIPSHasEstiloPortalWeb" DisplayName="Dera Web IPSHas Estilo Portal Web" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
+    <DomainRelationship Id="f4d3808f-f3d6-4ad3-a62d-fb0e03c9cd07" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed" Name="DeraWebIPSHasEstiloPortalWebbed" DisplayName="Dera Web IPSHas Estilo Portal Webbed" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
       <Source>
-        <DomainRole Id="08dd36d0-156c-490a-aeb5-4f75c2dda6a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloPortalWeb" Multiplicity="One" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Portal Web">
+        <DomainRole Id="08dd36d0-156c-490a-aeb5-4f75c2dda6a4" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloPortalWebbed" Multiplicity="OneMany" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Portal Webbed">
           <RolePlayer>
             <DomainClassMoniker Name="DeraWebIPS" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="2d9672f9-0750-48d1-a872-0343a1226bc7" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWeb.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" PropertyName="DeraWebIPS" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Dera Web IPS">
+        <DomainRole Id="2d9672f9-0750-48d1-a872-0343a1226bc7" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloPortalWebbed.EstiloPortalWeb" Name="EstiloPortalWeb" DisplayName="Estilo Portal Web" PropertyName="DeraWebIPS" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Dera Web IPS">
           <RolePlayer>
             <DomainClassMoniker Name="EstiloPortalWeb" />
-          </RolePlayer>
-        </DomainRole>
-      </Target>
-    </DomainRelationship>
-    <DomainRelationship Id="aad1ac41-0d06-493a-9f90-3b7456769e11" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario" Name="AtributoHasEstiloCampoFormulario" DisplayName="Atributo Has Estilo Campo Formulario" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
-      <Source>
-        <DomainRole Id="d63c7621-6759-4653-949e-9619530c4b4e" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="EstiloCampoFormulario" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Campo Formulario">
-          <RolePlayer>
-            <DomainClassMoniker Name="Atributo" />
-          </RolePlayer>
-        </DomainRole>
-      </Source>
-      <Target>
-        <DomainRole Id="0f1018f9-407c-47d5-82d8-3ef08f251d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasEstiloCampoFormulario.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="Atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo">
-          <RolePlayer>
-            <DomainClassMoniker Name="EstiloCampoFormulario" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -435,6 +464,38 @@
         <DomainRole Id="729f583c-7c26-4e94-bdff-26253c40e9f1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico" Name="restrinccionAlfanumerico" DisplayName="Restrinccion Alfanumerico" PropertyName="Atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo">
           <RolePlayer>
             <DomainClassMoniker Name="restrinccionAlfanumerico" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="38591fb1-0be8-40c5-83a0-9a2da5c1c217" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios" Name="AtributoReferencesEstiloCampoFormularios" DisplayName="Atributo References Estilo Campo Formularios" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Source>
+        <DomainRole Id="818d1325-1b14-465a-8dd7-80c909f317c4" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="EstiloCampoFormularios" PropertyDisplayName="Estilo Campo Formularios">
+          <RolePlayer>
+            <DomainClassMoniker Name="Atributo" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="74dc4065-e7ba-487b-bb3a-fc541a22c68b" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="Atributo" PropertyDisplayName="Atributo">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloCampoFormulario" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="1c99f117-bb9d-42a4-b2cc-12c1fb605704" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios" Name="DeraWebIPSHasEstiloCampoFormularios" DisplayName="Dera Web IPSHas Estilo Campo Formularios" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
+      <Source>
+        <DomainRole Id="f40a1141-8fc3-450e-b094-753d3c984566" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.DeraWebIPS" Name="DeraWebIPS" DisplayName="Dera Web IPS" PropertyName="EstiloCampoFormularios" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Estilo Campo Formularios">
+          <RolePlayer>
+            <DomainClassMoniker Name="DeraWebIPS" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="ab4e7938-693e-4694-9c09-77a5e8db41af" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEstiloCampoFormularios.EstiloCampoFormulario" Name="EstiloCampoFormulario" DisplayName="Estilo Campo Formulario" PropertyName="DeraWebIPS" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Dera Web IPS">
+          <RolePlayer>
+            <DomainClassMoniker Name="EstiloCampoFormulario" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -570,6 +631,57 @@
         <TextDecorator Name="FechaMax" DisplayName="Fecha Max" DefaultText="FechaMax" FontSize="4" />
       </ShapeHasDecorators>
     </Port>
+    <GeometryShape Id="c82323cd-7073-4ed1-9e73-9ee78db27d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampo" Name="EstiloCampo" DisplayName="Estilo Campo" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Campo" InitialHeight="1" Geometry="Circle">
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Visualizacion" DisplayName="Visualizacion" DefaultText="Visualizacion" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="TipoLetra" DisplayName="Tipo Letra" DefaultText="TipoLetra" />
+      </ShapeHasDecorators>
+    </GeometryShape>
+    <GeometryShape Id="b55d7712-6297-4811-ae60-8ff1b3420b75" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortral" Name="EstiloPortral" DisplayName="Estilo Portral" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Portral" InitialHeight="1" Geometry="Circle">
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="ColorFondo" DisplayName="Color Fondo" DefaultText="ColorFondo" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="ColorTitulo" DisplayName="Color Titulo" DefaultText="ColorTitulo" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Titulo" DisplayName="Titulo" DefaultText="Titulo" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="TipoLetra" DisplayName="Tipo Letra" DefaultText="TipoLetra" />
+      </ShapeHasDecorators>
+    </GeometryShape>
+    <GeometryShape Id="84d31347-405a-4237-9417-f1c7051b34f4" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPagina" Name="EstiloPagina" DisplayName="Estilo Pagina" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Pagina" InitialHeight="1" Geometry="Circle">
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
+      </ShapeHasDecorators>
+    </GeometryShape>
   </Shapes>
   <Connectors>
     <Connector Id="c3c4a25f-102a-44cc-9155-16f50bcf415f" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel" Name="MetaforaEnt_Rel" DisplayName="Metafora Ent_ Rel" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Metafora Ent_ Rel">
@@ -592,6 +704,8 @@
         <TextDecorator Name="relacionA" DisplayName="Relacion A" DefaultText="relacionA" />
       </ConnectorHasDecorators>
     </Connector>
+    <Connector Id="066df8ed-6452-4ee2-abf2-569a6c1a0dbf" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetAtr_EstiloCampo" Name="MetAtr_EstiloCampo" DisplayName="Met Atr_ Estilo Campo" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Met Atr_ Estilo Campo" />
+    <Connector Id="c382e049-ff50-4ffb-a235-423ec36f8d8a" Description="Description for UPM_IPS.XCYLSProyectoIPS.MetEnt_EstiloPagina" Name="MetEnt_EstiloPagina" DisplayName="Met Ent_ Estilo Pagina" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Met Ent_ Estilo Pagina" />
   </Connectors>
   <XmlSerializationBehavior Name="XCYLSProyectoIPSSerializationBehavior" Namespace="UPM_IPS.XCYLSProyectoIPS">
     <ClassData>
@@ -604,8 +718,11 @@
           <XmlRelationshipData UseFullForm="true" RoleElementName="relacioned">
             <DomainRelationshipMoniker Name="DeraWebIPSHasRelacioned" />
           </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloPortalWeb">
-            <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWeb" />
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloPortalWebbed">
+            <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWebbed" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormularios">
+            <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloCampoFormularios" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -752,11 +869,11 @@
           <XmlPropertyData XmlName="tipo">
             <DomainPropertyMoniker Name="Atributo/Tipo" />
           </XmlPropertyData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormulario">
-            <DomainRelationshipMoniker Name="AtributoHasEstiloCampoFormulario" />
-          </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="restrinccionAlfanumerico">
             <DomainRelationshipMoniker Name="AtributoHasrestrinccionAlfanumerico" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormularios">
+            <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormularios" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -783,6 +900,21 @@
           <XmlPropertyData XmlName="colorFondo">
             <DomainPropertyMoniker Name="EstiloPortalWeb/ColorFondo" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="colorTitulo">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/ColorTitulo" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="titulo">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/Titulo" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tamano">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/Tamano" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="alineacion">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/Alineacion" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tipoLetra">
+            <DomainPropertyMoniker Name="EstiloPortalWeb/TipoLetra" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloCampoFormularioMoniker" ElementName="estiloCampoFormulario" MonikerTypeName="EstiloCampoFormularioMoniker">
@@ -791,13 +923,22 @@
           <XmlPropertyData XmlName="visualizacion">
             <DomainPropertyMoniker Name="EstiloCampoFormulario/Visualizacion" />
           </XmlPropertyData>
+          <XmlPropertyData XmlName="color">
+            <DomainPropertyMoniker Name="EstiloCampoFormulario/Color" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tamano">
+            <DomainPropertyMoniker Name="EstiloCampoFormulario/Tamano" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="alineacion">
+            <DomainPropertyMoniker Name="EstiloCampoFormulario/Alineacion" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tipoLetra">
+            <DomainPropertyMoniker Name="EstiloCampoFormulario/TipoLetra" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="DeraWebIPSHasEstiloPortalWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSHasEstiloPortalWebMoniker" ElementName="deraWebIPSHasEstiloPortalWeb" MonikerTypeName="DeraWebIPSHasEstiloPortalWebMoniker">
-        <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWeb" />
-      </XmlClassData>
-      <XmlClassData TypeName="AtributoHasEstiloCampoFormulario" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoHasEstiloCampoFormularioMoniker" ElementName="atributoHasEstiloCampoFormulario" MonikerTypeName="AtributoHasEstiloCampoFormularioMoniker">
-        <DomainRelationshipMoniker Name="AtributoHasEstiloCampoFormulario" />
+      <XmlClassData TypeName="DeraWebIPSHasEstiloPortalWebbed" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSHasEstiloPortalWebbedMoniker" ElementName="deraWebIPSHasEstiloPortalWebbed" MonikerTypeName="DeraWebIPSHasEstiloPortalWebbedMoniker">
+        <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloPortalWebbed" />
       </XmlClassData>
       <XmlClassData TypeName="EntidadHasEstiloPaginaWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasEstiloPaginaWebMoniker" ElementName="entidadHasEstiloPaginaWeb" MonikerTypeName="EntidadHasEstiloPaginaWebMoniker">
         <DomainRelationshipMoniker Name="EntidadHasEstiloPaginaWeb" />
@@ -827,6 +968,27 @@
       </XmlClassData>
       <XmlClassData TypeName="AtributoHasrestrinccionAlfanumerico" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoHasrestrinccionAlfanumericoMoniker" ElementName="atributoHasrestrinccionAlfanumerico" MonikerTypeName="AtributoHasrestrinccionAlfanumericoMoniker">
         <DomainRelationshipMoniker Name="AtributoHasrestrinccionAlfanumerico" />
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloCampo" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloCampoMoniker" ElementName="estiloCampo" MonikerTypeName="EstiloCampoMoniker">
+        <GeometryShapeMoniker Name="EstiloCampo" />
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloPortral" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloPortralMoniker" ElementName="estiloPortral" MonikerTypeName="EstiloPortralMoniker">
+        <GeometryShapeMoniker Name="EstiloPortral" />
+      </XmlClassData>
+      <XmlClassData TypeName="EstiloPagina" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloPaginaMoniker" ElementName="estiloPagina" MonikerTypeName="EstiloPaginaMoniker">
+        <GeometryShapeMoniker Name="EstiloPagina" />
+      </XmlClassData>
+      <XmlClassData TypeName="AtributoReferencesEstiloCampoFormularios" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoReferencesEstiloCampoFormulariosMoniker" ElementName="atributoReferencesEstiloCampoFormularios" MonikerTypeName="AtributoReferencesEstiloCampoFormulariosMoniker">
+        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormularios" />
+      </XmlClassData>
+      <XmlClassData TypeName="DeraWebIPSHasEstiloCampoFormularios" MonikerAttributeName="" SerializeId="true" MonikerElementName="deraWebIPSHasEstiloCampoFormulariosMoniker" ElementName="deraWebIPSHasEstiloCampoFormularios" MonikerTypeName="DeraWebIPSHasEstiloCampoFormulariosMoniker">
+        <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloCampoFormularios" />
+      </XmlClassData>
+      <XmlClassData TypeName="MetAtr_EstiloCampo" MonikerAttributeName="" SerializeId="true" MonikerElementName="metAtr_EstiloCampoMoniker" ElementName="metAtr_EstiloCampo" MonikerTypeName="MetAtr_EstiloCampoMoniker">
+        <ConnectorMoniker Name="MetAtr_EstiloCampo" />
+      </XmlClassData>
+      <XmlClassData TypeName="MetEnt_EstiloPagina" MonikerAttributeName="" SerializeId="true" MonikerElementName="metEnt_EstiloPaginaMoniker" ElementName="metEnt_EstiloPagina" MonikerTypeName="MetEnt_EstiloPaginaMoniker">
+        <ConnectorMoniker Name="MetEnt_EstiloPagina" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
@@ -865,6 +1027,25 @@
           <RolePlayerConnectDirective>
             <AcceptingClass>
               <DomainClassMoniker Name="Entidad" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </TargetDirectives>
+      </LinkConnectDirective>
+    </ConnectionBuilder>
+    <ConnectionBuilder Name="AtributoReferencesEstiloCampoFormulariosBuilder">
+      <LinkConnectDirective>
+        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormularios" />
+        <SourceDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="Atributo" />
+            </AcceptingClass>
+          </RolePlayerConnectDirective>
+        </SourceDirectives>
+        <TargetDirectives>
+          <RolePlayerConnectDirective>
+            <AcceptingClass>
+              <DomainClassMoniker Name="EstiloCampoFormulario" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
@@ -1090,6 +1271,99 @@
         </DecoratorMap>
         <PortMoniker Name="RestrinccAlfanumeric" />
       </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloCampoFormulario" />
+        <ParentElementPath>
+          <DomainPath>DeraWebIPSHasEstiloCampoFormularios.DeraWebIPS/!DeraWebIPS</DomainPath>
+        </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloCampo/Alineacion" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloCampoFormulario/Alineacion" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloCampo/Color" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloCampoFormulario/Color" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloCampo/Tamano" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloCampoFormulario/Tamano" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloCampo/TipoLetra" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloCampoFormulario/TipoLetra" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloCampo/Visualizacion" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloCampoFormulario/Visualizacion" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <GeometryShapeMoniker Name="EstiloCampo" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloPaginaWeb" />
+        <ParentElementPath>
+          <DomainPath>EntidadHasEstiloPaginaWeb.Entidad/!Entidad/DeraWebIPSHasEntidad.DeraWebIPS/!DeraWebIPS</DomainPath>
+        </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPagina/Alineacion" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPaginaWeb/AlineaciónTexto" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPagina/Color" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPaginaWeb/ColorTexto" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPagina/Tamano" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPaginaWeb/TamañoLetra" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPagina/Tipo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPaginaWeb/TipoLetra" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <GeometryShapeMoniker Name="EstiloPagina" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="EstiloPortalWeb" />
+        <ParentElementPath>
+          <DomainPath>DeraWebIPSHasEstiloPortalWebbed.DeraWebIPS/!DeraWebIPS</DomainPath>
+        </ParentElementPath>
+        <GeometryShapeMoniker Name="EstiloPortral" />
+      </ShapeMap>
     </ShapeMaps>
     <ConnectorMaps>
       <ConnectorMap>
@@ -1144,6 +1418,14 @@
           </PropertyDisplayed>
         </DecoratorMap>
       </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="MetAtr_EstiloCampo" />
+        <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormularios" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="MetEnt_EstiloPagina" />
+        <DomainRelationshipMoniker Name="EntidadHasEstiloPaginaWeb" />
+      </ConnectorMap>
     </ConnectorMaps>
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="XCYLS_DSLProyIPS" EditorGuid="33f7fbc5-4e0d-4e5d-8427-a6f34dcc0397">
@@ -1177,6 +1459,18 @@
       </ElementTool>
       <ElementTool Name="RestrincAlfanumerico" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincAlfanumerico" Tooltip="Restrinc Alfanumerico" HelpKeyword="RestrincAlfanumerico">
         <DomainClassMoniker Name="restrinccionAlfanumerico" />
+      </ElementTool>
+      <ConnectionTool Name="EnlaceAtr_EstiloC" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceAtr_EstiloC" Tooltip="Enlace Atr_ Estilo C" HelpKeyword="EnlaceAtr_EstiloC">
+        <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/AtributoReferencesEstiloCampoFormulariosBuilder" />
+      </ConnectionTool>
+      <ElementTool Name="EstiloCampoF" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloCampoF" Tooltip="Estilo Campo F" HelpKeyword="EstiloCampoF">
+        <DomainClassMoniker Name="EstiloCampoFormulario" />
+      </ElementTool>
+      <ElementTool Name="EstiloPortalWeb" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloPortalWeb" Tooltip="Estilo Portal Web" HelpKeyword="EstiloPortalWeb">
+        <DomainClassMoniker Name="EstiloPortalWeb" />
+      </ElementTool>
+      <ElementTool Name="EstiloPaginaWeb" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloPaginaWeb" Tooltip="Estilo Pagina Web" HelpKeyword="EstiloPaginaWeb">
+        <DomainClassMoniker Name="EstiloPaginaWeb" />
       </ElementTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />

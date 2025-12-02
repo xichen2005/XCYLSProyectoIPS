@@ -30,12 +30,12 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						"DeraWebIPS", "", "Entidad"),
 						"DSL0001", this);
 			}
-			if (this.EstiloPortalWeb == null)
+			if (this.EstiloPortalWebbed.Count == 0)
 			{
 				context.LogViolation(DslValidation::ViolationType.Error,
 					string.Format(global::System.Globalization.CultureInfo.CurrentCulture, 
 						UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel.SingletonResourceManager.GetString("MinimumMultiplicityMissingLink"), 
-						"DeraWebIPS", "", "EstiloPortalWeb"),
+						"DeraWebIPS", "", "EstiloPortalWebbed"),
 						"DSL0001", this);
 			}
 		} // ValidateDeraWebIPSMultiplicity

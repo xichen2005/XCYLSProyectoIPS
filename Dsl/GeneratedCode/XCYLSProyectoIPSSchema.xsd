@@ -40,16 +40,31 @@
               </xsd:sequence>
             </xsd:complexType>
           </xsd:element>
-          <!-- Relationship: DeraWebIPSHasEstiloPortalWeb -->
-          <xsd:element name="estiloPortalWeb" minOccurs="1" maxOccurs="1">
+          <!-- Relationship: DeraWebIPSHasEstiloPortalWebbed -->
+          <xsd:element name="estiloPortalWebbed" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
-              <xsd:documentation>Instance of DeraWebIPSHasEstiloPortalWeb</xsd:documentation>
+              <xsd:documentation>Instances of DeraWebIPSHasEstiloPortalWebbed</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="deraWebIPSHasEstiloPortalWeb" minOccurs="1" maxOccurs="1">
+                <xsd:element ref="deraWebIPSHasEstiloPortalWebbed" minOccurs="1" maxOccurs="unbounded">
                   <xsd:annotation>
-                    <xsd:documentation>[Instance of DeraWebIPSHasEstiloPortalWeb needs to be serialized in full-form]</xsd:documentation>
+                    <xsd:documentation>[Instance of DeraWebIPSHasEstiloPortalWebbed needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: DeraWebIPSHasEstiloCampoFormularios -->
+          <xsd:element name="estiloCampoFormularios" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DeraWebIPSHasEstiloCampoFormularios</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="deraWebIPSHasEstiloCampoFormularios" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DeraWebIPSHasEstiloCampoFormularios needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -350,21 +365,6 @@
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: AtributoHasEstiloCampoFormulario -->
-          <xsd:element name="estiloCampoFormulario" minOccurs="0" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>Instances of AtributoHasEstiloCampoFormulario</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element ref="atributoHasEstiloCampoFormulario" minOccurs="0" maxOccurs="unbounded">
-                  <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoHasEstiloCampoFormulario needs to be serialized in full-form]</xsd:documentation>
-                  </xsd:annotation>
-                </xsd:element>
-              </xsd:sequence>
-            </xsd:complexType>
-          </xsd:element>
           <!-- Relationship: AtributoHasrestrinccionAlfanumerico -->
           <xsd:element name="restrinccionAlfanumerico" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
@@ -375,6 +375,21 @@
                 <xsd:element ref="atributoHasrestrinccionAlfanumerico" minOccurs="0" maxOccurs="unbounded">
                   <xsd:annotation>
                     <xsd:documentation>[Instance of AtributoHasrestrinccionAlfanumerico needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: AtributoReferencesEstiloCampoFormularios -->
+          <xsd:element name="estiloCampoFormularios" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of AtributoReferencesEstiloCampoFormularios</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="atributoReferencesEstiloCampoFormularios" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of AtributoReferencesEstiloCampoFormularios needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -465,6 +480,16 @@
         </xsd:attribute>
         <!-- Property: ColorFondo -->
         <xsd:attribute name="colorFondo" type="xsd:string" />
+        <!-- Property: ColorTitulo -->
+        <xsd:attribute name="colorTitulo" type="xsd:string" />
+        <!-- Property: Titulo -->
+        <xsd:attribute name="titulo" type="xsd:string" />
+        <!-- Property: Tamano -->
+        <xsd:attribute name="tamano" type="xsd:integer" />
+        <!-- Property: Alineacion -->
+        <xsd:attribute name="alineacion" type="tipoAlineacion" />
+        <!-- Property: TipoLetra -->
+        <xsd:attribute name="tipoLetra" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -499,6 +524,14 @@
         </xsd:attribute>
         <!-- Property: Visualizacion -->
         <xsd:attribute name="visualizacion" type="tipoVisualizacionCampo" />
+        <!-- Property: Color -->
+        <xsd:attribute name="color" type="xsd:string" />
+        <!-- Property: Tamano -->
+        <xsd:attribute name="tamano" type="xsd:integer" />
+        <!-- Property: Alineacion -->
+        <xsd:attribute name="alineacion" type="tipoAlineacion" />
+        <!-- Property: TipoLetra -->
+        <xsd:attribute name="tipoLetra" type="xsd:string" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
@@ -850,9 +883,9 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- DeraWebIPSHasEstiloPortalWeb -->
-  <xsd:element name="deraWebIPSHasEstiloPortalWeb" type="DeraWebIPSHasEstiloPortalWeb" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="DeraWebIPSHasEstiloPortalWeb">
+  <!-- DeraWebIPSHasEstiloPortalWebbed -->
+  <xsd:element name="deraWebIPSHasEstiloPortalWebbed" type="DeraWebIPSHasEstiloPortalWebbed" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DeraWebIPSHasEstiloPortalWebbed">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
@@ -873,51 +906,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- DeraWebIPSHasEstiloPortalWeb Moniker -->
-  <xsd:element name="deraWebIPSHasEstiloPortalWebMoniker" type="DeraWebIPSHasEstiloPortalWebMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="DeraWebIPSHasEstiloPortalWebMoniker">
+  <!-- DeraWebIPSHasEstiloPortalWebbed Moniker -->
+  <xsd:element name="deraWebIPSHasEstiloPortalWebbedMoniker" type="DeraWebIPSHasEstiloPortalWebbedMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DeraWebIPSHasEstiloPortalWebbedMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for DeraWebIPSHasEstiloPortalWeb instance.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElementMoniker">
-        <xsd:attribute name="Id" type="xsd:string" >
-          <xsd:annotation>
-            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoHasEstiloCampoFormulario -->
-  <xsd:element name="atributoHasEstiloCampoFormulario" type="AtributoHasEstiloCampoFormulario" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoHasEstiloCampoFormulario">
-    <xsd:complexContent>
-      <xsd:extension base="core:ModelElement">
-        <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end EstiloCampoFormulario -->
-          <xsd:element ref="estiloCampoFormulario" minOccurs="1" maxOccurs="1">
-            <xsd:annotation>
-              <xsd:documentation>[Target role-player]</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <!-- Id -->
-        <xsd:attribute name="Id" type="xsd:string">
-          <xsd:annotation>
-            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  
-  <!-- AtributoHasEstiloCampoFormulario Moniker -->
-  <xsd:element name="atributoHasEstiloCampoFormularioMoniker" type="AtributoHasEstiloCampoFormularioMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoHasEstiloCampoFormularioMoniker">
-    <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoHasEstiloCampoFormulario instance.</xsd:documentation>
+      <xsd:documentation>Moniker for DeraWebIPSHasEstiloPortalWebbed instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -998,6 +991,86 @@
   <xsd:complexType name="AtributoHasrestrinccionAlfanumericoMoniker">
     <xsd:annotation>
       <xsd:documentation>Moniker for AtributoHasrestrinccionAlfanumerico instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- AtributoReferencesEstiloCampoFormularios -->
+  <xsd:element name="atributoReferencesEstiloCampoFormularios" type="AtributoReferencesEstiloCampoFormularios" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="AtributoReferencesEstiloCampoFormularios">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end EstiloCampoFormulario -->
+          <xsd:element ref="estiloCampoFormularioMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- AtributoReferencesEstiloCampoFormularios Moniker -->
+  <xsd:element name="atributoReferencesEstiloCampoFormulariosMoniker" type="AtributoReferencesEstiloCampoFormulariosMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AtributoReferencesEstiloCampoFormulariosMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for AtributoReferencesEstiloCampoFormularios instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DeraWebIPSHasEstiloCampoFormularios -->
+  <xsd:element name="deraWebIPSHasEstiloCampoFormularios" type="DeraWebIPSHasEstiloCampoFormularios" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DeraWebIPSHasEstiloCampoFormularios">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end EstiloCampoFormulario -->
+          <xsd:element ref="estiloCampoFormulario" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DeraWebIPSHasEstiloCampoFormularios Moniker -->
+  <xsd:element name="deraWebIPSHasEstiloCampoFormulariosMoniker" type="DeraWebIPSHasEstiloCampoFormulariosMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DeraWebIPSHasEstiloCampoFormulariosMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DeraWebIPSHasEstiloCampoFormularios instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

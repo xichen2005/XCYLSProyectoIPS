@@ -93,6 +93,38 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					"@RestrincAlfanumericoToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
 					Index = 7)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EnlaceAtr_EstiloCToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EnlaceAtr_EstiloCToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EnlaceAtr_EstiloC", 
+					"@EnlaceAtr_EstiloCToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 8)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EstiloCampoFToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EstiloCampoFToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloCampoF", 
+					"@EstiloCampoFToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 9)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EstiloPortalWebToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EstiloPortalWebToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloPortalWeb", 
+					"@EstiloPortalWebToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 10)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EstiloPaginaWebToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWebToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloPaginaWeb", 
+					"@EstiloPaginaWebToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 11)]
 	[VSShell::ProvideEditorFactory(typeof(XCYLSProyectoIPSEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(XCYLSProyectoIPSEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(XCYLSProyectoIPSEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer
