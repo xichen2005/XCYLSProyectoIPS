@@ -86,11 +86,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					0xff00ff,
 					Index = 6)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@RestrincAlfanumericoToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.RestrincAlfanumericoToolboxItem", 
+					"@RestrincionesToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.RestrincionesToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"RestrincAlfanumerico", 
-					"@RestrincAlfanumericoToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"Restrinciones", 
+					"@RestrincionesToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
 					Index = 7)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",

@@ -405,53 +405,53 @@
     <value>Tipo Letra</value>
     <comment>DisplayName for DomainProperty &apos;TipoLetra&apos; on DomainClass &apos;EstiloCampoFormulario&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico</value>
-    <comment>Description for DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones</value>
+    <comment>Description for DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.DisplayName" xml:space="preserve">
-    <value>Restrinccion Alfanumerico</value>
-    <comment>DisplayName for DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones.DisplayName" xml:space="preserve">
+    <value>Restrincciones</value>
+    <comment>DisplayName for DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Valores.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Valores</value>
-    <comment>Description for DomainProperty &apos;Valores&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Valores.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Valores</value>
+    <comment>Description for DomainProperty &apos;Valores&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Valores.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Valores.DisplayName" xml:space="preserve">
     <value>Valores</value>
-    <comment>DisplayName for DomainProperty &apos;Valores&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;Valores&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Min</value>
-    <comment>Description for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Min.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Min</value>
+    <comment>Description for DomainProperty &apos;Min&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Min.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Min.DisplayName" xml:space="preserve">
     <value>Min</value>
-    <comment>DisplayName for DomainProperty &apos;Min&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;Min&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Max</value>
-    <comment>Description for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Max.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Max</value>
+    <comment>Description for DomainProperty &apos;Max&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/Max.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/Max.DisplayName" xml:space="preserve">
     <value>Max</value>
-    <comment>DisplayName for DomainProperty &apos;Max&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;Max&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Max</value>
-    <comment>Description for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/FechaMax.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Fecha Max</value>
+    <comment>Description for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMax.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/FechaMax.DisplayName" xml:space="preserve">
     <value>Fecha Max</value>
-    <comment>DisplayName for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;FechaMax&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Min</value>
-    <comment>Description for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/FechaMin.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Fecha Min</value>
+    <comment>Description for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico/FechaMin.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.restrincciones/FechaMin.DisplayName" xml:space="preserve">
     <value>Fecha Min</value>
-    <comment>DisplayName for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainProperty &apos;FechaMin&apos; on DomainClass &apos;restrincciones&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPSHasEntidad</value>
@@ -773,37 +773,37 @@
     <value>Entidad</value>
     <comment>PropertyDisplayName for DomainRole &apos;EstiloPaginaWeb&apos; on DomainRelationship &apos;EntidadHasEstiloPaginaWeb&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico</value>
-    <comment>Description for DomainClass &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones</value>
+    <comment>Description for DomainClass &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.DisplayName" xml:space="preserve">
-    <value>Atributo Hasrestrinccion Alfanumerico</value>
-    <comment>DisplayName for DomainClass &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.DisplayName" xml:space="preserve">
+    <value>Atributo Hasrestrincciones</value>
+    <comment>DisplayName for DomainClass &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Atributo</value>
-    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.DisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.DisplayName" xml:space="preserve">
     <value>Atributo</value>
-    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.PropertyDisplayName" xml:space="preserve">
-    <value>Restrinccion Alfanumerico</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Restrincciones</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico</value>
-    <comment>Description for DomainRole &apos;restrinccionAlfanumerico&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.restrincciones</value>
+    <comment>Description for DomainRole &apos;restrincciones&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.DisplayName" xml:space="preserve">
-    <value>Restrinccion Alfanumerico</value>
-    <comment>DisplayName for DomainRole &apos;restrinccionAlfanumerico&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.DisplayName" xml:space="preserve">
+    <value>Restrincciones</value>
+    <comment>DisplayName for DomainRole &apos;restrincciones&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.PropertyDisplayName" xml:space="preserve">
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.PropertyDisplayName" xml:space="preserve">
     <value>Atributo</value>
-    <comment>PropertyDisplayName for DomainRole &apos;restrinccionAlfanumerico&apos; on DomainRelationship &apos;AtributoHasrestrinccionAlfanumerico&apos;</comment>
+    <comment>PropertyDisplayName for DomainRole &apos;restrincciones&apos; on DomainRelationship &apos;AtributoHasrestrincciones&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoReferencesEstiloCampoFormularios</value>
@@ -1381,12 +1381,12 @@
     <value>Atributo Entidad</value>
     <comment>Toolbox tooltip text</comment>
   </data>
-  <data name="RestrincAlfanumericoToolboxItem" xml:space="preserve">
-    <value>RestrincAlfanumerico</value>
+  <data name="RestrincionesToolboxItem" xml:space="preserve">
+    <value>Restrinciones</value>
     <comment>Toolbox item name</comment>
   </data>
-  <data name="RestrincAlfanumericoToolboxTooltip" xml:space="preserve">
-    <value>Restrinc Alfanumerico</value>
+  <data name="RestrincionesToolboxTooltip" xml:space="preserve">
+    <value>Restrinciones</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="EnlaceAtr_EstiloCToolboxItem" xml:space="preserve">
@@ -1574,7 +1574,7 @@ A DomainClass can be serialized as a moniker only if
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
-  <data name="RestrincAlfanumericoToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+  <data name="RestrincionesToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

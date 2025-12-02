@@ -365,16 +365,16 @@
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Relationship: AtributoHasrestrinccionAlfanumerico -->
-          <xsd:element name="restrinccionAlfanumerico" minOccurs="0" maxOccurs="1">
+          <!-- Relationship: AtributoHasrestrincciones -->
+          <xsd:element name="restrincciones" minOccurs="0" maxOccurs="1">
             <xsd:annotation>
-              <xsd:documentation>Instances of AtributoHasrestrinccionAlfanumerico</xsd:documentation>
+              <xsd:documentation>Instances of AtributoHasrestrincciones</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element ref="atributoHasrestrinccionAlfanumerico" minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="atributoHasrestrincciones" minOccurs="0" maxOccurs="unbounded">
                   <xsd:annotation>
-                    <xsd:documentation>[Instance of AtributoHasrestrinccionAlfanumerico needs to be serialized in full-form]</xsd:documentation>
+                    <xsd:documentation>[Instance of AtributoHasrestrincciones needs to be serialized in full-form]</xsd:documentation>
                   </xsd:annotation>
                 </xsd:element>
               </xsd:sequence>
@@ -553,9 +553,9 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- restrinccionAlfanumerico -->
-  <xsd:element name="restrinccionAlfanumerico" type="RestrinccionAlfanumerico" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="RestrinccionAlfanumerico">
+  <!-- restrincciones -->
+  <xsd:element name="restrincciones" type="Restrincciones" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Restrincciones">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <!-- Id -->
@@ -578,11 +578,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- restrinccionAlfanumerico Moniker -->
-  <xsd:element name="restrinccionAlfanumericoMoniker" type="RestrinccionAlfanumericoMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="RestrinccionAlfanumericoMoniker">
+  <!-- restrincciones Moniker -->
+  <xsd:element name="restrinccionesMoniker" type="RestrinccionesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RestrinccionesMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for restrinccionAlfanumerico instance.</xsd:documentation>
+      <xsd:documentation>Moniker for restrincciones instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">
@@ -963,14 +963,14 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoHasrestrinccionAlfanumerico -->
-  <xsd:element name="atributoHasrestrinccionAlfanumerico" type="AtributoHasrestrinccionAlfanumerico" substitutionGroup="core:modelElement" />
-  <xsd:complexType name="AtributoHasrestrinccionAlfanumerico">
+  <!-- AtributoHasrestrincciones -->
+  <xsd:element name="atributoHasrestrincciones" type="AtributoHasrestrincciones" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="AtributoHasrestrincciones">
     <xsd:complexContent>
       <xsd:extension base="core:ModelElement">
         <xsd:sequence minOccurs="0" maxOccurs="1">
-          <!-- Target end restrinccionAlfanumerico -->
-          <xsd:element ref="restrinccionAlfanumerico" minOccurs="1" maxOccurs="1">
+          <!-- Target end restrincciones -->
+          <xsd:element ref="restrincciones" minOccurs="1" maxOccurs="1">
             <xsd:annotation>
               <xsd:documentation>[Target role-player]</xsd:documentation>
             </xsd:annotation>
@@ -986,11 +986,11 @@
     </xsd:complexContent>
   </xsd:complexType>
   
-  <!-- AtributoHasrestrinccionAlfanumerico Moniker -->
-  <xsd:element name="atributoHasrestrinccionAlfanumericoMoniker" type="AtributoHasrestrinccionAlfanumericoMoniker" substitutionGroup="core:modelElementMoniker" />
-  <xsd:complexType name="AtributoHasrestrinccionAlfanumericoMoniker">
+  <!-- AtributoHasrestrincciones Moniker -->
+  <xsd:element name="atributoHasrestrinccionesMoniker" type="AtributoHasrestrinccionesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AtributoHasrestrinccionesMoniker">
     <xsd:annotation>
-      <xsd:documentation>Moniker for AtributoHasrestrinccionAlfanumerico instance.</xsd:documentation>
+      <xsd:documentation>Moniker for AtributoHasrestrincciones instance.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="core:ModelElementMoniker">

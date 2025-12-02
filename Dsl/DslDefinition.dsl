@@ -158,10 +158,10 @@
       <ElementMergeDirectives>
         <ElementMergeDirective>
           <Index>
-            <DomainClassMoniker Name="restrinccionAlfanumerico" />
+            <DomainClassMoniker Name="restrincciones" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico</DomainPath>
+            <DomainPath>AtributoHasrestrincciones.restrincciones</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
       </ElementMergeDirectives>
@@ -253,29 +253,29 @@
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="98d0123a-51b3-47ab-90a3-2fce34fdd770" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico" Name="restrinccionAlfanumerico" DisplayName="Restrinccion Alfanumerico" Namespace="UPM_IPS.XCYLSProyectoIPS">
+    <DomainClass Id="98d0123a-51b3-47ab-90a3-2fce34fdd770" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones" Name="restrincciones" DisplayName="Restrincciones" Namespace="UPM_IPS.XCYLSProyectoIPS">
       <Properties>
-        <DomainProperty Id="a69a563c-b595-4428-9893-80e68a2954ae" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Valores" Name="Valores" DisplayName="Valores">
+        <DomainProperty Id="a69a563c-b595-4428-9893-80e68a2954ae" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Valores" Name="Valores" DisplayName="Valores">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="d503390d-b863-4212-84ef-d7a2b1892617" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Min" Name="Min" DisplayName="Min">
+        <DomainProperty Id="d503390d-b863-4212-84ef-d7a2b1892617" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Min" Name="Min" DisplayName="Min">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="2e2815b5-dea9-4bd0-9de9-0782d745c1b1" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Max" Name="Max" DisplayName="Max">
+        <DomainProperty Id="2e2815b5-dea9-4bd0-9de9-0782d745c1b1" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Max" Name="Max" DisplayName="Max">
           <Type>
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="435135bc-0084-4f4b-a385-03a80407e849" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Max" Name="FechaMax" DisplayName="Fecha Max">
+        <DomainProperty Id="435135bc-0084-4f4b-a385-03a80407e849" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Fecha Max" Name="FechaMax" DisplayName="Fecha Max">
           <Type>
             <ExternalTypeMoniker Name="/System/DateTime" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="81828fc7-29a5-4701-afd0-f786bad31456" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.Fecha Min" Name="FechaMin" DisplayName="Fecha Min">
+        <DomainProperty Id="81828fc7-29a5-4701-afd0-f786bad31456" Description="Description for UPM_IPS.XCYLSProyectoIPS.restrincciones.Fecha Min" Name="FechaMin" DisplayName="Fecha Min">
           <Type>
             <ExternalTypeMoniker Name="/System/DateTime" />
           </Type>
@@ -452,18 +452,18 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="0b000e06-3850-40e9-bf30-a40ac665c63d" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico" Name="AtributoHasrestrinccionAlfanumerico" DisplayName="Atributo Hasrestrinccion Alfanumerico" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
+    <DomainRelationship Id="0b000e06-3850-40e9-bf30-a40ac665c63d" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones" Name="AtributoHasrestrincciones" DisplayName="Atributo Hasrestrincciones" Namespace="UPM_IPS.XCYLSProyectoIPS" IsEmbedding="true">
       <Source>
-        <DomainRole Id="e3c96f5f-a1cf-4c5d-9470-1ecbb666a0e1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="restrinccionAlfanumerico" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Restrinccion Alfanumerico">
+        <DomainRole Id="e3c96f5f-a1cf-4c5d-9470-1ecbb666a0e1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="restrincciones" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Restrincciones">
           <RolePlayer>
             <DomainClassMoniker Name="Atributo" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="729f583c-7c26-4e94-bdff-26253c40e9f1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico" Name="restrinccionAlfanumerico" DisplayName="Restrinccion Alfanumerico" PropertyName="Atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo">
+        <DomainRole Id="729f583c-7c26-4e94-bdff-26253c40e9f1" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.restrincciones" Name="restrincciones" DisplayName="Restrincciones" PropertyName="Atributo" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Atributo">
           <RolePlayer>
-            <DomainClassMoniker Name="restrinccionAlfanumerico" />
+            <DomainClassMoniker Name="restrincciones" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -869,8 +869,8 @@
           <XmlPropertyData XmlName="tipo">
             <DomainPropertyMoniker Name="Atributo/Tipo" />
           </XmlPropertyData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="restrinccionAlfanumerico">
-            <DomainRelationshipMoniker Name="AtributoHasrestrinccionAlfanumerico" />
+          <XmlRelationshipData UseFullForm="true" RoleElementName="restrincciones">
+            <DomainRelationshipMoniker Name="AtributoHasrestrincciones" />
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormularios">
             <DomainRelationshipMoniker Name="AtributoReferencesEstiloCampoFormularios" />
@@ -943,31 +943,31 @@
       <XmlClassData TypeName="EntidadHasEstiloPaginaWeb" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasEstiloPaginaWebMoniker" ElementName="entidadHasEstiloPaginaWeb" MonikerTypeName="EntidadHasEstiloPaginaWebMoniker">
         <DomainRelationshipMoniker Name="EntidadHasEstiloPaginaWeb" />
       </XmlClassData>
-      <XmlClassData TypeName="RestrinccionAlfanumerico" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccionAlfanumericoMoniker" ElementName="restrinccionAlfanumerico" MonikerTypeName="RestrinccionAlfanumericoMoniker">
-        <DomainClassMoniker Name="restrinccionAlfanumerico" />
+      <XmlClassData TypeName="Restrincciones" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccionesMoniker" ElementName="restrincciones" MonikerTypeName="RestrinccionesMoniker">
+        <DomainClassMoniker Name="restrincciones" />
         <ElementData>
           <XmlPropertyData XmlName="valores">
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Valores" />
+            <DomainPropertyMoniker Name="restrincciones/Valores" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="min">
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Min" />
+            <DomainPropertyMoniker Name="restrincciones/Min" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="max">
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Max" />
+            <DomainPropertyMoniker Name="restrincciones/Max" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="fechaMax">
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMax" />
+            <DomainPropertyMoniker Name="restrincciones/FechaMax" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="fechaMin">
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMin" />
+            <DomainPropertyMoniker Name="restrincciones/FechaMin" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="RestrinccAlfanumeric" MonikerAttributeName="" SerializeId="true" MonikerElementName="restrinccAlfanumericMoniker" ElementName="restrinccAlfanumeric" MonikerTypeName="RestrinccAlfanumericMoniker">
         <PortMoniker Name="RestrinccAlfanumeric" />
       </XmlClassData>
-      <XmlClassData TypeName="AtributoHasrestrinccionAlfanumerico" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoHasrestrinccionAlfanumericoMoniker" ElementName="atributoHasrestrinccionAlfanumerico" MonikerTypeName="AtributoHasrestrinccionAlfanumericoMoniker">
-        <DomainRelationshipMoniker Name="AtributoHasrestrinccionAlfanumerico" />
+      <XmlClassData TypeName="AtributoHasrestrincciones" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoHasrestrinccionesMoniker" ElementName="atributoHasrestrincciones" MonikerTypeName="AtributoHasrestrinccionesMoniker">
+        <DomainRelationshipMoniker Name="AtributoHasrestrincciones" />
       </XmlClassData>
       <XmlClassData TypeName="EstiloCampo" MonikerAttributeName="" SerializeId="true" MonikerElementName="estiloCampoMoniker" ElementName="estiloCampo" MonikerTypeName="EstiloCampoMoniker">
         <GeometryShapeMoniker Name="EstiloCampo" />
@@ -1213,15 +1213,15 @@
         <GeometryShapeMoniker Name="AtributoRelacionTool" />
       </ShapeMap>
       <ShapeMap>
-        <DomainClassMoniker Name="restrinccionAlfanumerico" />
+        <DomainClassMoniker Name="restrincciones" />
         <ParentElementPath>
-          <DomainPath>AtributoHasrestrinccionAlfanumerico.Atributo/!Atributo</DomainPath>
+          <DomainPath>AtributoHasrestrincciones.Atributo/!Atributo</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
           <TextDecoratorMoniker Name="RestrinccAlfanumeric/Valores" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionAlfanumerico/Valores" />
+              <DomainPropertyMoniker Name="restrincciones/Valores" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -1229,44 +1229,44 @@
           <TextDecoratorMoniker Name="RestrinccAlfanumeric/min" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionAlfanumerico/Min" />
+              <DomainPropertyMoniker Name="restrincciones/Min" />
             </PropertyPath>
           </PropertyDisplayed>
           <VisibilityPropertyPath>
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Min" />
+            <DomainPropertyMoniker Name="restrincciones/Min" />
           </VisibilityPropertyPath>
         </DecoratorMap>
         <DecoratorMap>
           <TextDecoratorMoniker Name="RestrinccAlfanumeric/Max" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionAlfanumerico/Max" />
+              <DomainPropertyMoniker Name="restrincciones/Max" />
             </PropertyPath>
           </PropertyDisplayed>
           <VisibilityPropertyPath>
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/Max" />
+            <DomainPropertyMoniker Name="restrincciones/Max" />
           </VisibilityPropertyPath>
         </DecoratorMap>
         <DecoratorMap>
           <TextDecoratorMoniker Name="RestrinccAlfanumeric/FechaMax" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMax" />
+              <DomainPropertyMoniker Name="restrincciones/FechaMax" />
             </PropertyPath>
           </PropertyDisplayed>
           <VisibilityPropertyPath>
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMax" />
+            <DomainPropertyMoniker Name="restrincciones/FechaMax" />
           </VisibilityPropertyPath>
         </DecoratorMap>
         <DecoratorMap>
           <TextDecoratorMoniker Name="RestrinccAlfanumeric/FechaMin" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMin" />
+              <DomainPropertyMoniker Name="restrincciones/FechaMin" />
             </PropertyPath>
           </PropertyDisplayed>
           <VisibilityPropertyPath>
-            <DomainPropertyMoniker Name="restrinccionAlfanumerico/FechaMin" />
+            <DomainPropertyMoniker Name="restrincciones/FechaMin" />
           </VisibilityPropertyPath>
         </DecoratorMap>
         <PortMoniker Name="RestrinccAlfanumeric" />
@@ -1505,8 +1505,8 @@
       <ElementTool Name="AtributoEntidad" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoEntidad" Tooltip="Atributo Entidad" HelpKeyword="AtributoEntidad">
         <DomainClassMoniker Name="AtributoEntidad" />
       </ElementTool>
-      <ElementTool Name="RestrincAlfanumerico" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="RestrincAlfanumerico" Tooltip="Restrinc Alfanumerico" HelpKeyword="RestrincAlfanumerico">
-        <DomainClassMoniker Name="restrinccionAlfanumerico" />
+      <ElementTool Name="Restrinciones" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Restrinciones" Tooltip="Restrinciones" HelpKeyword="Restrinciones">
+        <DomainClassMoniker Name="restrincciones" />
       </ElementTool>
       <ConnectionTool Name="EnlaceAtr_EstiloC" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="EnlaceAtr_EstiloC" Tooltip="Enlace Atr_ Estilo C" HelpKeyword="EnlaceAtr_EstiloC">
         <ConnectionBuilderMoniker Name="XCYLSProyectoIPS/AtributoReferencesEstiloCampoFormulariosBuilder" />

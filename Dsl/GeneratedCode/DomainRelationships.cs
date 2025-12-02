@@ -2479,33 +2479,33 @@ namespace UPM_IPS.XCYLSProyectoIPS
 namespace UPM_IPS.XCYLSProyectoIPS
 {
 	/// <summary>
-	/// DomainRelationship AtributoHasrestrinccionAlfanumerico
-	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico
+	/// DomainRelationship AtributoHasrestrincciones
+	/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel))]
 	[global::System.CLSCompliant(true)]
 	[DslModeling::DomainRelationship(IsEmbedding=true)]
 	[DslModeling::DomainObjectId("0b000e06-3850-40e9-bf30-a40ac665c63d")]
-	public partial class AtributoHasrestrinccionAlfanumerico : DslModeling::ElementLink
+	public partial class AtributoHasrestrincciones : DslModeling::ElementLink
 	{
 		#region Constructors, domain class Id
 		
 		/// <summary>
-		/// AtributoHasrestrinccionAlfanumerico domain class Id.
+		/// AtributoHasrestrincciones domain class Id.
 		/// </summary>
 		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x0b000e06, 0x3850, 0x40e9, 0xbf, 0x30, 0xa4, 0x0a, 0xc6, 0x65, 0xc6, 0x3d);
 	
 				
 		/// <summary>
 		/// Constructor
-		/// Creates a AtributoHasrestrinccionAlfanumerico link in the same Partition as the given Atributo
+		/// Creates a AtributoHasrestrincciones link in the same Partition as the given Atributo
 		/// </summary>
 		/// <param name="source">Atributo to use as the source of the relationship.</param>
-		/// <param name="target">restrinccionAlfanumerico to use as the target of the relationship.</param>
-		public AtributoHasrestrinccionAlfanumerico(Atributo source, restrinccionAlfanumerico target)
-			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId, source), new DslModeling::RoleAssignment(AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId, target)}, null)
+		/// <param name="target">restrincciones to use as the target of the relationship.</param>
+		public AtributoHasrestrincciones(Atributo source, restrincciones target)
+			: base((source != null ? source.Partition : null), new DslModeling::RoleAssignment[]{new DslModeling::RoleAssignment(AtributoHasrestrincciones.AtributoDomainRoleId, source), new DslModeling::RoleAssignment(AtributoHasrestrincciones.restrinccionesDomainRoleId, target)}, null)
 		{
 		}
 		
@@ -2514,7 +2514,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public AtributoHasrestrinccionAlfanumerico(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
+		public AtributoHasrestrincciones(DslModeling::Store store, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, null)
 		{
 		}
@@ -2525,7 +2525,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="store">Store where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public AtributoHasrestrinccionAlfanumerico(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public AtributoHasrestrincciones(DslModeling::Store store, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2535,7 +2535,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
-		public AtributoHasrestrinccionAlfanumerico(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
+		public AtributoHasrestrincciones(DslModeling::Partition partition, params DslModeling::RoleAssignment[] roleAssignments)
 			: base(partition, roleAssignments, null)
 		{
 		}
@@ -2546,7 +2546,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// <param name="partition">Partition where new link is to be created.</param>
 		/// <param name="roleAssignments">List of relationship role assignments.</param>
 		/// <param name="propertyAssignments">List of properties assignments to set on the new link.</param>
-		public AtributoHasrestrinccionAlfanumerico(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
+		public AtributoHasrestrincciones(DslModeling::Partition partition, DslModeling::RoleAssignment[] roleAssignments, DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, roleAssignments, propertyAssignments)
 		{
 		}
@@ -2560,12 +2560,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		
 		/// <summary>
 		/// DomainRole Atributo
-		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.Atributo
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.Atributo
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "restrinccionAlfanumerico", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/Atributo.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "restrincciones", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/Atributo.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.PropagatesCopyToLinkAndOppositeRolePlayer, Multiplicity = DslModeling::Multiplicity.ZeroMany)]
 		[DslModeling::DomainObjectId("e3c96f5f-a1cf-4c5d-9470-1ecbb666a0e1")]
 		public virtual Atributo Atributo
 		{
@@ -2582,15 +2581,15 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 				
 		#endregion
-		#region Static methods to access Atributo of a restrinccionAlfanumerico
+		#region Static methods to access Atributo of a restrincciones
 		/// <summary>
 		/// Gets Atributo.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static Atributo GetAtributo(restrinccionAlfanumerico element)
+		public static Atributo GetAtributo(restrincciones element)
 		{
-			return DslModeling::DomainRoleInfo.GetLinkedElement(element, restrinccionAlfanumericoDomainRoleId) as Atributo;
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, restrinccionesDomainRoleId) as Atributo;
 		}
 		
 		/// <summary>
@@ -2598,74 +2597,74 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static void SetAtributo(restrinccionAlfanumerico element, Atributo newAtributo)
+		public static void SetAtributo(restrincciones element, Atributo newAtributo)
 		{
-			DslModeling::DomainRoleInfo.SetLinkedElement(element, restrinccionAlfanumericoDomainRoleId, newAtributo);
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, restrinccionesDomainRoleId, newAtributo);
 		}
 		#endregion
-		#region restrinccionAlfanumerico domain role code
+		#region restrincciones domain role code
 		
 		/// <summary>
-		/// restrinccionAlfanumerico domain role Id.
+		/// restrincciones domain role Id.
 		/// </summary>
-		public static readonly global::System.Guid restrinccionAlfanumericoDomainRoleId = new global::System.Guid(0x729f583c, 0x7c26, 0x4e94, 0xbd, 0xff, 0x26, 0x25, 0x3c, 0x40, 0xe9, 0xf1);
+		public static readonly global::System.Guid restrinccionesDomainRoleId = new global::System.Guid(0x729f583c, 0x7c26, 0x4e94, 0xbd, 0xff, 0x26, 0x25, 0x3c, 0x40, 0xe9, 0xf1);
 		
 		/// <summary>
-		/// DomainRole restrinccionAlfanumerico
+		/// DomainRole restrincciones
 		/// Description for
-		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumerico
+		/// UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.restrincciones
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Atributo", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico/restrinccionAlfanumerico.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Atributo", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones/restrincciones.PropertyDisplayName", PropagatesDelete = true,  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.One)]
 		[DslModeling::DomainObjectId("729f583c-7c26-4e94-bdff-26253c40e9f1")]
-		public virtual restrinccionAlfanumerico restrinccionAlfanumerico
+		public virtual restrincciones restrincciones
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return (restrinccionAlfanumerico)DslModeling::DomainRoleInfo.GetRolePlayer(this, restrinccionAlfanumericoDomainRoleId);
+				return (restrincciones)DslModeling::DomainRoleInfo.GetRolePlayer(this, restrinccionesDomainRoleId);
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::DomainRoleInfo.SetRolePlayer(this, restrinccionAlfanumericoDomainRoleId, value);
+				DslModeling::DomainRoleInfo.SetRolePlayer(this, restrinccionesDomainRoleId, value);
 			}
 		}
 				
 		#endregion
-		#region Static methods to access restrinccionAlfanumerico of a Atributo
+		#region Static methods to access restrincciones of a Atributo
 		/// <summary>
-		/// Gets a list of restrinccionAlfanumerico.
+		/// Gets a list of restrincciones.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<restrinccionAlfanumerico> GetrestrinccionAlfanumerico(Atributo element)
+		public static DslModeling::LinkedElementCollection<restrincciones> Getrestrincciones(Atributo element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<restrinccionAlfanumerico>, restrinccionAlfanumerico>(element, AtributoDomainRoleId);
+			return GetRoleCollection<DslModeling::LinkedElementCollection<restrincciones>, restrincciones>(element, AtributoDomainRoleId);
 		}
 		#endregion
 		#region Atributo link accessor
 		/// <summary>
-		/// Get the list of AtributoHasrestrinccionAlfanumerico links to a Atributo.
+		/// Get the list of AtributoHasrestrincciones links to a Atributo.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> GetLinksTorestrinccionAlfanumerico ( global::UPM_IPS.XCYLSProyectoIPS.Atributo atributoInstance )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> GetLinksTorestrincciones ( global::UPM_IPS.XCYLSProyectoIPS.Atributo atributoInstance )
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico>(atributoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones>(atributoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.AtributoDomainRoleId);
 		}
 		#endregion
-		#region restrinccionAlfanumerico link accessor
+		#region restrincciones link accessor
 		/// <summary>
-		/// Get the AtributoHasrestrinccionAlfanumerico link to a restrinccionAlfanumerico.
+		/// Get the AtributoHasrestrincciones link to a restrincciones.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico GetLinkToAtributo (global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico restrinccionAlfanumericoInstance)
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones GetLinkToAtributo (global::UPM_IPS.XCYLSProyectoIPS.restrincciones restrinccionesInstance)
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico>(restrinccionAlfanumericoInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.restrinccionAlfanumericoDomainRoleId);
-			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of restrinccionAlfanumerico not obeyed.");
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones>(restrinccionesInstance, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.restrinccionesDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of restrincciones not obeyed.");
 			if ( links.Count == 0 )
 			{
 				return null;
@@ -2676,20 +2675,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 		}
 		#endregion
-		#region AtributoHasrestrinccionAlfanumerico instance accessors
+		#region AtributoHasrestrincciones instance accessors
 		
 		/// <summary>
-		/// Get any AtributoHasrestrinccionAlfanumerico links between a given Atributo and a restrinccionAlfanumerico.
+		/// Get any AtributoHasrestrincciones links between a given Atributo and a restrincciones.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico target )
+		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> GetLinks( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.restrincciones target )
 		{
-			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico>();
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico link in links )
+			global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> outLinks = new global::System.Collections.Generic.List<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones>();
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.AtributoDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones link in links )
 			{
-				if ( target.Equals(link.restrinccionAlfanumerico) )
+				if ( target.Equals(link.restrincciones) )
 				{
 					outLinks.Add(link);
 				}
@@ -2697,16 +2696,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			return outLinks.AsReadOnly();
 		}
 		/// <summary>
-		/// Get the one AtributoHasrestrinccionAlfanumerico link between a given Atributoand a restrinccionAlfanumerico.
+		/// Get the one AtributoHasrestrincciones link between a given Atributoand a restrincciones.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico GetLink( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico target )
+		public static global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones GetLink( global::UPM_IPS.XCYLSProyectoIPS.Atributo source, global::UPM_IPS.XCYLSProyectoIPS.restrincciones target )
 		{
-			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico.AtributoDomainRoleId);
-			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrinccionAlfanumerico link in links )
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones>(source, global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones.AtributoDomainRoleId);
+			foreach ( global::UPM_IPS.XCYLSProyectoIPS.AtributoHasrestrincciones link in links )
 			{
-				if ( target.Equals(link.restrinccionAlfanumerico) )
+				if ( target.Equals(link.restrincciones) )
 				{
 					return link;
 				}

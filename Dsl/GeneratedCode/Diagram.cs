@@ -234,7 +234,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
 				return newShape;
 			}
-			if(element is global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico)
+			if(element is global::UPM_IPS.XCYLSProyectoIPS.restrincciones)
 			{
 				global::UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric newShape = new global::UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric(this.Partition);
 				if(newShape != null) newShape.Size = newShape.DefaultSize; // set default shape size
@@ -450,31 +450,31 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
 				DslDiagrams::AssociatedPropertyInfo propertyInfo;
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.ValoresDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.ValoresDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Valores").AssociateValueWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MinDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.MinDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "min").AssociateValueWith(shape.Store, propertyInfo);
 		
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MinDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.MinDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "min").AssociateVisibilityWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MaxDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.MaxDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Max").AssociateValueWith(shape.Store, propertyInfo);
 		
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.MaxDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.MaxDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Max").AssociateVisibilityWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMaxDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.FechaMaxDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMax").AssociateValueWith(shape.Store, propertyInfo);
 		
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMaxDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.FechaMaxDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMax").AssociateVisibilityWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMinDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.FechaMinDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMin").AssociateValueWith(shape.Store, propertyInfo);
 		
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico.FechaMinDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.restrincciones.FechaMinDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FechaMin").AssociateVisibilityWith(shape.Store, propertyInfo);
 			}
 		}
@@ -797,7 +797,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.Entidad), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.Relacion), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
-		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority + 1, InitiallyDisabled=true)]
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.restrincciones), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority + 1, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb), FireTime = DslModeling::TimeToFire.TopLevelCommit, Priority = DslDiagrams::DiagramFixupConstants.AddShapeParentExistRulePriority, InitiallyDisabled=true)]
@@ -843,9 +843,9 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				{
 					parentElement = GetParentForRelacion((global::UPM_IPS.XCYLSProyectoIPS.Relacion)childElement);
 				} else
-				if(childElement is global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico)
+				if(childElement is global::UPM_IPS.XCYLSProyectoIPS.restrincciones)
 				{
-					parentElement = GetParentForrestrinccionAlfanumerico((global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico)childElement);
+					parentElement = GetParentForrestrincciones((global::UPM_IPS.XCYLSProyectoIPS.restrincciones)childElement);
 				} else
 				if(childElement is global::UPM_IPS.XCYLSProyectoIPS.EstiloCampoFormulario)
 				{
@@ -912,7 +912,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if ( result == null ) return null;
 				return result;
 			}
-			public static global::UPM_IPS.XCYLSProyectoIPS.Atributo GetParentForrestrinccionAlfanumerico( global::UPM_IPS.XCYLSProyectoIPS.restrinccionAlfanumerico root )
+			public static global::UPM_IPS.XCYLSProyectoIPS.Atributo GetParentForrestrincciones( global::UPM_IPS.XCYLSProyectoIPS.restrincciones root )
 			{
 				// Segments 0 and 1
 				global::UPM_IPS.XCYLSProyectoIPS.Atributo result = root.Atributo;
