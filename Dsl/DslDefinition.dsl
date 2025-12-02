@@ -632,16 +632,16 @@
       </ShapeHasDecorators>
     </Port>
     <GeometryShape Id="c82323cd-7073-4ed1-9e73-9ee78db27d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampo" Name="EstiloCampo" DisplayName="Estilo Campo" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Campo" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Visualizacion" DisplayName="Visualizacion" DefaultText="Visualizacion" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
@@ -649,33 +649,33 @@
       </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="b55d7712-6297-4811-ae60-8ff1b3420b75" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortral" Name="EstiloPortral" DisplayName="Estilo Portral" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Portral" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="OuterTopRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="ColorFondo" DisplayName="Color Fondo" DefaultText="ColorFondo" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="OuterTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="ColorTitulo" DisplayName="Color Titulo" DefaultText="ColorTitulo" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Titulo" DisplayName="Titulo" DefaultText="Titulo" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="TipoLetra" DisplayName="Tipo Letra" DefaultText="TipoLetra" />
       </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="84d31347-405a-4237-9417-f1c7051b34f4" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPagina" Name="EstiloPagina" DisplayName="Estilo Pagina" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Pagina" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
@@ -1362,6 +1362,54 @@
         <ParentElementPath>
           <DomainPath>DeraWebIPSHasEstiloPortalWebbed.DeraWebIPS/!DeraWebIPS</DomainPath>
         </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/Alineacion" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/Alineacion" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/ColorFondo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/ColorFondo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/ColorTitulo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/ColorTitulo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/Tamano" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/Tamano" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/TipoLetra" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/TipoLetra" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EstiloPortral/Titulo" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EstiloPortalWeb/Titulo" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
         <GeometryShapeMoniker Name="EstiloPortral" />
       </ShapeMap>
     </ShapeMaps>
@@ -1466,11 +1514,11 @@
       <ElementTool Name="EstiloCampoF" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloCampoF" Tooltip="Estilo Campo F" HelpKeyword="EstiloCampoF">
         <DomainClassMoniker Name="EstiloCampoFormulario" />
       </ElementTool>
-      <ElementTool Name="EstiloPortalWeb" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloPortalWeb" Tooltip="Estilo Portal Web" HelpKeyword="EstiloPortalWeb">
-        <DomainClassMoniker Name="EstiloPortalWeb" />
-      </ElementTool>
       <ElementTool Name="EstiloPaginaWeb" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloPaginaWeb" Tooltip="Estilo Pagina Web" HelpKeyword="EstiloPaginaWeb">
         <DomainClassMoniker Name="EstiloPaginaWeb" />
+      </ElementTool>
+      <ElementTool Name="EstiloPortal" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="EstiloPortal" Tooltip="Estilo Portal" HelpKeyword="EstiloPortal">
+        <DomainClassMoniker Name="EstiloPortalWeb" />
       </ElementTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />

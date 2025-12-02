@@ -110,19 +110,19 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					0xff00ff,
 					Index = 9)]
 	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
-					"@EstiloPortalWebToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					"UPM_IPS.XCYLSProyectoIPS.EstiloPortalWebToolboxItem", 
-					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"EstiloPortalWeb", 
-					"@EstiloPortalWebToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
-					0xff00ff,
-					Index = 10)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
 					"@EstiloPaginaWebToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					"UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWebToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EstiloPaginaWeb", 
 					"@EstiloPaginaWebToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					0xff00ff,
+					Index = 10)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab",
+					"@EstiloPortalToolboxItem;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
+					"UPM_IPS.XCYLSProyectoIPS.EstiloPortalToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"EstiloPortal", 
+					"@EstiloPortalToolboxBitmap;UPM_IPS.XCYLSProyectoIPS.Dsl.dll", 
 					0xff00ff,
 					Index = 11)]
 	[VSShell::ProvideEditorFactory(typeof(XCYLSProyectoIPSEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]

@@ -1405,20 +1405,20 @@
     <value>Estilo Campo F</value>
     <comment>Toolbox tooltip text</comment>
   </data>
-  <data name="EstiloPortalWebToolboxItem" xml:space="preserve">
-    <value>EstiloPortalWeb</value>
-    <comment>Toolbox item name</comment>
-  </data>
-  <data name="EstiloPortalWebToolboxTooltip" xml:space="preserve">
-    <value>Estilo Portal Web</value>
-    <comment>Toolbox tooltip text</comment>
-  </data>
   <data name="EstiloPaginaWebToolboxItem" xml:space="preserve">
     <value>EstiloPaginaWeb</value>
     <comment>Toolbox item name</comment>
   </data>
   <data name="EstiloPaginaWebToolboxTooltip" xml:space="preserve">
     <value>Estilo Pagina Web</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EstiloPortalToolboxItem" xml:space="preserve">
+    <value>EstiloPortal</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EstiloPortalToolboxTooltip" xml:space="preserve">
+    <value>Estilo Portal</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -1586,11 +1586,11 @@ A DomainClass can be serialized as a moniker only if
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
-  <data name="EstiloPortalWebToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+  <data name="EstiloPaginaWebToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
-  <data name="EstiloPaginaWebToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+  <data name="EstiloPortalToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>

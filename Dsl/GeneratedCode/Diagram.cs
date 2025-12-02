@@ -312,6 +312,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			global::UPM_IPS.XCYLSProyectoIPS.RestrinccAlfanumeric.DecoratorsInitialized += RestrinccAlfanumericDecoratorMap.OnDecoratorsInitialized;
 			global::UPM_IPS.XCYLSProyectoIPS.EstiloCampo.DecoratorsInitialized += EstiloCampoDecoratorMap.OnDecoratorsInitialized;
 			global::UPM_IPS.XCYLSProyectoIPS.EstiloPagina.DecoratorsInitialized += EstiloPaginaDecoratorMap.OnDecoratorsInitialized;
+			global::UPM_IPS.XCYLSProyectoIPS.EstiloPortral.DecoratorsInitialized += EstiloPortralDecoratorMap.OnDecoratorsInitialized;
 			global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.DecoratorsInitialized += MetaforaEnt_RelDecoratorMap.OnDecoratorsInitialized;
 			global::UPM_IPS.XCYLSProyectoIPS.MetaforaRel_Ent.DecoratorsInitialized += MetaforaRel_EntDecoratorMap.OnDecoratorsInitialized;
 		}
@@ -532,6 +533,39 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.TipoLetraDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Tipo").AssociateValueWith(shape.Store, propertyInfo);
+			}
+		}
+		
+		/// <summary>
+		/// Class containing decorator path traversal methods for EstiloPortral.
+		/// </summary>
+		internal static partial class EstiloPortralDecoratorMap
+		{
+			/// <summary>
+			/// Event handler called when decorator initialization is complete for EstiloPortral.  Adds decorator mappings for this shape or connector.
+			/// </summary>
+			public static void OnDecoratorsInitialized(object sender, global::System.EventArgs e)
+			{
+				DslDiagrams::ShapeElement shape = (DslDiagrams::ShapeElement)sender;
+				DslDiagrams::AssociatedPropertyInfo propertyInfo;
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.AlineacionDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Alineacion").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorFondoDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "ColorFondo").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorTituloDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "ColorTitulo").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.TamanoDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Tamano").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.TipoLetraDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "TipoLetra").AssociateValueWith(shape.Store, propertyInfo);
+				
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.TituloDomainPropertyId);
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Titulo").AssociateValueWith(shape.Store, propertyInfo);
 			}
 		}
 		
@@ -999,6 +1033,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// A rule which fires when data mapped to outer text decorators has changed,
 		/// so we can update the decorator host's bounds.
 		/// </summary>
+		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb), InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned), InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1), InitiallyDisabled=true)]
 		internal sealed class DecoratorPropertyChanged : DslModeling::ChangeRule
@@ -1008,7 +1043,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{
 				if(e == null) throw new global::System.ArgumentNullException("e");
 				
-				if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId)
+				if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorFondoDomainPropertyId)
+				{
+					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.EstiloPortral.FindEstiloPortralDecorator("ColorFondo");
+					if(decorator != null)
+					{
+						decorator.UpdateDecoratorHostShapes(e.ModelElement, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId);
+					}
+				}
+				else if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorTituloDomainPropertyId)
+				{
+					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.EstiloPortral.FindEstiloPortralDecorator("ColorTitulo");
+					if(decorator != null)
+					{
+						decorator.UpdateDecoratorHostShapes(e.ModelElement, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId);
+					}
+				}
+				else if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId)
 				{
 					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.FindMetaforaEnt_RelDecorator("cardinaridad");
 					if(decorator != null)

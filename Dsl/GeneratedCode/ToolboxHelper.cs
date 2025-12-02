@@ -321,27 +321,11 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "UPM_IPS.XCYLSProyectoIPS.EstiloPortalWebToolboxItem":
-					// Add EstiloPortalWeb shape tool.
-					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.XCYLSProyectoIPS.EstiloPortalWebToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						11, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("EstiloPortalWebToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloPortalWebToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("XCYLSProyectoIPSToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"EstiloPortalWeb", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("EstiloPortalWebToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
-						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
-						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
-						});
-					break;
 				case "UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWebToolboxItem":
 					// Add EstiloPaginaWeb shape tool.
 					result = new DslDesign::ModelingToolboxItem(
 						"UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWebToolboxItem", // Unique identifier (non-localized) for the toolbox item.
-						12, // Position relative to other items in the same toolbox tab.
+						11, // Position relative to other items in the same toolbox tab.
 						resourceManager.GetString("EstiloPaginaWebToolboxItem", resourceCulture), // Localized display name for the item.
 						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloPaginaWebToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
 						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
@@ -349,6 +333,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						"EstiloPaginaWeb", // F1 help keyword for the toolbox item.
 						resourceManager.GetString("EstiloPaginaWebToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
 						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.EstiloPaginaWeb.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.XCYLSProyectoIPS.EstiloPortalToolboxItem":
+					// Add EstiloPortal shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.XCYLSProyectoIPS.EstiloPortalToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						12, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("EstiloPortalToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EstiloPortalToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("XCYLSProyectoIPSToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"EstiloPortal", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EstiloPortalToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
