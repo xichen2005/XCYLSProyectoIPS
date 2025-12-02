@@ -1033,7 +1033,6 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// A rule which fires when data mapped to outer text decorators has changed,
 		/// so we can update the decorator host's bounds.
 		/// </summary>
-		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb), InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned), InitiallyDisabled=true)]
 		[DslModeling::RuleOn(typeof(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1), InitiallyDisabled=true)]
 		internal sealed class DecoratorPropertyChanged : DslModeling::ChangeRule
@@ -1043,23 +1042,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			{
 				if(e == null) throw new global::System.ArgumentNullException("e");
 				
-				if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorFondoDomainPropertyId)
-				{
-					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.EstiloPortral.FindEstiloPortralDecorator("ColorFondo");
-					if(decorator != null)
-					{
-						decorator.UpdateDecoratorHostShapes(e.ModelElement, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId);
-					}
-				}
-				else if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.ColorTituloDomainPropertyId)
-				{
-					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.EstiloPortral.FindEstiloPortralDecorator("ColorTitulo");
-					if(decorator != null)
-					{
-						decorator.UpdateDecoratorHostShapes(e.ModelElement, global::UPM_IPS.XCYLSProyectoIPS.EstiloPortalWeb.DomainClassId);
-					}
-				}
-				else if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId)
+				if (e.DomainProperty.Id == global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.cardinaridadDomainPropertyId)
 				{
 					DslDiagrams::Decorator decorator = global::UPM_IPS.XCYLSProyectoIPS.MetaforaEnt_Rel.FindMetaforaEnt_RelDecorator("cardinaridad");
 					if(decorator != null)

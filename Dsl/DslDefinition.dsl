@@ -527,14 +527,14 @@
     </DomainEnumeration>
     <DomainEnumeration Name="tipoNull" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull">
       <Literals>
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null" Name="Null" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null" Name="Not_Null" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null" Name="Null" Value="1" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null" Name="Not_Null" Value="0" />
       </Literals>
     </DomainEnumeration>
     <DomainEnumeration Name="tipoÚnico" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico">
       <Literals>
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.Único" Name="Único" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.No_Único" Name="No_Único" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.Único" Name="Único" Value="1" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.No_Único" Name="No_Único" Value="0" />
       </Literals>
     </DomainEnumeration>
     <DomainEnumeration Name="tipoAlineacion" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoAlineacion">
@@ -547,19 +547,19 @@
     </DomainEnumeration>
     <DomainEnumeration Name="tipoVisualizacionCampo" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo">
       <Literals>
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Área_de_Texto" Name="Área_de_Texto" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Checkbox" Name="Checkbox" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Radio_button" Name="Radio_button" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable" Name="Lista_Desplegable" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Área_de_Texto" Name="Área_de_Texto" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Checkbox" Name="Checkbox" Value="1" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Radio_button" Name="Radio_button" Value="3" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable" Name="Lista_Desplegable" Value="2" />
       </Literals>
     </DomainEnumeration>
     <DomainEnumeration Name="TipoCardinalidad" Namespace="UPM_IPS.XCYLSProyectoIPS" Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad">
       <Literals>
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_MaxN" Name="Min1_MaxN" Value="0" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN" Name="Min0_MaxN" Value="0" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN" Name="Min0_MaxN" Value="1" />
         <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.MinN_MaxM" Name="MinN_MaxM" Value="2" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1" Name="Min1_Max1" Value="" />
-        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1" Name="Min0_Max1" Value="" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1" Name="Min1_Max1" Value="4" />
+        <EnumerationLiteral Description="Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1" Name="Min0_Max1" Value="3" />
       </Literals>
     </DomainEnumeration>
   </Types>
@@ -631,28 +631,28 @@
         <TextDecorator Name="FechaMax" DisplayName="Fecha Max" DefaultText="FechaMax" FontSize="4" />
       </ShapeHasDecorators>
     </Port>
-    <GeometryShape Id="c82323cd-7073-4ed1-9e73-9ee78db27d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampo" Name="EstiloCampo" DisplayName="Estilo Campo" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Campo" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
+    <GeometryShape Id="c82323cd-7073-4ed1-9e73-9ee78db27d3f" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloCampo" Name="EstiloCampo" DisplayName="Estilo Campo" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Campo" FillColor="Aqua" InitialHeight="1" FillGradientMode="ForwardDiagonal" Geometry="Circle">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Visualizacion" DisplayName="Visualizacion" DefaultText="Visualizacion" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="TipoLetra" DisplayName="Tipo Letra" DefaultText="TipoLetra" />
       </ShapeHasDecorators>
     </GeometryShape>
-    <GeometryShape Id="b55d7712-6297-4811-ae60-8ff1b3420b75" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortral" Name="EstiloPortral" DisplayName="Estilo Portral" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Portral" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="OuterTopRight" HorizontalOffset="0" VerticalOffset="0">
+    <GeometryShape Id="b55d7712-6297-4811-ae60-8ff1b3420b75" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPortral" Name="EstiloPortral" DisplayName="Estilo Portral" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Portral" FillColor="Aqua" InitialHeight="1" FillGradientMode="ForwardDiagonal" Geometry="Circle">
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="ColorFondo" DisplayName="Color Fondo" DefaultText="ColorFondo" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="OuterTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="ColorTitulo" DisplayName="Color Titulo" DefaultText="ColorTitulo" />
       </ShapeHasDecorators>
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -668,17 +668,17 @@
         <TextDecorator Name="TipoLetra" DisplayName="Tipo Letra" DefaultText="TipoLetra" />
       </ShapeHasDecorators>
     </GeometryShape>
-    <GeometryShape Id="84d31347-405a-4237-9417-f1c7051b34f4" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPagina" Name="EstiloPagina" DisplayName="Estilo Pagina" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Pagina" InitialHeight="1" Geometry="Circle">
-      <ShapeHasDecorators Position="InnerTopCenter" HorizontalOffset="0" VerticalOffset="0">
+    <GeometryShape Id="84d31347-405a-4237-9417-f1c7051b34f4" Description="Description for UPM_IPS.XCYLSProyectoIPS.EstiloPagina" Name="EstiloPagina" DisplayName="Estilo Pagina" Namespace="UPM_IPS.XCYLSProyectoIPS" FixedTooltipText="Estilo Pagina" FillColor="Aqua" InitialHeight="1" FillGradientMode="ForwardDiagonal" Geometry="Circle">
+      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Color" DisplayName="Color" DefaultText="Color" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tamano" DisplayName="Tamano" DefaultText="Tamano" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerBottomCenter" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Alineacion" DisplayName="Alineacion" DefaultText="Alineacion" />
       </ShapeHasDecorators>
-      <ShapeHasDecorators Position="InnerTopLeft" HorizontalOffset="0" VerticalOffset="0">
+      <ShapeHasDecorators Position="InnerBottomRight" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="Tipo" DisplayName="Tipo" DefaultText="Tipo" />
       </ShapeHasDecorators>
     </GeometryShape>

@@ -638,13 +638,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Null
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoNull/Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Null,
+		Null = 1,
 		/// <summary>
 		/// Not_Null
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoNull.Not_Null
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoNull/Not_Null.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Not_Null,
+		Not_Null = 0,
 	}
 }
 namespace UPM_IPS.XCYLSProyectoIPS
@@ -661,13 +661,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.Único
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoÚnico/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Único,
+		Único = 1,
 		/// <summary>
 		/// No_Único
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoÚnico.No_Único
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoÚnico/No_Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		No_Único,
+		No_Único = 0,
 	}
 }
 namespace UPM_IPS.XCYLSProyectoIPS
@@ -719,26 +719,26 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Área_de_Texto
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo/Área_de_Texto.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Área_de_Texto,
+		Área_de_Texto = 0,
 		/// <summary>
 		/// Checkbox
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Checkbox
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo/Checkbox.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Checkbox,
+		Checkbox = 1,
 		/// <summary>
 		/// Radio_button
 		/// Description for UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Radio_button
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo/Radio_button.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Radio_button,
+		Radio_button = 3,
 		/// <summary>
 		/// Lista_Desplegable
 		/// Description for
 		/// UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo.Lista_Desplegable
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.tipoVisualizacionCampo/Lista_Desplegable.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Lista_Desplegable,
+		Lista_Desplegable = 2,
 	}
 }
 namespace UPM_IPS.XCYLSProyectoIPS
@@ -761,7 +761,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_MaxN
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_MaxN.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Min0_MaxN = 0,
+		Min0_MaxN = 1,
 		/// <summary>
 		/// MinN_MaxM
 		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.MinN_MaxM
@@ -773,13 +773,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min1_Max1
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min1_Max1.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Min1_Max1,
+		Min1_Max1 = 4,
 		/// <summary>
 		/// Min0_Max1
 		/// Description for UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad.Min0_Max1
 		/// </summary>
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.TipoCardinalidad/Min0_Max1.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		Min0_Max1,
+		Min0_Max1 = 3,
 	}
 }
 
