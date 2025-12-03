@@ -2,6 +2,13 @@
 <Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4c2de3c8-9232-4a16-be74-1ea73f22a0a8" Description="Description for UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPS" Name="XCYLSProyectoIPS" DisplayName="XCYLSProyectoIPS" Namespace="UPM_IPS.XCYLSProyectoIPS" ProductName="XCYLSProyectoIPS" CompanyName="UPM_IPS" PackageGuid="8bf689c9-05f2-4eba-86c7-f92496a3a491" PackageNamespace="UPM_IPS.XCYLSProyectoIPS" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
   <Classes>
     <DomainClass Id="c1d6649a-daef-493e-a618-d1b033cba6f0" Description="The root in which all other elements are embedded. Appears as a diagram." Name="DeraWebIPS" DisplayName="DeraWebIPS" Namespace="UPM_IPS.XCYLSProyectoIPS">
+      <Properties>
+        <DomainProperty Id="dcc124b8-9a1c-4930-b29f-9f8a90d2353d" Description="Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPS.Name" Name="Name" DisplayName="Name">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+      </Properties>
       <ElementMergeDirectives>
         <ElementMergeDirective>
           <Index>
@@ -321,7 +328,7 @@
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="31ad9191-1381-4176-89f9-7dcdfc039946" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad" Multiplicity="OneMany" PropertyDisplayName="Entidad">
+        <DomainRole Id="31ad9191-1381-4176-89f9-7dcdfc039946" Description="Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad" Multiplicity="ZeroOne" PropertyDisplayName="Entidad">
           <RolePlayer>
             <DomainClassMoniker Name="Relacion" />
           </RolePlayer>
@@ -406,7 +413,7 @@
         </DomainProperty>
       </Properties>
       <Source>
-        <DomainRole Id="926ed29f-b13b-4331-9ea1-2401acae3936" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad1" Multiplicity="OneMany" PropertyDisplayName="Entidad1">
+        <DomainRole Id="926ed29f-b13b-4331-9ea1-2401acae3936" Description="Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad1" Multiplicity="ZeroOne" PropertyDisplayName="Entidad1">
           <RolePlayer>
             <DomainClassMoniker Name="Relacion" />
           </RolePlayer>
@@ -724,6 +731,9 @@
           <XmlRelationshipData UseFullForm="true" RoleElementName="estiloCampoFormularios">
             <DomainRelationshipMoniker Name="DeraWebIPSHasEstiloCampoFormularios" />
           </XmlRelationshipData>
+          <XmlPropertyData XmlName="name">
+            <DomainPropertyMoniker Name="DeraWebIPS/Name" />
+          </XmlPropertyData>
         </ElementData>
       </XmlClassData>
       <XmlClassData TypeName="EntidadShape" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadShapeMoniker" ElementName="entidadShape" MonikerTypeName="EntidadShapeMoniker">

@@ -89,6 +89,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					{
 						global::UPM_IPS.XCYLSProyectoIPS.Entidad sourceEntidad = (global::UPM_IPS.XCYLSProyectoIPS.Entidad)candidateSource;
 						global::UPM_IPS.XCYLSProyectoIPS.Relacion targetRelacion = (global::UPM_IPS.XCYLSProyectoIPS.Relacion)candidateTarget;
+						if(targetRelacion == null || global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.GetLinkToEntidad(targetRelacion) != null) return false;
 						if(targetRelacion == null || sourceEntidad == null || global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.GetLinks(sourceEntidad, targetRelacion).Count > 0) return false;
 						return true;
 					}
@@ -219,6 +220,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					{
 						global::UPM_IPS.XCYLSProyectoIPS.Relacion sourceRelacion = (global::UPM_IPS.XCYLSProyectoIPS.Relacion)candidateSource;
 						global::UPM_IPS.XCYLSProyectoIPS.Entidad targetEntidad = (global::UPM_IPS.XCYLSProyectoIPS.Entidad)candidateTarget;
+						if(sourceRelacion == null || global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.GetLinkToEntidad1(sourceRelacion) != null) return false;
 						if(targetEntidad == null || sourceRelacion == null || global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.GetLinks(sourceRelacion, targetEntidad).Count > 0) return false;
 						return true;
 					}

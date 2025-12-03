@@ -1,122 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <deraWebIPS xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1d0da6d3-d4ba-4a44-82d0-91a594e8fdea" xmlns="http://schemas.microsoft.com/dsltools/XCYLSProyectoIPS">
   <entidad>
-    <deraWebIPSHasEntidad Id="2edabbeb-cac5-4050-a004-f0a929e3a3c2">
-      <entidad Id="b722dc3f-1031-4be3-89bd-914d807f3db7" name="Alumno">
+    <deraWebIPSHasEntidad Id="a75d6b38-bf08-4e3a-a4ce-e5d58d463998">
+      <entidad Id="f3cb4867-80a2-4d83-a666-3b72254cc5ec" name="Alumno">
         <relacioned>
-          <entidadReferencesRelacioned Id="662cd280-7e42-4922-9bff-be12a4329ad4" cardinaridad="Min0_MaxN" relacionB="Mentor">
-            <relacionMoniker Id="3d13d3a7-9b22-4ade-935b-14abab496ac6" />
+          <entidadReferencesRelacioned Id="b312ae42-7959-4b36-bac6-85ffc2451460" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="902cc626-771d-4956-83b6-7a48451cbd77" />
           </entidadReferencesRelacioned>
-          <entidadReferencesRelacioned Id="b32601a0-e0cf-4445-83b9-bb91e5c182b1" cardinaridad="Min1_MaxN">
-            <relacionMoniker Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" />
+          <entidadReferencesRelacioned Id="896b3087-0c5a-4a53-8612-c00f3a8c5f66" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="897f7de8-68f1-4b3a-bd8d-11fd73a377b8" />
           </entidadReferencesRelacioned>
         </relacioned>
         <atributoEntidad>
-          <entidadHasAtributoEntidad Id="0ae814af-4197-4469-b2a2-b41a71f27740">
-            <atributoEntidad Id="094e4ffa-42d0-458a-ba2d-908d723df36f" nombre="edad" tipo="Int" longitud="0">
-              <restrinccionAlfanumerico>
-                <atributoHasrestrinccionAlfanumerico Id="0173931a-1a89-4111-903b-82e655cb3a65">
-                  <restrinccionAlfanumerico Id="a9d62ffe-c7ea-4002-91b2-eadfdc267cbf" min="15" max="99" fechaMax="" fechaMin="" />
-                </atributoHasrestrinccionAlfanumerico>
-              </restrinccionAlfanumerico>
-            </atributoEntidad>
-          </entidadHasAtributoEntidad>
-          <entidadHasAtributoEntidad Id="d954c7ca-c225-4031-b36a-a11e18ebc331">
-            <atributoEntidad Id="c9e621a8-b2e5-43ec-83a3-1602080e169e" nombre="sexo" tipo="String" null="Not_Null" longitud="256" />
+          <entidadHasAtributoEntidad Id="944417a5-3d0d-4a86-8684-9c3e118221a1">
+            <atributoEntidad Id="bcf67c7a-c8be-4405-9a2d-638ec3363bd6" nombre="Edad" tipo="Int" null="Not_Null" longitud="0" />
           </entidadHasAtributoEntidad>
         </atributoEntidad>
         <atributoClaves>
-          <entidadHasAtributoClaves Id="def26397-e543-4cbc-afcc-db63ca0de647">
-            <atributoClave Id="ead004b7-b880-4848-8edb-2f5eb0c22f08" nombre="Id_alumno" tipo="String" />
+          <entidadHasAtributoClaves Id="985309e5-8847-401c-a614-990a8bc6ef2a">
+            <atributoClave Id="3390b1bd-4993-4302-b8e0-ef96c3cef4ba" nombre="Id_Alumno" tipo="Int" único="Único" />
           </entidadHasAtributoClaves>
         </atributoClaves>
       </entidad>
     </deraWebIPSHasEntidad>
-    <deraWebIPSHasEntidad Id="052eb37a-b1fa-4a7f-8d28-7e9652da69dd">
-      <entidad Id="106b90fa-35c3-423d-b24d-9e9013d69737" name="Universidad" />
+    <deraWebIPSHasEntidad Id="4fd3d2ad-130f-456f-b37e-3989578f3998">
+      <entidad Id="4b84a41c-d147-41ba-abca-c5a2034febba" name="Universidad">
+        <atributoClaves>
+          <entidadHasAtributoClaves Id="937b3539-220e-47d2-9514-04bd248fbbf6">
+            <atributoClave Id="7755dcfa-fcfc-4253-bdb4-573d3026d70c" nombre="Nombre" tipo="String" único="Único" />
+          </entidadHasAtributoClaves>
+        </atributoClaves>
+      </entidad>
     </deraWebIPSHasEntidad>
-    <deraWebIPSHasEntidad Id="11ce1fc3-4bea-48d2-b039-1d029f7308df">
-      <entidad Id="2b7695b5-e0c6-4892-8aac-892b696dbaaa" name="Profesor">
+    <deraWebIPSHasEntidad Id="5822b080-7c00-44da-832d-e16329b71418">
+      <entidad Id="5e5798b8-7440-4b79-b8a6-c77800864478" name="Profesor">
         <relacioned>
-          <entidadReferencesRelacioned Id="d1cd7269-4072-4ccd-aec3-832b4609f12d" cardinaridad="Min1_MaxN">
-            <relacionMoniker Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" />
-          </entidadReferencesRelacioned>
-          <entidadReferencesRelacioned Id="813b569f-102e-4ba8-84d2-ae4fb5750962" cardinaridad="Min1_MaxN">
-            <relacionMoniker Id="d8c76074-56f6-4b38-916b-6cb47d0c3f44" />
+          <entidadReferencesRelacioned Id="47c89614-089c-46d6-8b09-4382e7f28131" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="998f4097-0df0-4aca-81c8-c638a9e3ae77" />
           </entidadReferencesRelacioned>
         </relacioned>
         <atributoEntidad>
-          <entidadHasAtributoEntidad Id="13b6a253-3ef2-4af2-b587-b59d25da241d">
-            <atributoEntidad Id="c54471b4-9b77-41ca-9726-1651027bbb81" nombre="edad" tipo="Int" null="Not_Null" longitud="0">
-              <restrinccionAlfanumerico>
-                <atributoHasrestrinccionAlfanumerico Id="e32bb5df-5dcd-48a8-adf5-7e69a6f199c4">
-                  <restrinccionAlfanumerico Id="9ee85040-9418-486e-8dbd-bd7fabe5935d" min="15" max="99" fechaMax="" fechaMin="" />
-                </atributoHasrestrinccionAlfanumerico>
-              </restrinccionAlfanumerico>
+          <entidadHasAtributoEntidad Id="4577fa06-9499-4ad9-b715-6b7da9c4d6d3">
+            <atributoEntidad Id="22a6661d-025d-44e2-acf0-5a6ab4fa236b" nombre="Edad" tipo="Int" null="Not_Null" longitud="0">
+              <restrincciones>
+                <atributoHasrestrincciones Id="e19fe9f0-9960-46ee-9d0e-8a936ae2f68c">
+                  <restrincciones Id="ae591d8c-4ad3-4787-9290-9707fc3bf1fa" min="18" max="60" fechaMax="" fechaMin="" />
+                </atributoHasrestrincciones>
+              </restrincciones>
             </atributoEntidad>
           </entidadHasAtributoEntidad>
         </atributoEntidad>
         <atributoClaves>
-          <entidadHasAtributoClaves Id="bbeb096e-ffe0-4cd2-960c-77a8cf016d5c">
-            <atributoClave Id="45520610-28ff-4c3b-bbbb-e99711d1ead5" nombre="id_profesor" tipo="Int" único="Único">
-              <estiloCampoFormularios>
-                <atributoReferencesEstiloCampoFormularios Id="2ff64ec2-2fe5-4bca-b321-a726b7b2a2ef">
-                  <estiloCampoFormularioMoniker Id="97495737-25d6-4006-b2f7-62a97e25460c" />
-                </atributoReferencesEstiloCampoFormularios>
-              </estiloCampoFormularios>
-            </atributoClave>
+          <entidadHasAtributoClaves Id="95266a59-6b99-4363-80ca-8d356445d537">
+            <atributoClave Id="cb0a4ec3-9106-4bf1-a53d-ade9dc0b314e" nombre="Id_Prof" tipo="Int" único="Único" />
           </entidadHasAtributoClaves>
         </atributoClaves>
         <estiloPaginaWeb>
-          <entidadHasEstiloPaginaWeb Id="601043ff-1e17-4f9a-9d73-66a7792cf9ef">
-            <estiloPaginaWeb Id="0a8a2639-332f-4eed-9a22-cd65f29c8585" colorTexto="Negro" alineaciónTexto="Izquierda" tipoLetra="Arial" tamañoLetra="8" />
+          <entidadHasEstiloPaginaWeb Id="64476a5c-c984-472a-9742-edd77c28c4da">
+            <estiloPaginaWeb Id="61d5965a-9387-4eff-83a3-59ac131fad76" colorTexto="Negro" alineaciónTexto="Izquierda" tipoLetra="Arial" tamañoLetra="8" />
           </entidadHasEstiloPaginaWeb>
         </estiloPaginaWeb>
       </entidad>
     </deraWebIPSHasEntidad>
   </entidad>
   <relacioned>
-    <deraWebIPSHasRelacioned Id="6b2dc418-7b8a-448b-912b-c00d2f33b389">
-      <relacion Id="d8c76074-56f6-4b38-916b-6cb47d0c3f44" name="trabaja">
-        <atributoRelacioned>
-          <relacionHasAtributoRelacioned Id="eacaa81a-1c5d-4cb4-8d80-f28b8f4b14b8">
-            <atributoRelacion Id="ad6f3e70-e034-40dd-a0a1-b8d29548c481" nombre="Turno" tipo="String" null="Not_Null">
-              <restrinccionAlfanumerico>
-                <atributoHasrestrinccionAlfanumerico Id="d7baa050-84b9-46ba-b382-991825a2bcf9">
-                  <restrinccionAlfanumerico Id="4c86b410-47fb-45b8-9194-7db6f8824c81" valores="manyana" min="0" max="0" fechaMax="" fechaMin="" />
-                </atributoHasrestrinccionAlfanumerico>
-              </restrinccionAlfanumerico>
-            </atributoRelacion>
-          </relacionHasAtributoRelacioned>
-        </atributoRelacioned>
+    <deraWebIPSHasRelacioned Id="0dbd82e9-69d1-453f-8bc4-e420c4c6530d">
+      <relacion Id="902cc626-771d-4956-83b6-7a48451cbd77" name="educar">
         <entidad1>
-          <relacionReferencesEntidad1 Id="81cbe82c-86db-4d68-80b7-4e8880e731bc" cardinalidad="Min1_Max1">
-            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Universidad" />
+          <relacionReferencesEntidad1 Id="2a25592f-b802-4207-b0ba-29a784ec03e4" cardinalidad="Min1_MaxN">
+            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Profesor" />
           </relacionReferencesEntidad1>
         </entidad1>
       </relacion>
     </deraWebIPSHasRelacioned>
-    <deraWebIPSHasRelacioned Id="81562975-459a-457a-848f-344d63ab73da">
-      <relacion Id="3d13d3a7-9b22-4ade-935b-14abab496ac6" name="Tutoriza">
+    <deraWebIPSHasRelacioned Id="24779526-ac3e-41c0-a5f0-c25436469480">
+      <relacion Id="897f7de8-68f1-4b3a-bd8d-11fd73a377b8" name="Tutorizar">
         <entidad1>
-          <relacionReferencesEntidad1 Id="c98d403a-4514-429d-bc54-94912271b1d1" cardinalidad="Min0_Max1" relacionA="alumno">
+          <relacionReferencesEntidad1 Id="fef878f1-ca44-4a8e-8ddc-2387d4459ccd" cardinalidad="Min1_MaxN">
             <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Alumno" />
           </relacionReferencesEntidad1>
         </entidad1>
       </relacion>
     </deraWebIPSHasRelacioned>
-    <deraWebIPSHasRelacioned Id="cf0da476-bf3a-419b-afe0-55c7c3a1b32a">
-      <relacion Id="bc0e6494-074d-41a5-ad12-13bd6bfa1e67" name="educar" />
+    <deraWebIPSHasRelacioned Id="41779ce9-50d7-401f-9c9f-7be4084093a6">
+      <relacion Id="998f4097-0df0-4aca-81c8-c638a9e3ae77" name="Trabajar">
+        <atributoRelacioned>
+          <relacionHasAtributoRelacioned Id="8fb147ee-6e50-4cb0-8bd7-c45d8326d538">
+            <atributoRelacion Id="0665947b-67ef-4f73-861a-1f52a8bc5007" nombre="Turno" tipo="String" />
+          </relacionHasAtributoRelacioned>
+        </atributoRelacioned>
+        <entidad1>
+          <relacionReferencesEntidad1 Id="26379138-a0d1-43bc-8106-c2f7ac120960" cardinalidad="Min1_MaxN">
+            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Universidad" />
+          </relacionReferencesEntidad1>
+        </entidad1>
+      </relacion>
     </deraWebIPSHasRelacioned>
   </relacioned>
   <estiloPortalWebbed>
-    <deraWebIPSHasEstiloPortalWebbed Id="bcac93a4-5b3e-4747-bc2b-9c7229bf633e">
-      <estiloPortalWeb Id="55052e59-1a52-41a8-8390-499f6754d4cb" colorFondo="Blanco" colorTitulo="Negro" titulo="EstiloPortal" tamano="12" alineacion="Izquierda" tipoLetra="Arial" />
+    <deraWebIPSHasEstiloPortalWebbed Id="ca57280d-2c41-4fb4-aa65-31aef9db8c12">
+      <estiloPortalWeb Id="feabeeb7-f79a-4ba6-bbd4-83e1cfb68018" colorFondo="Blanco" colorTitulo="Negro" titulo="Dereweb" tamano="12" alineacion="Izquierda" tipoLetra="Arial" />
     </deraWebIPSHasEstiloPortalWebbed>
   </estiloPortalWebbed>
   <estiloCampoFormularios>
-    <deraWebIPSHasEstiloCampoFormularios Id="dc6b0106-ff40-486e-b264-b7ab492c802c">
-      <estiloCampoFormulario Id="97495737-25d6-4006-b2f7-62a97e25460c" visualizacion="Lista_Desplegable" color="Negro" tamano="8" alineacion="Izquierda" tipoLetra="Arial" />
+    <deraWebIPSHasEstiloCampoFormularios Id="e917e7c0-7f57-40a4-b983-66ad29d1be78">
+      <estiloCampoFormulario Id="a31a311d-e708-4980-b9a1-649b5500e17a" visualizacion="Área_de_Texto" tamano="0" alineacion="Izquierda" />
     </deraWebIPSHasEstiloCampoFormularios>
   </estiloCampoFormularios>
 </deraWebIPS>

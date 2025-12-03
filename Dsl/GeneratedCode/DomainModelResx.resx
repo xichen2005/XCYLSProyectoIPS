@@ -133,6 +133,14 @@
     <value>DeraWebIPS</value>
     <comment>DisplayName for DomainClass &apos;DeraWebIPS&apos;</comment>
   </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPS/Name.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPS.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;DeraWebIPS&apos;</comment>
+  </data>
+  <data name="UPM_IPS.XCYLSProyectoIPS.DeraWebIPS/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;DeraWebIPS&apos;</comment>
+  </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.Entidad.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.Entidad</value>
     <comment>Description for DomainClass &apos;Entidad&apos;</comment>

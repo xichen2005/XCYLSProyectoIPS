@@ -120,6 +120,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 			return new DomainMemberInfo[]
 			{
+				new DomainMemberInfo(typeof(DeraWebIPS), "Name", DeraWebIPS.NameDomainPropertyId, typeof(DeraWebIPS.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Entidad), "Name", Entidad.NameDomainPropertyId, typeof(Entidad.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Relacion), "Name", Relacion.NameDomainPropertyId, typeof(Relacion.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(AtributoEntidad), "Null", AtributoEntidad.NullDomainPropertyId, typeof(AtributoEntidad.NullPropertyHandler)),

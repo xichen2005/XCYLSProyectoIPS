@@ -48,6 +48,93 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
+		#region Name domain property code
+		
+		/// <summary>
+		/// Name domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NameDomainPropertyId = new global::System.Guid(0xdcc124b8, 0x9a1c, 0x4930, 0xb2, 0x9f, 0x9f, 0x8a, 0x90, 0xd2, 0x35, 0x3d);
+		
+		/// <summary>
+		/// Storage for Name
+		/// </summary>
+		private global::System.String namePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Name domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.DeraWebIPS.Name
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPS/Name.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.DeraWebIPS/Name.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("dcc124b8-9a1c-4930-b29f-9f8a90d2353d")]
+		public global::System.String Name
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return namePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NamePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the DeraWebIPS.Name domain property.
+		/// </summary>
+		internal sealed partial class NamePropertyHandler : DslModeling::DomainPropertyValueHandler<DeraWebIPS, global::System.String>
+		{
+			private NamePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the DeraWebIPS.Name domain property value handler.
+			/// </summary>
+			public static readonly NamePropertyHandler Instance = new NamePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the DeraWebIPS.Name domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NameDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(DeraWebIPS element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.namePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(DeraWebIPS element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.namePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region Entidad opposite domain role accessor
 		
 		/// <summary>
@@ -797,17 +884,21 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		
 		#endregion
 		#region Entidad opposite domain role accessor
-		
 		/// <summary>
-		/// Gets a list of Entidad.
+		/// Gets or sets Entidad.
 		/// Description for UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.Relacion
 		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Entidad> Entidad
+		public virtual Entidad Entidad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.RelacionDomainRoleId);
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.RelacionDomainRoleId) as Entidad;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.RelacionDomainRoleId, value);
 			}
 		}
 		#endregion
@@ -846,17 +937,21 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		#endregion
 		#region Entidad1 opposite domain role accessor
-		
 		/// <summary>
-		/// Gets a list of Entidad1.
+		/// Gets or sets Entidad1.
 		/// Description for UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.Relacion
 		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Entidad> Entidad1
+		public virtual Entidad Entidad1
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId) as Entidad;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId, value);
 			}
 		}
 		#endregion

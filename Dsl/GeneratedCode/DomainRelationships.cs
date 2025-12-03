@@ -355,13 +355,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Static methods to access Entidad of a Relacion
 		/// <summary>
-		/// Gets a list of Entidad.
+		/// Gets Entidad.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<Entidad> GetEntidad(Relacion element)
+		public static Entidad GetEntidad(Relacion element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(element, RelacionDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, RelacionDomainRoleId) as Entidad;
+		}
+		
+		/// <summary>
+		/// Sets Entidad.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetEntidad(Relacion element, Entidad newEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, RelacionDomainRoleId, newEntidad);
 		}
 		#endregion
 		#region Relacion domain role code
@@ -377,7 +387,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Target, PropertyName = "Entidad", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
 		[DslModeling::DomainObjectId("31ad9191-1381-4176-89f9-7dcdfc039946")]
 		public virtual Relacion Relacion
 		{
@@ -593,13 +603,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Relacion link accessor
 		/// <summary>
-		/// Get the list of EntidadReferencesRelacioned links to a Relacion.
+		/// Get the EntidadReferencesRelacioned link to a Relacion.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned> GetLinksToEntidad ( global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance )
+		public static global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned GetLinkToEntidad (global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance)
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.RelacionDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.EntidadReferencesRelacioned.RelacionDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of Relacion not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
 		}
 		#endregion
 		#region EntidadReferencesRelacioned instance accessors
@@ -1689,7 +1708,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		/// </summary>
 		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Entidad1", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.OneMany)]
+		[DslModeling::DomainRole(DslModeling::DomainRoleOrder.Source, PropertyName = "Entidad1", PropertyDisplayNameKey="UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1/Relacion.PropertyDisplayName",  PropagatesCopy = DslModeling::PropagatesCopyOption.DoNotPropagateCopy, Multiplicity = DslModeling::Multiplicity.ZeroOne)]
 		[DslModeling::DomainObjectId("926ed29f-b13b-4331-9ea1-2401acae3936")]
 		public virtual Relacion Relacion
 		{
@@ -1749,13 +1768,23 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Static methods to access Entidad1 of a Relacion
 		/// <summary>
-		/// Gets a list of Entidad1.
+		/// Gets Entidad1.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static DslModeling::LinkedElementCollection<Entidad> GetEntidad1(Relacion element)
+		public static Entidad GetEntidad1(Relacion element)
 		{
-			return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(element, RelacionDomainRoleId);
+			return DslModeling::DomainRoleInfo.GetLinkedElement(element, RelacionDomainRoleId) as Entidad;
+		}
+		
+		/// <summary>
+		/// Sets Entidad1.
+		/// </summary>
+		[global::System.Diagnostics.DebuggerStepThrough]
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
+		public static void SetEntidad1(Relacion element, Entidad newEntidad)
+		{
+			DslModeling::DomainRoleInfo.SetLinkedElement(element, RelacionDomainRoleId, newEntidad);
 		}
 		#endregion
 		#region cardinalidad domain property code
@@ -1934,13 +1963,22 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		#endregion
 		#region Relacion link accessor
 		/// <summary>
-		/// Get the list of RelacionReferencesEntidad1 links to a Relacion.
+		/// Get the RelacionReferencesEntidad1 link to a Relacion.
 		/// </summary>
 		[global::System.Diagnostics.DebuggerStepThrough]
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1011")]
-		public static global::System.Collections.ObjectModel.ReadOnlyCollection<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> GetLinksToEntidad1 ( global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance )
+		public static global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1 GetLinkToEntidad1 (global::UPM_IPS.XCYLSProyectoIPS.Relacion relacionInstance)
 		{
-			return DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+			global::System.Collections.Generic.IList<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1> links = DslModeling::DomainRoleInfo.GetElementLinks<global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1>(relacionInstance, global::UPM_IPS.XCYLSProyectoIPS.RelacionReferencesEntidad1.RelacionDomainRoleId);
+			global::System.Diagnostics.Debug.Assert(links.Count <= 1, "Multiplicity of Relacion not obeyed.");
+			if ( links.Count == 0 )
+			{
+				return null;
+			}
+			else
+			{
+				return links[0];
+			}
 		}
 		#endregion
 		#region Entidad link accessor

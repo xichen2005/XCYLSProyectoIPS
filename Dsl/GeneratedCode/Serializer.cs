@@ -103,7 +103,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			
 			// Read properties serialized as XML attributes.
 			ReadPropertiesFromAttributes(serializationContext, element, reader);
-				
+	
 			// Read nested XML elements.
 			if (!serializationContext.Result.Failed)
 			{
@@ -151,7 +151,26 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// Always call the base class so any extensions are deserialized
 			base.ReadPropertiesFromAttributes(serializationContext, element, reader);
 	
-			// There is no property to read; do nothing
+			DeraWebIPS instanceOfDeraWebIPS = element as DeraWebIPS;
+			global::System.Diagnostics.Debug.Assert(instanceOfDeraWebIPS != null, "Expecting an instance of DeraWebIPS");
+	
+			// Name
+			if (!serializationContext.Result.Failed)
+			{
+				string attribName = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "name");
+				if (attribName != null)
+				{
+					global::System.String valueOfName;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.String>(serializationContext, attribName, out valueOfName))
+					{
+						instanceOfDeraWebIPS.Name = valueOfName;
+					}
+					else
+					{	// Invalid property value, ignored.
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "name", typeof(global::System.String), attribName);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -839,7 +858,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			// Always call the base class so any extensions are serialized
 			base.WritePropertiesAsAttributes(serializationContext, element, writer);
 	
-			// There are no properties; do nothing
+			DeraWebIPS instanceOfDeraWebIPS = element as DeraWebIPS;
+			global::System.Diagnostics.Debug.Assert(instanceOfDeraWebIPS != null, "Expecting an instance of DeraWebIPS");
+	
+			// Name
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.String propValue = instanceOfDeraWebIPS.Name;
+				if (!serializationContext.Result.Failed)
+				{
+					if (!string.IsNullOrEmpty(propValue))
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "name", propValue);
+	
+				}
+			}
 		}
 	
 		/// <summary>
@@ -2261,7 +2293,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						else
 						{
 							DslModeling::SerializationUtilities.SkipToFirstChild(reader);  // Skip the open tag of <entidad1>
-							ReadRelacionReferencesEntidad1Instances(serializationContext, element, reader);
+							ReadRelacionReferencesEntidad1Instance(serializationContext, element, reader);
 							DslModeling::SerializationUtilities.Skip(reader);  // Skip the close tag of </entidad1>
 						}
 						break;
@@ -2318,19 +2350,26 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 	
 		/// <summary>
-		/// Reads all instances of relationship RelacionReferencesEntidad1.
+		/// Reads instance of relationship RelacionReferencesEntidad1.
 		/// </summary>
 		/// <remarks>
 		/// The caller will position the reader at the open tag of the first XML element inside the relationship tag, so it can be
-		/// either the first instance, or a bogus tag. This method will deserialize all instances and ignore all bogus tags. When the
-		/// method returns, the reader will be positioned at the end tag of the relationship (or EOF if somehow that happens).
+		/// either the first instance, or a bogus tag. This method will deserialize only the first valid instance and ignore all the
+		/// rest tags (because the multiplicity allows only one instance). When the method returns, the reader will be positioned at 
+		/// the end tag of the relationship (or EOF if somehow that happens).
 		/// </remarks>
 		/// <param name="serializationContext">Serialization context.</param>
 		/// <param name="element">In-memory Relacion instance that will get the deserialized data.</param>
 		/// <param name="reader">XmlReader to read serialized data from.</param>
 		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1806")]
-		private static void ReadRelacionReferencesEntidad1Instances(DslModeling::SerializationContext serializationContext, Relacion element, global::System.Xml.XmlReader reader)
+		private static void ReadRelacionReferencesEntidad1Instance(DslModeling::SerializationContext serializationContext, Relacion element, global::System.Xml.XmlReader reader)
 		{
+			if (DslModeling::DomainRoleInfo.GetElementLinks<RelacionReferencesEntidad1> (element, RelacionReferencesEntidad1.RelacionDomainRoleId).Count > 0)
+			{	// Only allow one instance, which already exists, so skip everything
+				DslModeling::SerializationUtilities.Skip(reader);	// Moniker contains no child XML elements, so just skip.
+				return;
+			}
+	
 			while (!serializationContext.Result.Failed && !reader.EOF && reader.NodeType == global::System.Xml.XmlNodeType.Element)
 			{
 				DslModeling::DomainClassXmlSerializer newRelacionReferencesEntidad1Serializer = serializationContext.Directory.GetSerializer(RelacionReferencesEntidad1.DomainClassId);
@@ -2342,6 +2381,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					DslModeling::DomainClassXmlSerializer targetSerializer = serializationContext.Directory.GetSerializer (newRelacionReferencesEntidad1.GetDomainClass().Id);	
 					global::System.Diagnostics.Debug.Assert (targetSerializer != null, "Cannot find serializer for " + newRelacionReferencesEntidad1.GetDomainClass().Name + "!");
 					targetSerializer.Read(serializationContext, newRelacionReferencesEntidad1, reader);
+					break;	// Only allow one instance.
 				}
 				else
 				{	// Maybe the relationship is serialized in short-form by mistake.
@@ -2353,6 +2393,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.ExpectingFullFormRelationship(serializationContext, reader, typeof(RelacionReferencesEntidad1));
 						new RelacionReferencesEntidad1(element.Partition, new DslModeling::RoleAssignment(RelacionReferencesEntidad1.RelacionDomainRoleId, element), new DslModeling::RoleAssignment(RelacionReferencesEntidad1.EntidadDomainRoleId, newEntidadMonikerOfRelacionReferencesEntidad1));
 						DslModeling::SerializationUtilities.Skip(reader);	// Moniker contains no child XML elements, so just skip.
+						break;	// Only allow one instance.
 					}
 					else
 					{	// Unknown element, skip.
@@ -2823,19 +2864,13 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			}
 	
 			// RelacionReferencesEntidad1
-			global::System.Collections.ObjectModel.ReadOnlyCollection<RelacionReferencesEntidad1> allRelacionReferencesEntidad1Instances = RelacionReferencesEntidad1.GetLinksToEntidad1(element);
-			if (!serializationContext.Result.Failed && allRelacionReferencesEntidad1Instances.Count > 0)
+			RelacionReferencesEntidad1 theRelacionReferencesEntidad1Instance = RelacionReferencesEntidad1.GetLinkToEntidad1(element);
+			if (!serializationContext.Result.Failed && theRelacionReferencesEntidad1Instance != null)
 			{
 				writer.WriteStartElement("entidad1");
-				foreach (RelacionReferencesEntidad1 eachRelacionReferencesEntidad1Instance in allRelacionReferencesEntidad1Instances)
-				{
-					if (serializationContext.Result.Failed)
-						break;
-	
-					DslModeling::DomainClassXmlSerializer relSerializer = serializationContext.Directory.GetSerializer(eachRelacionReferencesEntidad1Instance.GetDomainClass().Id);
-					global::System.Diagnostics.Debug.Assert(relSerializer != null, "Cannot find serializer for " + eachRelacionReferencesEntidad1Instance.GetDomainClass().Name + "!");
-					relSerializer.Write(serializationContext, eachRelacionReferencesEntidad1Instance, writer);
-				}
+				DslModeling::DomainClassXmlSerializer relSerializer = serializationContext.Directory.GetSerializer(theRelacionReferencesEntidad1Instance.GetDomainClass().Id);
+				global::System.Diagnostics.Debug.Assert(relSerializer != null, "Cannot find serializer for " + theRelacionReferencesEntidad1Instance.GetDomainClass().Name + "!");
+				relSerializer.Write(serializationContext, theRelacionReferencesEntidad1Instance, writer);
 				writer.WriteEndElement();
 			}
 	
