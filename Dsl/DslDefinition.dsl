@@ -108,7 +108,7 @@
             <DomainEnumerationMoniker Name="tipoNull" />
           </Type>
         </DomainProperty>
-        <DomainProperty Id="64770b58-b7cb-40fb-962e-f8815d12c9e5" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
+        <DomainProperty Id="64770b58-b7cb-40fb-962e-f8815d12c9e5" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Unico" Name="Unico" DisplayName="Unico" DefaultValue="No_Único">
           <Type>
             <DomainEnumerationMoniker Name="tipoÚnico" />
           </Type>
@@ -125,7 +125,7 @@
         <DomainClassMoniker Name="Atributo" />
       </BaseClass>
       <Properties>
-        <DomainProperty Id="2f96f9aa-1b86-4309-8ede-e554afc754b8" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
+        <DomainProperty Id="2f96f9aa-1b86-4309-8ede-e554afc754b8" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Unico" Name="Unico" DisplayName="Unico" DefaultValue="No_Único">
           <Type>
             <DomainEnumerationMoniker Name="tipoÚnico" />
           </Type>
@@ -142,7 +142,7 @@
         <DomainClassMoniker Name="Atributo" />
       </BaseClass>
       <Properties>
-        <DomainProperty Id="63736cc9-5f95-4de7-a368-9bbdc172b812" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Único" Name="Único" DisplayName="Único" DefaultValue="No_Único">
+        <DomainProperty Id="63736cc9-5f95-4de7-a368-9bbdc172b812" Description="Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Unico" Name="Unico" DisplayName="Unico" DefaultValue="No_Único">
           <Type>
             <DomainEnumerationMoniker Name="tipoÚnico" />
           </Type>
@@ -788,8 +788,8 @@
           <XmlPropertyData XmlName="null">
             <DomainPropertyMoniker Name="AtributoEntidad/Null" />
           </XmlPropertyData>
-          <XmlPropertyData XmlName="único">
-            <DomainPropertyMoniker Name="AtributoEntidad/Único" />
+          <XmlPropertyData XmlName="unico">
+            <DomainPropertyMoniker Name="AtributoEntidad/Unico" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="longitud">
             <DomainPropertyMoniker Name="AtributoEntidad/Longitud" />
@@ -813,8 +813,8 @@
       <XmlClassData TypeName="AtributoRelacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoRelacionMoniker" ElementName="atributoRelacion" MonikerTypeName="AtributoRelacionMoniker">
         <DomainClassMoniker Name="AtributoRelacion" />
         <ElementData>
-          <XmlPropertyData XmlName="único">
-            <DomainPropertyMoniker Name="AtributoRelacion/Único" />
+          <XmlPropertyData XmlName="unico">
+            <DomainPropertyMoniker Name="AtributoRelacion/Unico" />
           </XmlPropertyData>
           <XmlPropertyData XmlName="null">
             <DomainPropertyMoniker Name="AtributoRelacion/Null" />
@@ -830,8 +830,8 @@
       <XmlClassData TypeName="AtributoClave" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoClaveMoniker" ElementName="atributoClave" MonikerTypeName="AtributoClaveMoniker">
         <DomainClassMoniker Name="AtributoClave" />
         <ElementData>
-          <XmlPropertyData XmlName="único">
-            <DomainPropertyMoniker Name="AtributoClave/Único" />
+          <XmlPropertyData XmlName="unico">
+            <DomainPropertyMoniker Name="AtributoClave/Unico" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -1138,7 +1138,7 @@
           <TextDecoratorMoniker Name="AtributoEntShape/Único" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoEntidad/Único" />
+              <DomainPropertyMoniker Name="AtributoEntidad/Unico" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -1169,7 +1169,7 @@
           <TextDecoratorMoniker Name="AtributoClaveShape/Único" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoClave/Único" />
+              <DomainPropertyMoniker Name="AtributoClave/Unico" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -1216,7 +1216,7 @@
           <TextDecoratorMoniker Name="AtributoClaveShape/Único" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="AtributoRelacion/Único" />
+              <DomainPropertyMoniker Name="AtributoRelacion/Unico" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>

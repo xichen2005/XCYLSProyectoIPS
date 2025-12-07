@@ -1,0 +1,168 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+<#@ output extension=".txt" #> 
+<#@ XCYLSProyectoIPS processor="XCYLSProyectoIPSDirectiveProcessor" requires="fileName='Sample.XCYLS_DSLProyIPS'" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+
+<#
+    var modelo = this.DeraWebIPS; 
+#>
+
+CREATE DATABASE IF NOT EXISTS <#= modelo.Name #>;
+USE <#= modelo.Name #>;
+
+<#
+    foreach (Entidad entidad in modelo.Entidad) 
+    {
+#>
+CREATE TABLE IF NOT EXISTS <#= entidad.Name #> (
+<#
+        List<string> columnasSQL = new List<string>();
+        List<string> primaryKeys = new List<string>();
+
+        foreach (AtributoClave clave in entidad.AtributoClaves)
+        {
+            string linea = "    " + clave.Nombre + " ";
+
+            switch (clave.Tipo.ToString())
+            {
+                case "Entero":        linea += "INTEGER"; break;
+                case "Real":          linea += "FLOAT"; break;
+                case "Fecha":         linea += "DATE"; break;
+                case "Alfanumerico":  linea += "CHAR(20)"; break;
+                default:              linea += "VARCHAR(255)"; break;
+            }
+
+            linea += " NOT NULL";
+            columnasSQL.Add(linea);
+            primaryKeys.Add(clave.Nombre);
+        }
+
+        foreach (AtributoEntidad attr in entidad.AtributoEntidad)
+        {
+            string linea = "    " + attr.Nombre + " ";
+
+            switch (attr.Tipo.ToString())
+            {
+                case "Entero":        linea += "INTEGER"; break;
+                case "Real":          linea += "FLOAT"; break;
+                case "Fecha":         linea += "DATE"; break;
+                case "Alfanumerico":  
+                    linea += "CHAR(" + attr.Longitud + ")"; 
+                    break;
+                default:              linea += "VARCHAR(255)"; break;
+            }
+
+            if (attr.Null.ToString() == "No") 
+            {
+                linea += " NOT NULL";
+            }
+
+            if (attr.Unico.ToString() == "Si" || attr.ToString().Contains("Si"))
+            {
+                linea += " UNIQUE";
+            }
+
+            columnasSQL.Add(linea);
+        }
+
+        for (int i = 0; i < columnasSQL.Count; i++)
+        {
+            Write(columnasSQL[i]);
+            
+            if (i < columnasSQL.Count - 1 || primaryKeys.Count > 0)
+            {
+                WriteLine(",");
+            }
+            else
+            {
+                WriteLine("");
+            }
+        }
+
+        if (primaryKeys.Count > 0)
+        {
+            string pkString = string.Join(", ", primaryKeys.ToArray());
+#>
+    PRIMARY KEY (<#= pkString #>)
+<#
+        }
+#>
+);
+<#
+    }
+
+    foreach (Relacion rel in modelo.Relacioned)
+    {
+        var link1 = RelacionReferencesEntidad1.GetLinkToEntidad1(rel);
+        var link2 = EntidadReferencesRelacioned.GetLinkToEntidad(rel);
+
+        if (link1 == null || link2 == null) continue;
+
+        string c1 = link1.cardinalidad.ToString();
+        string c2 = link2.cardinaridad.ToString();
+
+        if ((c1.Contains("MaxN") || c1.Contains("N")) && (c2.Contains("MaxN") || c2.Contains("N")))
+        {
+#>
+CREATE TABLE IF NOT EXISTS <#= rel.Name #> (
+<#
+            List<string> relCols = new List<string>();
+            List<string> fkConstraints = new List<string>();
+
+            foreach (AtributoRelacion attr in rel.AtributoRelacioned)
+            {
+                string linea = "    " + attr.Nombre + " ";
+                
+                switch (attr.Tipo.ToString())
+                {
+                    case "Entero": linea += "INTEGER"; break;
+                    case "Real":   linea += "FLOAT"; break;
+                    case "Fecha":  linea += "DATE"; break; 
+                    default:       linea += "VARCHAR(255)"; break;
+                }
+                
+                if (attr.Null.ToString() == "No") linea += " NOT NULL";
+                
+                relCols.Add(linea);
+            }
+
+            List<Entidad> connectedEntities = new List<Entidad> { link2.Entidad, link1.Entidad };
+
+            foreach (Entidad connectedEntity in connectedEntities)
+            {
+                string pkName = "";
+                string pkType = "VARCHAR(255)"; 
+
+                foreach(AtributoClave pk in connectedEntity.AtributoClaves) {
+                    pkName = pk.Nombre; 
+                    if(pk.Tipo.ToString() == "Entero") pkType = "INTEGER";
+                    else if(pk.Tipo.ToString() == "Alfanumerico") pkType = "CHAR(20)"; 
+                }
+
+                if (!string.IsNullOrEmpty(pkName))
+                {
+                    relCols.Add("    " + pkName + " " + pkType + " NOT NULL");
+                    fkConstraints.Add("    FOREIGN KEY (" + pkName + ") REFERENCES " + connectedEntity.Name + " (" + pkName + ")");
+                }
+            }
+
+            for (int i = 0; i < relCols.Count; i++)
+            {
+                Write(relCols[i]);
+                if (i < relCols.Count - 1 || fkConstraints.Count > 0) WriteLine(",");
+                else WriteLine("");
+            }
+
+            for (int i = 0; i < fkConstraints.Count; i++)
+            {
+                Write(fkConstraints[i]);
+                if (i < fkConstraints.Count - 1) WriteLine(",");
+                else WriteLine("");
+            }
+#>
+);
+<#
+        }
+    } 
+#>

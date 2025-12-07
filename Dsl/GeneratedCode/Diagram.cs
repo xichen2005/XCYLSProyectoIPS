@@ -372,7 +372,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Atributo.NombreDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "AtributoC").AssociateValueWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoClave.ÚnicoDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoClave.UnicoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Único").AssociateValueWith(shape.Store, propertyInfo);
 			}
 		}
@@ -402,7 +402,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Atributo.TipoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Tipo").AssociateValueWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.ÚnicoDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.UnicoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Único").AssociateValueWith(shape.Store, propertyInfo);
 			}
 		}
@@ -423,7 +423,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Atributo.TipoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Tipo").AssociateValueWith(shape.Store, propertyInfo);
 				
-				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.ÚnicoDomainPropertyId);
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.UnicoDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "Único").AssociateValueWith(shape.Store, propertyInfo);
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::UPM_IPS.XCYLSProyectoIPS.Atributo.NombreDomainPropertyId);

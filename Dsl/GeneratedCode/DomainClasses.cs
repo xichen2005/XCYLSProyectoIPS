@@ -1181,60 +1181,60 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		}
 		
 		#endregion
-		#region Único domain property code
+		#region Unico domain property code
 		
 		/// <summary>
-		/// Único domain property Id.
+		/// Unico domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x64770b58, 0xb7cb, 0x40fb, 0x96, 0x2e, 0xf8, 0x81, 0x5d, 0x12, 0xc9, 0xe5);
+		public static readonly global::System.Guid UnicoDomainPropertyId = new global::System.Guid(0x64770b58, 0xb7cb, 0x40fb, 0x96, 0x2e, 0xf8, 0x81, 0x5d, 0x12, 0xc9, 0xe5);
 		
 		/// <summary>
-		/// Storage for Único
+		/// Storage for Unico
 		/// </summary>
-		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
+		private tipoÚnico unicoPropertyStorage = tipoÚnico.No_Único;
 		
 		/// <summary>
-		/// Gets or sets the value of Único domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Único
+		/// Gets or sets the value of Unico domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Unico
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Unico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Unico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
 		[DslModeling::DomainObjectId("64770b58-b7cb-40fb-962e-f8815d12c9e5")]
-		public tipoÚnico Único
+		public tipoÚnico Unico
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return únicoPropertyStorage;
+				return unicoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				ÚnicoPropertyHandler.Instance.SetValue(this, value);
+				UnicoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the AtributoEntidad.Único domain property.
+		/// Value handler for the AtributoEntidad.Unico domain property.
 		/// </summary>
-		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoÚnico>
+		internal sealed partial class UnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoEntidad, tipoÚnico>
 		{
-			private ÚnicoPropertyHandler() { }
+			private UnicoPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the AtributoEntidad.Único domain property value handler.
+			/// Gets the singleton instance of the AtributoEntidad.Unico domain property value handler.
 			/// </summary>
-			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
+			public static readonly UnicoPropertyHandler Instance = new UnicoPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the AtributoEntidad.Único domain property.
+			/// Gets the Id of the AtributoEntidad.Unico domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return ÚnicoDomainPropertyId;
+					return UnicoDomainPropertyId;
 				}
 			}
 			
@@ -1246,7 +1246,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			public override sealed tipoÚnico GetValue(AtributoEntidad element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.únicoPropertyStorage;
+				return element.unicoPropertyStorage;
 			}
 		
 			/// <summary>
@@ -1262,7 +1262,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.únicoPropertyStorage = newValue;
+					element.unicoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1417,60 +1417,60 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
-		#region Único domain property code
+		#region Unico domain property code
 		
 		/// <summary>
-		/// Único domain property Id.
+		/// Unico domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x2f96f9aa, 0x1b86, 0x4309, 0x8e, 0xde, 0xe5, 0x54, 0xaf, 0xc7, 0x54, 0xb8);
+		public static readonly global::System.Guid UnicoDomainPropertyId = new global::System.Guid(0x2f96f9aa, 0x1b86, 0x4309, 0x8e, 0xde, 0xe5, 0x54, 0xaf, 0xc7, 0x54, 0xb8);
 		
 		/// <summary>
-		/// Storage for Único
+		/// Storage for Unico
 		/// </summary>
-		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
+		private tipoÚnico unicoPropertyStorage = tipoÚnico.No_Único;
 		
 		/// <summary>
-		/// Gets or sets the value of Único domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Único
+		/// Gets or sets the value of Unico domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Unico
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Unico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Unico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
 		[DslModeling::DomainObjectId("2f96f9aa-1b86-4309-8ede-e554afc754b8")]
-		public tipoÚnico Único
+		public tipoÚnico Unico
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return únicoPropertyStorage;
+				return unicoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				ÚnicoPropertyHandler.Instance.SetValue(this, value);
+				UnicoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the AtributoRelacion.Único domain property.
+		/// Value handler for the AtributoRelacion.Unico domain property.
 		/// </summary>
-		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoRelacion, tipoÚnico>
+		internal sealed partial class UnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoRelacion, tipoÚnico>
 		{
-			private ÚnicoPropertyHandler() { }
+			private UnicoPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the AtributoRelacion.Único domain property value handler.
+			/// Gets the singleton instance of the AtributoRelacion.Unico domain property value handler.
 			/// </summary>
-			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
+			public static readonly UnicoPropertyHandler Instance = new UnicoPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the AtributoRelacion.Único domain property.
+			/// Gets the Id of the AtributoRelacion.Unico domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return ÚnicoDomainPropertyId;
+					return UnicoDomainPropertyId;
 				}
 			}
 			
@@ -1482,7 +1482,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			public override sealed tipoÚnico GetValue(AtributoRelacion element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.únicoPropertyStorage;
+				return element.unicoPropertyStorage;
 			}
 		
 			/// <summary>
@@ -1498,7 +1498,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.únicoPropertyStorage = newValue;
+					element.unicoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
@@ -1654,60 +1654,60 @@ namespace UPM_IPS.XCYLSProyectoIPS
 		{
 		}
 		#endregion
-		#region Único domain property code
+		#region Unico domain property code
 		
 		/// <summary>
-		/// Único domain property Id.
+		/// Unico domain property Id.
 		/// </summary>
-		public static readonly global::System.Guid ÚnicoDomainPropertyId = new global::System.Guid(0x63736cc9, 0x5f95, 0x4de7, 0xa3, 0x68, 0x9b, 0xbd, 0xc1, 0x72, 0xb8, 0x12);
+		public static readonly global::System.Guid UnicoDomainPropertyId = new global::System.Guid(0x63736cc9, 0x5f95, 0x4de7, 0xa3, 0x68, 0x9b, 0xbd, 0xc1, 0x72, 0xb8, 0x12);
 		
 		/// <summary>
-		/// Storage for Único
+		/// Storage for Unico
 		/// </summary>
-		private tipoÚnico únicoPropertyStorage = tipoÚnico.No_Único;
+		private tipoÚnico unicoPropertyStorage = tipoÚnico.No_Único;
 		
 		/// <summary>
-		/// Gets or sets the value of Único domain property.
-		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Único
+		/// Gets or sets the value of Unico domain property.
+		/// Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Unico
 		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DisplayNameResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Unico.DisplayName", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.XCYLSProyectoIPS.AtributoClave/Unico.Description", typeof(global::UPM_IPS.XCYLSProyectoIPS.XCYLSProyectoIPSDomainModel), "UPM_IPS.XCYLSProyectoIPS.GeneratedCode.DomainModelResx")]
 		[global::System.ComponentModel.DefaultValue(tipoÚnico.No_Único)]
 		[DslModeling::DomainObjectId("63736cc9-5f95-4de7-a368-9bbdc172b812")]
-		public tipoÚnico Único
+		public tipoÚnico Unico
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return únicoPropertyStorage;
+				return unicoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				ÚnicoPropertyHandler.Instance.SetValue(this, value);
+				UnicoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the AtributoClave.Único domain property.
+		/// Value handler for the AtributoClave.Unico domain property.
 		/// </summary>
-		internal sealed partial class ÚnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, tipoÚnico>
+		internal sealed partial class UnicoPropertyHandler : DslModeling::DomainPropertyValueHandler<AtributoClave, tipoÚnico>
 		{
-			private ÚnicoPropertyHandler() { }
+			private UnicoPropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the AtributoClave.Único domain property value handler.
+			/// Gets the singleton instance of the AtributoClave.Unico domain property value handler.
 			/// </summary>
-			public static readonly ÚnicoPropertyHandler Instance = new ÚnicoPropertyHandler();
+			public static readonly UnicoPropertyHandler Instance = new UnicoPropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the AtributoClave.Único domain property.
+			/// Gets the Id of the AtributoClave.Unico domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return ÚnicoDomainPropertyId;
+					return UnicoDomainPropertyId;
 				}
 			}
 			
@@ -1719,7 +1719,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			public override sealed tipoÚnico GetValue(AtributoClave element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.únicoPropertyStorage;
+				return element.unicoPropertyStorage;
 			}
 		
 			/// <summary>
@@ -1735,7 +1735,7 @@ namespace UPM_IPS.XCYLSProyectoIPS
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.únicoPropertyStorage = newValue;
+					element.unicoPropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}

@@ -7,18 +7,30 @@
           <entidadReferencesRelacioned Id="b312ae42-7959-4b36-bac6-85ffc2451460" cardinaridad="Min1_MaxN">
             <relacionMoniker Id="902cc626-771d-4956-83b6-7a48451cbd77" />
           </entidadReferencesRelacioned>
-          <entidadReferencesRelacioned Id="896b3087-0c5a-4a53-8612-c00f3a8c5f66" cardinaridad="Min1_MaxN">
+          <entidadReferencesRelacioned Id="896b3087-0c5a-4a53-8612-c00f3a8c5f66" cardinaridad="Min0_MaxN" relacionB="Mentor">
             <relacionMoniker Id="897f7de8-68f1-4b3a-bd8d-11fd73a377b8" />
+          </entidadReferencesRelacioned>
+          <entidadReferencesRelacioned Id="0da2ec91-00ce-4bc5-afe9-9105c64e3cfd" cardinaridad="Min1_MaxN">
+            <relacionMoniker Id="db1c8adf-b7da-4a30-9a41-b22ab5cfaf50" />
           </entidadReferencesRelacioned>
         </relacioned>
         <atributoEntidad>
           <entidadHasAtributoEntidad Id="944417a5-3d0d-4a86-8684-9c3e118221a1">
             <atributoEntidad Id="bcf67c7a-c8be-4405-9a2d-638ec3363bd6" nombre="Edad" tipo="Int" null="Not_Null" longitud="0" />
           </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="edf33214-bfde-473e-8a79-fc9229b2a1b2">
+            <atributoEntidad Id="66160bd1-d09f-40cb-9867-a5becaf8f73e" nombre="Nombre" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="75b19c03-b16a-4641-b02a-66c1ad4ea624">
+            <atributoEntidad Id="b1e7fab4-577d-43cf-aff2-a7de4fa980c7" nombre="Apellidos1" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="68a72d9c-9bea-4e9a-b2a2-5ff31974558f">
+            <atributoEntidad Id="e361c146-3844-4480-b0c7-5760df78d8de" nombre="Apellidos2" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
         </atributoEntidad>
         <atributoClaves>
           <entidadHasAtributoClaves Id="985309e5-8847-401c-a614-990a8bc6ef2a">
-            <atributoClave Id="3390b1bd-4993-4302-b8e0-ef96c3cef4ba" nombre="Id_Alumno" tipo="Int" único="Único" />
+            <atributoClave Id="3390b1bd-4993-4302-b8e0-ef96c3cef4ba" nombre="Id_Alumno" tipo="String" único="Único" />
           </entidadHasAtributoClaves>
         </atributoClaves>
       </entidad>
@@ -49,10 +61,22 @@
               </restrincciones>
             </atributoEntidad>
           </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="1b01ce26-4412-4ce4-af16-7992565c1074">
+            <atributoEntidad Id="e11ace6e-bb8c-433b-b06c-137cb75a384a" nombre="Nombre" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="8a944a06-c246-4ea7-bc38-f51a1c0a866e">
+            <atributoEntidad Id="72439703-3e25-46aa-b729-9c5848da8aff" nombre="Apellidos1" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="bd967687-5ce4-41f8-bdf2-f39c659b8986">
+            <atributoEntidad Id="d9e7fa17-50c1-4010-83cf-ae116748862c" nombre="Apellidos2" tipo="String" null="Not_Null" longitud="0" />
+          </entidadHasAtributoEntidad>
+          <entidadHasAtributoEntidad Id="b5b271be-a5a2-4bb4-9b10-27d709b05f89">
+            <atributoEntidad Id="ae884a15-10f8-41b3-86db-8c12fc2381ba" nombre="Telefono" tipo="String" único="Único" longitud="0" />
+          </entidadHasAtributoEntidad>
         </atributoEntidad>
         <atributoClaves>
           <entidadHasAtributoClaves Id="95266a59-6b99-4363-80ca-8d356445d537">
-            <atributoClave Id="cb0a4ec3-9106-4bf1-a53d-ade9dc0b314e" nombre="Id_Prof" tipo="Int" único="Único" />
+            <atributoClave Id="cb0a4ec3-9106-4bf1-a53d-ade9dc0b314e" nombre="Id_Prof" tipo="String" único="Único" />
           </entidadHasAtributoClaves>
         </atributoClaves>
         <estiloPaginaWeb>
@@ -65,7 +89,7 @@
   </entidad>
   <relacioned>
     <deraWebIPSHasRelacioned Id="0dbd82e9-69d1-453f-8bc4-e420c4c6530d">
-      <relacion Id="902cc626-771d-4956-83b6-7a48451cbd77" name="educar">
+      <relacion Id="902cc626-771d-4956-83b6-7a48451cbd77" name="Educar">
         <entidad1>
           <relacionReferencesEntidad1 Id="2a25592f-b802-4207-b0ba-29a784ec03e4" cardinalidad="Min1_MaxN">
             <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Profesor" />
@@ -76,7 +100,7 @@
     <deraWebIPSHasRelacioned Id="24779526-ac3e-41c0-a5f0-c25436469480">
       <relacion Id="897f7de8-68f1-4b3a-bd8d-11fd73a377b8" name="Tutorizar">
         <entidad1>
-          <relacionReferencesEntidad1 Id="fef878f1-ca44-4a8e-8ddc-2387d4459ccd" cardinalidad="Min1_MaxN">
+          <relacionReferencesEntidad1 Id="fef878f1-ca44-4a8e-8ddc-2387d4459ccd" cardinalidad="Min0_Max1" relacionA="Alumnos">
             <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Alumno" />
           </relacionReferencesEntidad1>
         </entidad1>
@@ -90,7 +114,16 @@
           </relacionHasAtributoRelacioned>
         </atributoRelacioned>
         <entidad1>
-          <relacionReferencesEntidad1 Id="26379138-a0d1-43bc-8106-c2f7ac120960" cardinalidad="Min1_MaxN">
+          <relacionReferencesEntidad1 Id="26379138-a0d1-43bc-8106-c2f7ac120960" cardinalidad="Min1_Max1">
+            <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Universidad" />
+          </relacionReferencesEntidad1>
+        </entidad1>
+      </relacion>
+    </deraWebIPSHasRelacioned>
+    <deraWebIPSHasRelacioned Id="403a9d4c-7fbe-4f59-94c7-76e92b0bd7ca">
+      <relacion Id="db1c8adf-b7da-4a30-9a41-b22ab5cfaf50" name="Estar">
+        <entidad1>
+          <relacionReferencesEntidad1 Id="44cae743-ca8c-49ff-9cdc-99d20e27568c" cardinalidad="Min1_Max1">
             <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Universidad" />
           </relacionReferencesEntidad1>
         </entidad1>

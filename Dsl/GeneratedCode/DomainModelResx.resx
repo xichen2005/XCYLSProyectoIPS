@@ -189,13 +189,13 @@
     <value>Null</value>
     <comment>DisplayName for DomainProperty &apos;Null&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Único</value>
-    <comment>Description for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Unico.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Unico</value>
+    <comment>Description for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Único.DisplayName" xml:space="preserve">
-    <value>Único</value>
-    <comment>DisplayName for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Unico.DisplayName" xml:space="preserve">
+    <value>Unico</value>
+    <comment>DisplayName for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoEntidad&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoEntidad/Longitud.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoEntidad.Longitud</value>
@@ -213,13 +213,13 @@
     <value>Atributo Relacion</value>
     <comment>DisplayName for DomainClass &apos;AtributoRelacion&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Único</value>
-    <comment>Description for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Unico.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Unico</value>
+    <comment>Description for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Único.DisplayName" xml:space="preserve">
-    <value>Único</value>
-    <comment>DisplayName for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Unico.DisplayName" xml:space="preserve">
+    <value>Unico</value>
+    <comment>DisplayName for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoRelacion&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.AtributoRelacion/Null.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoRelacion.Null</value>
@@ -237,13 +237,13 @@
     <value>Atributo Clave</value>
     <comment>DisplayName for DomainClass &apos;AtributoClave&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Único</value>
-    <comment>Description for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoClave&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Unico.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.XCYLSProyectoIPS.AtributoClave.Unico</value>
+    <comment>Description for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoClave&apos;</comment>
   </data>
-  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Único.DisplayName" xml:space="preserve">
-    <value>Único</value>
-    <comment>DisplayName for DomainProperty &apos;Único&apos; on DomainClass &apos;AtributoClave&apos;</comment>
+  <data name="UPM_IPS.XCYLSProyectoIPS.AtributoClave/Unico.DisplayName" xml:space="preserve">
+    <value>Unico</value>
+    <comment>DisplayName for DomainProperty &apos;Unico&apos; on DomainClass &apos;AtributoClave&apos;</comment>
   </data>
   <data name="UPM_IPS.XCYLSProyectoIPS.Atributo.Description" xml:space="preserve">
     <value>Description for UPM_IPS.XCYLSProyectoIPS.Atributo</value>

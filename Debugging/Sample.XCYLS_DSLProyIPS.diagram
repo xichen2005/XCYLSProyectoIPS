@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xCYLSProyectoIPSDiagram dslVersion="1.0.0.0" Id="8cbf42b6-681a-4b03-b86d-12faa6801ef5" absoluteBounds="0, 0, 17.375, 8.5" name="Sample">
+<xCYLSProyectoIPSDiagram dslVersion="1.0.0.0" Id="8cbf42b6-681a-4b03-b86d-12faa6801ef5" absoluteBounds="0, 0, 22.5, 9" name="Sample">
   <deraWebIPSMoniker Id="1d0da6d3-d4ba-4a44-82d0-91a594e8fdea" />
   <nestedChildShapes>
-    <entidadShape Id="3cea3868-db93-4dae-a664-757423c941c0" absoluteBounds="4.125, 1, 2, 0.75">
+    <entidadShape Id="3cea3868-db93-4dae-a664-757423c941c0" absoluteBounds="9.25, 2.375, 2, 0.75">
       <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Alumno" />
     </entidadShape>
-    <entidadShape Id="4d13e23c-ef71-44fa-88b6-2e9beae31f84" absoluteBounds="5.625, 6.125, 2, 0.75">
+    <entidadShape Id="4d13e23c-ef71-44fa-88b6-2e9beae31f84" absoluteBounds="10.75, 7.5, 2, 0.75">
       <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Universidad" />
     </entidadShape>
-    <entidadShape Id="1385723c-b033-4acc-bb24-67082f642487" absoluteBounds="9.5, 2.875, 2, 0.75">
+    <entidadShape Id="1385723c-b033-4acc-bb24-67082f642487" absoluteBounds="14.625, 4.25, 2, 0.75">
       <entidadMoniker name="/1d0da6d3-d4ba-4a44-82d0-91a594e8fdea/Profesor" />
     </entidadShape>
-    <relacionShape Id="0c66e77a-f97b-4949-abd5-ca7f77dca223" absoluteBounds="8, 0.875, 1.5, 1">
+    <relacionShape Id="0c66e77a-f97b-4949-abd5-ca7f77dca223" absoluteBounds="13.125, 2.25, 1.5, 1">
       <relacionMoniker Id="902cc626-771d-4956-83b6-7a48451cbd77" />
     </relacionShape>
-    <relacionShape Id="2817d5d9-f288-45ec-858d-0711ceba3809" absoluteBounds="0.625, 0.875, 1.5, 1">
+    <relacionShape Id="2817d5d9-f288-45ec-858d-0711ceba3809" absoluteBounds="5.75, 2.25, 1.5, 1">
       <relacionMoniker Id="897f7de8-68f1-4b3a-bd8d-11fd73a377b8" />
     </relacionShape>
-    <relacionShape Id="342d5bf9-7f02-4689-880d-bca9cf43d9ef" absoluteBounds="10.75, 5.5, 1.5, 1">
+    <relacionShape Id="342d5bf9-7f02-4689-880d-bca9cf43d9ef" absoluteBounds="14.5, 7.625, 1.5, 1">
       <relacionMoniker Id="998f4097-0df0-4aca-81c8-c638a9e3ae77" />
     </relacionShape>
-    <metaforaEnt_Rel Id="37a07c16-df0a-4ea8-b850-5d83bc837e3d" edgePoints="[(6.125 : 1.375); (8 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Rel Id="37a07c16-df0a-4ea8-b850-5d83bc837e3d" edgePoints="[(11.25 : 2.75); (13.125 : 2.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadReferencesRelacionedMoniker Id="b312ae42-7959-4b36-bac6-85ffc2451460" />
       <relativeChildShapes />
       <nodes>
@@ -28,7 +28,7 @@
         <relacionShapeMoniker Id="0c66e77a-f97b-4949-abd5-ca7f77dca223" />
       </nodes>
     </metaforaEnt_Rel>
-    <metaforaRel_Ent Id="e780bb5c-ff0d-46c2-9b83-2f3a7e2e0977" edgePoints="[(8.71875 : 1.87456578367841); (8.71875 : 3.25); (9.5 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaRel_Ent Id="e780bb5c-ff0d-46c2-9b83-2f3a7e2e0977" edgePoints="[(13.9375 : 3.24826086429589); (13.9375 : 4.90625); (14.625 : 4.90625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <relacionReferencesEntidad1Moniker Id="2a25592f-b802-4207-b0ba-29a784ec03e4" />
       <relativeChildShapes />
       <nodes>
@@ -36,7 +36,7 @@
         <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
       </nodes>
     </metaforaRel_Ent>
-    <metaforaEnt_Rel Id="22ca1911-5972-439c-a507-ab8a5458a839" edgePoints="[(4.125 : 1.375); (2.125 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Rel Id="22ca1911-5972-439c-a507-ab8a5458a839" edgePoints="[(9.25 : 2.75); (7.25 : 2.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadReferencesRelacionedMoniker Id="896b3087-0c5a-4a53-8612-c00f3a8c5f66" />
       <relativeChildShapes />
       <nodes>
@@ -44,7 +44,7 @@
         <relacionShapeMoniker Id="2817d5d9-f288-45ec-858d-0711ceba3809" />
       </nodes>
     </metaforaEnt_Rel>
-    <metaforaRel_Ent Id="a8678563-1450-4092-8435-7b7845ec5d9a" edgePoints="[(2.02451905283833 : 1.125); (4.125 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaRel_Ent Id="a8678563-1450-4092-8435-7b7845ec5d9a" edgePoints="[(7.14951905283833 : 2.5); (9.25 : 2.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <relacionReferencesEntidad1Moniker Id="fef878f1-ca44-4a8e-8ddc-2387d4459ccd" />
       <relativeChildShapes />
       <nodes>
@@ -52,7 +52,7 @@
         <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
       </nodes>
     </metaforaRel_Ent>
-    <metaforaEnt_Rel Id="982b4994-eafb-4e55-a264-1f0139813a01" edgePoints="[(11.125 : 3.625); (11.125 : 5.56698729810778)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Rel Id="982b4994-eafb-4e55-a264-1f0139813a01" edgePoints="[(15.46875 : 5); (15.46875 : 7.64673998819796)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadReferencesRelacionedMoniker Id="47c89614-089c-46d6-8b09-4382e7f28131" />
       <relativeChildShapes />
       <nodes>
@@ -60,7 +60,7 @@
         <relacionShapeMoniker Id="342d5bf9-7f02-4689-880d-bca9cf43d9ef" />
       </nodes>
     </metaforaEnt_Rel>
-    <metaforaRel_Ent Id="c06f34b1-200d-4826-ac59-63e155081461" edgePoints="[(10.9145314376502 : 6.3125); (7.625 : 6.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaRel_Ent Id="c06f34b1-200d-4826-ac59-63e155081461" edgePoints="[(14.5547313918348 : 7.9375); (12.75 : 7.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <relacionReferencesEntidad1Moniker Id="26379138-a0d1-43bc-8106-c2f7ac120960" />
       <relativeChildShapes />
       <nodes>
@@ -68,86 +68,175 @@
         <entidadShapeMoniker Id="4d13e23c-ef71-44fa-88b6-2e9beae31f84" />
       </nodes>
     </metaforaRel_Ent>
-    <atributoRelacionTool Id="27c862f6-7b6a-4e94-8bb5-b854aeaeaf77" absoluteBounds="13.5, 5, 1.5, 1">
+    <atributoRelacionTool Id="27c862f6-7b6a-4e94-8bb5-b854aeaeaf77" absoluteBounds="19.875, 7.75, 1.5, 1">
       <atributoRelacionMoniker Id="0665947b-67ef-4f73-861a-1f52a8bc5007" />
     </atributoRelacionTool>
-    <metaforaRel_Atr Id="acde218f-f006-4d24-9f3a-3b4f234b41b7" edgePoints="[(12.1495190528383 : 5.75); (13.5 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaRel_Atr Id="acde218f-f006-4d24-9f3a-3b4f234b41b7" edgePoints="[(15.9941175562369 : 8.1875); (19.875 : 8.1875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <relacionHasAtributoRelacionedMoniker Id="8fb147ee-6e50-4cb0-8bd7-c45d8326d538" />
       <nodes>
         <relacionShapeMoniker Id="342d5bf9-7f02-4689-880d-bca9cf43d9ef" />
         <atributoRelacionToolMoniker Id="27c862f6-7b6a-4e94-8bb5-b854aeaeaf77" />
       </nodes>
     </metaforaRel_Atr>
-    <atributoClaveShape Id="387b4eed-a577-49fa-95b8-952f8c3a24dd" absoluteBounds="4.875, 2.375, 1.5, 1">
+    <atributoClaveShape Id="387b4eed-a577-49fa-95b8-952f8c3a24dd" absoluteBounds="11.375, 5.375, 1.5, 1">
       <atributoClaveMoniker Id="3390b1bd-4993-4302-b8e0-ef96c3cef4ba" />
     </atributoClaveShape>
-    <metaforaEnt_Atr Id="9459ed82-6ba8-4a06-9420-1af5958cdb72" edgePoints="[(5.5 : 1.75); (5.5 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Atr Id="9459ed82-6ba8-4a06-9420-1af5958cdb72" edgePoints="[(11.03125 : 3.125); (11.03125 : 5.90625); (11.375 : 5.90625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasAtributoClavesMoniker Id="985309e5-8847-401c-a614-990a8bc6ef2a" />
       <nodes>
         <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
         <atributoClaveShapeMoniker Id="387b4eed-a577-49fa-95b8-952f8c3a24dd" />
       </nodes>
     </metaforaEnt_Atr>
-    <atributoEntShape Id="2b60a721-b6ec-47c6-9e82-b67988b296ec" absoluteBounds="3.125, 2.5, 1.5, 1">
+    <atributoEntShape Id="2b60a721-b6ec-47c6-9e82-b67988b296ec" absoluteBounds="9.25, 4.375, 1.5, 1">
       <atributoEntidadMoniker Id="bcf67c7a-c8be-4405-9a2d-638ec3363bd6" />
     </atributoEntShape>
-    <metaforaEnt_Atr Id="d7a0453c-ef87-4dbf-82c9-d6d07008d77b" edgePoints="[(4.375 : 1.75); (4.375 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Atr Id="d7a0453c-ef87-4dbf-82c9-d6d07008d77b" edgePoints="[(10 : 3.125); (10 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasAtributoEntidadMoniker Id="944417a5-3d0d-4a86-8684-9c3e118221a1" />
       <nodes>
         <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
         <atributoEntShapeMoniker Id="2b60a721-b6ec-47c6-9e82-b67988b296ec" />
       </nodes>
     </metaforaEnt_Atr>
-    <atributoClaveShape Id="6eac4c93-444c-4623-ba8b-87867c1eb493" absoluteBounds="10.75, 1.375, 1.5, 1">
+    <atributoClaveShape Id="6eac4c93-444c-4623-ba8b-87867c1eb493" absoluteBounds="16.5, 0.625, 1.5, 1">
       <atributoClaveMoniker Id="cb0a4ec3-9106-4bf1-a53d-ade9dc0b314e" />
     </atributoClaveShape>
-    <metaforaEnt_Atr Id="dd5245af-4134-4c3f-a0f2-d1e5a3d7ded4" edgePoints="[(11.125 : 2.875); (11.125 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Atr Id="dd5245af-4134-4c3f-a0f2-d1e5a3d7ded4" edgePoints="[(14.75 : 4.25); (14.75 : 1.09375); (16.5 : 1.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasAtributoClavesMoniker Id="95266a59-6b99-4363-80ca-8d356445d537" />
       <nodes>
         <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
         <atributoClaveShapeMoniker Id="6eac4c93-444c-4623-ba8b-87867c1eb493" />
       </nodes>
     </metaforaEnt_Atr>
-    <atributoEntShape Id="792a3aa1-d461-445d-91a9-32e83b8b6409" absoluteBounds="12.75, 2.625, 1.5, 1">
+    <atributoEntShape Id="792a3aa1-d461-445d-91a9-32e83b8b6409" absoluteBounds="17.875, 3, 1.5, 1">
       <atributoEntidadMoniker Id="22a6661d-025d-44e2-acf0-5a6ab4fa236b" />
       <relativeChildShapes>
-        <restrinccAlfanumeric Id="eb57596b-c79b-4624-9c5e-e3e9340b9e8e" absoluteBounds="14, 2.96875, 0.5, 0.5">
+        <restrinccAlfanumeric Id="eb57596b-c79b-4624-9c5e-e3e9340b9e8e" absoluteBounds="19.125, 3.34375, 0.5, 0.5">
           <restrinccionesMoniker Id="ae591d8c-4ad3-4787-9290-9707fc3bf1fa" />
         </restrinccAlfanumeric>
       </relativeChildShapes>
     </atributoEntShape>
-    <metaforaEnt_Atr Id="60b07952-8789-4798-a33e-165daabdbfa3" edgePoints="[(11.5 : 3.25); (12.75 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Atr Id="60b07952-8789-4798-a33e-165daabdbfa3" edgePoints="[(16.625 : 4.28125); (18.34375 : 4.28125); (18.34375 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasAtributoEntidadMoniker Id="4577fa06-9499-4ad9-b715-6b7da9c4d6d3" />
       <nodes>
         <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
         <atributoEntShapeMoniker Id="792a3aa1-d461-445d-91a9-32e83b8b6409" />
       </nodes>
     </metaforaEnt_Atr>
-    <atributoClaveShape Id="7a8e35b0-55fd-4582-8044-6e93af680e03" absoluteBounds="3.875, 6, 1.5, 1">
+    <atributoClaveShape Id="7a8e35b0-55fd-4582-8044-6e93af680e03" absoluteBounds="7.875, 7.75, 1.5, 1">
       <atributoClaveMoniker Id="7755dcfa-fcfc-4253-bdb4-573d3026d70c" />
     </atributoClaveShape>
-    <metaforaEnt_Atr Id="316a1e92-b653-4aa9-94fc-2d723700e8f0" edgePoints="[(5.625 : 6.5); (5.375 : 6.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metaforaEnt_Atr Id="316a1e92-b653-4aa9-94fc-2d723700e8f0" edgePoints="[(10.75 : 8); (9.375 : 8)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasAtributoClavesMoniker Id="937b3539-220e-47d2-9514-04bd248fbbf6" />
       <nodes>
         <entidadShapeMoniker Id="4d13e23c-ef71-44fa-88b6-2e9beae31f84" />
         <atributoClaveShapeMoniker Id="7a8e35b0-55fd-4582-8044-6e93af680e03" />
       </nodes>
     </metaforaEnt_Atr>
-    <estiloCampo Id="8c47a046-8a06-49b2-9a8d-b5f04f50315b" absoluteBounds="15.625, 1.375, 1.5, 1.5">
+    <estiloCampo Id="8c47a046-8a06-49b2-9a8d-b5f04f50315b" absoluteBounds="20.75, 2.75, 1.5, 1.5">
       <estiloCampoFormularioMoniker Id="a31a311d-e708-4980-b9a1-649b5500e17a" />
     </estiloCampo>
-    <estiloPortral Id="03617337-d16d-4ab7-8b02-667d3c0ea1d2" absoluteBounds="0.5, 3.5, 1.5, 1.5">
+    <estiloPortral Id="03617337-d16d-4ab7-8b02-667d3c0ea1d2" absoluteBounds="5.625, 4.875, 1.5, 1.5">
       <estiloPortalWebMoniker Id="feabeeb7-f79a-4ba6-bbd4-83e1cfb68018" />
     </estiloPortral>
-    <estiloPagina Id="3f37c5c7-cf37-4b23-b4ff-6bd87b00554e" absoluteBounds="8.25, 4, 1.5, 1.5">
+    <estiloPagina Id="3f37c5c7-cf37-4b23-b4ff-6bd87b00554e" absoluteBounds="13.375, 5.375, 1.5, 1.5">
       <estiloPaginaWebMoniker Id="61d5965a-9387-4eff-83a3-59ac131fad76" />
     </estiloPagina>
-    <metEnt_EstiloPagina Id="3ddef48a-e31b-4687-879e-57b3e4e7bc9a" edgePoints="[(9.625 : 3.625); (9.625 : 4.33542190120558)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <metEnt_EstiloPagina Id="3ddef48a-e31b-4687-879e-57b3e4e7bc9a" edgePoints="[(14.75 : 5); (14.75 : 5.71042190120558)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <entidadHasEstiloPaginaWebMoniker Id="64476a5c-c984-472a-9742-edd77c28c4da" />
       <nodes>
         <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
         <estiloPaginaMoniker Id="3f37c5c7-cf37-4b23-b4ff-6bd87b00554e" />
       </nodes>
     </metEnt_EstiloPagina>
+    <atributoEntShape Id="1da889e6-9711-49e2-9059-818adf741566" absoluteBounds="8.625, 0.625, 1.5, 1">
+      <atributoEntidadMoniker Id="66160bd1-d09f-40cb-9867-a5becaf8f73e" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="5420b0ce-fbea-4c4a-957f-b98513f726c7" edgePoints="[(9.6875 : 2.375); (9.6875 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="edf33214-bfde-473e-8a79-fc9229b2a1b2" />
+      <nodes>
+        <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
+        <atributoEntShapeMoniker Id="1da889e6-9711-49e2-9059-818adf741566" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="a21a8acd-d0ae-4613-a78d-14bbb41468f2" absoluteBounds="10.5, 0.625, 1.5, 1">
+      <atributoEntidadMoniker Id="b1e7fab4-577d-43cf-aff2-a7de4fa980c7" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="a6956018-1f7a-4a5c-9fed-edd9eb40ae7f" edgePoints="[(10.875 : 2.375); (10.875 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="75b19c03-b16a-4641-b02a-66c1ad4ea624" />
+      <nodes>
+        <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
+        <atributoEntShapeMoniker Id="a21a8acd-d0ae-4613-a78d-14bbb41468f2" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="b45b766b-318a-4c94-aa41-b60a680291d6" absoluteBounds="11.75, 3.75, 1.5, 1">
+      <atributoEntidadMoniker Id="e361c146-3844-4480-b0c7-5760df78d8de" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="d5fbec22-9199-4058-9e2b-71ae77b5d98d" edgePoints="[(11.25 : 2.968752); (12.406248 : 2.968752); (12.406248 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="68a72d9c-9bea-4e9a-b2a2-5ff31974558f" />
+      <nodes>
+        <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
+        <atributoEntShapeMoniker Id="b45b766b-318a-4c94-aa41-b60a680291d6" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="b1e4a343-368e-416f-bc7b-a9f13023668b" absoluteBounds="17.5, 6.25, 1.5, 1">
+      <atributoEntidadMoniker Id="e11ace6e-bb8c-433b-b06c-137cb75a384a" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="c654672e-687b-4f50-aee8-75a5f05d37ef" edgePoints="[(16.0781275 : 5); (16.0781275 : 7.09375); (17.5 : 7.09375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="1b01ce26-4412-4ce4-af16-7992565c1074" />
+      <nodes>
+        <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
+        <atributoEntShapeMoniker Id="b1e4a343-368e-416f-bc7b-a9f13023668b" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="cc2c07b8-b764-4b09-a94f-dafc5e250a94" absoluteBounds="14.875, 1.625, 1.5, 1">
+      <atributoEntidadMoniker Id="72439703-3e25-46aa-b729-9c5848da8aff" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="ad96244d-cf26-467d-a55a-c09dcbfc995a" edgePoints="[(15.203125 : 4.25); (15.203125 : 2.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="8a944a06-c246-4ea7-bc38-f51a1c0a866e" />
+      <nodes>
+        <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
+        <atributoEntShapeMoniker Id="cc2c07b8-b764-4b09-a94f-dafc5e250a94" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="b8655ea3-2a09-4da5-95ad-71e5f2b692c6" absoluteBounds="18.875, 4.375, 1.5, 1">
+      <atributoEntidadMoniker Id="d9e7fa17-50c1-4010-83cf-ae116748862c" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="4ad7be7f-bfcf-466a-9372-b09dd844ba41" edgePoints="[(16.625 : 4.6875); (18.875 : 4.6875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="bd967687-5ce4-41f8-bdf2-f39c659b8986" />
+      <nodes>
+        <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
+        <atributoEntShapeMoniker Id="b8655ea3-2a09-4da5-95ad-71e5f2b692c6" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <atributoEntShape Id="4c90c729-714f-4ae0-8268-1fda15ff42e4" absoluteBounds="19.75, 1.75, 1.5, 1">
+      <atributoEntidadMoniker Id="ae884a15-10f8-41b3-86db-8c12fc2381ba" />
+    </atributoEntShape>
+    <metaforaEnt_Atr Id="5ecbc7ac-bb85-4f87-bccd-a704741ed4d1" edgePoints="[(16.53125 : 4.25); (16.53125 : 2.71875); (19.75 : 2.71875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadHasAtributoEntidadMoniker Id="b5b271be-a5a2-4bb4-9b10-27d709b05f89" />
+      <nodes>
+        <entidadShapeMoniker Id="1385723c-b033-4acc-bb24-67082f642487" />
+        <atributoEntShapeMoniker Id="4c90c729-714f-4ae0-8268-1fda15ff42e4" />
+      </nodes>
+    </metaforaEnt_Atr>
+    <relacionShape Id="6fd9b152-fb87-4ff4-a289-2eb3e0ea41de" absoluteBounds="7.625, 5.5, 1.5, 1">
+      <relacionMoniker Id="db1c8adf-b7da-4a30-9a41-b22ab5cfaf50" />
+    </relacionShape>
+    <metaforaEnt_Rel Id="ce856d15-1ca7-4811-8986-afaec7045877" edgePoints="[(9.25 : 2.9687525); (8.375 : 2.9687525); (8.375 : 5.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <entidadReferencesRelacionedMoniker Id="0da2ec91-00ce-4bc5-afe9-9105c64e3cfd" />
+      <relativeChildShapes />
+      <nodes>
+        <entidadShapeMoniker Id="3cea3868-db93-4dae-a664-757423c941c0" />
+        <relacionShapeMoniker Id="6fd9b152-fb87-4ff4-a289-2eb3e0ea41de" />
+      </nodes>
+    </metaforaEnt_Rel>
+    <metaforaRel_Ent Id="913a3ecd-021a-41ae-b804-284e5b0cc42e" edgePoints="[(8.63598895450766 : 6.46875); (10.890625 : 6.46875); (10.890625 : 7.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <relacionReferencesEntidad1Moniker Id="44cae743-ca8c-49ff-9cdc-99d20e27568c" />
+      <relativeChildShapes />
+      <nodes>
+        <relacionShapeMoniker Id="6fd9b152-fb87-4ff4-a289-2eb3e0ea41de" />
+        <entidadShapeMoniker Id="4d13e23c-ef71-44fa-88b6-2e9beae31f84" />
+      </nodes>
+    </metaforaRel_Ent>
   </nestedChildShapes>
 </xCYLSProyectoIPSDiagram>

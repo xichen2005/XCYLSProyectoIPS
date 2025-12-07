@@ -281,8 +281,8 @@
         </xsd:attribute>
         <!-- Property: Null -->
         <xsd:attribute name="null" type="tipoNull" />
-        <!-- Property: Único -->
-        <xsd:attribute name="único" type="tipoÚnico" />
+        <!-- Property: Unico -->
+        <xsd:attribute name="unico" type="tipoÚnico" />
         <!-- Property: Longitud -->
         <xsd:attribute name="longitud" type="xsd:integer" />
       </xsd:extension>
@@ -312,8 +312,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
-        <!-- Property: Único -->
-        <xsd:attribute name="único" type="tipoÚnico" />
+        <!-- Property: Unico -->
+        <xsd:attribute name="unico" type="tipoÚnico" />
         <!-- Property: Null -->
         <xsd:attribute name="null" type="tipoNull" />
       </xsd:extension>
@@ -343,8 +343,8 @@
             <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
-        <!-- Property: Único -->
-        <xsd:attribute name="único" type="tipoÚnico" />
+        <!-- Property: Unico -->
+        <xsd:attribute name="unico" type="tipoÚnico" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

@@ -1,0 +1,221 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" language="C#" hostspecific="true" #>
+<#@ output extension=".html" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ include file="EF.utility.CS.ttinclude" #> 
+<#@ XCYLSProyectoIPS processor="XCYLSProyectoIPSDirectiveProcessor" requires="fileName='Sample.XCYLS_DSLProyIPS'" #>
+
+<#
+    // 1. 初始化文件管理器
+    var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+    var modelo = this.DeraWebIPS;
+#>
+
+<#
+    // =================================================================
+    //  PARTE 1: Generación para Entidades (生成实体页面)
+    // =================================================================
+    // 【修正】使用 Entidades (复数) 以避免 CS1579 错误
+    foreach (Entidad entidad in modelo.Entidad)
+    {
+        // 【修改】后缀改为 .html 用于预览
+        fileManager.StartNewFile(entidad.Name + ".html");
+        
+        // 获取主键名称
+        string pkNameForCheck = "id"; 
+        if(entidad.AtributoClaves.Count > 0) pkNameForCheck = entidad.AtributoClaves[0].Nombre;
+#>
+<!–– Comenzamos con la estructura HTML abriendo la etiqueta html ––>
+<html>
+<head>
+    <title>Gestión de <#= entidad.Name #></title>
+    <meta charset="UTF-8">
+</head>
+<!–– Le asignamos el estilo predefinido a la página ––>
+<body bgcolor="#B8D1F1">
+
+<!–– Comenzamos el código PHP abriendo su etiqueta ––>
+<?php
+    // Comprobamos si hay datos
+    if (!(isset($_GET['var<#= pkNameForCheck #>']))) {
+?>
+    <!–– Creamos un formulario ––>
+    <form action="<#= entidad.Name #>.html" method="GET">
+        <!–– Título de la entidad ––>
+        <h1><#= entidad.Name #></h1>
+
+<#
+        // --- A. Generar Inputs para Claves Primarias ---
+        // 【修正】使用 AtributoClaves (复数)
+        foreach (AtributoClave clave in entidad.AtributoClaves)
+        {
+            string inputType = "text";
+            if(clave.Tipo.ToString() == "Entero") inputType = "number";
+            if(clave.Tipo.ToString() == "Fecha") inputType = "date";
+#>
+        <label><#= clave.Nombre #>:</label>
+        <input name="var<#= clave.Nombre #>" type="<#= inputType #>" required> <br><br>
+<#
+        }
+
+        // --- B. Generar Inputs para Atributos Normales ---
+        // 【修正】使用 AtributoEntidads (复数)
+        foreach (AtributoEntidad attr in entidad.AtributoEntidad)
+        {
+            string inputType = "text";
+            if(attr.Tipo.ToString() == "Entero") inputType = "number";
+            if(attr.Tipo.ToString() == "Fecha") inputType = "date";
+            
+            string requiredStr = (attr.Null.ToString() == "No") ? "required" : "";
+#>
+        <label><#= attr.Nombre #>:</label>
+        <input name="var<#= attr.Nombre #>" type="<#= inputType #>" value="" <#= requiredStr #>> <br><br>
+<#
+        }
+#>
+        <!–– Botón Alta ––>
+        <input type="submit" value="Alta" />
+    </form>
+
+<?php
+    } else {
+        // --- PHP 代码保留，但在 HTML 模式下不会执行 ---
+        $conex = mysqli_connect("localhost", "root", "") or die("ERROR DE CONEXIÓN");
+        mysqli_select_db($conex, "<#= modelo.Name #>") or die("ERROR CON LA BASE DE DATOS");
+
+<#
+        List<string> varsPHP = new List<string>();
+        List<bool> isString = new List<bool>();
+
+        foreach (AtributoClave clave in entidad.AtributoClaves) {
+            string varName = "$" + clave.Nombre;
+            varsPHP.Add(varName);
+            isString.Add(clave.Tipo.ToString() != "Entero" && clave.Tipo.ToString() != "Real");
+#>
+        <#= varName #> = $_GET['var<#= clave.Nombre #>'];
+<#      } 
+
+        foreach (AtributoEntidad attr in entidad.AtributoEntidad) {
+            string varName = "$" + attr.Nombre;
+            varsPHP.Add(varName);
+            isString.Add(attr.Tipo.ToString() != "Entero" && attr.Tipo.ToString() != "Real");
+#>
+        <#= varName #> = $_GET['var<#= attr.Nombre #>'];
+<#      } #>
+
+        $sql = "INSERT INTO <#= entidad.Name #> VALUES (";
+<?php
+<#
+        for(int i=0; i<varsPHP.Count; i++) {
+            string val = varsPHP[i];
+            if(isString[i]) {
+#>
+        $sql .= "'<#= val #>'";
+<#          } else { 
+#>
+        $sql .= <#= val #>;
+<#          }
+            if(i < varsPHP.Count - 1) { 
+#>
+        $sql .= ", ";
+<#          }
+        } 
+#>
+        $sql .= ")";
+
+        $resultado = mysqli_query($conex, $sql);
+
+        if ($resultado)
+            echo "<b>Datos Insertados Correctamente</b>";
+        else
+            echo "Error en la inserción: " . mysqli_error($conex);
+
+        mysqli_close($conex);
+    }
+?>
+</body>
+</html>
+<#
+    } // Fin del bucle de Entidades
+#>
+
+<#
+    // =================================================================
+    //  PARTE 2: Generación para Relaciones N:M
+    // =================================================================
+    // 【修正】使用 Relaciones (复数)
+    foreach (Relacion rel in modelo.Relacioned)
+    {
+        var link1 = RelacionReferencesEntidad1.GetLinkToEntidad1(rel);
+        var link2 = EntidadReferencesRelacioned.GetLinkToEntidad(rel);
+        if (link1 == null || link2 == null) continue;
+
+        string c1 = link1.cardinalidad.ToString();
+        string c2 = link2.cardinaridad.ToString();
+
+        if ((c1.Contains("MaxN") || c1.Contains("N")) && (c2.Contains("MaxN") || c2.Contains("N")))
+        {
+            // 【修改】后缀改为 .html
+            fileManager.StartNewFile(rel.Name + ".html");
+#>
+<html>
+<head><title>Gestión de <#= rel.Name #></title></head>
+<body bgcolor="#B8D1F1">
+    <h1>Relación: <#= rel.Name #></h1>
+<?php
+    if (!isset($_GET['btnAlta'])) {
+?>
+    <form action="<#= rel.Name #>.html" method="GET">
+<#
+            // 【修正】使用复数 Entity 集合
+            // 注意：这里需要确保 Link 获取的对象是正确的 Entidad
+            List<Entidad> connectedEntities = new List<Entidad>();
+            if (link2.Entidad != null) connectedEntities.Add(link2.Entidad);
+            if (link1.Entidad != null) connectedEntities.Add(link1.Entidad);
+
+            List<string> fkNames = new List<string>();
+
+            foreach(Entidad ent in connectedEntities) {
+                foreach(AtributoClave pk in ent.AtributoClaves) {
+                    fkNames.Add(pk.Nombre);
+#>
+        <label><#= pk.Nombre #> (De <#= ent.Name #>):</label>
+        <input type="text" name="var<#= pk.Nombre #>" required> <br><br>
+<#
+                }
+            }
+#>
+        <input type="submit" name="btnAlta" value="Alta">
+    </form>
+<?php
+    } else {
+        $conex = mysqli_connect("localhost", "root", "") or die("Error");
+        mysqli_select_db($conex, "<#= modelo.Name #>");
+
+<#          foreach(string fk in fkNames) { #>
+        $<#= fk #> = $_GET['var<#= fk #>'];
+<#          } #>
+
+        $sql = "INSERT INTO <#= rel.Name #> VALUES (";
+<?php
+<#          for(int i=0; i<fkNames.Count; i++) { #>
+        $sql .= "'$" . <#= fkNames[i] #> . "'";
+<#              if(i < fkNames.Count - 1) { #>
+        $sql .= ", ";
+<#              }
+            } #>
+        $sql .= ")";
+        
+        if(mysqli_query($conex, $sql)) echo "<b>Insertado</b>";
+        else echo "Error: " . mysqli_error($conex);
+        
+        mysqli_close($conex);
+    }
+?>
+</body>
+</html>
+<#
+        }
+    }
+    
+    fileManager.Process();
+#>

@@ -1,0 +1,34 @@
+﻿ 
+
+
+
+CREATE DATABASE IF NOT EXISTS ;
+USE ;
+
+CREATE TABLE IF NOT EXISTS Alumno (
+    Id_Alumno VARCHAR(255) NOT NULL,
+    Edad VARCHAR(255),
+    Nombre VARCHAR(255),
+    Apellidos1 VARCHAR(255),
+    Apellidos2 VARCHAR(255),
+    PRIMARY KEY (Id_Alumno)
+);
+CREATE TABLE IF NOT EXISTS Universidad (
+    Nombre VARCHAR(255) NOT NULL,
+    PRIMARY KEY (Nombre)
+);
+CREATE TABLE IF NOT EXISTS Profesor (
+    Id_Prof VARCHAR(255) NOT NULL,
+    Edad VARCHAR(255),
+    Nombre VARCHAR(255),
+    Apellidos1 VARCHAR(255),
+    Apellidos2 VARCHAR(255),
+    Telefono VARCHAR(255),
+    PRIMARY KEY (Id_Prof)
+);
+CREATE TABLE IF NOT EXISTS Educar (
+    Id_Alumno VARCHAR(255) NOT NULL,
+    Id_Prof VARCHAR(255) NOT NULL,
+    FOREIGN KEY (Id_Alumno) REFERENCES Alumno (Id_Alumno),
+    FOREIGN KEY (Id_Prof) REFERENCES Profesor (Id_Prof)
+);

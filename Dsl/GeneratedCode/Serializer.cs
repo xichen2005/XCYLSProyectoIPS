@@ -3090,20 +3090,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					}
 				}
 			}
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				string attribÚnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "único");
-				if (attribÚnico != null)
+				string attribUnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "unico");
+				if (attribUnico != null)
 				{
-					tipoÚnico valueOfÚnico;
-					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribÚnico, out valueOfÚnico))
+					tipoÚnico valueOfUnico;
+					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribUnico, out valueOfUnico))
 					{
-						instanceOfAtributoEntidad.Único = valueOfÚnico;
+						instanceOfAtributoEntidad.Unico = valueOfUnico;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "único", typeof(tipoÚnico), attribÚnico);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "unico", typeof(tipoÚnico), attribUnico);
 					}
 				}
 			}
@@ -3539,16 +3539,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 					}
 				}
 			}
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				tipoÚnico propValue = instanceOfAtributoEntidad.Único;
+				tipoÚnico propValue = instanceOfAtributoEntidad.Unico;
 				string serializedPropValue = DslModeling::SerializationUtilities.GetString<tipoÚnico>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "No_Único") != 0)
 					{	// No need to write the value out if it's the same as default value.
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "único", serializedPropValue);
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "unico", serializedPropValue);
 					}
 				}
 			}
@@ -3761,20 +3761,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			AtributoRelacion instanceOfAtributoRelacion = element as AtributoRelacion;
 			global::System.Diagnostics.Debug.Assert(instanceOfAtributoRelacion != null, "Expecting an instance of AtributoRelacion");
 	
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				string attribÚnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "único");
-				if (attribÚnico != null)
+				string attribUnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "unico");
+				if (attribUnico != null)
 				{
-					tipoÚnico valueOfÚnico;
-					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribÚnico, out valueOfÚnico))
+					tipoÚnico valueOfUnico;
+					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribUnico, out valueOfUnico))
 					{
-						instanceOfAtributoRelacion.Único = valueOfÚnico;
+						instanceOfAtributoRelacion.Unico = valueOfUnico;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "único", typeof(tipoÚnico), attribÚnico);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "unico", typeof(tipoÚnico), attribUnico);
 					}
 				}
 			}
@@ -4197,16 +4197,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			AtributoRelacion instanceOfAtributoRelacion = element as AtributoRelacion;
 			global::System.Diagnostics.Debug.Assert(instanceOfAtributoRelacion != null, "Expecting an instance of AtributoRelacion");
 	
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				tipoÚnico propValue = instanceOfAtributoRelacion.Único;
+				tipoÚnico propValue = instanceOfAtributoRelacion.Unico;
 				string serializedPropValue = DslModeling::SerializationUtilities.GetString<tipoÚnico>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "No_Único") != 0)
 					{	// No need to write the value out if it's the same as default value.
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "único", serializedPropValue);
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "unico", serializedPropValue);
 					}
 				}
 			}
@@ -4422,20 +4422,20 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			AtributoClave instanceOfAtributoClave = element as AtributoClave;
 			global::System.Diagnostics.Debug.Assert(instanceOfAtributoClave != null, "Expecting an instance of AtributoClave");
 	
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				string attribÚnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "único");
-				if (attribÚnico != null)
+				string attribUnico = XCYLSProyectoIPSSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "unico");
+				if (attribUnico != null)
 				{
-					tipoÚnico valueOfÚnico;
-					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribÚnico, out valueOfÚnico))
+					tipoÚnico valueOfUnico;
+					if (DslModeling::SerializationUtilities.TryGetValue<tipoÚnico>(serializationContext, attribUnico, out valueOfUnico))
 					{
-						instanceOfAtributoClave.Único = valueOfÚnico;
+						instanceOfAtributoClave.Unico = valueOfUnico;
 					}
 					else
 					{	// Invalid property value, ignored.
-						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "único", typeof(tipoÚnico), attribÚnico);
+						XCYLSProyectoIPSSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "unico", typeof(tipoÚnico), attribUnico);
 					}
 				}
 			}
@@ -4841,16 +4841,16 @@ namespace UPM_IPS.XCYLSProyectoIPS
 			AtributoClave instanceOfAtributoClave = element as AtributoClave;
 			global::System.Diagnostics.Debug.Assert(instanceOfAtributoClave != null, "Expecting an instance of AtributoClave");
 	
-			// Único
+			// Unico
 			if (!serializationContext.Result.Failed)
 			{
-				tipoÚnico propValue = instanceOfAtributoClave.Único;
+				tipoÚnico propValue = instanceOfAtributoClave.Unico;
 				string serializedPropValue = DslModeling::SerializationUtilities.GetString<tipoÚnico>(serializationContext, propValue);
 				if (!serializationContext.Result.Failed)
 				{
 					if (serializationContext.WriteOptionalPropertiesWithDefaultValue || string.CompareOrdinal(serializedPropValue, "No_Único") != 0)
 					{	// No need to write the value out if it's the same as default value.
-						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "único", serializedPropValue);
+						XCYLSProyectoIPSSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "unico", serializedPropValue);
 					}
 				}
 			}

@@ -1,0 +1,37 @@
+<html>
+<head><title>Gestión de Educar</title></head>
+<body bgcolor="#B8D1F1">
+    <h1>Relación: Educar</h1>
+<?php
+    if (!isset($_GET['btnAlta'])) {
+?>
+    <form action="Educar.html" method="GET">
+        <label>Id_Alumno (De Alumno):</label>
+        <input type="text" name="varId_Alumno" required> <br><br>
+        <label>Id_Prof (De Profesor):</label>
+        <input type="text" name="varId_Prof" required> <br><br>
+        <input type="submit" name="btnAlta" value="Alta">
+    </form>
+<?php
+    } else {
+        $conex = mysqli_connect("localhost", "root", "") or die("Error");
+        mysqli_select_db($conex, "");
+
+        $Id_Alumno = $_GET['varId_Alumno'];
+        $Id_Prof = $_GET['varId_Prof'];
+
+        $sql = "INSERT INTO Educar VALUES (";
+<?php
+        $sql .= "'$" . Id_Alumno . "'";
+        $sql .= ", ";
+        $sql .= "'$" . Id_Prof . "'";
+        $sql .= ")";
+        
+        if(mysqli_query($conex, $sql)) echo "<b>Insertado</b>";
+        else echo "Error: " . mysqli_error($conex);
+        
+        mysqli_close($conex);
+    }
+?>
+</body>
+</html>
