@@ -1,24 +1,20 @@
-<!–– Comenzamos con la estructura HTML abriendo la etiqueta html ––>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Gestión de Profesor</title>
+    <title>Gestión de Alumno</title>
     <meta charset="UTF-8">
 </head>
-<!–– Le asignamos el estilo predefinido a la página ––>
 <body bgcolor="#B8D1F1">
 
-<!–– Comenzamos el código PHP abriendo su etiqueta ––>
 <?php
     // Comprobamos si hay datos
-    if (!(isset($_GET['varId_Prof']))) {
+    if (!(isset($_GET['varId_Alumno']))) {
 ?>
-    <!–– Creamos un formulario ––>
-    <form action="Profesor.html" method="GET">
-        <!–– Título de la entidad ––>
-        <h1>Profesor</h1>
+    <form action="Alumno.php" method="GET">
+        <h1>Alumno</h1>
 
-        <label>Id_Prof:</label>
-        <input name="varId_Prof" type="text" required> <br><br>
+        <label>Id_Alumno:</label>
+        <input name="varId_Alumno" type="text" required> <br><br>
         <label>Edad:</label>
         <input name="varEdad" type="text" value="" > <br><br>
         <label>Nombre:</label>
@@ -27,28 +23,24 @@
         <input name="varApellidos1" type="text" value="" > <br><br>
         <label>Apellidos2:</label>
         <input name="varApellidos2" type="text" value="" > <br><br>
-        <label>Telefono:</label>
-        <input name="varTelefono" type="text" value="" > <br><br>
-        <!–– Botón Alta ––>
         <input type="submit" value="Alta" />
     </form>
 
 <?php
     } else {
-        // --- PHP 代码保留，但在 HTML 模式下不会执行 ---
+        // --- PHP 代码部分 ---
         $conex = mysqli_connect("localhost", "root", "") or die("ERROR DE CONEXIÓN");
-        mysqli_select_db($conex, "") or die("ERROR CON LA BASE DE DATOS");
+        // 注意：请确保数据库名称在这里是正确的
+        mysqli_select_db($conex, "gestionUniversidad") or die("ERROR CON LA BASE DE DATOS");
 
-        $Id_Prof = $_GET['varId_Prof'];
+        $Id_Alumno = $_GET['varId_Alumno'];
         $Edad = $_GET['varEdad'];
         $Nombre = $_GET['varNombre'];
         $Apellidos1 = $_GET['varApellidos1'];
         $Apellidos2 = $_GET['varApellidos2'];
-        $Telefono = $_GET['varTelefono'];
 
-        $sql = "INSERT INTO Profesor VALUES (";
-<?php
-        $sql .= "'$Id_Prof'";
+        $sql = "INSERT INTO Alumno VALUES (";
+        $sql .= "'$Id_Alumno'";
         $sql .= ", ";
         $sql .= "'$Edad'";
         $sql .= ", ";
@@ -57,8 +49,6 @@
         $sql .= "'$Apellidos1'";
         $sql .= ", ";
         $sql .= "'$Apellidos2'";
-        $sql .= ", ";
-        $sql .= "'$Telefono'";
         $sql .= ")";
 
         $resultado = mysqli_query($conex, $sql);
@@ -73,4 +63,3 @@
 ?>
 </body>
 </html>
-

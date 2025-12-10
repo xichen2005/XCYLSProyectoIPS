@@ -2,8 +2,8 @@
 
 
 
-CREATE DATABASE IF NOT EXISTS ;
-USE ;
+CREATE DATABASE IF NOT EXISTS gestionUniversidad;
+USE gestionUniversidad;
 
 CREATE TABLE IF NOT EXISTS Alumno (
     Id_Alumno VARCHAR(255) NOT NULL,

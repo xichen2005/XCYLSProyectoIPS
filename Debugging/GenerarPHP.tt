@@ -1,5 +1,5 @@
 ﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" language="C#" hostspecific="true" #>
-<#@ output extension=".html" #>
+<#@ output extension=".php" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ include file="EF.utility.CS.ttinclude" #> 
 <#@ XCYLSProyectoIPS processor="XCYLSProyectoIPSDirectiveProcessor" requires="fileName='Sample.XCYLS_DSLProyIPS'" #>
@@ -14,38 +14,31 @@
     // =================================================================
     //  PARTE 1: Generación para Entidades (生成实体页面)
     // =================================================================
-    // 【修正】使用 Entidades (复数) 以避免 CS1579 错误
     foreach (Entidad entidad in modelo.Entidad)
     {
-        // 【修改】后缀改为 .html 用于预览
-        fileManager.StartNewFile(entidad.Name + ".html");
+        fileManager.StartNewFile(entidad.Name + ".php");
         
         // 获取主键名称
         string pkNameForCheck = "id"; 
         if(entidad.AtributoClaves.Count > 0) pkNameForCheck = entidad.AtributoClaves[0].Nombre;
 #>
-<!–– Comenzamos con la estructura HTML abriendo la etiqueta html ––>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Gestión de <#= entidad.Name #></title>
     <meta charset="UTF-8">
 </head>
-<!–– Le asignamos el estilo predefinido a la página ––>
 <body bgcolor="#B8D1F1">
 
-<!–– Comenzamos el código PHP abriendo su etiqueta ––>
 <?php
     // Comprobamos si hay datos
     if (!(isset($_GET['var<#= pkNameForCheck #>']))) {
 ?>
-    <!–– Creamos un formulario ––>
-    <form action="<#= entidad.Name #>.html" method="GET">
-        <!–– Título de la entidad ––>
+    <form action="<#= entidad.Name #>.php" method="GET">
         <h1><#= entidad.Name #></h1>
 
 <#
         // --- A. Generar Inputs para Claves Primarias ---
-        // 【修正】使用 AtributoClaves (复数)
         foreach (AtributoClave clave in entidad.AtributoClaves)
         {
             string inputType = "text";
@@ -58,7 +51,6 @@
         }
 
         // --- B. Generar Inputs para Atributos Normales ---
-        // 【修正】使用 AtributoEntidads (复数)
         foreach (AtributoEntidad attr in entidad.AtributoEntidad)
         {
             string inputType = "text";
@@ -72,14 +64,14 @@
 <#
         }
 #>
-        <!–– Botón Alta ––>
         <input type="submit" value="Alta" />
     </form>
 
 <?php
     } else {
-        // --- PHP 代码保留，但在 HTML 模式下不会执行 ---
+        // --- PHP 代码部分 ---
         $conex = mysqli_connect("localhost", "root", "") or die("ERROR DE CONEXIÓN");
+        // 注意：请确保数据库名称在这里是正确的
         mysqli_select_db($conex, "<#= modelo.Name #>") or die("ERROR CON LA BASE DE DATOS");
 
 <#
@@ -103,19 +95,17 @@
 <#      } #>
 
         $sql = "INSERT INTO <#= entidad.Name #> VALUES (";
-<?php
 <#
+        // 【修正】这里去掉了错误的 <?php
         for(int i=0; i<varsPHP.Count; i++) {
             string val = varsPHP[i];
             if(isString[i]) {
 #>
         $sql .= "'<#= val #>'";
-<#          } else { 
-#>
+<#          } else { #>
         $sql .= <#= val #>;
 <#          }
-            if(i < varsPHP.Count - 1) { 
-#>
+            if(i < varsPHP.Count - 1) { #>
         $sql .= ", ";
 <#          }
         } 
@@ -142,7 +132,6 @@
     // =================================================================
     //  PARTE 2: Generación para Relaciones N:M
     // =================================================================
-    // 【修正】使用 Relaciones (复数)
     foreach (Relacion rel in modelo.Relacioned)
     {
         var link1 = RelacionReferencesEntidad1.GetLinkToEntidad1(rel);
@@ -154,9 +143,9 @@
 
         if ((c1.Contains("MaxN") || c1.Contains("N")) && (c2.Contains("MaxN") || c2.Contains("N")))
         {
-            // 【修改】后缀改为 .html
-            fileManager.StartNewFile(rel.Name + ".html");
+            fileManager.StartNewFile(rel.Name + ".php");
 #>
+<!DOCTYPE html>
 <html>
 <head><title>Gestión de <#= rel.Name #></title></head>
 <body bgcolor="#B8D1F1">
@@ -164,10 +153,8 @@
 <?php
     if (!isset($_GET['btnAlta'])) {
 ?>
-    <form action="<#= rel.Name #>.html" method="GET">
+    <form action="<#= rel.Name #>.php" method="GET">
 <#
-            // 【修正】使用复数 Entity 集合
-            // 注意：这里需要确保 Link 获取的对象是正确的 Entidad
             List<Entidad> connectedEntities = new List<Entidad>();
             if (link2.Entidad != null) connectedEntities.Add(link2.Entidad);
             if (link1.Entidad != null) connectedEntities.Add(link1.Entidad);
@@ -196,8 +183,9 @@
 <#          } #>
 
         $sql = "INSERT INTO <#= rel.Name #> VALUES (";
-<?php
-<#          for(int i=0; i<fkNames.Count; i++) { #>
+<#          
+        // 【修正】这里也去掉了错误的 <?php
+        for(int i=0; i<fkNames.Count; i++) { #>
         $sql .= "'$" . <#= fkNames[i] #> . "'";
 <#              if(i < fkNames.Count - 1) { #>
         $sql .= ", ";

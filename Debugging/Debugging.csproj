@@ -65,20 +65,20 @@
     <Service Include="{508349B6-6B84-4df5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Alumno.html">
+    <Content Include="Alumno.php">
       <DependentUpon>GenerarPHP.tt</DependentUpon>
     </Content>
-    <Content Include="Educar.html">
+    <Content Include="Educar.php">
       <DependentUpon>GenerarPHP.tt</DependentUpon>
     </Content>
-    <Content Include="GenerarPHP.html">
+    <Content Include="GenerarPHP.php">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GenerarPHP.tt</DependentUpon>
     </Content>
     <Content Include="GenerarPHP.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>GenerarPHP.html</LastGenOutput>
+      <LastGenOutput>GenerarPHP.php</LastGenOutput>
     </Content>
     <Content Include="GenerarSQL.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -89,10 +89,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GenerarSQL.tt</DependentUpon>
     </Content>
-    <Content Include="Profesor.html">
+    <Content Include="Profesor.php">
       <DependentUpon>GenerarPHP.tt</DependentUpon>
     </Content>
-    <Content Include="Universidad.html">
+    <Content Include="Universidad.php">
       <DependentUpon>GenerarPHP.tt</DependentUpon>
     </Content>
     <Content Include="XCYLSProyectoIPSReport.txt">

@@ -1,38 +1,33 @@
-<!–– Comenzamos con la estructura HTML abriendo la etiqueta html ––>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Gestión de Universidad</title>
     <meta charset="UTF-8">
 </head>
-<!–– Le asignamos el estilo predefinido a la página ––>
 <body bgcolor="#B8D1F1">
 
-<!–– Comenzamos el código PHP abriendo su etiqueta ––>
 <?php
     // Comprobamos si hay datos
     if (!(isset($_GET['varNombre']))) {
 ?>
-    <!–– Creamos un formulario ––>
-    <form action="Universidad.html" method="GET">
-        <!–– Título de la entidad ––>
+    <form action="Universidad.php" method="GET">
         <h1>Universidad</h1>
 
         <label>Nombre:</label>
         <input name="varNombre" type="text" required> <br><br>
-        <!–– Botón Alta ––>
         <input type="submit" value="Alta" />
     </form>
 
 <?php
     } else {
-        // --- PHP 代码保留，但在 HTML 模式下不会执行 ---
+        // --- PHP 代码部分 ---
         $conex = mysqli_connect("localhost", "root", "") or die("ERROR DE CONEXIÓN");
-        mysqli_select_db($conex, "") or die("ERROR CON LA BASE DE DATOS");
+        // 注意：请确保数据库名称在这里是正确的
+        mysqli_select_db($conex, "gestionUniversidad") or die("ERROR CON LA BASE DE DATOS");
 
         $Nombre = $_GET['varNombre'];
 
         $sql = "INSERT INTO Universidad VALUES (";
-<?php
         $sql .= "'$Nombre'";
         $sql .= ")";
 

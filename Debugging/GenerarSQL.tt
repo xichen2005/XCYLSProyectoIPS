@@ -8,8 +8,8 @@
     var modelo = this.DeraWebIPS; 
 #>
 
-CREATE DATABASE IF NOT EXISTS <#= modelo.Name #>;
-USE <#= modelo.Name #>;
+CREATE DATABASE IF NOT EXISTS gestionUniversidad;
+USE gestionUniversidad;
 
 <#
     foreach (Entidad entidad in modelo.Entidad) 

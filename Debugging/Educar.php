@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head><title>Gestión de Educar</title></head>
 <body bgcolor="#B8D1F1">
@@ -5,7 +6,7 @@
 <?php
     if (!isset($_GET['btnAlta'])) {
 ?>
-    <form action="Educar.html" method="GET">
+    <form action="Educar.php" method="GET">
         <label>Id_Alumno (De Alumno):</label>
         <input type="text" name="varId_Alumno" required> <br><br>
         <label>Id_Prof (De Profesor):</label>
@@ -15,13 +16,12 @@
 <?php
     } else {
         $conex = mysqli_connect("localhost", "root", "") or die("Error");
-        mysqli_select_db($conex, "");
+        mysqli_select_db($conex, "gestionUniversidad");
 
         $Id_Alumno = $_GET['varId_Alumno'];
         $Id_Prof = $_GET['varId_Prof'];
 
         $sql = "INSERT INTO Educar VALUES (";
-<?php
         $sql .= "'$" . Id_Alumno . "'";
         $sql .= ", ";
         $sql .= "'$" . Id_Prof . "'";
