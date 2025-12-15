@@ -1,37 +1,28 @@
-<!DOCTYPE html>
 <html>
-<head><title>Gestión de Educar</title></head>
+<head><title>Educar</title></head>
 <body bgcolor="#B8D1F1">
-    <h1>Relación: Educar</h1>
 <?php
-    if (!isset($_GET['btnAlta'])) {
+if (!isset($_GET['btnAlta'])){
 ?>
-    <form action="Educar.php" method="GET">
-        <label>Id_Alumno (De Alumno):</label>
-        <input type="text" name="varId_Alumno" required> <br><br>
-        <label>Id_Prof (De Profesor):</label>
-        <input type="text" name="varId_Prof" required> <br><br>
-        <input type="submit" name="btnAlta" value="Alta">
-    </form>
+<form>
+<h1>Relación: Educar</h1>
+Id_Alumno (De Alumno): <input type="text" name="varId_Alumno"> <br>
+Id_Prof (De Profesor): <input type="text" name="varId_Prof"> <br>
+<input type="submit" name="btnAlta" value="Alta" />
+</form>
 <?php
-    } else {
-        $conex = mysqli_connect("localhost", "root", "") or die("Error");
-        mysqli_select_db($conex, "gestionUniversidad");
-
-        $Id_Alumno = $_GET['varId_Alumno'];
-        $Id_Prof = $_GET['varId_Prof'];
-
-        $sql = "INSERT INTO Educar VALUES (";
-        $sql .= "'$" . Id_Alumno . "'";
-        $sql .= ", ";
-        $sql .= "'$" . Id_Prof . "'";
-        $sql .= ")";
-        
-        if(mysqli_query($conex, $sql)) echo "<b>Insertado</b>";
-        else echo "Error: " . mysqli_error($conex);
-        
-        mysqli_close($conex);
-    }
+}
+else{
+$conex = mysqli_connect("localhost","root") or die("ERROR...");
+mysqli_select_db($conex,"gestionUniversidad") or die("ERROR BD");
+$Id_Alumno = $_GET['varId_Alumno'];
+$Id_Prof = $_GET['varId_Prof'];
+$resultado = mysqli_query($conex,"INSERT INTO Educar VALUES 
+('$Id_Alumno','$Id_Prof')");
+if ($resultado) echo" <b>Datos Insertados</b> ";
+else echo"Error en la inserción";
+mysqli_close($conex);
+}
 ?>
 </body>
 </html>
